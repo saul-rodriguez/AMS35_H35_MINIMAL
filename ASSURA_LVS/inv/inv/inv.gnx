@@ -1,0 +1,18 @@
+# 4
+PMOS4(MOS): PMOS4(MOS)
+= D D B
+= G G B
+= S S B
+= B B B
+# 4
+NMOS4(MOS): NMOS4(MOS)
+= D D B
+= G G B
+= S S B
+= B B B
+# 4
+inv schematic INV: inv layout INV
+= GNDA GNDA I
+= IN IN B
+= OUT OUT B
+= VDDA VDDA I

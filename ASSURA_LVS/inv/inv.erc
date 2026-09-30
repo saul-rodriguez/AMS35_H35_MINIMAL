@@ -1,0 +1,22 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'inv layout INV':
+  info: Assign pin label "GNDA" at (3.000, 0.950) to layer `net_met1'.
+  info: Assign pin label "IN" at (1.900, 5.450) to layer `net_met1'.
+  info: Assign pin label "OUT" at (4.350, 5.550) to layer `net_met1'.
+  info: Assign pin label "VDDA" at (3.000, 10.500) to layer `net_met1'.
+
+***** End of Label Report *****
+
+
+***** Begin Label Report *****
+
+ Label in cell 'inv layout INV':
+  info: Assign pin label "GNDA" at (3.000, 0.950) to layer `net_met1'.
+  info: Assign pin label "IN" at (1.900, 5.450) to layer `net_met1'.
+  info: Assign pin label "OUT" at (4.350, 5.550) to layer `net_met1'.
+  info: Assign pin label "VDDA" at (3.000, 10.500) to layer `net_met1'.
+
+***** End of Label Report *****
+

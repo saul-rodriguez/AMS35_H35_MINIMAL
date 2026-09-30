@@ -1,0 +1,2 @@
+define_attribute flow_implementation_stage -data_type string -obj_type design -category write_def -help_string {DEF property} -quiet
+define_attribute flow_timed_design_state -data_type string -obj_type design -category write_def -help_string {DEF property} -quiet

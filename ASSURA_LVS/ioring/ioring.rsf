@@ -1,0 +1,1890 @@
+;----------------------------------------------------------------------------
+; @(#)$CDS: assura version av4.1:Production:dfII25.1-64b:IC25.1-64b.38 08/06/25 03:01 (sjfdcl919) $
+; sub-version 4.1_USR7_HF3
+;----------------------------------------------------------------------------
+
+
+;----------------------------------------------------------------------------
+; RSF include(/opt/pdk/ams/5.10.1/X35/assura/h35b4/h35b4d3/LVSinclude.rsf) Section
+; Specified in the Assura UI
+;----------------------------------------------------------------------------
+
+; *********************************
+; Owner: austriamicrosystems AG
+; HIT-Kit: Digital
+;
+; File: LVSinclude.rsf
+;
+; Created: Oct  4 15:06:30 2023
+; *********************************
+
+; will be included by the UI automaticly
+
+; switch for extract.rul
+
+AMS_LIB = strcat(getShellEnvVar("AMS_DIR") "/" getShellEnvVar("AMS_DB") "/HK_H35")
+printf( "Loading all available p-cell functions\n" )
+load(strcat(AMS_LIB "/skill/ams_sdl.il"))
+
+avParameters(
+;?set "no_layer_MIDOX"
+;?set "no_layer_POLY2"
+;?set "no_layer_HRES"
+?set "no_layer_METCAP"
+;?set "no_layer_METRES"
+;?set "no_module_SUBSTRATE"
+;?set "no_module_NMOS50"
+?set "no_module_MIM5V"
+?set "no_module_MIM20V"
+;?set "module_NW2SN"
+;?set "no_layer_HVOX"
+;?set "no_layer_VIA2"
+;?set "no_layer_MET3"
+;?set "no_layer_VIA3"
+;?set "no_layer_MET4"
+;?set "module_PMOSS"
+;?set "layer_LVTDEF"
+;?set "no_module_VHV"
+;?set "element_PHDPINB750"
+?set "no_layer_DEVDEF_opto"
+;?set "layer_PAD_BARC"
+;?set "module_IEPI"
+;?set "library_PRIMLIB_WIP"
+;?set "library_ESDLIB_WIP"
+?set "library_HALL"
+;?set "element_NMOSFI25H"
+;?set "element_NMOSFI25HS"
+;?set "layer_PAD_EBARC"
+;?set "layer_PAD_OBARC"
+
+)
+
+; **********************************
+; Load end user customizations
+; **********************************
+
+if( isFile("LVSinclude_local.rsf") then
+   load("LVSinclude_local.rsf")
+)
+
+
+;----------------------------------------------------------------------------
+; avParameter Section
+; Created by the Assura UI
+;----------------------------------------------------------------------------
+
+avParameters(
+  ?inputLayout ( "df2" "MINIMAL_IO_HV" )
+  ?cellName "ioring"
+  ?viewName "layout"
+  ?workingDirectory "ASSURA_LVS/ioring"
+  ?technology "h35b4d3"
+  ?techLib "./assura_tech.lib"
+  ?techRuleSet "Full"
+  ?set ("resimulate_extracted")
+  ?avrpt t
+  ?overwrite t
+)
+
+
+
+
+;----------------------------------------------------------------------------
+; avCompareRules Section from Rules Files
+; Specified in the Assura UI
+;----------------------------------------------------------------------------
+
+; *********************************
+; Owner: austriamicrosystems AG
+; HIT-Kit: Digital
+;
+; File: compare.rul
+;
+; 2002-07-01 who: created
+; 2004-03-30 who: rf devices
+; 2005-03-21 who: waffle mos
+; 2005-06-09 who: rpolyhrf
+; 2006-11-22 hge: added default settings for msg_sch and msg_lay
+;                 in comapreDIODE and comapreCAP
+; 2006-12-27 who: short (metal resistor)
+; 2007-09-18 who: phdnwa850, nmos30m
+; 2008-07-17 who: nmos30t
+; 2008-07-25 who: rpolyz
+; 2008-11-07 ghe: set swapPins to nil for cmim
+; 2008-11-19 who: nmos30t->nmos18t
+; 2008-12-18 who: rpoly2p, rpoly2ph
+; 2009-10-12 who: sbd5
+; 2009-12-14 who: esdfdn5, esdfdp5, esdgcn5, esdgcp5,
+;                 esdpd18, esdpd26, esdpd30
+; 2010-01-20 hge: added compareParameter ("m" 1) for all ESD* devices
+; 2010-09-07 who: cvart, cvarm
+; 2010-09-13 who: xxxrf noMerge
+; 2011-07-06 hge: added  parameterModifiedDevice("[NP]MOS{M}4" ("modelName" "_"))    ; for WAFFLE
+; 2011-07-26 who: use standard MOSFET names for old WAFFLE
+; 2011-12-05 hge: disabled noMerge for sbd5
+; 2011-12-06 hge: added AMS_avCompParameter,AMS_avCompIsoParameter,AMS_compParameters
+; 2012-01-09 hge: changed checks for cvart and cvarm
+; 2012-04-04 ghe: pmosd30m
+; 2012-07-31 hge: added parameter "area" in AMS_parallelMerge and AMS_compParameters ; added LAT2 merge and comp
+; 2013-01-17 hge: added BONDPAD and numEdge in AMS_compParameters 
+; 2013-03-04 who: phdpinb750
+; 2013-05-22 who: pmos30m
+; 2013-07-18 who: cpolyhd
+; 2013-08-30 who: add F to AMS_parallelMerge
+; 2013-10-23 who: esdpd12
+; 2014-02-05 who: add FTD to AMS_parallelMerge
+; 2014-08-11 hge: phdnwb850
+; 2014-10-13 hge: vxcap ; renamed AMS_avCompIsoParameter to AMS_avCompExactParameter and added parameters top, bottom and isoVoltagePW
+; 2015-03-09 wbi: added vert5 (copied from vert10)
+; 2015-07-01 wbi: GCNSCR1, PDL2N01S01 and PDL2N02S01 added
+; 2016-08-02 wbi: added vert2 (copied from vert5)
+; 2017-01-09 sned: add ESDNPN_PN3
+; 2017-01-17 hge:  added filterDevice SHORT_SUB for amsssubx
+; 2017-04-27 sned: remove SUB pin from vert3 in layout
+; 2018-01-30 sned: pdl2n02s02 diode
+; 2018-02-21 sned: compare parameters dn_ps
+; 2018-05-30 sned: add compare number of fingers nmosi/nmosil/nmosisln/nmosi20t/pmosi/pmosil
+; 2018-11-06 sned: RESMAT
+; 2018-11-20 sned: VERTN1_ARRAY
+; 2018-12-17 sned: ESDSCR55_SN
+; 2019-05-23 hge: added CFMOM
+; 2019-07-07 sned: PDI1N01S002
+; 2020-02-26 sned: PDL2N05S02 rev. 1
+; 2020-03-04 sned: remove RESMAT  (req. rhe)
+; 2020-06-14 wbi: added CFMOM50
+; 2021-11-29 wbi: add ply and tpm for cfmom and cfmom50
+; 2022-03-16 hge: disabled swapPins for cfmom*
+; 2022-08-30 wbi: add PDV1N01S001, PDV1N01S002, PDV1N01G001, PDV1N01G002, PDV1N02S001, PDV1N02S002, PDV1N02G001, PDV1N02G002
+; 2023-06-28 hge: added SUBTYPE nmosi,pmosi,nmosim, pmosim fro waffle
+; 2023-10-02 sned: PDI1N13S002
+; 2024-02-05 sned: add filterID property
+; 2024-06-07 sned: pmosll4
+; *********************************
+
+ams_capTol = 1;
+ams_resTol = 1;
+ams_mosTol = 1;
+ams_dioTol = 1;
+
+
+procedure( parallelCAP( c1, c2 ) 
+ prog( ( ct ) 
+ ct = ncons( nil ) 
+ if( ( c1->m && c2->m ) then
+    c1_m = float( c1->m ) 
+    c2_m = float( c2->m ) 
+    ct->m = 1
+     )
+ if( ( c1->a && c2->a ) then
+    c1_a = float( c1->a ) 
+    c2_a = float( c2->a ) 
+    if( ( c1->m && c2->m ) then
+       ct->a = ( c1_a*c1_m + c2_a*c2_m )
+    else
+       ct->a = ( c1_a + c2_a )
+    )
+ ) 
+ if( ( c1->p && c2->p ) then
+    c1_p = float( c1->p ) 
+    c2_p = float( c2->p ) 
+    if( ( c1->m && c2->m ) then
+       ct->p = ( c1_p*c1_m + c2_p*c2_m )
+    else
+       ct->p = ( c1_p + c2_p )
+    )
+ ) 
+ return( ct ) 
+ ) 
+)
+
+; **************************
+; * compare CAP parameters *
+; **************************
+
+procedure( compareCAP( lay, sch )
+  prog( (missingInLay missingInSch compTol msg_sch msg_lay)
+
+      msg_sch = ""
+      msg_lay = ""
+
+; If m is missing, set it to 1
+
+      when( !lay->m  lay->m = 1 )
+      when( !sch->m  sch->m = 1 )
+
+; If "a" or "p" is missing generate a parameter mismatch
+
+      foreach( prop '( a p)
+        unless( get( lay prop )
+          missingInLay = cons( prop missingInLay )
+        ) ;unless
+        unless( get( sch prop )
+          missingInSch = cons( prop missingInSch )
+        ) ;unless
+      ) ;foreach
+
+; Report all missing parameters
+
+      when( ( missingInLay || missingInSch )
+
+        when( missingInSch
+          sprintf( msg_sch "Schematic CAP missing params: %s"
+            buildString( missingInSch ",") )
+        ) ;when
+
+        when( missingInLay
+          sprintf( msg_lay "Layout CAP missing params: %s"
+            buildString( missingInLay ",") )
+        ) ;when
+
+        sprintf( msg "Err: %s ; %s" msg_sch msg_lay )
+        return( msg )
+      )
+
+; get Tolerances for comparison
+     if( sch->tolerance then
+       compTol = sch->tolerance
+     else
+       compTol = ams_capTol
+     )
+     msg=""
+     when( (compTol != ams_capTol)
+       sprintf( msg "Compare tolerance: %3.1f%%; " float(compTol) )
+     )
+
+; now we know that a, p and m are defined for both devices
+; correct for m here
+
+      layArea = float( lay->m * lay->a )
+      schArea = float( sch->m * sch->a )
+
+      layPj = float( lay->m * lay->p )
+      schPj = float( sch->m * sch->p )
+
+      diffArea = 100 * (abs( layArea - schArea ) / schArea )
+      diffPj   = 100 * (abs( layPj   - schPj   ) / schPj   )
+
+      areaErr = nil
+      pjErr = nil
+
+      when( diffArea > compTol areaErr = t )
+      when( diffPj   > compTol pjErr = t )
+
+; if no errors return nil
+
+      when( ((!areaErr)&&(!pjErr)) 
+        if( msg=="" then 
+	  return(nil) 
+	else
+	  return(msg)
+	)
+      )
+; now we know there is a parameter error
+      when( areaErr
+         sprintf( msg "%s area %g vs %g differs by %3.1f%%;" msg schArea layArea diffArea)
+      )
+      when( pjErr
+         sprintf( msg "%s perimeter %g vs %g differs by %3.1f%%;" msg schPj layPj diffPj)
+      )
+      return( msg )
+
+   ) ; end prog
+  ) ; end compareCAP
+
+
+
+
+procedure( parallelDIODE( d1, d2 ) 
+ prog( ( dt ) 
+ dt = ncons( nil ) 
+ if( ( d1->m && d2->m ) then
+    d1_m = float( d1->m ) 
+    d2_m = float( d2->m ) 
+         dt->m = 1
+          )
+ if( ( d1->isoVoltage && d2->isoVoltage ) then
+    d1_isoVoltage = float( d1->isoVoltage ) 
+    d2_isoVoltage = float( d2->isoVoltage ) 
+     if( ( d1->m && d2->m ) then
+       dt->isoVoltage = 0.5*( d1_isoVoltage*d1_m + d2_isoVoltage*d2_m )
+         else
+       dt->isoVoltage = 0.5*( d1_isoVoltage + d2_isoVoltage )
+    )
+ )
+ if( ( d1->area && d2->area ) then
+    d1_area = float( d1->area ) 
+    d2_area = float( d2->area ) 
+    if( ( d1->m && d2->m ) then
+       dt->area = ( d1_area*d1_m + d2_area*d2_m )
+         else
+       dt->area = ( d1_area + d2_area )
+    )
+ ) 
+ if( ( d1->pj && d2->pj ) then
+    d1_pj = float( d1->pj ) 
+    d2_pj = float( d2->pj ) 
+    if( ( d1->m && d2->m ) then
+       dt->pj = ( d1_pj*d1_m + d2_pj*d2_m )
+         else
+       dt->pj = ( d1_pj + d2_pj )
+    )
+ ) 
+ return( dt ) 
+ ) 
+)
+
+
+; ****************************
+; * compare DIODE parameters *
+; ****************************
+
+procedure( compareDIODE( lay, sch )
+  prog( (missingInLay missingInSch compTol msg_sch msg_lay)
+
+      msg_sch = ""
+      msg_lay = ""
+
+; If m is missing, set it to 1
+
+      when( !lay->m  lay->m = 1 )
+      when( !sch->m  sch->m = 1 )
+      when( !lay->isoVoltage  lay->isoVoltage = 23 )
+      when( !sch->isoVoltage  sch->isoVoltage = 23 )
+
+; If "area" or "pj" is missing generate a parameter mismatch
+
+      foreach( prop '( area pj)
+        unless( get( lay prop )
+          missingInLay = cons( prop missingInLay )
+        ) ;unless
+        unless( get( sch prop )
+          missingInSch = cons( prop missingInSch )
+        ) ;unless
+      ) ;foreach
+
+; Report all missing parameters
+
+      when( ( missingInLay || missingInSch )
+
+        when( missingInSch
+          sprintf( msg_sch "Schematic DIODE missing params: %s"
+            buildString( missingInSch ",") )
+        ) ;when
+
+        when( missingInLay
+          sprintf( msg_lay "Layout DIODE missing params: %s"
+            buildString( missingInLay ",") )
+        ) ;when
+
+        sprintf( msg "Err: %s ; %s" msg_sch msg_lay )
+        return( msg )
+      )
+
+; get Tolerances for comparison
+     if( sch->tolerance then
+       compTol = sch->tolerance
+     else
+       compTol = ams_dioTol
+     )
+     msg=""
+     when( (compTol != ams_dioTol)
+       sprintf( msg "Compare tolerance: %3.1f%%; " float(compTol) )
+     )
+
+; now we know that area, pj and m are defined for both devices
+; correct for m here
+
+      layArea = float( lay->m * lay->area )
+      schArea = float( sch->m * sch->area )
+
+      layPj = float( lay->m * lay->pj )
+      schPj = float( sch->m * sch->pj )
+
+      layisoVoltage = float( lay->m * lay->isoVoltage )
+      schisoVoltage = float( sch->m * sch->isoVoltage )
+      diffArea = 100 * (abs( layArea - schArea ) / schArea )
+      diffisoVoltage = 100 * (abs( layisoVoltage - schisoVoltage ) / schisoVoltage )
+      if(schPj > 1e-8 then 
+          diffPj = 100 * (abs( layPj - schPj ) / schPj) 
+      else 
+        if(layPj > 1e-8 then 
+          diffPj = 100 * (abs( layPj - schPj )/layPj)
+	else
+	  diffPj = 0.0
+	)
+      )
+
+      areaErr = nil
+      pjErr = nil
+      isoVoltageErr = nil
+
+      when( diffArea > compTol areaErr = t )
+      when( diffPj   > compTol pjErr = t )
+      when( diffisoVoltage > compTol isoVoltageErr = t )
+
+; if no errors return nil
+
+      when( ((!areaErr)&&(!pjErr)&&(!isoVoltageErr)) 
+        if( msg=="" then 
+	  return(nil) 
+	else
+	  return(msg)
+	)
+      )
+
+; now we know there is a parameter error
+      when( areaErr
+         sprintf( msg "%s area %g vs %g differs by %3.1f%%;" msg schArea layArea diffArea)
+      )
+      when( pjErr
+         sprintf( msg "%s perimeter %g vs %g differs by %3.1f%%;" msg schPj layPj diffPj)
+      )
+      return( msg )
+
+   ) ; end prog
+  ) ; end compareDIODE
+
+
+;-----------------------------------------------------------------------------------------
+;
+; Combine Parallel devices
+;
+;-----------------------------------------------------------------------------------------
+
+procedure( AMS_parallelMerge( d1, d2 ) 
+ prog( ( dt compTol ) 
+
+    dt = ncons( nil ) 
+    compTol = 0.01   ; 1%
+
+    d1_m = if( d1->m then float( d1->m ) else 1.0 )
+    d2_m = if( d2->m then float( d2->m ) else 1.0 )
+    dt->m = 1
+
+    if(d1->w && d2->w then dt->w = float(d1->w)*d1_m + float(d2->w)*d2_m )
+
+    if(d1->l && d2->l then 
+         d1_l = float( d1->l )
+         d2_l = float( d2->l )
+         if( abs(d1_l-d2_l) > compTol*d1_l then return("doNotCombine"))
+         dt->l = d1->l
+    ) 
+
+    if(d1->area && d2->area then dt->area = float(d1->area)*d1_m + float(d2->area)*d2_m )
+    if(d1->a && d2->a then dt->a = float(d1->a)*d1_m + float(d2->a)*d2_m )
+    if(d1->p && d2->p then dt->p = float(d1->p)*d1_m + float(d2->p)*d2_m )
+
+    if(d1->isoVoltage && d2->isoVoltage then 
+       if( d1->isoVoltage != d2->isoVoltage then return("doNotCombine"))
+       dt->isoVoltage = d1->isoVoltage
+    )
+
+    if(d1->isoType && d2->isoType then 
+       if( d1->isoType != d2->isoType then return("doNotCombine"))
+       dt->isoType = d1->isoType
+    )
+
+    if(d1->F && d2->F then 
+       if( d1->F != d2->F then return("doNotCombine"))
+       dt->F = d1->F
+    )
+
+    if(d1->FTD && d2->FTD then 
+       if( d1->FTD != d2->FTD then return("doNotCombine"))
+       dt->FTD = d1->FTD
+    )
+
+    return( dt ) 
+ ) 
+)
+
+;---------------------------------------------------------------------------------------------------
+;
+; AMS_avCompParameter generic compare of one parameter
+;
+;---------------------------------------------------------------------------------------------------
+
+procedure( AMS_avCompParameter( paramName schP layP schM layM tolerance)
+  prog(( msgParam valSch valLay diffParam unit)
+
+    msgParam = ""
+
+    if(!schP then  sprintf( msgParam "%s%s missing in Schematic; " msgParam paramName ))
+    if(!layP then  sprintf( msgParam "%s%s missing in Layout; " msgParam paramName ))
+    if(msgParam != "" then return(msgParam)) 
+
+    when(!schM schM=1)
+    when(!layM layM=1)
+
+    valSch = float(schP)*schM
+    valLay = float(layP)*layM
+
+    if(valSch < 0.1 then 
+	    valSch=valSch*1e6 
+	    valLay=valLay*1e6
+	    unit="u"
+    else
+	    unit=""
+    )
+
+    diffParam = 100*(abs(valSch-valLay)/valSch)
+    if( diffParam > tolerance then  sprintf( msgParam "%s%s: %g%s vs %g%s (%3.1f%%); " msgParam paramName valSch unit valLay unit diffParam))
+
+    return(msgParam)
+  )
+)
+
+;---------------------------------------------------------------------------------------------------
+
+procedure( AMS_avCompExactParameter( paramName schP layP default)
+  prog(( msgParam valSch valLay )
+
+    msgParam = ""
+
+    if( !schP then schP = default)
+    if( !layP then layP = default)
+
+    if(schP != layP  then sprintf( msgParam "%s%s: %d vs %d; " msgParam paramName schP layP))
+
+    return(msgParam)
+  )
+)
+
+procedure( AMS_avCompESDParameter( paramName schP layP default)
+  prog(( msgParam valSch valLay )
+    msgParam = ""
+    if( !schP then schP = default)
+    if( !layP then layP = default)
+    if( atoi(schP) != layP  then sprintf( msgParam "%s%s: %s vs %s; " msgParam paramName schP layP))
+    return(msgParam)
+  )
+)
+;---------------------------------------------------------------------------------------------------
+
+procedure( AMS_avCompESDParameter1( paramName schP layP schM layM tolerance)
+  prog(( msgParam valSch valLay diffParam unit)
+
+    msgParam = ""
+
+    if(!schP then  sprintf( msgParam "%s%s missing in Schematic; " msgParam paramName ))
+    if(!layP then  sprintf( msgParam "%s%s missing in Layout; " msgParam paramName ))
+    if(msgParam != "" then return(msgParam)) 
+
+    when(!schM schM=1)
+    when(!layM layM=1)
+
+    valSch = float(atoi(schP))*schM
+    valLay = float(layP)*layM
+
+    if(valSch < 0.1 then 
+	    valSch=valSch*1e6 
+	    valLay=valLay*1e6
+	    unit="u"
+    else
+	    unit=""
+    )
+
+    diffParam = 100*(abs(valSch-valLay)/valSch)
+    if( diffParam > tolerance then  sprintf( msgParam "%s%s: %g%s vs %g%s (%3.1f%%); " msgParam paramName valSch unit valLay unit diffParam))
+
+    return(msgParam)
+  )
+)
+
+  ;----------------------------
+  ; generic compare procedure |
+  ;----------------------------
+
+  procedure( genericcomp(procName layObj schObj paramInfoList)
+    let( (paramInfo paramName compProc tolVal layParamVal schParamVal
+          layMissingParams schMissingParams compMismatch errReport m1 m2)
+
+      m1 = layObj
+      m2 = schObj
+                                                                                         ; #####LVSDEBUG
+       if( LVSdebug then                                                                  ; #####LVSDEBUG
+         printf("in procedure %s:\n" procName)                                           ; #####LVSDEBUG
+         printf("layout    : ")                                                          ; #####LVSDEBUG
+         foreach( paramInfo paramInfoList                                                ; #####LVSDEBUG
+            paramName = car(paramInfo)                                                   ; #####LVSDEBUG
+            unless( evalstring(sprintf(nil "layObj->%s" paramName))                      ; #####LVSDEBUG
+               paramName=upperCase(paramName)                                            ; #####LVSDEBUG
+            )                                                                            ; #####LVSDEBUG
+            printf("%s: %L " paramName evalstring(sprintf(nil "layObj->%s" paramName)))  ; #####LVSDEBUG
+         )                                                                               ; #####LVSDEBUG
+         printf("\n")                                                                    ; #####LVSDEBUG
+         printf("schematic : ")                                                          ; #####LVSDEBUG
+         foreach( paramInfo paramInfoList                                                ; #####LVSDEBUG
+            paramName = car(paramInfo)                                                   ; #####LVSDEBUG
+            unless( evalstring(sprintf(nil "schObj->%s" paramName))                      ; #####LVSDEBUG
+               paramName=upperCase(paramName)                                            ; #####LVSDEBUG
+            )                                                                            ; #####LVSDEBUG
+            printf("%s: %L " paramName evalstring(sprintf(nil "schObj->%s" paramName)))  ; #####LVSDEBUG
+         )                                                                               ; #####LVSDEBUG
+         printf("\n\n")                                                                  ; #####LVSDEBUG
+       )                                                                                  ; #####LVSDEBUG
+
+      ;; loop through the parameters passed
+
+      foreach(  paramInfo paramInfoList
+
+         paramName = car(paramInfo)     ; parameter name
+         compProc  = cadr(paramInfo)    ; name of the compare procedure to use (rel_comp or abs_comp)
+         tolVal    = caddr(paramInfo)   ; tolerance
+         defVal    = cadddr(paramInfo)  ; optional - default value for this parameter if it doesn't exist
+
+         ;; get the value from the layout and schematic, assign value from lowercase first, if it doesn't exist assign uppercase
+
+         layParamVal = getValCase(layObj paramName)
+         schParamVal = getValCase(schObj paramName)
+
+         ;; if a default value was passed, set the parameter equal to it if the value doesn't exist
+
+         if( defVal then
+            unless( layParamVal layParamVal = getVal(evalstring(sprintf(nil "layObj->%s=%s" paramName defVal))))
+            unless( schParamVal schParamVal = getVal(evalstring(sprintf(nil "schObj->%s=%s" paramName defVal))))
+         )
+
+         ;; if it still doesn't exist, add it to the list of missing parameters
+
+         unless(layParamVal layMissingParams = cons(paramName layMissingParams) )
+         unless(schParamVal schMissingParams = cons(paramName schMissingParams) )
+
+         ;; if the parameter has a value in both layout and shematic, compare them
+         ;; using the passed procedure name.  If they don't match to the specified
+         ;; tolerance, add the parameter to the mismatched parameter list
+
+         if( layParamVal && schParamVal then
+            if( evalstring(sprintf(nil "%s(layParamVal schParamVal %L)" compProc evalstring(tolVal)))
+               compMismatch = cons(list(paramName layParamVal schParamVal) compMismatch)
+            )
+         )
+      )
+
+      ;; report any errors found
+
+      errReport = compCheckForErrors(layMissingParams schMissingParams compMismatch procName)
+
+    ) ; ** let **
+  ) ; ** procedure genericcomp **
+
+  ;----------------------------
+  ; generic combine procedure |
+  ;----------------------------
+
+  procedure( genericcomb(procName obj1 obj2 paramInfoList)
+    let( (paramInfo paramName compProc tolVal newValueProc obj1ParamVal obj2ParamVal
+          combMissingParams combMismatch errReport haveErrors new_value m1 m2)
+
+      m1 = obj1
+      m2 = obj2
+      new_value = ncons(nil)
+                                                                                       ; #####LVSDEBUG
+      if( LVSdebug then                                                                ; #####LVSDEBUG
+         printf("\nin procedure %s:\n" procName)                                       ; #####LVSDEBUG
+         printf("Device 1: ")                                                          ; #####LVSDEBUG
+         foreach( paramInfo paramInfoList                                              ; #####LVSDEBUG
+            paramName = car(paramInfo)                                                 ; #####LVSDEBUG
+            unless( evalstring(sprintf(nil "obj1->%s" paramName))                      ; #####LVSDEBUG
+               paramName=upperCase(paramName)                                          ; #####LVSDEBUG
+            )                                                                          ; #####LVSDEBUG
+            printf("%s: %L " paramName evalstring(sprintf(nil "obj1->%s" paramName)))  ; #####LVSDEBUG
+         )                                                                             ; #####LVSDEBUG
+         printf("\n")                                                                  ; #####LVSDEBUG
+         printf("Device 2: ")                                                          ; #####LVSDEBUG
+         foreach( paramInfo paramInfoList                                              ; #####LVSDEBUG
+            paramName = car(paramInfo)                                                 ; #####LVSDEBUG
+            unless( evalstring(sprintf(nil "obj2->%s" paramName))                      ; #####LVSDEBUG
+               paramName=upperCase(paramName)                                          ; #####LVSDEBUG
+            )                                                                          ; #####LVSDEBUG
+            printf("%s: %L " paramName evalstring(sprintf(nil "obj2->%s" paramName)))  ; #####LVSDEBUG
+         )                                                                             ; #####LVSDEBUG
+         printf("\n")                                                                  ; #####LVSDEBUG
+      )                                                                                ; #####LVSDEBUG
+
+      foreach(  paramInfo paramInfoList
+
+         paramName  = car(paramInfo)
+         compProc   = cadr(paramInfo)
+         tolVal     = caddr(paramInfo)
+         newValProc = cadddr(paramInfo)
+
+         ;get parameter values for obj1 and obj2, look for lowercase first
+         ;if lowercase doesn't exist, look for uppercase
+
+         obj1ParamVal = getValCase(obj1 paramName)
+         obj2ParamVal = getValCase(obj2 paramName)
+
+         if( obj1ParamVal &&  obj2ParamVal then
+            if( compProc != "X" then
+               if( evalstring(sprintf(nil "%s(obj1ParamVal obj2ParamVal %L)" compProc evalstring(tolVal))) then
+                  combMismatch = cons(list(paramName obj1ParamVal obj2ParamVal) combMismatch)
+                  haveErrors = 1
+               else
+                  unless(haveErrors evalstring(sprintf(nil "new_value->%s = NV%s(obj1 obj2 obj1ParamVal obj2ParamVal)" paramName newValProc)))
+               )
+            else
+               unless(haveErrors evalstring(sprintf(nil "new_value->%s = NV%s(obj1 obj2 obj1ParamVal obj2ParamVal)" paramName newValProc)))
+            )
+         else
+            combMissingParams = cons(list(paramName obj1ParamVal obj2ParamVal) combMissingParams)
+            haveErrors = 1
+         )
+
+      )
+      errReport = combCheckForErrors(combMissingParams combMismatch procName)
+      if( errReport then
+         printf("instances not combined in %s due to the following problems:\n" procName)
+         printf("%s" errReport)
+         "doNotCombine"
+      else
+         printf("%s Resultant: %L\n" procName new_value)
+         new_value
+      )
+    ) ; ** let **
+  ) ; ** procedure genericcomb **
+
+  ;--------------------------------------------------------
+  ; getVal evaluates its argument as a string if necessary |
+  ;--------------------------------------------------------
+
+  procedure( getVal(p)
+    if( stringp(p) then evalstring(p) else p )
+  ) ; ** procedure getVal **
+
+  procedure( getValCase(device param)
+    getVal( lvsCase(device param) )
+  )
+
+  ;----------------------------------------------------------------------------
+  ; two types of compare procedures                                            |
+  ; both receive two values and a tolerance                                    |
+  ;   rel_comp   compares the (%error)/100 to the tolerance value              |
+  ;   abs_comp   compares the difference to the tolerance value                |
+  ;----------------------------------------------------------------------------
+
+
+  procedure( rel_comp( p1 p2 rel_tol )
+    let( (P2)
+      P2 = getVal( p2 ) ; define intermediate value to avoid redundant evalstring
+      if( ( abs((getVal(p1) - P2 ) / ( P2 * 1.0 )) >=  getVal(rel_tol) ) t)
+    ) ; ** let **
+  ) ; ** procedure rel_comp **
+
+  procedure( abs_comp( p1 p2 abs_tol )
+    if( ( abs( getVal(p1) - getVal(p2) ) >= getVal(abs_tol)) t)
+  ) ; ** procedure abs_comp **
+
+  ;---------------------------------------------------------
+  ; sets the bentgate tolerance
+  ;---------------------------------------------------------
+
+  procedure( getBentTol(m1 m2)
+    unless(getValCase(m1 "bentgate") m1->bentgate=0)
+    unless(getValCase(m2 "bentgate") m2->bentgate=0)
+    if( greaterp( getValCase(m1 "bentgate") getValCase(m2 "bentgate") )
+       then getValCase(m1 "bentgate")*5*hgp
+    else getValCase(m2 "bentgate")*5*hgp
+    )
+  ) ; ** procedure getBentTol **
+
+
+
+  ;-------------------------------------------------------
+  ; procedures for formatting compare and combine errors |
+  ;-------------------------------------------------------
+
+  procedure(compCheckForErrors(layMissingParams schMissingParams compMismatch procName)
+    let((errReport paramErr)
+      errReport = ""
+      if(layMissingParams then
+         errReport = strcat(errReport sprintf(nil "%s is missing layout parameter(s): " procName))
+         foreach(  paramErr layMissingParams
+            errReport =  strcat(errReport paramErr " ")
+         )
+         errReport = strcat(errReport "\n")
+      )
+      if(schMissingParams then
+         errReport = strcat(errReport sprintf(nil "%s is missing schematic parameter(s): " procName))
+         foreach(  paramErr schMissingParams
+            errReport =  strcat(errReport paramErr " ")
+         )
+         errReport = strcat(errReport "\n")
+      )
+      if( compMismatch then
+         errReport = strcat(errReport sprintf(nil "%s has mismatched parameter(s): \n" procName))
+         foreach( paramErr compMismatch
+            errReport = strcat(errReport sprintf(nil "%L layout: %L schematic: %L \n" car(paramErr) cadr(paramErr) caddr(paramErr)))
+         )
+      )
+      if( errReport == "" errReport = nil )
+      errReport
+    )
+
+  ) ; ** procedure compCheckForErrors **
+
+  procedure(combCheckForErrors(combMissingParams combMismatch procName)
+    let((errReport paramErr)
+      errReport = ""
+      if( combMissingParams then
+         errReport = strcat(errReport sprintf(nil "%s is missing parameter(s): " procName))
+         foreach( paramErr combMissingParams
+            errReport = strcat(errReport sprintf(nil "%L: %L %L\n" car(paramErr) cadr(paramErr) caddr(paramErr)))
+         )
+         errReport = strcat(errReport "\n")
+      )
+      if( combMismatch then
+         errReport = strcat(errReport sprintf(nil "%s has mismatched parameter(s): " procName))
+         foreach( paramErr combMismatch
+            errReport = strcat(errReport sprintf(nil "%L: %L != %L\n" car(paramErr) cadr(paramErr) caddr(paramErr)))
+         )
+         errReport = strcat(errReport "\n")
+      )
+      if( errReport == "" errReport = nil )
+      errReport
+    )
+
+  ) ; ** procedure combCheckForErrors **
+
+  ; procedure to get the value of a parameter checking lowercase first and uppercase second
+  ; used for CDL netlisting which may have lowercase or uppercase
+  ; parameter names
+
+  procedure(lvsCase(device paramName)
+    let((upperParamName lowerParamName)
+      upperParamName = upperCase(paramName)
+      lowerParamName = lowerCase(paramName)
+
+      ;set intial value to regular paramName value
+      return=evalstring( sprintf( nil "device->%s" paramName) )
+
+      ;printf("initial return value is %L\n\n" return)
+
+      unless( evalstring( sprintf( nil "device->%s" paramName) )
+         ;printf("in unless for device\n\n")
+         if( evalstring( sprintf( nil "device->%s" lowerParamName) )  then
+            ;printf("in lowerparam for device\n\n")
+            return = evalstring( sprintf( nil "device->%s" lowerParamName) )
+         else
+            if( evalstring( sprintf( nil "device->%s" upperParamName) ) then
+               ;printf("in upperparam for device\n\n")
+               return = evalstring( sprintf( nil "device->%s" upperParamName) )
+            )
+         ) ; ** if evalstring **
+      ) ; ** unless evalstring **
+
+      ;printf("end return value is %L\n\n" return )
+      return
+    ) ; ** let **
+  ) ; ** procedure lvsCase **
+
+
+  ;----------------------------
+  ; generic compare procedure |
+  ;----------------------------
+
+  procedure( genericcomp(procName layObj schObj paramInfoList)
+    let( (paramInfo paramName compProc tolVal layParamVal schParamVal
+          layMissingParams schMissingParams compMismatch errReport m1 m2)
+
+      m1 = layObj
+      m2 = schObj
+                                                                                         ; #####LVSDEBUG
+       if( LVSdebug then                                                                  ; #####LVSDEBUG
+         printf("in procedure %s:\n" procName)                                           ; #####LVSDEBUG
+         printf("layout    : ")                                                          ; #####LVSDEBUG
+         foreach( paramInfo paramInfoList                                                ; #####LVSDEBUG
+            paramName = car(paramInfo)                                                   ; #####LVSDEBUG
+            unless( evalstring(sprintf(nil "layObj->%s" paramName))                      ; #####LVSDEBUG
+               paramName=upperCase(paramName)                                            ; #####LVSDEBUG
+            )                                                                            ; #####LVSDEBUG
+            printf("%s: %L " paramName evalstring(sprintf(nil "layObj->%s" paramName)))  ; #####LVSDEBUG
+         )                                                                               ; #####LVSDEBUG
+         printf("\n")                                                                    ; #####LVSDEBUG
+         printf("schematic : ")                                                          ; #####LVSDEBUG
+         foreach( paramInfo paramInfoList                                                ; #####LVSDEBUG
+            paramName = car(paramInfo)                                                   ; #####LVSDEBUG
+            unless( evalstring(sprintf(nil "schObj->%s" paramName))                      ; #####LVSDEBUG
+               paramName=upperCase(paramName)                                            ; #####LVSDEBUG
+            )                                                                            ; #####LVSDEBUG
+            printf("%s: %L " paramName evalstring(sprintf(nil "schObj->%s" paramName)))  ; #####LVSDEBUG
+         )                                                                               ; #####LVSDEBUG
+         printf("\n\n")                                                                  ; #####LVSDEBUG
+       )                                                                                  ; #####LVSDEBUG
+
+      ;; loop through the parameters passed
+
+      foreach(  paramInfo paramInfoList
+
+         paramName = car(paramInfo)     ; parameter name
+         compProc  = cadr(paramInfo)    ; name of the compare procedure to use (rel_comp or abs_comp)
+         tolVal    = caddr(paramInfo)   ; tolerance
+         defVal    = cadddr(paramInfo)  ; optional - default value for this parameter if it doesn't exist
+
+         ;; get the value from the layout and schematic, assign value from lowercase first, if it doesn't exist assign uppercase
+
+         layParamVal = getValCase(layObj paramName)
+         schParamVal = getValCase(schObj paramName)
+
+         ;; if a default value was passed, set the parameter equal to it if the value doesn't exist
+
+         if( defVal then
+            unless( layParamVal layParamVal = getVal(evalstring(sprintf(nil "layObj->%s=%s" paramName defVal))))
+            unless( schParamVal schParamVal = getVal(evalstring(sprintf(nil "schObj->%s=%s" paramName defVal))))
+         )
+
+         ;; if it still doesn't exist, add it to the list of missing parameters
+
+         unless(layParamVal layMissingParams = cons(paramName layMissingParams) )
+         unless(schParamVal schMissingParams = cons(paramName schMissingParams) )
+
+         ;; if the parameter has a value in both layout and shematic, compare them
+         ;; using the passed procedure name.  If they don't match to the specified
+         ;; tolerance, add the parameter to the mismatched parameter list
+
+         if( layParamVal && schParamVal then
+            if( evalstring(sprintf(nil "%s(layParamVal schParamVal %L)" compProc evalstring(tolVal)))
+               compMismatch = cons(list(paramName layParamVal schParamVal) compMismatch)
+            )
+         )
+      )
+
+      ;; report any errors found
+
+      errReport = compCheckForErrors(layMissingParams schMissingParams compMismatch procName)
+
+    ) ; ** let **
+  ) ; ** procedure genericcomp **
+
+  ;--------------------------------------------------------
+  ; getVal evaluates its argument as a string if necessary |
+  ;--------------------------------------------------------
+
+  procedure( getVal(p)
+    if( stringp(p) then evalstring(p) else p )
+  ) ; ** procedure getVal **
+
+  procedure( getValCase(device param)
+    getVal( lvsCase(device param) )
+  )
+
+  ;----------------------------------------------------------------------------
+  ; two types of compare procedures                                            |
+  ; both receive two values and a tolerance                                    |
+  ;   rel_comp   compares the (%error)/100 to the tolerance value              |
+  ;   abs_comp   compares the difference to the tolerance value                |
+  ;----------------------------------------------------------------------------
+
+
+  procedure( rel_comp( p1 p2 rel_tol )
+    let( (P2)
+      P2 = getVal( p2 ) ; define intermediate value to avoid redundant evalstring
+      if( ( abs((getVal(p1) - P2 ) / ( P2 * 1.0 )) >=  getVal(rel_tol) ) t)
+    ) ; ** let **
+  ) ; ** procedure rel_comp **
+
+  procedure( abs_comp( p1 p2 abs_tol )
+    if( ( abs( getVal(p1) - getVal(p2) ) >= getVal(abs_tol)) t)
+  ) ; ** procedure abs_comp **
+
+  ; procedure to get the value of a parameter checking lowercase first and uppercase second
+  ; used for CDL netlisting which may have lowercase or uppercase
+  ; parameter names
+
+  procedure(lvsCase(device paramName)
+    let((upperParamName lowerParamName)
+      upperParamName = upperCase(paramName)
+      lowerParamName = lowerCase(paramName)
+
+      ;set intial value to regular paramName value
+      return=evalstring( sprintf( nil "device->%s" paramName) )
+
+      ;printf("initial return value is %L\n\n" return)
+
+      unless( evalstring( sprintf( nil "device->%s" paramName) )
+         ;printf("in unless for device\n\n")
+         if( evalstring( sprintf( nil "device->%s" lowerParamName) )  then
+            ;printf("in lowerparam for device\n\n")
+            return = evalstring( sprintf( nil "device->%s" lowerParamName) )
+         else
+            if( evalstring( sprintf( nil "device->%s" upperParamName) ) then
+               ;printf("in upperparam for device\n\n")
+               return = evalstring( sprintf( nil "device->%s" upperParamName) )
+            )
+         ) ; ** if evalstring **
+      ) ; ** unless evalstring **
+
+      ;printf("end return value is %L\n\n" return )
+      return
+    ) ; ** let **
+  ) ; ** procedure lvsCase **
+
+ ;-------------------------------------------------------
+  ; procedures for formatting compare and combine errors |
+  ;-------------------------------------------------------
+
+  procedure(compCheckForErrors(layMissingParams schMissingParams compMismatch procName)
+    let((errReport paramErr)
+      errReport = ""
+      if(layMissingParams then
+         errReport = strcat(errReport sprintf(nil "%s is missing layout parameter(s): " procName))
+         foreach(  paramErr layMissingParams
+            errReport =  strcat(errReport paramErr " ")
+         )
+         errReport = strcat(errReport "\n")
+      )
+      if(schMissingParams then
+         errReport = strcat(errReport sprintf(nil "%s is missing schematic parameter(s): " procName))
+         foreach(  paramErr schMissingParams
+            errReport =  strcat(errReport paramErr " ")
+         )
+         errReport = strcat(errReport "\n")
+      )
+      if( compMismatch then
+         errReport = strcat(errReport sprintf(nil "%s has mismatched parameter(s): \n" procName))
+         foreach( paramErr compMismatch
+            errReport = strcat(errReport sprintf(nil "%L layout: %L schematic: %L \n" car(paramErr) cadr(paramErr) caddr(paramErr)))
+         )
+      )
+      if( errReport == "" errReport = nil )
+      errReport
+    )
+
+  ) ; ** procedure compCheckForErrors **
+  ;-----------------------------------------------------------
+  ; procedures for calculating new values of combined devices |
+  ;                                                           |
+  ; five procedures, each with the following arguments:       |
+  ;   obj1Val               object1 parameter value           |
+  ;   ovj2Val               object2 parameter value           |
+  ;                                                           |
+  ; each returns a result of a different calculation          |
+  ;-----------------------------------------------------------
+
+  procedure( NVsame( obj1 obj2 obj1Val obj2Val )
+    obj1Val
+  ) ; ** procedure NVsame **
+
+  procedure( NVadd( obj1 obj2 obj1Val obj2Val )
+    obj1Val+obj2Val
+  ) ; ** procedure NVadd **
+
+  procedure( NVavg( obj1 obj2 obj1Val obj2Val )
+    (obj1Val+obj2Val)/2.0
+  ) ; ** procedure NVavg **
+
+  procedure( NVpres( obj1 obj2 obj1Val obj2Val )
+    (obj1Val*obj2Val*1.0)/(obj1Val+obj2Val)
+  ) ; ** procedure NVpres **
+
+  procedure( NVone( obj1 obj2 obj1Val obj2Val )
+    1
+  ) ; ** procedure NVone **
+
+  procedure( NVzero( obj1 obj2 obj1Val obj2Val )
+    0
+  ) ; ** procedure NVzero **
+
+  procedure( NVignore( obj1 obj2 obj1Val obj2Val )
+    -99
+  ) ; ** procedure NVignore **
+
+  procedure( NVidg( obj1 obj2 obj1Val obj2Val )
+    if( obj1->idg if( abs_comp(obj1->idg 0 0.5) obj1Val = obj1->m*obj1Val ))  ; reset obj1Val to m*obj1Val if idg is 1
+    if( obj2->idg if( abs_comp(obj2->idg 0 0.5) obj2Val = obj2->m*obj2Val ))
+    obj1Val+obj1Val
+  ) ; ** procedure NVidg **
+
+
+  procedure( ESDNPNcomp(m1, m2)
+    let((paraminfolist )
+      paraminfolist='(
+        ("Wunits" "abs_comp" "hgp")
+        ("Lunits" "abs_comp" "hgp")
+      )
+      genericcomp("ESDNPNcomp" m1 m2 paraminfolist)
+  )
+)
+;---------------------------------------------------------------------------------------------------
+;
+; AMS_compParameters compares the parameter of floating devices -> 
+; isoVoltage and isoType are not standard therefore this function is required
+;
+;---------------------------------------------------------------------------------------------------
+
+procedure( AMS_compParameters( lay sch ) 
+ prog( ( msg ) 
+
+   msg = ""
+
+   if(sch->w           then sprintf(msg "%s%s" msg AMS_avCompParameter("w" sch->w lay->w sch->m lay->m 1)))
+   if(sch->l           then sprintf(msg "%s%s" msg AMS_avCompParameter("l" sch->l lay->l 1 1 1)))
+   if(sch->a           then sprintf(msg "%s%s" msg AMS_avCompParameter("a" sch->a lay->a sch->m lay->m 1)))
+   if(sch->area        then sprintf(msg "%s%s" msg AMS_avCompParameter("area" sch->area lay->area sch->m lay->m 1)))
+   if(sch->p           then sprintf(msg "%s%s" msg AMS_avCompParameter("p" sch->p lay->p sch->m lay->m 1)))
+   if(sch->numEdge     then sprintf(msg "%s%s" msg AMS_avCompParameter("numEdge" sch->numEdge lay->numEdge 1 1 4)))
+   if(sch->F           then sprintf(msg "%s%s" msg AMS_avCompParameter("F" sch->F lay->F 1 1 1)))
+   if(sch->FTD         then sprintf(msg "%s%s" msg AMS_avCompParameter("FTD" sch->FTD lay->FTD 1 1 1)))
+
+   if(sch->isoVoltage   then sprintf(msg "%s%s" msg AMS_avCompExactParameter("isoVoltage" sch->isoVoltage lay->isoVoltage 50)))
+   if(sch->isoType      then sprintf(msg "%s%s" msg AMS_avCompExactParameter("isoType"    sch->isoType    lay->isoType    1)))
+   if(sch->isoVoltagePW then sprintf(msg "%s%s" msg AMS_avCompExactParameter("isoVoltagePW" sch->isoVoltagePW lay->isoVoltagePW -7)))
+
+   if(sch->top         then sprintf(msg "%s%s" msg AMS_avCompExactParameter("top" sch->top lay->top 3)))
+   if(sch->bottom      then sprintf(msg "%s%s" msg AMS_avCompExactParameter("bottom" sch->bottom lay->bottom 0)))
+   if(sch->Wunits      then sprintf(msg "%s%s" msg AMS_avCompParameter("Wunits" sch->Wunits lay->Wunits 1 1 1)))
+   if(sch->Lunits      then sprintf(msg "%s%s" msg AMS_avCompParameter("Lunits" sch->Lunits lay->Lunits 1 1 1)))
+
+   if(sch->RESMAT      then sprintf(msg "%s%s" msg AMS_avCompExactParameter("RESMAT" sch->RESMAT lay->RESMAT 0)))
+   if(sch->ply         then sprintf(msg "%s%s" msg AMS_avCompExactParameter("ply" sch->ply lay->ply 0)))
+   if(sch->tpm         then sprintf(msg "%s%s" msg AMS_avCompExactParameter("tpm" sch->tpm lay->tpm 0)))
+
+   if(sch->nr      then sprintf(msg "%s%s" msg AMS_avCompExactParameter("nr" sch->nr lay->nr 1)))
+
+   if(sch->nc      then sprintf(msg "%s%s" msg AMS_avCompExactParameter("nc" sch->nc lay->nc 1)))
+
+   if(msg != "" then return(msg)) 
+
+   return(nil)
+
+ ) 
+)
+  procedure( NFETNFcomp(m1, m2)
+    let((paraminfolist )
+      paraminfolist='(
+        ;("ng" "abs_comp" "0.5")
+        ("m" "abs_comp" "0.5")
+        ; ("l" "rel_comp" "5%")
+        ("l" "rel_comp" "1%")   ; HGE 270213
+        ("wt" "rel_comp" "if( (m1->bentgate && (getVal(m1->bentgate) > 0.5)) || (m2->bentgate && (getVal(m2->bentgate) > 0.5)) then 5% else 1%)")
+        ("isoVoltage" "abs_comp" "0.5")
+        ("isoVoltagePW" "abs_comp" "0.5")
+        ("isoType" "abs_comp" "0.5")
+      )
+      (if !m1->wt then if( m1->w && m1->m then m1->wt = getValCase(m1 "w") * getValCase(m1 "m") else m1->wt = getValCase(m1 "w") ))
+      (if !m2->wt then if( m2->w && m2->m then m2->wt = getValCase(m2 "w") * getValCase(m2 "m") else m2->wt = getValCase(m2 "w") ))
+      if( !getValCase(m1 "m") || !getValCase(m2 "m")  then
+        m1->m = 1
+        m2->m = 1
+      )
+      unless( getValCase(m1 "m") m1->m = 1 )
+      unless( getValCase(m2 "m") m2->m = 1 )
+      genericcomp("FETNFcomp" m1 m2 paraminfolist)
+    )
+  )
+  
+ procedure( PFETNFcomp(m1, m2)
+    let((paraminfolist )
+      paraminfolist='(
+        ;("ng" "abs_comp" "0.5")
+        ("m" "abs_comp" "0.5")
+        ; ("l" "rel_comp" "5%")
+        ("l" "rel_comp" "1%")   ; HGE 270213
+        ("wt" "rel_comp" "if( (m1->bentgate && (getVal(m1->bentgate) > 0.5)) || (m2->bentgate && (getVal(m2->bentgate) > 0.5)) then 5% else 1%)")
+        ("isoVoltage" "abs_comp" "0.5")
+        ("isoType" "abs_comp" "0.5")
+      )
+      (if !m1->wt then if( m1->w && m1->m then m1->wt = getValCase(m1 "w") * getValCase(m1 "m") else m1->wt = getValCase(m1 "w") ))
+      (if !m2->wt then if( m2->w && m2->m then m2->wt = getValCase(m2 "w") * getValCase(m2 "m") else m2->wt = getValCase(m2 "w") ))
+      if( !getValCase(m1 "m") || !getValCase(m2 "m")  then
+        m1->m = 1
+        m2->m = 1
+      )
+      unless( getValCase(m1 "m") m1->m = 1 )
+      unless( getValCase(m2 "m") m2->m = 1 )
+
+      genericcomp("FETNFcomp" m1 m2 paraminfolist)
+    )
+  )
+  procedure( parNFETcomb(m1, m2)
+    let((paraminfolist )
+      paraminfolist='(
+        ("w" "rel_comp" "1%" "same")
+        ("l" "rel_comp" "1%" "same")
+        ("m"  "X" "X" "add")
+;;        ("m" "abs_comp" "1%" "same")
+	    ("isoVoltage" "abs_comp" "1%" "same")
+        ("isoVoltagePW" "abs_comp" "1%" "same")
+        ("isoType" "abs_comp" "1%" "same")
+      )
+ 
+      if( !getValCase(m1 "m") || !getValCase(m2 "m")  then
+        m1->m = 1
+        m2->m = 1
+      )
+
+      if( !getValCase(m1 "isoVoltage") || !getValCase(m2 "isoVoltage")  then
+        m1->isoVoltage = "23"
+        m2->isoVoltage = "23"
+      )
+
+      if( !getValCase(m1 "isoVoltagePW") || !getValCase(m2 "isoVoltagePW")  then
+        m1->isoVoltagePW = -7
+        m2->isoVoltagePW = -7
+      )
+
+      if( !getValCase(m1 "isoType") || !getValCase(m2 "isoType")  then
+        m1->isoVoltage = "1"
+        m2->isoVoltage = "1"
+      )
+
+;      (if !m1->wt then if( m1->w && m1->ng then m1->wt = getValCase(m1 "w") * getValCase(m1 "ng") else m1->wt = getValCase(m1 "w") ))
+;      (if !m2->wt then if( m2->w && m2->ng then m2->wt = getValCase(m2 "w") * getValCase(m2 "ng") else m2->wt = getValCase(m2 "w") ))
+
+
+      unless( getValCase(m1 "m") m1->m = 1 )
+      unless( getValCase(m2 "m") m2->m = 1 )
+      ; unless( getValCase(m1 "par") m1->par = getValCase(m1 "m") )
+      ; unless( getValCase(m2 "par") m2->par = getValCase(m2 "m") )
+      ; unless( getValCase(m1 "psp") m1->psp = 0 )
+      ; unless( getValCase(m2 "psp") m2->psp = 0 )
+      genericcomb("parFETcomb" m1 m2 paraminfolist)
+    )
+  )
+
+  procedure( parPFETcomb(m1, m2)
+    let((paraminfolist )
+      paraminfolist='(
+        ("w" "rel_comp" "1%" "same")
+        ("l" "rel_comp" "1%" "same")
+        ("m"  "X" "X" "add")
+;;        ("m" "abs_comp" "1%" "same")
+	    ("isoVoltage" "abs_comp" "1%" "same")
+        ("isoType" "abs_comp" "1%" "same")
+      )
+ 
+      if( !getValCase(m1 "m") || !getValCase(m2 "m")  then
+        m1->m = 1
+        m2->m = 1
+      )
+
+      if( !getValCase(m1 "isoVoltage") || !getValCase(m2 "isoVoltage")  then
+        m1->isoVoltage = "23"
+        m2->isoVoltage = "23"
+      )
+
+;      if( !getValCase(m1 "isoVoltagePW") || !getValCase(m2 "isoVoltagePW")  then
+;        m1->isoVoltagePW = -7
+;        m2->isoVoltagePW = -7
+;      )
+
+      if( !getValCase(m1 "isoType") || !getValCase(m2 "isoType")  then
+        m1->isoVoltage = "1"
+        m2->isoVoltage = "1"
+      )
+
+;      (if !m1->wt then if( m1->w && m1->ng then m1->wt = getValCase(m1 "w") * getValCase(m1 "ng") else m1->wt = getValCase(m1 "w") ))
+;      (if !m2->wt then if( m2->w && m2->ng then m2->wt = getValCase(m2 "w") * getValCase(m2 "ng") else m2->wt = getValCase(m2 "w") ))
+
+
+      unless( getValCase(m1 "m") m1->m = 1 )
+      unless( getValCase(m2 "m") m2->m = 1 )
+      ; unless( getValCase(m1 "par") m1->par = getValCase(m1 "m") )
+      ; unless( getValCase(m2 "par") m2->par = getValCase(m2 "m") )
+      ; unless( getValCase(m1 "psp") m1->psp = 0 )
+      ; unless( getValCase(m2 "psp") m2->psp = 0 )
+      genericcomb("parFETcomb" m1 m2 paraminfolist)
+    )
+  )
+  procedure( ESDcomp(m1, m2)
+    let((paraminfolist)
+      paraminfolist='(
+        ("w" "rel_comp" "1%")
+      )
+
+
+      (if m1->m && (m1->wt!="wt") then if( (m1->w!="w") && m1->nf then m1->wt = getValCase(m1 "w") * getValCase(m1 "nf") else m1->wt = getValCase(m1 "w") ))
+      (if m2->m && (m2->wt!="wt") then if( (m2->w!="w") && m2->nf then m2->wt = getValCase(m2 "w") * getValCase(m2 "nf") else m2->wt = getValCase(m2 "w") ))
+
+      if( !getValCase(m1 "m") || !getValCase(m2 "m")  then
+        m1->m = 1
+        m2->m = 1
+       )
+    
+       genericcomp("ESDcomp" m1 m2 paraminfolist)
+      
+
+ 
+ 
+    )
+  )
+  procedure( CFMOMcomp(m1, m2)
+    let((paraminfolist )
+      paraminfolist='(
+        ("m" "abs_comp" "0.5")
+        ("l" "rel_comp" "1%")  
+        ("w" "rel_comp" "1%")
+        ("nf" "abs_comp" "0.5")
+        ("ply" "abs_comp" "0.5")
+        ("tpm" "abs_comp" "0.5")
+
+      )
+      if( !getValCase(m1 "m") || !getValCase(m2 "m")  then
+        m1->m = 1
+        m2->m = 1
+      )
+      if( !getValCase(m1 "nf") || !getValCase(m2 "nf")  then
+        m1->nf = 1
+        m2->nf = 1
+      )
+      unless( getValCase(m1 "m") m1->m = 1 )
+      unless( getValCase(m2 "m") m2->m = 1 )
+;      unless( getValCase(m1 "nf") m1->nf = 1 )
+;      unless( getValCase(m2 "nf") m2->nf = 1 )
+      genericcomp("CFMOMcomp" m1 m2 paraminfolist)
+    )
+  )
+  procedure( CFMOM50comp(m1, m2)
+    let((paraminfolist )
+      paraminfolist='(
+        ("m" "abs_comp" "0.5")
+        ("l" "rel_comp" "1%")  
+        ("w" "rel_comp" "1%")
+        ("nf" "abs_comp" "0.5")
+        ("ply" "abs_comp" "0.5")
+        ("tpm" "abs_comp" "0.5")
+
+      )
+      if( !getValCase(m1 "m") || !getValCase(m2 "m")  then
+        m1->m = 1
+        m2->m = 1
+      )
+      if( !getValCase(m1 "nf") || !getValCase(m2 "nf")  then
+        m1->nf = 1
+        m2->nf = 1
+      )
+      unless( getValCase(m1 "m") m1->m = 1 )
+      unless( getValCase(m2 "m") m2->m = 1 )
+;      unless( getValCase(m1 "nf") m1->nf = 1 )
+;      unless( getValCase(m2 "nf") m2->nf = 1 )
+      genericcomp("CFMOM50comp" m1 m2 paraminfolist)
+    )
+  )
+;---------------------------------------------------------------------------------------------------
+;---------------------------------------------------------------------------------------------------
+
+avCompareRules(
+  ; Global Variables
+
+  hgp=5e-9
+  LVSdebug=0
+   parameterModifiedDevice("NMOS4"  ("SUBTYPE" ""))   ; for WAFFLE
+   parameterModifiedDevice("PMOS4"  ("SUBTYPE" ""))   ; for WAFFLE
+   parameterModifiedDevice("NMOSM4" ("SUBTYPE" ""))   ; for WAFFLE
+   parameterModifiedDevice("PMOSM4" ("SUBTYPE" ""))   ; for WAFFLE
+   parameterModifiedDevice("NMOSI"  ("SUBTYPE" ""))   ; for WAFFLE
+   parameterModifiedDevice("PMOSI"  ("SUBTYPE" ""))   ; for WAFFLE
+   parameterModifiedDevice("NMOSIM"  ("SUBTYPE" ""))   ; for WAFFLE
+   parameterModifiedDevice("PMOSIM"  ("SUBTYPE" ""))   ; for WAFFLE
+
+   layout(
+      lddDevice("NMOS18T"  ("D" "G" "S" "B") "W" "L" "M" )
+      lddDevice("NMOS30M"  ("D" "G" "S" "B") "W" "L" "M" )
+      lddDevice("NMOSH"    ("D" "G" "S" "B") "W" "L" "M" )
+      lddDevice("NMOSHL"   ("D" "G" "S" "B") "W" "L" "M" )
+      lddDevice("NMOSMH"   ("D" "G" "S" "B") "W" "L" "M" )
+      lddDevice("NMOSMHL"  ("D" "G" "S" "B") "W" "L" "M" )
+      lddDevice("PMOS30M"  ("D" "G" "S" "B") "W" "L" "M" )
+      lddDevice("PMOSD30M" ("D" "G" "S" nil) "W" "L" "M" )
+      mosDevice("NMOS4"    ("D" "G" "S" "B") "W" "L" "M" )
+      mosDevice("NMOSL4"   ("D" "G" "S" "B") "W" "L" "M" )
+      mosDevice("NMOSM4"   ("D" "G" "S" "B") "W" "L" "M" )
+      mosDevice("NMOSML4"  ("D" "G" "S" "B") "W" "L" "M" )
+      mosDevice("PMOS4"    ("D" "G" "S" "B") "W" "L" "M" )
+      mosDevice("PMOSLL4"   ("D" "G" "S" "B") "W" "L" "M" )
+      mosDevice("PMOSL4"   ("D" "G" "S" "B") "W" "L" "M" )
+      mosDevice("PMOSM4"   ("D" "G" "S" "B") "W" "L" "M" )
+      mosDevice("PMOSML4"  ("D" "G" "S" "B") "W" "L" "M" )
+      filterDevice( "pcapacitor")
+      filterDevice( "P_DN_PS")
+      filterDevice( "P_DP_DN")
+      filterDevice( "P_ND")
+      filterDevice( "P_ND_SP")
+      filterDevice( "P_NWD")
+      filterDevice( "P_PD")
+      filterDevice( "P_PD_SN")
+      ;; filterDevice( "SHORT" short( "PLUS" "MINUS" ) )
+      filterDevice( "presistor" short( "PLUS" "MINUS" ) )
+      deleteCellPin( "PMOSD30M"  "B")
+      deleteCellPin( "PNPVERT3" "SUB")
+      deleteCellPin( "PNPVERT10" "SUB")
+      deleteCellPin( "PNPVERT5" "SUB")
+      deleteCellPin( "PNPVERT2" "SUB")
+		deleteCellPin( "PNPVERT15" "SUB")		
+      deleteCellPin( "RPOLY1"    "REF")
+      deleteCellPin( "RPOLY2PH"  "REF")
+      deleteCellPin( "RPOLY2P"   "REF")
+      deleteCellPin( "RPOLY2"    "REF")
+      deleteCellPin( "RPOLYH"    "REF")
+      deleteCellPin( "RPOLYM"    "REF")
+      deleteCellPin( "RPOLYZ"    "REF")
+   );; end layout
+
+   schematic(
+      filterDevice( "pcapacitor")
+      filterDevice( "pnwd")
+      filterDevice( "presistor" short( "PLUS" "MINUS" ) )
+      deleteCellPin( "PMOSD30M" "B")         
+      swapPins("CMIM"    nil)
+      swapPins("CPOLYA"  nil)
+      swapPins("CPOLYHD" nil)
+      swapPins("CPOLYRF" nil)
+      swapPins("NMOSRF" "(p S D)")
+      swapPins("PMOSRF" "(p S D)")
+      ; swapPins("CFMOM" "(p PLUS MINUS)")
+      ; swapPins("CFMOM50" "(p PLUS MINUS)")
+      genericDevice("CVAR")
+      genericDevice("CVARM")
+      genericDevice("CVART")
+      genericDevice("GCNSCR1")
+      genericDevice("LAT2")
+      genericDevice("PNPLAT3")
+      genericDevice("PDL2N01S01")
+      genericDevice("PDL2N02S01")		
+      genericDevice("PDL2N02S02")	
+      genericDevice("PDL2N05S02")
+;;      genericDevice("VXCAP")
+   ) ;; end schematic
+
+
+   mergeParallel(CAP merge parallelCAP)
+   mergeParallel(DIODE merge parallelDIODE)
+
+   mergeParallel("CPOLYRF"    noMerge)
+   mergeParallel("CVAR"       noMerge)
+   mergeParallel("NMOSRF"     noMerge)
+   mergeParallel("PHDNWA850"  noMerge)
+   mergeParallel("PHDNWB850"  noMerge)
+   mergeParallel("PHDPINB750" noMerge)
+   mergeParallel("PDL2N01S01" noMerge)
+   mergeParallel("PDL2N02S01" noMerge)
+   mergeParallel("PDL2N02S02" noMerge)
+   mergeParallel("PDL2N05S02" noMerge)
+   mergeParallel("PDI1N01S002"   noMerge)
+   mergeParallel("PDI1N13S002"   noMerge)
+
+   mergeParallel("PMOSRF"     noMerge)
+   mergeParallel("VERTN1_ARRAY"     noMerge)
+
+   mergeSeries("RPOLY2RF" noMerge)
+   mergeSeries("RPOLYHRF" noMerge)
+   mergeSeries("RPOLYZRF" noMerge)
+
+   combineTolerance(LDD parallel "l" 1e-8)
+   combineTolerance(MOS parallel "l" 1e-8)
+   combineTolerance(RES parallel "l" 1e-8)
+   combineTolerance(RES series   "w" 1e-8)
+
+   compareParameter(BJT percent("ea" 1))
+   compareParameter(CAP compareCAP)
+   compareParameter(DIODE compareDIODE)
+   compareParameter(LDD percent("w" 1 "l" 1))
+   compareParameter(MOS percent("w" 1 "l" 1))
+   compareParameter(RES percent("w" 1 "l" 1 ))                ; disable when RESMAT included in extract.rul 
+   ; compareParameter(RES percent("w" 1 "l" 1 "RESMAT" 0))    ; enable when included
+
+   compareParameter("CPOLYRF"    percent("w" 1 "l" 1))
+   compareParameter("CVAR"       percent("w" 1 "l" 1))
+   compareParameter("NMOSRF"     percent("w" 1 "l" 1 "ng" 1))
+   compareParameter("PHDNWA850"  percent("w" 1 "l" 1 "nf" 1))
+   compareParameter("PHDNWB850"  percent("w" 1 "l" 1 "nf" 1))
+   compareParameter("PDV1N01S001" percent("w" 1 "l" 1 "nf" 1))
+   compareParameter("PDV1N01S002" percent("w" 1 "l" 1 "nf" 1))
+   compareParameter("PDV1N01G001" percent("w" 1 "l" 1 "nf" 1 "filterID" 0))
+   compareParameter("PDV1N01G002" percent("w" 1 "l" 1 "nf" 1 "filterID" 0))
+   compareParameter("PDV1N02S001" percent("w" 1 "l" 1 "nf" 1))
+   compareParameter("PDV1N02S002" percent("w" 1 "l" 1 "nf" 1))
+   compareParameter("PDV1N02G001" percent("w" 1 "l" 1 "nf" 1 "filterID" 0))
+   compareParameter("PDV1N02G002" percent("w" 1 "l" 1 "nf" 1 "filterID" 0))
+   compareParameter("PHDPINB750" percent("w" 1 "l" 1 "nf" 1))
+   compareParameter("PDL2N01S01" percent("w_ch1" 1 "w_ch2" 1 "l" 1 "n" 1))
+   compareParameter("PDL2N02S01" percent("w_ch1" 1 "w_ch2" 1 "l" 1 "n" 1))
+   compareParameter("PDL2N02S02" percent("w_ch1" 1 "w_ch2" 1 "l" 1 "n" 1))
+   compareParameter("PDL2N05S02" percent("w_ch1" 1 "w_ch2" 1 "l" 1 "n" 1))
+   compareParameter("PMOSRF"     percent("w" 1 "l" 1 "ng" 1))
+   compareParameter("SHORT"      nil)
+   compareParameter("ZD2SM24"    nil)
+
+   ; Generic Devices
+
+   mergeParallel("CVARM"   merge AMS_parallelMerge export("w" "m" "l"))
+   mergeParallel("CVART"   merge AMS_parallelMerge export("w" "m" "l"))
+   mergeParallel("ESDFDN5" merge AMS_parallelMerge export("w" "m"))
+   mergeParallel("ESDFDP5" merge AMS_parallelMerge export("w" "m"))
+   mergeParallel("ESDGCN5" merge AMS_parallelMerge export("w" "m"))
+   mergeParallel("ESDGCP5" merge AMS_parallelMerge export("w" "m"))
+   mergeParallel("ESDPD12" merge AMS_parallelMerge export("w" "m"))
+   mergeParallel("ESDPD18" merge AMS_parallelMerge export("w" "m"))
+   mergeParallel("ESDPD26" merge AMS_parallelMerge export("w" "m"))
+   mergeParallel("ESDPD30" merge AMS_parallelMerge export("w" "m"))
+   mergeParallel("LAT2"    merge AMS_parallelMerge export("area"))
+   mergeParallel("SBD5"    merge AMS_parallelMerge export("w" "l" "m"))
+
+   compareParameter("BONDPAD"  AMS_compParameters export("w" "l" "numEdge"))
+   compareParameter("CVARM"    AMS_compParameters export("w" "m" "l")) 
+   compareParameter("CVART"    AMS_compParameters export("w" "m" "l"))  
+   compareParameter("ESDFDN5"  AMS_compParameters export("w" "m"))
+   compareParameter("ESDFDP5"  AMS_compParameters export("w" "m"))
+   compareParameter("ESDGCN5"  AMS_compParameters export("w" "m"))
+   compareParameter("ESDGCP5"  AMS_compParameters export("w" "m"))
+;;   compareParameter("ESDNPN_PN3"    AMS_compParameters export("Wunits" "Lunits"))
+   compareParameter("DN_PS"    AMS_compParameters export("area" "perimeter" "isoVoltage"))
+   compareParameter("SN_PS"    AMS_compParameters export("area" "perimeter" ))
+   compareParameter("PDI1N01S001"    AMS_compParameters export("Wunits" "Lunits"))
+   compareParameter("PDI1N01S002"    AMS_compParameters export("Wunits" "Lunits"))
+   compareParameter("PDI1N13S002"    AMS_compParameters export("Wunits" "Lunits"))
+   compareParameter("ESDPD12"  AMS_compParameters export("w" "m"))
+   compareParameter("ESDPD18"  AMS_compParameters export("w" "m"))
+   compareParameter("ESDPD26"  AMS_compParameters export("w" "m"))
+   compareParameter("ESDPD30"  AMS_compParameters export("w" "m"))
+   compareParameter("LAT2"     AMS_compParameters export("area")) 
+   compareParameter("PMOS30M"  AMS_compParameters export("w" "m" "l")) 
+   compareParameter("PMOSD30M" AMS_compParameters export("w" "m" "l")) 
+   compareParameter("SBD5"     AMS_compParameters export("w" "l" "m"))
+   compareParameter("VXCAP"    AMS_compParameters export("w" "l" "m" "bottom" "top"))
+   compareParameter("CFMOM"    AMS_compParameters export("w" "l" "m" "bottom" "top" "ply" "tpm"))
+   compareParameter("CFMOM50"    AMS_compParameters export("w" "l" "m" "bottom" "top" "ply" "tpm"))
+
+   compareParameter("RPOLY2" AMS_compParameters export("w" "l" "RESMAT"))
+   compareParameter("RPOLY2P" AMS_compParameters export("w" "l" "RESMAT"))
+   compareParameter("RPOLY2PH" AMS_compParameters export("w" "l" "RESMAT"))
+   compareParameter("RPOLY2RF" AMS_compParameters export("w" "l" "RESMAT"))
+   compareParameter("RPOLYH" AMS_compParameters export("w" "l" "RESMAT"))
+   compareParameter("RPOLYHRF" AMS_compParameters export("w" "l" "RESMAT"))
+   compareParameter("RPOLYZ" AMS_compParameters export("w" "l" "RESMAT"))
+
+   compareParameter("VERTN1_ARRAY" AMS_compParameters export("nc" "nr"))
+   compareParameter("ESDSCR55_SN"  ESDcomp  )
+
+)
+; *********************************
+; Owner: austriamicrosystems AG    
+; HIT-Kit: Digital                 
+;
+; File: compare_hv.rul
+;
+; 2004-06-25 hge: created
+; 2004-07-04 who: CDL flow
+; 2005-04-07 who: nmosfi25h
+; 2005-05-18 who: CDL flow
+; 2007-04-17 who: nmos20h, nmos20hs, nmos20m, nmos20t
+;                 nmosdi20h, nmosdi50h,
+;                 nmosfi25hs, nmosi120h, nmosi120m, nmosi20m, nmosi20t,
+;                 pmos120h, pmos120m, pmos20hs, pmos20m, pmos20t
+; 2007-05-24 who: nmosil, nmosiml, pmosil, pmosiml, pmossl, pmossml, sn_ps
+; 2008-02-12 hge: pmosd20m, nmosdi20m
+; 2009-02-16 who: esdfdi50, esdgci20, esdgci3, esdgcni5, esdtd50
+; 2009-09-22 hge: nmos10mh, nmosd10mh, pmos10mh, pmosd10mh
+; 2009-10-19 who: nmosd20m
+; 2009-11-04 who: esdpd10
+; 2009-12-14 who: esdfdni5, esdfdpi5, esdgcpi5
+; 2010-01-20 hge: esdtd42, esdtd40, esdtd45, esdtd60
+;                 added compareParameter ("m" 1) for all ESD* devices
+; 2010-06-01 who: esdpnp40, esdpnp42
+; 2010-09-07 who: cvarim, cvarit, esdtd20
+; 2011-01-24 who: pmosd20t
+; 2011-12-05 hge: added ESD_DEVICES checks
+; 2012-01-09 hge: changed cvarit and cavrim checks
+; 2013-01-28 who: nmosisln
+; 2013-04-02 who: nmosdivst, pmosvst
+; 2013-07-18 who: cpvaritpiphd, cvarih, cvaritpiphd
+; 2013-08-30 who: pmosdvst
+; 2013-11-04 who: esdpmos18t, esdfdi120
+; 2013-11-07 who: nmosivst
+; 2014-02-05 who: esdvsd, esdvss
+; 2017-01-09 sned: ESDNPN_PN3
+; 2021-08-10 wbi: NMOSDI20T, NMOSDI50T, NMOSDI20M
+; 2022-12-20 sned: waffle transistors
+; 2023-06-29 sned: mos device pmosi, pmosim
+;**********************************
+
+avCompareRules(
+
+  layout(
+
+    mosDevice("NMOS20HS"   ("D" "G" "S" "B") "W" "L" )
+    mosDevice("NMOS50HS"   ("D" "G" "S" "B") "W" "L" )
+    mosDevice("NMOSFI25HS" ("D" "G" "S" "B" "T") "W" "L" )
+    mosDevice("NMOSI"      ("D" "G" "S" "B" "T") "W" "L" )
+    mosDevice("NMOSIW"      ("D" "G" "S" "B" "T") "W" "L" )
+    mosDevice("NMOSIL"     ("D" "G" "S" "B" "T") "W" "L" )
+    mosDevice("NMOSIM"     ("D" "G" "S" "B" "T") "W" "L" )
+    mosDevice("NMOSIMW"     ("D" "G" "S" "B" "T") "W" "L" )
+    mosDevice("NMOSIML"    ("D" "G" "S" "B" "T") "W" "L" )
+    mosDevice("NMOSISLN"   ("D" "G" "S" "B" "T") "W" "L" )
+    mosDevice("PMOSI"      ("D" "G" "S" "B") "W" "L" )
+    mosDevice("PMOSIM"      ("D" "G" "S" "B") "W" "L" )    
+    mosDevice("PMOS20HS"   ("D" "G" "S" "B") "W" "L" )
+    mosDevice("PMOS50HS"   ("D" "G" "S" "B") "W" "L" )
+
+    lddDevice("ESDPMOS18T" ("D" "G" "S" "B") "W" "L" )
+    lddDevice("NMOS10MH"   ("D" "G" "S" "B") "W" "L" )
+    lddDevice("NMOS20H"    ("D" "G" "S" "B") "W" "L" )
+    lddDevice("NMOS20M"    ("D" "G" "S" "B") "W" "L" )
+    lddDevice("NMOS20T"    ("D" "G" "S" "B") "W" "L" )
+    lddDevice("NMOS50H"    ("D" "G" "S" "B") "W" "L" )
+    lddDevice("NMOS50M"    ("D" "G" "S" "B") "W" "L" )
+    lddDevice("NMOS50T"    ("D" "G" "S" "B") "W" "L" )
+    lddDevice("NMOSD10MH"  ("D" "G" "S" nil) "W" "L" )
+    lddDevice("NMOSD20M"   ("D" "G" "S" nil) "W" "L" )
+    lddDevice("NMOSDI20H"  ("D" "G" "S" nil) "W" "L" )
+    lddDevice("NMOSDI20M"  ("D" "G" "S" nil) "W" "L" )
+    lddDevice("NMOSDI20T"  ("D" "G" "S" nil) "W" "L" )
+    lddDevice("NMOSDI50H"  ("D" "G" "S" nil) "W" "L" )
+    lddDevice("NMOSDI50T"  ("D" "G" "S" nil) "W" "L" )
+;;    lddDevice("NMOSDI50T"  ("G" "S" "D" nil) "W" "L" )
+    lddDevice("NMOSDIVST"  ("D" "G" "S" nil) "W" "L" )
+    lddDevice("NMOSFI25H"  ("D" "G" "S" "B" "T") "W" "L" )
+    lddDevice("NMOSI120H"  ("D" "G" "S" "B") "W" "L" )
+    lddDevice("NMOSI120M"  ("D" "G" "S" "B") "W" "L" )
+    lddDevice("NMOSI20H"   ("D" "G" "S" "B") "W" "L" )
+    lddDevice("NMOSI20M"   ("D" "G" "S" "B") "W" "L" )
+    lddDevice("NMOSI20T"   ("D" "G" "S" "B") "W" "L" )
+    lddDevice("NMOSI50H"   ("D" "G" "S" "B") "W" "L" )
+    lddDevice("NMOSI50M"   ("D" "G" "S" "B") "W" "L" )
+    lddDevice("NMOSI50T"   ("D" "G" "S" "B") "W" "L" )
+    lddDevice("NMOSIVST"   ("D" "G" "S" "B") "W" "L" )
+    lddDevice("PMOS10MH"   ("D" "G" "S" "B") "W" "L" )
+    lddDevice("PMOS120H"   ("D" "G" "S" "B") "W" "L" )
+    lddDevice("PMOS120M"   ("D" "G" "S" "B") "W" "L" )
+    lddDevice("PMOS20H"    ("D" "G" "S" "B") "W" "L" )
+    lddDevice("PMOS20M"    ("D" "G" "S" "B") "W" "L" )
+    lddDevice("PMOS20T"    ("D" "G" "S" "B") "W" "L" )
+    lddDevice("PMOS50H"    ("D" "G" "S" "B") "W" "L" )
+    lddDevice("PMOS50M"    ("D" "G" "S" "B") "W" "L" )
+    lddDevice("PMOS50T"    ("D" "G" "S" "B") "W" "L" )
+    lddDevice("PMOSD10MH"  ("D" "G" "S" nil) "W" "L" )
+    lddDevice("PMOSD20M"   ("D" "G" "S" nil) "W" "L" )
+    lddDevice("PMOSD20T"   ("D" "G" "S" nil) "W" "L" )
+    lddDevice("PMOSDVST"   ("D" "G" "S" nil) "W" "L" )
+    lddDevice("PMOSVST"    ("D" "G" "S" "B") "W" "L" )
+
+    genericDevice("PJFET")
+    genericDevice("RDIFFNR")
+
+    filterDevice( "P_DN_PS")
+    filterDevice( "P_DP_DN")
+    filterDevice( "P_ND_SP")
+    filterDevice( "P_PD_SN")
+    filterDevice( "P_SN_PS")
+
+    deleteCellPin( "NMOSD10MH" "B")
+    deleteCellPin( "NMOSD20M"  "B")
+    deleteCellPin( "PMOSD10MH" "B")
+    deleteCellPin( "PMOSD20M"  "B")
+    deleteCellPin( "PMOSD20T"  "B")
+    deleteCellPin( "PMOSDVST"  "B")
+    deleteCellPin( "VERTPH"    "SUB")
+
+  ); end layout
+
+  schematic(
+
+    mosDevice("NMOSFI25HS" ("D" "G" "S" "B" "T") "W" "L" )
+    mosDevice("NMOSI"      ("D" "G" "S" "B" "T") "W" "L" )
+    mosDevice("NMOSIW"      ("D" "G" "S" "B" "T") "W" "L" )
+    mosDevice("NMOSIL"     ("D" "G" "S" "B" "T") "W" "L" )
+    mosDevice("NMOSIM"     ("D" "G" "S" "B" "T") "W" "L" )
+    mosDevice("NMOSIMW"     ("D" "G" "S" "B" "T") "W" "L" )
+    mosDevice("NMOSIML"    ("D" "G" "S" "B" "T") "W" "L" )
+    mosDevice("NMOSISLN"   ("D" "G" "S" "B" "T") "W" "L" )
+
+    lddDevice("NMOSFI25H" ("D" "G" "S" "B" "T") "W" "L" )
+
+    genericDevice("CPVARITPIPHD")
+    genericDevice("CVARIH")
+    genericDevice("CVARIM")
+    genericDevice("CVARITPIPHD")
+    genericDevice("CVARIT")
+    genericDevice("PJFET")
+    genericDevice("RDIFFNR")
+
+    deleteCellPin("NMOSD10MH" "B")
+    deleteCellPin("NMOSD20M"  "B")
+    deleteCellPin("NMOSDI20H" "B")
+    deleteCellPin("NMOSDI20M" "B")
+    deleteCellPin("NMOSDI20T" "B")
+    deleteCellPin("NMOSDI50H" "B")
+    deleteCellPin("NMOSDI50T" "B")
+    deleteCellPin("NMOSDIVST" "B")
+    deleteCellPin("PMOSD10MH" "B")
+    deleteCellPin("PMOSD20M"  "B")
+    deleteCellPin("PMOSD20T"  "B")
+    deleteCellPin("PMOSDVST"  "B")
+
+    swapPins("CMIM20"   nil)
+    swapPins("CPM"      nil)
+    swapPins("CWPM"     nil)
+    swapPins("ESDPNP40" "(p C E)")
+    swapPins("ESDPNP42" "(p C E)")
+    swapPins("ESDNPN_PN3" "(f VIO GND VSUB)")
+    swapPins("NMOS20HS" "(p S D)")
+    swapPins("NMOS50HS" "(p S D)")
+    swapPins("NMOSIL"   "(p S D)")
+    swapPins("NMOSIML"  "(p S D)")
+    swapPins("NMOSIM"   "(p S D)")
+    swapPins("NMOSI"    "(p S D)")
+    swapPins("NMOSISLN" "(p S D)")
+    swapPins("PJFET"    "(p S D)")
+    swapPins("PMOS20HS" "(p S D)")
+    swapPins("PMOS50HS" "(p S D)")
+    swapPins("RDIFFNR"  "(p PLUS MINUS)")
+    swapPins("RNWELLS"  "(p PLUS MINUS)")
+
+  ); end schematic
+  
+  mergeParallel("CPVARITPIPHD" merge AMS_parallelMerge export("w" "m" "l"))
+  mergeParallel("CVARIH"       merge AMS_parallelMerge export("w" "m" "l"))
+  mergeParallel("CVARIM"       merge AMS_parallelMerge export("w" "m" "l"))
+  mergeParallel("CVARITPIPHD"  merge AMS_parallelMerge export("w" "m" "l"))
+  mergeParallel("CVARIT"       merge AMS_parallelMerge export("w" "m" "l"))
+  mergeParallel("RDIFFNR"      merge AMS_parallelMerge export("w" "m" "l"))
+  mergeParallel("ESDFD10"      merge AMS_parallelMerge export("w" "m"))
+  mergeParallel("ESDFDI120"    merge AMS_parallelMerge export("w" "m"))
+  mergeParallel("ESDFDI50"     merge AMS_parallelMerge export("w" "m"))
+  mergeParallel("ESDFDNI5"     merge AMS_parallelMerge export("w" "m"))
+  mergeParallel("ESDFDPI5"     merge AMS_parallelMerge export("w" "m"))
+  mergeParallel("ESDGCI20"     merge AMS_parallelMerge export("w" "m"))
+  mergeParallel("ESDGCI3"      merge AMS_parallelMerge export("w" "m"))
+  mergeParallel("ESDGCNI5"     merge AMS_parallelMerge export("w" "m"))
+  mergeParallel("ESDGCPI5"     merge AMS_parallelMerge export("w" "m"))
+  mergeParallel("ESDPNP40"     merge AMS_parallelMerge export("w" "m"))
+  mergeParallel("ESDPNP42"     merge AMS_parallelMerge export("w" "m"))
+  mergeParallel("ESDNPN_PN3"   noMerge)
+  mergeParallel("ESDTD20"      merge AMS_parallelMerge export("w" "m"))
+  mergeParallel("ESDTD40"      merge AMS_parallelMerge export("w" "m"))
+  mergeParallel("ESDTD42"      merge AMS_parallelMerge export("w" "m"))
+  mergeParallel("ESDTD45"      merge AMS_parallelMerge export("w" "m"))
+  mergeParallel("ESDTD50"      merge AMS_parallelMerge export("w" "m"))
+  mergeParallel("ESDTD60"      merge AMS_parallelMerge export("w" "m"))
+  mergeParallel("ESDVSD"       merge AMS_parallelMerge export("w" "m" "FTD"))
+  mergeParallel("ESDVSS"       merge AMS_parallelMerge export("w" "m" "FTD"))
+  mergeParallel("NMOSDIVST"    merge AMS_parallelMerge export("w" "m" "l" "F"))
+  mergeParallel("NMOSIVST"     merge AMS_parallelMerge export("w" "m" "l" "F"))
+  mergeParallel("PJFET"        noMerge)
+  mergeParallel("PMOSDVST"     merge AMS_parallelMerge export("w" "m" "l" "F"))
+  mergeParallel("PMOSVST"     merge AMS_parallelMerge export("w" "m" "l" "F"))
+
+  compareParameter("CPVARITPIPHD" AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType"))  
+  compareParameter("CVARIH"       AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("CVARIM"       AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("CVARITPIPHD"  AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType"))  
+  compareParameter("CVARIT"       AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType"))  
+  compareParameter("CWPM"         AMS_compParameters export("a" "p" "m" "isoVoltage" "isoType"))
+  compareParameter("ESDFDI120"    AMS_compParameters export("w" "m" "isoVoltage" "isoType")) 
+  compareParameter("ESDFDI50"     AMS_compParameters export("w" "m" "isoVoltage" "isoType")) 
+  compareParameter("ESDFDNI5"     AMS_compParameters export("w" "m" "isoVoltage" "isoType")) 
+  compareParameter("ESDFDPI5"     AMS_compParameters export("w" "m" "isoVoltage" "isoType"))
+  compareParameter("ESDGCI20"     AMS_compParameters export("w" "m" "isoVoltage" "isoType"))
+  compareParameter("ESDGCI3"      AMS_compParameters export("w" "m" "isoVoltage" "isoType"))
+  compareParameter("ESDGCNI5"     AMS_compParameters export("w" "m" "isoVoltage" "isoType"))
+  compareParameter("ESDGCPI5"     AMS_compParameters export("w" "m" "isoVoltage" "isoType"))
+  compareParameter("ESDPD10"      AMS_compParameters export("w" "m" "isoVoltage" "isoType"))
+  compareParameter("ESDPMOS18T"   AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("ESDPNP40"     AMS_compParameters export("w" "m" "isoVoltage" "isoType"))
+  compareParameter("ESDPNP42"     AMS_compParameters export("w" "m" "isoVoltage" "isoType"))
+;;  compareParameter("ESDNPN_PN3"   AMS_compParameters export("Wunits" "Lunits" ))
+    compareParameter( "ESDNPN_PN3"        ESDNPNcomp )
+  compareParameter("ESDTD20"      AMS_compParameters export("w" "m" "isoVoltage" "isoType"))
+  compareParameter("ESDTD40"      AMS_compParameters export("w" "m" "isoVoltage" "isoType"))
+  compareParameter("ESDTD42"      AMS_compParameters export("w" "m" "isoVoltage" "isoType"))
+  compareParameter("ESDTD45"      AMS_compParameters export("w" "m" "isoVoltage" "isoType"))
+  compareParameter("ESDTD50"      AMS_compParameters export("w" "m" "isoVoltage" "isoType"))
+  compareParameter("ESDTD60"      AMS_compParameters export("w" "m" "isoVoltage" "isoType"))
+  compareParameter("ESDVSD"       AMS_compParameters export("w" "m" "FTD" "isoVoltage" "isoType")) 
+  compareParameter("ESDVSS"       AMS_compParameters export("w" "m" "FTD" "isoVoltage" "isoType")) 
+  compareParameter("NMOS10MH"     AMS_compParameters export("w" "m" "l" )) 
+  compareParameter("NMOS20HS"     AMS_compParameters export("w" "m" "l")) 
+  compareParameter("NMOS50HS"     AMS_compParameters export("w" "m" "l")) 
+  compareParameter("NMOSD10MH"    AMS_compParameters export("w" "m" "l" )) 
+  compareParameter("NMOSD20M"     AMS_compParameters export("w" "m" "l" )) 
+  compareParameter("NMOSDI20H"    AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("NMOSDI20M"    AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("NMOSDI20T"    AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("NMOSDI50H"    AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType"))  
+  compareParameter("NMOSDI50T"    AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType"))  
+  compareParameter("NMOSDIVST"    AMS_compParameters export("w" "m" "l" "F" "isoVoltage" "isoType"))  
+  compareParameter("NMOSI120H"    AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType"))  
+  compareParameter("NMOSI120M"    AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType"))  
+  compareParameter("NMOSI20H"     AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("NMOSI20M"     AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("NMOSI20T"     AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("NMOSI50H"     AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("NMOSI50M"     AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("NMOSI50T"     AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("NMOSIVST"     AMS_compParameters export("w" "m" "l" "F" "isoVoltage" "isoType"))  
+  compareParameter("NMOSI"        AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("NMOSIW"        AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("NMOSIL"       AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("NMOSIM"       AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("NMOSIMW"       AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("NMOSISLN"     AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("PJFET"        AMS_compParameters export("w" "m" "isoVoltage" "isoType")) 
+  compareParameter("PMOS10MH"     AMS_compParameters export("w" "m" "l")) 
+  compareParameter("PMOS120H"     AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType"))  
+  compareParameter("PMOS120M"     AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("PMOS20H"      AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("PMOS20HS"     AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("PMOS20M"      AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("PMOS20T"      AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("PMOS50H"      AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("PMOS50HS"     AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("PMOS50M"      AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("PMOS50T"      AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("PMOSD10MH"    AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("PMOSD20M"     AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("PMOSD20T"     AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("PMOSDVST"     AMS_compParameters export("w" "m" "l" "F" "isoVoltage" "isoType")) 
+  compareParameter("PMOSI"        AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("PMOSIW"        AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("PMOSIL"       AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("PMOSIM"       AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("PMOSIMW"       AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("PMOSIML"      AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("PMOSVST"      AMS_compParameters export("w" "m" "l" "F" "isoVoltage" "isoType")) 
+  compareParameter("RDIFFNR"      AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("RDIFFPS"      AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+  compareParameter("RPWELLR"      AMS_compParameters export("w" "m" "l" "isoVoltage" "isoType")) 
+
+)
+
+
+;----------------------------------------------------------------------------
+; avCompareRules Section from Options Form
+; Created by the Assura UI
+;----------------------------------------------------------------------------
+
+avCompareRules(
+     abortOnUnboundDevices( nil )
+     alwaysContinue()
+     autoPinSwap( t 1000 )
+     expandOnError( (unstableDevices t) (swap t) (reduce t) (pins t) (match t) (swapThres t) (instCount t) (skipMatchOnReduceError t) (ambiguousPinAssignment nil) (parameter nil) )
+     filterReduceStatistics( (preExpand t) )
+     formGate( MOS none )
+     listFilteredDevices()
+     listXRef()
+     mergeSplitGate( MOS sameOrder )
+     mergeSplitGate( LDD sameOrder )
+     unmatchedNetDetail()
+     verifyTopLayPins( (t notKeepFloatingPins) )
+     verifyTopSchPins( (t notKeepFloatingPins) )
+)
+
+
+
+
+;----------------------------------------------------------------------------
+; avCompareRules Section from Run Submit Form
+; Created by the Assura UI
+;----------------------------------------------------------------------------
+
+avCompareRules(
+schematic(
+netlist( dfII "/home/saul/projects/AMS35_H35_MINIMAL/ASSURA_LVS/ioring/ioring.vlr" )
+)
+bindingFile("/opt/pdk/ams/5.10.1/X35/assura/h35b4/h35b4d3/bind.rul")
+)
+
+
+avLVS()
+

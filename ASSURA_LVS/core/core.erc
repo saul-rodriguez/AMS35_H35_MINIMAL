@@ -1,0 +1,418 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'XOR2X1_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (4.200, 0.000) to layer `net_met1'.
+  info: Assign pin label "B" at (4.900, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (6.300, 6.500) to layer `net_met1'.
+  info: Assign pin label "A" at (7.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (4.200, 10.400) to layer `net_met1'.
+
+ Label in cell 'XNOR2X2_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (4.200, 0.000) to layer `net_met1'.
+  info: Assign pin label "B" at (2.100, 5.200) to layer `net_met1'.
+  info: Assign pin label "A" at (4.900, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (4.900, 7.800) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (4.200, 10.400) to layer `net_met1'.
+
+ Label in cell 'NOR2X4_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.100, 0.000) to layer `net_met1'.
+  info: Assign pin label "B" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (2.100, 5.200) to layer `net_met1'.
+  info: Assign pin label "A" at (3.500, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.100, 10.400) to layer `net_met1'.
+
+ Label in cell 'INVX4_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.100, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (2.100, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.100, 10.400) to layer `net_met1'.
+
+ Label in cell 'INVX16_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (3.500, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (2.100, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (3.500, 10.400) to layer `net_met1'.
+
+ Label in cell 'HAX3_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "B" at (2.100, 3.900) to layer `net_met1'.
+  info: Assign pin label "gnd!" at (7.000, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (6.300, 5.200) to layer `net_met1'.
+  info: Assign pin label "CO" at (10.500, 5.200) to layer `net_met1'.
+  info: Assign pin label "SUM" at (11.900, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (7.000, 10.400) to layer `net_met1'.
+
+ Label in cell 'FILLCELLX4_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (1.525, 0.000) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (1.475, 10.400) to layer `net_met1'.
+
+ Label in cell 'FILLCAPX8_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (5.600, 0.000) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (5.600, 10.400) to layer `net_met1'.
+
+ Label in cell 'FILLCAPX4_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.800, 0.000) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.800, 10.400) to layer `net_met1'.
+
+ Label in cell 'FILLCAPX16_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (11.200, 0.000) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (11.200, 10.400) to layer `net_met1'.
+
+ Label in cell 'DLY1X1_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "A" at (2.100, 5.200) to layer `net_met1'.
+  info: Assign pin label "gnd!" at (8.400, 0.000) to layer `net_met1'.
+  info: Assign pin label "Q" at (11.900, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (8.400, 11.000) to layer `net_met1'.
+
+ Label in cell 'DFX1_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "CP" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "D" at (4.900, 5.200) to layer `net_met1'.
+  info: Assign pin label "gnd!" at (11.200, 0.000) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (11.200, 10.400) to layer `net_met1'.
+  info: Assign pin label "Q" at (21.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "QN" at (23.100, 5.200) to layer `net_met1'.
+
+ Label in cell 'CLKBUFX8_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.800, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (3.500, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.800, 10.400) to layer `net_met1'.
+
+ Label in cell 'CLKBUFX6_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.800, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (3.500, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.800, 10.400) to layer `net_met1'.
+
+ Label in cell 'CLKBUFX3_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.800, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (3.500, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.800, 10.400) to layer `net_met1'.
+
+ Label in cell 'CLKBUFX2_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.800, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (3.500, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.800, 10.400) to layer `net_met1'.
+
+ Label in cell 'CLKBUFX24_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (5.600, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (2.100, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (7.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (5.600, 10.400) to layer `net_met1'.
+
+ Label in cell 'CLKBUFX16_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (4.200, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (6.300, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (4.200, 10.400) to layer `net_met1'.
+
+ Label in cell 'CLKBUFX12_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.800, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (6.300, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.800, 10.400) to layer `net_met1'.
+
+ Label in cell 'BUFX8_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.800, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (3.500, 6.500) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.800, 10.400) to layer `net_met1'.
+
+ Label in cell 'BUFX6_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.800, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (4.900, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.800, 10.400) to layer `net_met1'.
+
+ Label in cell 'BUFX4_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.100, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (3.500, 7.800) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.100, 10.400) to layer `net_met1'.
+
+ Label in cell 'BUFX2_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.100, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (3.500, 7.800) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.100, 10.400) to layer `net_met1'.
+
+ Label in cell 'BUFX16_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (4.900, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (7.700, 6.500) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (4.900, 10.400) to layer `net_met1'.
+
+ Label in cell 'BUFX12_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (3.500, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (4.900, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (3.500, 10.400) to layer `net_met1'.
+
+ Label in cell 'AOI22X4_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (3.500, 0.050) to layer `net_met1'.
+  info: Assign pin label "B2" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "B1" at (2.100, 5.200) to layer `net_met1'.
+  info: Assign pin label "A1" at (3.500, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (4.900, 3.900) to layer `net_met1'.
+  info: Assign pin label "A2" at (6.300, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (3.500, 10.450) to layer `net_met1'.
+
+ Label in cell 'AOI22X3_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (3.500, 0.050) to layer `net_met1'.
+  info: Assign pin label "B2" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "B1" at (2.100, 5.200) to layer `net_met1'.
+  info: Assign pin label "A1" at (3.500, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (4.900, 3.900) to layer `net_met1'.
+  info: Assign pin label "A2" at (6.300, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (3.500, 10.450) to layer `net_met1'.
+
+ Label in cell 'inv layout INV':
+  info: Assign pin label "GNDA" at (3.000, 0.950) to layer `net_met1'.
+  info: Assign pin label "IN" at (1.900, 5.450) to layer `net_met1'.
+  info: Assign pin label "OUT" at (4.350, 5.550) to layer `net_met1'.
+  info: Assign pin label "VDDA" at (3.000, 10.500) to layer `net_met1'.
+
+ Label in cell 'counter layout COUNTER':
+  info: Assign pin label "out<7>" at (52.500, 0.300) to layer `net_met3'.
+  info: Assign pin label "out<6>" at (63.700, 0.300) to layer `net_met3'.
+  info: Assign pin label "out<5>" at (74.900, 0.300) to layer `net_met3'.
+  info: Assign pin label "out<4>" at (86.100, 0.300) to layer `net_met3'.
+  info: Assign pin label "out<3>" at (97.300, 0.300) to layer `net_met3'.
+  info: Assign pin label "out<2>" at (108.500, 0.350) to layer `net_met3'.
+  info: Assign pin label "out<1>" at (119.700, 0.300) to layer `net_met3'.
+  info: Assign pin label "out<0>" at (130.900, 0.300) to layer `net_met3'.
+  info: Assign pin label "clk" at (77.700, 134.900) to layer `net_met3'.
+  info: Assign pin label "enable" at (88.900, 134.900) to layer `net_met3'.
+  info: Assign pin label "reset" at (100.100, 134.900) to layer `net_met3'.
+  info: Assign pin label "gnd!" at (3.850, 103.450) to layer `net_met2'.
+  info: Assign pin label "vdd!" at (8.200, 108.850) to layer `net_met2'.
+
+ Label in cell 'core layout MINIMAL_CORE':
+  info: Assign pin label "out<2>" at (123.250, 55.550) to layer `net_met3'.
+  info: Assign pin label "out<1>" at (134.450, 55.500) to layer `net_met3'.
+  info: Assign pin label "out<0>" at (145.650, 55.550) to layer `net_met3'.
+  info: Assign pin label "clk" at (92.450, 191.350) to layer `net_met3'.
+  info: Assign pin label "enable" at (103.650, 191.350) to layer `net_met3'.
+  info: Assign pin label "reset" at (114.850, 191.350) to layer `net_met3'.
+  info: Assign pin label "aout1" at (99.550, 12.850) to layer `net_met2'.
+  info: Assign pin label "ain2" at (111.900, 12.700) to layer `net_met2'.
+  info: Assign pin label "aout2" at (115.750, 12.850) to layer `net_met2'.
+  info: Assign pin label "GNDD" at (18.500, 160.700) to layer `net_met2'.
+  info: Assign pin label "VDDD" at (22.950, 167.100) to layer `net_met2'.
+  info: Assign pin label "VSUB" at (30.050, 71.600) to layer `net_met1'.
+  info: Assign pin label "GNDA" at (98.050, 6.900) to layer `net_met1'.
+  info: Assign pin label "VDDA" at (98.000, 19.150) to layer `net_met1'.
+
+***** End of Label Report *****
+
+
+***** Begin Label Report *****
+
+ Label in cell 'XOR2X1_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (4.200, 0.000) to layer `net_met1'.
+  info: Assign pin label "B" at (4.900, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (6.300, 6.500) to layer `net_met1'.
+  info: Assign pin label "A" at (7.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (4.200, 10.400) to layer `net_met1'.
+
+ Label in cell 'XNOR2X2_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (4.200, 0.000) to layer `net_met1'.
+  info: Assign pin label "B" at (2.100, 5.200) to layer `net_met1'.
+  info: Assign pin label "A" at (4.900, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (4.900, 7.800) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (4.200, 10.400) to layer `net_met1'.
+
+ Label in cell 'NOR2X4_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.100, 0.000) to layer `net_met1'.
+  info: Assign pin label "B" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (2.100, 5.200) to layer `net_met1'.
+  info: Assign pin label "A" at (3.500, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.100, 10.400) to layer `net_met1'.
+
+ Label in cell 'INVX4_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.100, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (2.100, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.100, 10.400) to layer `net_met1'.
+
+ Label in cell 'INVX16_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (3.500, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (2.100, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (3.500, 10.400) to layer `net_met1'.
+
+ Label in cell 'HAX3_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "B" at (2.100, 3.900) to layer `net_met1'.
+  info: Assign pin label "gnd!" at (7.000, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (6.300, 5.200) to layer `net_met1'.
+  info: Assign pin label "CO" at (10.500, 5.200) to layer `net_met1'.
+  info: Assign pin label "SUM" at (11.900, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (7.000, 10.400) to layer `net_met1'.
+
+ Label in cell 'FILLCELLX4_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (1.525, 0.000) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (1.475, 10.400) to layer `net_met1'.
+
+ Label in cell 'FILLCAPX8_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (5.600, 0.000) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (5.600, 10.400) to layer `net_met1'.
+
+ Label in cell 'FILLCAPX4_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.800, 0.000) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.800, 10.400) to layer `net_met1'.
+
+ Label in cell 'FILLCAPX16_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (11.200, 0.000) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (11.200, 10.400) to layer `net_met1'.
+
+ Label in cell 'DLY1X1_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "A" at (2.100, 5.200) to layer `net_met1'.
+  info: Assign pin label "gnd!" at (8.400, 0.000) to layer `net_met1'.
+  info: Assign pin label "Q" at (11.900, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (8.400, 11.000) to layer `net_met1'.
+
+ Label in cell 'DFX1_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "CP" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "D" at (4.900, 5.200) to layer `net_met1'.
+  info: Assign pin label "gnd!" at (11.200, 0.000) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (11.200, 10.400) to layer `net_met1'.
+  info: Assign pin label "Q" at (21.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "QN" at (23.100, 5.200) to layer `net_met1'.
+
+ Label in cell 'CLKBUFX8_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.800, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (3.500, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.800, 10.400) to layer `net_met1'.
+
+ Label in cell 'CLKBUFX6_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.800, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (3.500, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.800, 10.400) to layer `net_met1'.
+
+ Label in cell 'CLKBUFX3_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.800, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (3.500, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.800, 10.400) to layer `net_met1'.
+
+ Label in cell 'CLKBUFX2_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.800, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (3.500, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.800, 10.400) to layer `net_met1'.
+
+ Label in cell 'CLKBUFX24_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (5.600, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (2.100, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (7.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (5.600, 10.400) to layer `net_met1'.
+
+ Label in cell 'CLKBUFX16_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (4.200, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (6.300, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (4.200, 10.400) to layer `net_met1'.
+
+ Label in cell 'CLKBUFX12_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.800, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (6.300, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.800, 10.400) to layer `net_met1'.
+
+ Label in cell 'BUFX8_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.800, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (3.500, 6.500) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.800, 10.400) to layer `net_met1'.
+
+ Label in cell 'BUFX6_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.800, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (4.900, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.800, 10.400) to layer `net_met1'.
+
+ Label in cell 'BUFX4_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.100, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (3.500, 7.800) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.100, 10.400) to layer `net_met1'.
+
+ Label in cell 'BUFX2_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.100, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (3.500, 7.800) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.100, 10.400) to layer `net_met1'.
+
+ Label in cell 'BUFX16_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (4.900, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (7.700, 6.500) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (4.900, 10.400) to layer `net_met1'.
+
+ Label in cell 'BUFX12_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (3.500, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (4.900, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (3.500, 10.400) to layer `net_met1'.
+
+ Label in cell 'AOI22X4_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (3.500, 0.050) to layer `net_met1'.
+  info: Assign pin label "B2" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "B1" at (2.100, 5.200) to layer `net_met1'.
+  info: Assign pin label "A1" at (3.500, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (4.900, 3.900) to layer `net_met1'.
+  info: Assign pin label "A2" at (6.300, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (3.500, 10.450) to layer `net_met1'.
+
+ Label in cell 'AOI22X3_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (3.500, 0.050) to layer `net_met1'.
+  info: Assign pin label "B2" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "B1" at (2.100, 5.200) to layer `net_met1'.
+  info: Assign pin label "A1" at (3.500, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (4.900, 3.900) to layer `net_met1'.
+  info: Assign pin label "A2" at (6.300, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (3.500, 10.450) to layer `net_met1'.
+
+ Label in cell 'inv layout INV':
+  info: Assign pin label "GNDA" at (3.000, 0.950) to layer `net_met1'.
+  info: Assign pin label "IN" at (1.900, 5.450) to layer `net_met1'.
+  info: Assign pin label "OUT" at (4.350, 5.550) to layer `net_met1'.
+  info: Assign pin label "VDDA" at (3.000, 10.500) to layer `net_met1'.
+
+ Label in cell 'counter layout COUNTER':
+  info: Assign pin label "out<7>" at (52.500, 0.300) to layer `net_met3'.
+  info: Assign pin label "out<6>" at (63.700, 0.300) to layer `net_met3'.
+  info: Assign pin label "out<5>" at (74.900, 0.300) to layer `net_met3'.
+  info: Assign pin label "out<4>" at (86.100, 0.300) to layer `net_met3'.
+  info: Assign pin label "out<3>" at (97.300, 0.300) to layer `net_met3'.
+  info: Assign pin label "out<2>" at (108.500, 0.350) to layer `net_met3'.
+  info: Assign pin label "out<1>" at (119.700, 0.300) to layer `net_met3'.
+  info: Assign pin label "out<0>" at (130.900, 0.300) to layer `net_met3'.
+  info: Assign pin label "clk" at (77.700, 134.900) to layer `net_met3'.
+  info: Assign pin label "enable" at (88.900, 134.900) to layer `net_met3'.
+  info: Assign pin label "reset" at (100.100, 134.900) to layer `net_met3'.
+  info: Assign pin label "gnd!" at (3.850, 103.450) to layer `net_met2'.
+  info: Assign pin label "vdd!" at (8.200, 108.850) to layer `net_met2'.
+
+ Label in cell 'core layout MINIMAL_CORE':
+  info: Assign pin label "out<2>" at (123.250, 55.550) to layer `net_met3'.
+  info: Assign pin label "out<1>" at (134.450, 55.500) to layer `net_met3'.
+  info: Assign pin label "out<0>" at (145.650, 55.550) to layer `net_met3'.
+  info: Assign pin label "clk" at (92.450, 191.350) to layer `net_met3'.
+  info: Assign pin label "enable" at (103.650, 191.350) to layer `net_met3'.
+  info: Assign pin label "reset" at (114.850, 191.350) to layer `net_met3'.
+  info: Assign pin label "aout1" at (99.550, 12.850) to layer `net_met2'.
+  info: Assign pin label "ain2" at (111.900, 12.700) to layer `net_met2'.
+  info: Assign pin label "aout2" at (115.750, 12.850) to layer `net_met2'.
+  info: Assign pin label "GNDD" at (18.500, 160.700) to layer `net_met2'.
+  info: Assign pin label "VDDD" at (22.950, 167.100) to layer `net_met2'.
+  info: Assign pin label "VSUB" at (30.050, 71.600) to layer `net_met1'.
+  info: Assign pin label "GNDA" at (98.050, 6.900) to layer `net_met1'.
+  info: Assign pin label "VDDA" at (98.000, 19.150) to layer `net_met1'.
+
+***** End of Label Report *****
+

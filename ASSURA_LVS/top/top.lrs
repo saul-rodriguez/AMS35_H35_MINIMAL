@@ -1,0 +1,75 @@
+@(#)$CDS: nvn_64 version av4.1:Production:dfII25.1-64b:IC25.1-64b.38 08/06/2025 03:34 (sjfdcl919) $
+sub-version 4.1_USR7_HF3, integ signature 2025-08-06-0300
+run on edatools at Wed Sep 30 06:41:57 2026
+
+Schematic                                 | Layout                                  | Status
+-----------------------------------------------------------------------------------------------------------------
+inv schematic INV                         | inv layout INV                          | matched                   
+BUFX8_DCV_HV cmos_sch CORELIBD_DCV_HV     | BUFX8_DCV_HV layout CORELIBD_DCV_HV     | matched                   
+XOR2X1_DCV_HV cmos_sch CORELIBD_DCV_HV    | XOR2X1_DCV_HV layout CORELIBD_DCV_HV    | matched                   
+AOI22X4_DCV_HV cmos_sch CORELIBD_DCV_HV   | AOI22X4_DCV_HV layout CORELIBD_DCV_HV   | matched                   
+HAX3_DCV_HV cmos_sch CORELIBD_DCV_HV      | HAX3_DCV_HV layout CORELIBD_DCV_HV      | matched                   
+BUFX16_DCV_HV cmos_sch CORELIBD_DCV_HV    | BUFX16_DCV_HV layout CORELIBD_DCV_HV    | matched                   
+AOI22X3_DCV_HV cmos_sch CORELIBD_DCV_HV   | AOI22X3_DCV_HV layout CORELIBD_DCV_HV   | matched                   
+INVX4_DCV_HV cmos_sch CORELIBD_DCV_HV     | INVX4_DCV_HV layout CORELIBD_DCV_HV     | matched                   
+INVX16_DCV_HV cmos_sch CORELIBD_DCV_HV    | INVX16_DCV_HV layout CORELIBD_DCV_HV    | matched                   
+DFX1_DCV_HV cmos_sch CORELIBD_DCV_HV      | DFX1_DCV_HV layout CORELIBD_DCV_HV      | matched                   
+XNOR2X2_DCV_HV cmos_sch CORELIBD_DCV_HV   | XNOR2X2_DCV_HV layout CORELIBD_DCV_HV   | matched                   
+NOR2X4_DCV_HV cmos_sch CORELIBD_DCV_HV    | NOR2X4_DCV_HV layout CORELIBD_DCV_HV    | matched                   
+CLKBUFX16_DCV_HV cmos_sch CORELIBD_DCV_HV | CLKBUFX16_DCV_HV layout CORELIBD_DCV_HV | matched                   
+BUFX12_DCV_HV cmos_sch CORELIBD_DCV_HV    | BUFX12_DCV_HV layout CORELIBD_DCV_HV    | matched                   
+CLKBUFX8_DCV_HV cmos_sch CORELIBD_DCV_HV  | CLKBUFX8_DCV_HV layout CORELIBD_DCV_HV  | matched                   
+CLKBUFX24_DCV_HV cmos_sch CORELIBD_DCV_HV | CLKBUFX24_DCV_HV layout CORELIBD_DCV_HV | matched                   
+DLY1X1_DCV_HV cmos_sch CORELIBD_DCV_HV    | DLY1X1_DCV_HV layout CORELIBD_DCV_HV    | matched                   
+BUFX6_DCV_HV cmos_sch CORELIBD_DCV_HV     | BUFX6_DCV_HV layout CORELIBD_DCV_HV     | matched                   
+CLKBUFX12_DCV_HV cmos_sch CORELIBD_DCV_HV | CLKBUFX12_DCV_HV layout CORELIBD_DCV_HV | matched                   
+BUFX2_DCV_HV cmos_sch CORELIBD_DCV_HV     | BUFX2_DCV_HV layout CORELIBD_DCV_HV     | matched                   
+CLKBUFX3_DCV_HV cmos_sch CORELIBD_DCV_HV  | CLKBUFX3_DCV_HV layout CORELIBD_DCV_HV  | matched                   
+FILLCAPX16_DCV_HV cmos_sch CORELIBD_DCV_HV| FILLCAPX16_DCV_HV layout CORELIBD_DCV_HV| matched                   
+FILLCAPX8_DCV_HV cmos_sch CORELIBD_DCV_HV | FILLCAPX8_DCV_HV layout CORELIBD_DCV_HV | matched                   
+FILLCAPX4_DCV_HV cmos_sch CORELIBD_DCV_HV | FILLCAPX4_DCV_HV layout CORELIBD_DCV_HV | matched                   
+CLKBUFX6_DCV_HV cmos_sch CORELIBD_DCV_HV  | CLKBUFX6_DCV_HV layout CORELIBD_DCV_HV  | matched                   
+BUFX4_DCV_HV cmos_sch CORELIBD_DCV_HV     | BUFX4_DCV_HV layout CORELIBD_DCV_HV     | matched                   
+CLKBUFX2_DCV_HV cmos_sch CORELIBD_DCV_HV  | CLKBUFX2_DCV_HV layout CORELIBD_DCV_HV  | matched                   
+counter schematic COUNTER                 | counter layout COUNTER                  | matched                   
+core schematic MINIMAL_CORE               | core layout MINIMAL_CORE                | matched                   
+PWRCUT_DIG_P_DXS_HV cmos_sch IOLIB_HV_4M  | PWRCUT_DIG_P_DXS_HV layout IOLIB_HV_4M  | matched                   
+APRIOP_HV schematic IOLIB_ANA_HV_4M       | APRIOP_HV layout IOLIB_ANA_HV_4M        | matched                   
+APRIO200P_HV schematic IOLIB_ANA_HV_4M    | APRIO200P_HV layout IOLIB_ANA_HV_4M     | matched                   
+AVDD3ALLP_HV schematic IOLIB_ANA_HV_4M    | AVDD3ALLP_HV layout IOLIB_ANA_HV_4M     | matched                   
+AGND3ALLP_HV schematic IOLIB_ANA_HV_4M    | AGND3ALLP_HV layout IOLIB_ANA_HV_4M     | expanded, unstable devices
+BU2P_HV cmos_sch IOLIB_HV_4M              | BU2P_HV layout IOLIB_HV_4M              | matched                   
+ICP_HV cmos_sch IOLIB_HV_4M               | ICP_HV layout IOLIB_HV_4M               | matched                   
+VSUBALLP_HV cmos_sch IOLIB_HV_4M          | VSUBALLP_HV layout IOLIB_HV_4M          | matched                   
+VDD3ALLP_HV cmos_sch IOLIB_HV_4M          | VDD3ALLP_HV layout IOLIB_HV_4M          | matched                   
+GND3ALLP_HV cmos_sch IOLIB_HV_4M          | GND3ALLP_HV layout IOLIB_HV_4M          | matched                   
+ioring schematic MINIMAL_IO_HV            | ioring layout MINIMAL_IO_HV             | matched                   
+top schematic MINIMAL_TOP                 | top layout MINIMAL_TOP                  | matched                   
+
+Schematic and Layout Match
+
+Schematic:
+  Library:MINIMAL_TOP
+  Cell   :top
+  View   :schematic
+
+Layout:
+  Library:MINIMAL_TOP
+  Cell   :top
+  View   :layout
+
+
+
+Extraction  Information
+--------------------
+     0 cells have 0 mal-formed device problems
+     4 cells have 16 label short problems
+     0 cells have 0 label open problems
+
+Mismatch  Information
+--------------------
+     0 cells have 0 Net mismatches
+     0 cells have 0 Device mismatches
+     0 cells have 0 Pin mismatches
+     0 cells have 0 Parameter mismatches
+

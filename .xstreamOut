@@ -1,0 +1,4 @@
+techLib "TECH_H35B4"
+userSkillFile "/opt/pdk/ams/5.10.1/X35/cds/HK_H35/skill/ams_sdl.il"
+case "preserve"
+maxVertices 1024

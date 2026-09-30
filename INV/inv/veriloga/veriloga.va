@@ -1,0 +1,32 @@
+// VerilogA for INV, inv, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module inv(GNDA, IN, OUT, VDDA);
+inout GNDA;
+electrical GNDA;
+inout IN;
+electrical IN;
+inout OUT;
+electrical OUT;
+inout VDDA;
+electrical VDDA;
+
+real aux = 0;
+
+analog begin 
+
+    @(cross( V(IN) - 0.5*V(VDDA) ) )
+	;
+        
+    if (V(IN) > 0.5*V(VDDA))
+        aux= 0;
+    else
+        aux =V(VDDA);
+
+	V(OUT) <+ transition(aux, 0, 0.1n); //smooths the output 
+
+end
+
+endmodule

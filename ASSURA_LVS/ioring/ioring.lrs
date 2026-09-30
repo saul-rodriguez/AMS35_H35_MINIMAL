@@ -1,0 +1,45 @@
+@(#)$CDS: nvn_64 version av4.1:Production:dfII25.1-64b:IC25.1-64b.38 08/06/2025 03:34 (sjfdcl919) $
+sub-version 4.1_USR7_HF3, integ signature 2025-08-06-0300
+run on edatools at Mon Sep 28 14:30:17 2026
+
+Schematic                               | Layout                                | Status
+------------------------------------------------------------------------------------------
+PWRCUT_DIG_P_DXS_HV cmos_sch IOLIB_HV_4M| PWRCUT_DIG_P_DXS_HV layout IOLIB_HV_4M| matched
+APRIOP_HV schematic IOLIB_ANA_HV_4M     | APRIOP_HV layout IOLIB_ANA_HV_4M      | matched
+APRIO200P_HV schematic IOLIB_ANA_HV_4M  | APRIO200P_HV layout IOLIB_ANA_HV_4M   | matched
+AVDD3ALLP_HV schematic IOLIB_ANA_HV_4M  | AVDD3ALLP_HV layout IOLIB_ANA_HV_4M   | matched
+AGND3ALLP_HV schematic IOLIB_ANA_HV_4M  | AGND3ALLP_HV layout IOLIB_ANA_HV_4M   | matched
+BU2P_HV cmos_sch IOLIB_HV_4M            | BU2P_HV layout IOLIB_HV_4M            | matched
+ICP_HV cmos_sch IOLIB_HV_4M             | ICP_HV layout IOLIB_HV_4M             | matched
+VSUBALLP_HV cmos_sch IOLIB_HV_4M        | VSUBALLP_HV layout IOLIB_HV_4M        | matched
+VDD3ALLP_HV cmos_sch IOLIB_HV_4M        | VDD3ALLP_HV layout IOLIB_HV_4M        | matched
+GND3ALLP_HV cmos_sch IOLIB_HV_4M        | GND3ALLP_HV layout IOLIB_HV_4M        | matched
+ioring schematic MINIMAL_IO_HV          | ioring layout MINIMAL_IO_HV           | matched
+
+Schematic and Layout Match
+
+Schematic:
+  Library:MINIMAL_IO_HV
+  Cell   :ioring
+  View   :schematic
+
+Layout:
+  Library:MINIMAL_IO_HV
+  Cell   :ioring
+  View   :layout
+
+
+
+Extraction  Information
+--------------------
+     0 cells have 0 mal-formed device problems
+     4 cells have 16 label short problems
+     0 cells have 0 label open problems
+
+Mismatch  Information
+--------------------
+     0 cells have 0 Net mismatches
+     0 cells have 0 Device mismatches
+     0 cells have 0 Pin mismatches
+     0 cells have 0 Parameter mismatches
+

@@ -1,0 +1,8 @@
+# 0
+PMOS4(MOS): PMOS4(MOS)
+# 0
+NMOS4(MOS): NMOS4(MOS)
+# 2
+inv schematic INV: inv layout INV
+D MN0 avD1_1
+D MP0 avD3_1

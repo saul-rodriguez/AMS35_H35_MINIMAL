@@ -1,0 +1,92 @@
+;----------------------------------------------------------------------------
+; @(#)$CDS: assura version av4.1:Production:dfII25.1-64b:IC25.1-64b.38 08/06/25 03:01 (sjfdcl919) $
+; sub-version 4.1_USR7_HF3
+;----------------------------------------------------------------------------
+
+
+;----------------------------------------------------------------------------
+; RSF include(/opt/pdk/ams/5.10.1/X35/assura/h35b4/h35b4d3/DRCinclude.rsf) Section
+; Specified in the Assura UI
+;----------------------------------------------------------------------------
+
+; *********************************
+; Owner: austriamicrosystems AG
+; HIT-Kit: Digital
+;
+; File: DRCinclude.rsf
+;
+; Created: Oct  4 15:06:30 2023
+; *********************************
+
+
+AMS_LIB = strcat(getShellEnvVar("AMS_DIR") "/" getShellEnvVar("AMS_DB") "/HK_H35")
+printf( "Loading all available p-cell functions\n" )
+load(strcat(AMS_LIB "/skill/ams_sdl.il"))
+
+; **********************************
+; Switches for processOptions 
+; **********************************
+avParameters(
+;?set "no_layer_MIDOX"
+;?set "no_layer_POLY2"
+;?set "no_layer_HRES"
+?set "no_layer_METCAP"
+;?set "no_layer_METRES"
+;?set "no_module_SUBSTRATE"
+;?set "no_module_NMOS50"
+?set "no_module_MIM5V"
+?set "no_module_MIM20V"
+;?set "module_NW2SN"
+;?set "no_layer_HVOX"
+;?set "no_layer_VIA2"
+;?set "no_layer_MET3"
+;?set "no_layer_VIA3"
+;?set "no_layer_MET4"
+;?set "module_PMOSS"
+;?set "layer_LVTDEF"
+;?set "no_module_VHV"
+;?set "element_PHDPINB750"
+?set "no_layer_DEVDEF_opto"
+;?set "layer_PAD_BARC"
+;?set "module_IEPI"
+;?set "library_PRIMLIB_WIP"
+;?set "library_ESDLIB_WIP"
+?set "library_HALL"
+;?set "element_NMOSFI25H"
+;?set "element_NMOSFI25HS"
+;?set "layer_PAD_EBARC"
+;?set "layer_PAD_OBARC"
+?widenZeroAreaErrorRegions t
+?labelPriority ( "*vdd*" "*gnd*" )
+)
+
+
+
+
+; **********************************
+; Load end user customizations
+; **********************************
+
+if( isFile("DRCinclude_local.rsf") then
+   load("DRCinclude_local.rsf")
+)
+
+
+;----------------------------------------------------------------------------
+; avParameter Section
+; Created by the Assura UI
+;----------------------------------------------------------------------------
+
+avParameters(
+  ?inputLayout ( "df2" "MINIMAL_CORE" )
+  ?cellName "core"
+  ?viewName "layout"
+  ?workingDirectory "ASSURA_DRC/core"
+  ?technology "h35b4d3"
+  ?techLib "./assura_tech.lib"
+  ?techRuleSet "dfII"
+  ?avrpt t
+  ?legacyMode nil
+  ?overwrite t
+  ?verbose "hideOptimization"
+)

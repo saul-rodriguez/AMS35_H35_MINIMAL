@@ -1,0 +1,29 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-RUNMODE
+-NOCOPYRIGHT
+-NOSTDOUT
+-NOWARN
+DLNOHV
+-NOWARN
+SPDUSD
+-INCDIR
+"/home/saul/projects/AMS35_H35_MINIMAL/"
+-AMS
+-UPDATE
+-CDSLIB
+./xcelium.d/run.lnx8664.24.09.d/cdsrun.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.24.09.d/hdlrun.var
+-amscommfile
+./xcelium.d/AMSD/ams_spice_in/amscomm.list
+-work
+COUNTER
+-messages
+-VIEW
+verilogams
+-SPECIFICUNIT
+counter_stimulus
+/home/saul/projects/AMS35_H35_MINIMAL/COUNTER/counter_stimulus/verilogams/verilog.vams

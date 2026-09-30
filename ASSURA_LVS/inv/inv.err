@@ -1,0 +1,44 @@
+================================================================================
+Rule No. 355 : # INFO: Don't use -resimulate_extracted- Switch for standard LVS but only for QRC! #
+
+Real Error Count : 1; Flat Error Count : 1
+================================================================================
+
+--------------------------------------------------------------------------------
+Cell Name : inv layout INV
+
+                   Cell Errors    Real Errors   Cell Placements     Environments
+                             1              1                 1                1
+--------------------------------------------------------------------------------
+Env.  Env. Placements            X1           Y1          X2           Y2
+
+  1        1                  0.950        0.300       6.300       11.350
+
+Shape               Environments Status & Error Marker 
+
+          1           X1         Y1         X2         Y2
+
+   1      X        0.950      0.300      6.300     11.350
+
+================================================================================
+Rule No. 356 : # H35B4 ENG - 243 (Last updated 28-Mar-2025 00:09) #
+
+Real Error Count : 1; Flat Error Count : 1
+================================================================================
+
+--------------------------------------------------------------------------------
+Cell Name : inv layout INV
+
+                   Cell Errors    Real Errors   Cell Placements     Environments
+                             1              1                 1                1
+--------------------------------------------------------------------------------
+Env.  Env. Placements            X1           Y1          X2           Y2
+
+  1        1                  0.950        0.300       6.300       11.350
+
+Shape               Environments Status & Error Marker 
+
+          1           X1         Y1         X2         Y2
+
+   1      X        0.950      0.300      6.300     11.350
+

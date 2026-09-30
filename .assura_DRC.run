@@ -1,0 +1,3 @@
+#!/bin/sh -f
+/opt/tools/cadence/installs/ASSURA41/tools.lnx86/assura/bin/assura /home/saul/projects/AMS35_H35_MINIMAL/ASSURA_DRC/top/top.rsf -cdslib /home/saul/projects/AMS35_H35_MINIMAL/cds.lib -restart -gui
+exit $?

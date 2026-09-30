@@ -1,0 +1,300 @@
+text DNTUB_pintext attach PIN_DNTUB
+text SNTUB_pintext attach PIN_SNTUB
+text NTUB_pintext attach PIN_NTUB
+text DPTUB_pintext attach PIN_DPTUB
+text NDIFF_pintext attach net_pin_ndiff
+text PDIFF_pintext attach net_pin_pdiff
+text PIN_pin_pintext attach net_DEVDEF_pin OPTDEF_lambdaterm_pinshape net_phdpinb750_lambdaterm OPTDEF_pterm_pinshape net_phdpinb750_pterm
+text POLY1_pintext attach net_poly1 POLY1_pinshape
+text MET1_pintext attach net_met1 MET1_pinshape
+text MET2_pintext attach net_met2 MET2_pinshape
+text MET3_pintext attach net_met3 MET3_pinshape
+text MET4_pintext attach net_met4 MET4_pinshape
+text PAD_pintext attach net_met4 PAD_pinshape
+connect net_met4 net_bondpad by PAD
+connect net_met4 net_met3 by net_via3
+connect net_met3 net_metcap by net_via2_metcap
+connect net_met3 net_met2 by net_via2_met2
+connect net_met2 net_met1 by net_via1
+connect net_met1 net_poly2 by net_poly2con
+connect net_met1 net_poly1 by net_poly1con
+connect net_met1 net_ndiff_c_ntub by net_ndiffcon
+connect net_met1 net_ndiff_d_sub by net_ndiffcon
+connect net_met1 net_ndiff_d_ptub by net_ndiffcon
+connect net_ndiff_c_ntub net_ndiff_d_sub by net_ndiffcon
+connect net_ndiff_c_ntub net_ndiff_d_ptub by net_ndiffcon
+connect net_ndiff_d_sub net_ndiff_d_ptub by net_ndiffcon
+connect net_met1 net_pdiff_c_sub by net_pdiffcon
+connect net_met1 net_pdiff_c_ptub by net_pdiffcon
+connect net_met1 net_pdiff_d_ntub by net_pdiffcon
+connect net_pdiff_c_sub net_pdiff_c_ptub by net_pdiffcon
+connect net_pdiff_c_sub net_pdiff_d_ntub by net_pdiffcon
+connect net_pdiff_c_ptub net_pdiff_d_ntub by net_pdiffcon
+connect net_poly1 POLY1_pinshape by POLY1_pinshape
+connect net_met1 MET1_pinshape by MET1_pinshape
+connect net_met2 MET2_pinshape by MET2_pinshape
+connect net_met3 MET3_pinshape by MET3_pinshape
+connect net_met4 MET4_pinshape by MET4_pinshape
+connect net_met4 PAD_pinshape by PAD_pinshape
+connect net_phdpinb750_lambdaterm OPTDEF_lambdaterm_pinshape by OPTDEF_lambdaterm_pinshape
+connect net_phdpinb750_pterm OPTDEF_pterm_pinshape by OPTDEF_pterm_pinshape
+connect net_phdpinb750_lambdaterm net_DEVDEF_pin by net_DEVDEF_pin
+connect net_phdpinb750_pterm net_DEVDEF_pin by net_DEVDEF_pin
+connect net_met1 net_met1_X1A by net_met1_X1A
+connect net_met2 net_met2_X1A by net_met2_X1A
+connect net_met3 net_met3_X1A by net_met3_X1A
+connect net_met1 net_met1_X1B by net_met1_X1B
+connect net_met2 net_met2_X1B by net_met2_X1B
+connect net_met3 net_met3_X1B by net_met3_X1B
+connect net_met1 net_met1_X1C by net_met1_X1C
+connect net_met2 net_met2_X1C by net_met2_X1C
+connect net_met3 net_met3_X1C by net_met3_X1C
+connect net_met1 net_met1_X1D by net_met1_X1D
+connect net_met2 net_met2_X1D by net_met2_X1D
+connect net_met3 net_met3_X1D by net_met3_X1D
+connect net_met1 net_met1_Y1A by net_met1_Y1A
+connect net_met2 net_met2_Y1A by net_met2_Y1A
+connect net_met3 net_met3_Y1A by net_met3_Y1A
+connect net_met1 net_met1_Y1B by net_met1_Y1B
+connect net_met2 net_met2_Y1B by net_met2_Y1B
+connect net_met3 net_met3_Y1B by net_met3_Y1B
+connect net_met1 net_met1_Y1C by net_met1_Y1C
+connect net_met2 net_met2_Y1C by net_met2_Y1C
+connect net_met3 net_met3_Y1C by net_met3_Y1C
+connect net_met1 net_met1_Y1D by net_met1_Y1D
+connect net_met2 net_met2_Y1D by net_met2_Y1D
+connect net_met3 net_met3_Y1D by net_met3_Y1D
+connect net_met1 net_met1_Y2A by net_met1_Y2A
+connect net_met2 net_met2_Y2A by net_met2_Y2A
+connect net_met3 net_met3_Y2A by net_met3_Y2A
+connect net_met1 net_met1_Y2B by net_met1_Y2B
+connect net_met2 net_met2_Y2B by net_met2_Y2B
+connect net_met3 net_met3_Y2B by net_met3_Y2B
+connect net_met1 net_met1_Y2C by net_met1_Y2C
+connect net_met2 net_met2_Y2C by net_met2_Y2C
+connect net_met3 net_met3_Y2C by net_met3_Y2C
+connect net_met1 net_met1_Y2D by net_met1_Y2D
+connect net_met2 net_met2_Y2D by net_met2_Y2D
+connect net_met3 net_met3_Y2D by net_met3_Y2D
+connect net_met1 net_met1_X2A by net_met1_X2A
+connect net_met2 net_met2_X2A by net_met2_X2A
+connect net_met3 net_met3_X2A by net_met3_X2A
+connect net_met1 net_met1_X2B by net_met1_X2B
+connect net_met2 net_met2_X2B by net_met2_X2B
+connect net_met3 net_met3_X2B by net_met3_X2B
+connect net_met1 net_met1_X2C by net_met1_X2C
+connect net_met2 net_met2_X2C by net_met2_X2C
+connect net_met3 net_met3_X2C by net_met3_X2C
+connect net_met1 net_met1_X2D by net_met1_X2D
+connect net_met2 net_met2_X2D by net_met2_X2D
+connect net_met3 net_met3_X2D by net_met3_X2D
+connect net_met1 net_met1_ZA by net_met1_ZA
+connect net_met2 net_met2_ZA by net_met2_ZA
+connect net_met3 net_met3_ZA by net_met3_ZA
+connect net_met1 net_met1_ZB by net_met1_ZB
+connect net_met2 net_met2_ZB by net_met2_ZB
+connect net_met3 net_met3_ZB by net_met3_ZB
+connect net_met1 net_met1_ZC by net_met1_ZC
+connect net_met2 net_met2_ZC by net_met2_ZC
+connect net_met3 net_met3_ZC by net_met3_ZC
+connect net_met1 net_met1_ZD by net_met1_ZD
+connect net_met2 net_met2_ZD by net_met2_ZD
+connect net_met3 net_met3_ZD by net_met3_ZD
+connect net_met3 net_met3_COILN by net_met3_COILN
+connect net_met3 net_met3_COILP by net_met3_COILP
+connect net_met4 net_met4_COILN by net_met4_COILN
+connect net_met4 net_met4_COILP by net_met4_COILP
+connect net_DEVDEF_pin net_pin_BFx by net_pin_BFx
+connect net_DEVDEF_pin net_pin_BFy by net_pin_BFy
+connect net_DEVDEF_pin net_pin_BFz by net_pin_BFz
+connect net_DEVDEF_pin net_pin_BFgnd by net_pin_BFgnd
+connect net_met1 net_met1_VSUB by net_met1_VSUB
+connect net_met2 net_met2_VSUB by net_met2_VSUB
+connect net_met3 net_met3_VSUB by net_met3_VSUB
+connect net_ndiff_c_ntub net_ndiff by net_ndiff
+connect net_ndiff_d_sub net_ndiff by net_ndiff
+connect net_ndiff_d_ptub net_ndiff by net_ndiff
+connect net_nsd net_ndiff by net_ndiff
+connect net_pdiff_c_sub net_pdiff by net_pdiff
+connect net_pdiff_c_ptub net_pdiff by net_pdiff
+connect net_pdiff_d_ntub net_pdiff by net_pdiff
+connect net_psd net_pdiff by net_pdiff
+connect T?4072 net_pin_ndiff by net_pin_ndiff
+connect T?4073 net_pin_pdiff by net_pin_pdiff
+stamp net_nwell by net_ndiff_c_ntub
+stamp net_pwell by net_pdiff_c_ptub
+stamp avStamp000ff9 by net_pdiff_c_sub
+stamp avStamp001001 by PIN_DNTUB
+stamp net_psub by avStamp000ff9
+stamp net_psub by avStamp001001
+stamp net_met2_metcap by net_met2
+stamp net_met3_metcap by net_met3
+stamp net_poly1_metcap by net_poly1
+stamp net_poly2_metcap by net_poly2
+stamp esdgci3_e_ndiff_d_ptubx by net_ndiff_d_ptub
+stamp esdgci3_gate by net_poly1
+stamp nmos50_for_stamp by net_ndiff_d_ptub
+stamp nmos20_for_stamp by net_ndiff_d_ptub
+stamp nmos10mh_for_stamp by net_ndiff_d_ptub
+stamp nmosi50_for_stamp by net_ndiff_d_ptub
+stamp nmosdi50_for_stamp by net_ndiff_d_ptub
+stamp nmosfi25t_source by net_ndiff_d_ptub
+stamp nmosfi25_for_stamp by nmosfi25t_source
+stamp nmosi20_for_stamp by net_ndiff_d_ptub
+stamp nmosdi20_for_stamp by net_ndiff_d_ptub
+stamp nmosi120_for_stamp by net_ndiff_d_ptub
+stamp pmos50_for_stamp by net_pdiff_d_ntub
+stamp pmos20_for_stamp by net_pdiff_d_ntub
+stamp esdpmos18t_for_stamp by net_pdiff_d_ntub
+stamp pmos120_for_stamp by net_pdiff_d_ntub
+stamp pmos10mh_for_stamp by net_pdiff_d_ntub
+stamp nmosi20_met1_b by net_pdiff_c_ptub
+stamp nmosi20_met1_s by net_ndiff_d_ptub
+stamp nmosi50_met1_b by net_pdiff_c_ptub
+stamp nmosi50_met1_s by net_ndiff_d_ptub
+stamp nmosi120_met1_b by net_pdiff_c_ptub
+stamp nmosi120_met1_s by net_ndiff_d_ptub
+stamp source50 by net_ndiff_d_ptub
+stamp source20 by net_ndiff_d_ptub
+stamp source10mh by net_ndiff_d_ptub
+stamp pmosvst_for_stamp by net_pdiff_d_ntub
+stamp pmosdvst_for_stamp by net_pdiff_d_ntub
+stamp met1_and_cap by net_met1
+stamp met2_and_cap by net_met2
+stamp met3_and_cap by net_met3
+stamp poly_and_cap by net_poly1
+stamp pwell_and_cap by net_pwell
+stamp met1_and_capc by net_met1
+stamp met2_and_capc by net_met2
+stamp met3_and_capc by net_met3
+stamp poly_and_capc by net_poly1
+stamp pjfet_pdiff_s_3_ele by net_pdiff_c_ptub
+stamp pjfet_for_stamping_3 by pjfet_pdiff_s_3_ele
+stamp pnplat2_g1_all by net_poly1
+stamp sptub_in_dntub_drc by net_pwell
+stamp pdiff_c_ptub_pwell by net_pdiff_c_ptub
+stamp routingnwell_check by net_nwell
+stamp net_nwell_stamp by net_nwell
+stamp net_bondpad_st by net_bondpad
+stamp net_pad_4oa by PAD
+stamp poa_trans_lv_gate_pad by net_poly1
+stamp poa_trans_lv_ndiff_sd by net_ndiff
+stamp poa_trans_lv_pdiff_sd by net_pdiff
+stamp poa_nmos50tm_w_edge_ele_exp_l_min by net_poly1
+stamp poa_nmos50h_w_edge_ele_exp_l_min by net_poly1
+stamp poa_nmos20tm_w_edge_ele_exp_l_min by net_poly1
+stamp poa_nmos20h_w_edge_ele_exp_l_min by net_poly1
+stamp poa_nmosd20tm_w_edge_ele_exp_l_min by net_poly1
+stamp poa_nmosi50_w_edge_ele_exp_l_min by net_poly1
+stamp poa_nmosdi50_w_edge_ele_exp_l_min by net_poly1
+stamp poa_nmosi20mh_w_edge_ele_exp_l_min by net_poly1
+stamp poa_nmosi20t_w_edge_ele_exp_l_min by net_poly1
+stamp poa_nmosdi20_w_edge_ele_exp_l_min by net_poly1
+stamp poa_nmos50hs_w_edge_ele_exp_l_min by net_poly1
+stamp poa_nmos20hs_w_edge_ele_exp_l_min by net_poly1
+stamp poa_nmos10mh_w_edge_ele_exp_l_min by net_poly1
+stamp poa_nmosd10mh_w_edge_ele_exp_l_min by net_poly1
+stamp poa_nmosi120_w_edge_ele_exp_l_min by net_poly1
+stamp poa_pmos50tm_w_edge_ele_exp_l_min by net_poly1
+stamp poa_pmos50h_w_edge_ele_exp_l_min by net_poly1
+stamp poa_pmos20tm_w_edge_ele_exp_l_min by net_poly1
+stamp poa_pmos20h_w_edge_ele_exp_l_min by net_poly1
+stamp poa_pmosd20_w_edge_ele_exp_l_min by net_poly1
+stamp poa_pmos50hs_w_edge_ele_exp_l_min by net_poly1
+stamp poa_pmos20hs_w_edge_ele_exp_l_min by net_poly1
+stamp poa_pmos10mh_w_edge_ele_exp_l_min by net_poly1
+stamp poa_pmosd10mh_w_edge_ele_exp_l_min by net_poly1
+stamp poa_pmos120tm_w_edge_ele_exp_l_min by net_poly1
+stamp poa_pmos120h_w_edge_ele_exp_l_min by net_poly1
+stamp transhv_erc by net_poly1
+stamp translv_erc by net_poly1
+stamp trans_no_name by net_poly1
+stamp ndres_trm by net_ndiff_d_sub
+stamp ndres_r_trm by net_ndiff_d_ptub
+stamp pdres_trm by net_pdiff_d_ntub
+stamp pdres_s_trm by net_pdiff_d_ntub
+stamp nwres_trm by net_nwell
+stamp nwres_s_trm by net_nwell
+stamp pwres_r_trm by net_pwell
+stamp pres_trm by net_poly2
+stamp presh_trm by net_poly2
+stamp presp_trm by net_poly2
+stamp presph_trm by net_poly2
+connect net_met3 net_met2 by net_via2
+connect net_met1 net_ndiff_stamp by net_ndiffcon
+connect net_met1 net_pdiff_stamp by net_pdiffcon
+stamp net_pdiff by net_pdiff_stamp
+stamp net_ndiff by net_ndiff_stamp
+connect net_met1 net_pdiff by net_pdiffcon
+connect net_met1 net_ndiff by net_ndiffcon
+connect net_poly1 net_poly2 by cpoly_for_short
+connect net_met2 net_met3 by cmim_for_short
+connect net_pdiff net_pdiff_c_sub by net_pdiff_c_sub
+connect net_pdiff net_pdiff_c_ptub by net_pdiff_c_ptub
+connect net_pdiff net_pdiff_d_ntub by net_pdiff_d_ntub
+connect net_nwell net_pdiff_d_ntub by net_pdiff_d_ntub
+connect net_ndiff net_ndiff_c_ntub by net_ndiff_c_ntub
+connect net_ndiff net_ndiff_d_ptub by net_ndiff_d_ptub
+connect net_pwell net_ndiff_d_ptub by net_ndiff_d_ptub
+connect net_ndiff net_ndiff_d_sub by net_ndiff_d_sub
+connect net_psub net_ndiff_d_sub by net_ndiff_d_sub
+connect net_pdiff_c_sub net_psub by net_psub
+connect net_ndiff_c_ntub net_nwell by net_nwell
+connect net_pdiff_c_ptub net_pwell by net_pwell
+connect net_poly1 gate_short1_a by gate_short1_a
+connect net_ndiff_d_ptub gate_short1_a by gate_short1_a
+connect net_poly1 gate_short1_b by gate_short1_b
+connect net_ndiff_d_sub gate_short1_b by gate_short1_b
+connect net_poly1 gate_short1_c by gate_short1_c
+connect net_pdiff_d_ntub gate_short1_c by gate_short1_c
+connect net_met1 net_poly2_1 by net_poly2con
+connect net_met1 net_poly1_1 by net_poly1con
+connect net_met1 net_poly1_in_120v_dn by net_poly1con
+connect net_poly1_1 net_poly1_in_120v_dn by net_poly1con
+connect net_met1 net_ndiff_1 by net_ndiffcon
+connect net_met1 net_ndiff_in_120v_dn by net_ndiffcon
+connect net_ndiff_1 net_ndiff by net_ndiffcon
+connect net_ndiff_1 net_ndiff_in_120v_dn by net_ndiffcon
+connect net_ndiff net_ndiff_in_120v_dn by net_ndiffcon
+connect net_met1 net_pdiff_1 by net_pdiffcon
+connect net_met1 net_pdiff_in_120v_dn by net_pdiffcon
+connect net_pdiff_1 net_pdiff by net_pdiffcon
+connect net_pdiff_1 net_pdiff_in_120v_dn by net_pdiffcon
+connect net_pdiff net_pdiff_in_120v_dn by net_pdiffcon
+connect net_ndiff_c_ntub net_nwell_x by net_nwell_x
+connect net_pdiff_c_ptub net_pwell_x by net_pwell_x
+connect net_ndiff_d_ptub resdef_ndiff_d_ptub by resdef_ndiff_d_ptub
+connect net_ndiff_d_sub resdef_ndiff_d_sub by resdef_ndiff_d_sub
+connect net_pdiff_d_ntub resdef_pdiff_d_ntub by resdef_pdiff_d_ntub
+connect net_pwell net_nwell by dp_dn_pwell_nwell_diode
+connect net_nwell net_psub by nwd_ps_nwell_diode
+connect met1_120v_x net_met1 by net_met1
+connect met2_120v_x net_met2 by net_met2
+connect met3_120v_x net_met3 by net_met3
+connect poly1_120v_x net_poly1 by net_poly1
+connect poly2_120v_x net_poly2 by net_poly2
+connect net_poly1 poly1_copy2 by poly1_copy1
+stamp gate_T?30043 by net_poly1
+stamp gate_T?30045 by net_poly1
+stamp gate_T?30047 by net_poly1
+stamp gate_T?30049 by net_poly1
+stamp gate_T?30051 by net_poly1
+connect pres1_lexp pres1_wexp by pres1_exp
+connect pres_lexp pres_wexp by pres_exp
+connect presp_lexp presp_wexp by presp_exp
+connect presph_lexp presph_wexp by presph_exp
+connect nwres_lexp nwres_wexp by nwres_exp
+connect presh_lexp presh_wexp by presh_exp
+connect nwres_s_lexp nwres_s_wexp by nwres_s_exp
+connect pwres_r_lexp pwres_r_wexp by pwres_r_exp
+connect pdres_all_lexp pdres_all_wexp by pdres_all_exp
+connect ndres_all_lexp ndres_all_wexp by ndres_all_exp
+connect POLY2 net_poly2con by net_poly2con
+connect POLY1 net_poly1con by net_poly1con
+connect m3pad_st m2pad_st by via2_pad
+connect m2pad_st m1pad_st by via_pad
+connect m4pad_st m3pad_st by via3_pad
+connect net_met1 ndiff_drc by net_ndiffcon
+connect net_met1 pdiff_drc by net_pdiffcon
+stamp ndiff_n_zener by ndiff_drc
+stamp pdiff_n_zener by pdiff_drc

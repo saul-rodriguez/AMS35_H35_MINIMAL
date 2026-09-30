@@ -1,0 +1,111 @@
+Assura Errors & Warnings Search (PLEASE CAREFULLY REVIEW THESE MESSAGES)
+================================================================================
+WARNINGS & ERRORS found in Assura NVN Run Log file
+--------------------------------------------------------------------------------
+*WARNING* deleteCellPin - Unable to find cell 'PMOSDVST'
+*WARNING* deleteCellPin - Unable to find cell 'PMOSD20T'
+*WARNING* deleteCellPin - Unable to find cell 'PMOSD20M'
+*WARNING* deleteCellPin - Unable to find cell 'PMOSD10MH'
+*WARNING* deleteCellPin - Unable to find cell 'NMOSDIVST'
+*WARNING* deleteCellPin - Unable to find cell 'NMOSDI50T'
+*WARNING* deleteCellPin - Unable to find cell 'NMOSDI50H'
+*WARNING* deleteCellPin - Unable to find cell 'NMOSDI20T'
+*WARNING* deleteCellPin - Unable to find cell 'NMOSDI20M'
+*WARNING* deleteCellPin - Unable to find cell 'NMOSDI20H'
+*WARNING* deleteCellPin - Unable to find cell 'NMOSD20M'
+*WARNING* deleteCellPin - Unable to find cell 'NMOSD10MH'
+*WARNING* deleteCellPin - Unable to find cell 'PMOSD30M'
+*WARNING* filterDevice: Shorting pin 'A' and pin 'psub!' of cell 'VSUBALLP_HV cmos_sch IOLIB_HV_4M'
+*WARNING* filterDevice: Shorting pin 'PAD' and pin 'GND3A' of cell 'AGND3ALLP_HV schematic IOLIB_ANA_HV_4M'
+*WARNING* filterDevice: Shorting pin 'PAD' and pin 'VDD3A' of cell 'AVDD3ALLP_HV schematic IOLIB_ANA_HV_4M'
+*WARNING* filterDevice: Shorting pin 'PAD' and pin 'Z' of cell 'APRIOP_HV schematic IOLIB_ANA_HV_4M'
+*WARNING* genericDevice("RDIFFNR") - cell does not exist. This command will be ignored.
+*WARNING* genericDevice("PJFET") - cell does not exist. This command will be ignored.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'PMOSVST' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'PMOSDVST' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'PMOSD20T' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'PMOSD20M' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'PMOSD10MH' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'PMOS50T' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'PMOS50M' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'PMOS50H' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'PMOS20T' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'PMOS20M' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'PMOS20H' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'PMOS120M' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'PMOS120H' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'PMOS10MH' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'NMOSIVST' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'NMOSI50T' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'NMOSI50M' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'NMOSI50H' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'NMOSI20T' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'NMOSI20M' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'NMOSI20H' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'NMOSI120M' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'NMOSI120H' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'NMOSFI25H' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'NMOSDIVST' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'NMOSDI50T' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'NMOSDI50H' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'NMOSDI20T' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'NMOSDI20M' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'NMOSDI20H' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'NMOSD20M' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'NMOSD10MH' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'NMOS50T' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'NMOS50M' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'NMOS50H' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'NMOS20T' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'NMOS20M' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'NMOS20H' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'NMOS10MH' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'ESDPMOS18T' not found.
+ WARNING (AVLVSNN-10050) : mosDevice - cell 'PMOS50HS' not found.
+ WARNING (AVLVSNN-10050) : mosDevice - cell 'PMOS20HS' not found.
+ WARNING (AVLVSNN-10050) : mosDevice - cell 'PMOSIM' not found.
+ WARNING (AVLVSNN-10050) : mosDevice - cell 'PMOSI' not found.
+ WARNING (AVLVSNN-10050) : mosDevice - cell 'NMOSISLN' not found.
+ WARNING (AVLVSNN-10050) : mosDevice - cell 'NMOSIML' not found.
+ WARNING (AVLVSNN-10050) : mosDevice - cell 'NMOSIMW' not found.
+ WARNING (AVLVSNN-10050) : mosDevice - cell 'NMOSIM' not found.
+ WARNING (AVLVSNN-10050) : mosDevice - cell 'NMOSIL' not found.
+ WARNING (AVLVSNN-10050) : mosDevice - cell 'NMOSIW' not found.
+ WARNING (AVLVSNN-10050) : mosDevice - cell 'NMOSFI25HS' not found.
+ WARNING (AVLVSNN-10050) : mosDevice - cell 'NMOS50HS' not found.
+ WARNING (AVLVSNN-10050) : mosDevice - cell 'NMOS20HS' not found.
+ WARNING (AVLVSNN-10050) : mosDevice - cell 'PMOSML4' not found.
+ WARNING (AVLVSNN-10050) : mosDevice - cell 'PMOSM4' not found.
+ WARNING (AVLVSNN-10050) : mosDevice - cell 'PMOSL4' not found.
+ WARNING (AVLVSNN-10050) : mosDevice - cell 'PMOSLL4' not found.
+ WARNING (AVLVSNN-10050) : mosDevice - cell 'PMOS4' not found.
+ WARNING (AVLVSNN-10050) : mosDevice - cell 'NMOSML4' not found.
+ WARNING (AVLVSNN-10050) : mosDevice - cell 'NMOSM4' not found.
+ WARNING (AVLVSNN-10050) : mosDevice - cell 'NMOSL4' not found.
+ WARNING (AVLVSNN-10050) : mosDevice - cell 'NMOS4' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'PMOSD30M' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'PMOS30M' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'NMOSMHL' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'NMOSMH' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'NMOSHL' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'NMOSH' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'NMOS30M' not found.
+ WARNING (AVLVSNN-10050) : lddDevice - cell 'NMOS18T' not found.
+*WARNING* deleteCellPin - Unable to find cell 'VERTPH'
+*WARNING* deleteCellPin - Unable to find cell 'PMOSDVST'
+*WARNING* deleteCellPin - Unable to find cell 'PMOSD20T'
+*WARNING* deleteCellPin - Unable to find cell 'PMOSD20M'
+*WARNING* deleteCellPin - Unable to find cell 'PMOSD10MH'
+*WARNING* deleteCellPin - Unable to find cell 'NMOSD20M'
+*WARNING* deleteCellPin - Unable to find cell 'NMOSD10MH'
+*WARNING* deleteCellPin - Unable to find cell 'RPOLYZ'
+*WARNING* deleteCellPin - Unable to find cell 'RPOLYM'
+*WARNING* deleteCellPin - Unable to find cell 'RPOLYH'
+*WARNING* deleteCellPin - Unable to find cell 'RPOLY2P'
+*WARNING* deleteCellPin - Unable to find cell 'RPOLY2PH'
+*WARNING* deleteCellPin - Unable to find cell 'PNPVERT15'
+*WARNING* deleteCellPin - Unable to find cell 'PNPVERT2'
+*WARNING* deleteCellPin - Unable to find cell 'PNPVERT5'
+*WARNING* deleteCellPin - Unable to find cell 'PNPVERT10'
+*WARNING* deleteCellPin - Unable to find cell 'PNPVERT3'
+*WARNING* deleteCellPin - Unable to find cell 'PMOSD30M'

@@ -1,0 +1,182 @@
+\# Program start time:     UTC 2026.09.28 15:08:41.882
+\# Local time: UTC (UTC+00:00) 2026.09.28 15:08:41.882
+\o Program:		@(#)$CDS: Virtuoso Studio version IC23.1-64b 09/09/2025 22:44 (cpgbld16) $
+\o Hierarchy:		/opt/tools/cadence/installs/IC231/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC23.1-64b.ISR16.19  (64-bit addresses)
+\# Command line:	/opt/tools/cadence/installs/IC231/tools.lnx86/dfII/bin/64bit/virtuoso -beanhost edatools -beanport 11665 -beanbinlog  -beanLogFile /home/saul/projects/AMS35_H35_MINIMAL/logs_saul/logs0/amps_Service12.log -mpssession virtuoso475528 -mpshost edatools -davinciService DaVinciService_475528_1790607240 -scopedPid 475528 -axlSession fnxSession1 -axlServiceIdFlag 12 -uuid b096f023-d654-4476-ad3b-3f6d0f5eee4b -heartbeat /dev/shm/swift-heartbeat.vkIwvHi0U2 -log /home/saul/projects/AMS35_H35_MINIMAL/logs_saul/logs0/Service12.log -adeBrokerAddress edatools:36165 -noautostart -nographE -lscs 000175E1894CBE06FF0966E38F1FFC06BC4D138FFC7EFC06BC4D68F886089075D3225CD1A12FD236867F66E38F1FFC06BC4D66E38F1FFC06BC4D0C590DE77EFED6F700001E71 -interactive -offlineExprEval -upfrontMode -fenixMode assembler -heartbeatTimeout  -lingerTimeout 300 -pointlifetime -1
+\# Host name (type):	edatools (x86_64)
+\# Operating system:	Linux 7.0.0-30-generic #30~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Aug  7 13:27:52 UTC 2
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:8449 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12011000)
+\# X resource pool:	base 0x400000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	      1,670 MB
+\# Available memory:	     47,001 MB
+\# System memory:	     72,235 MB
+\# Maximum memory size:	     70,749 MB
+\# Max mem available:	     47,185 MB
+\# Initial memory used:	        184 MB
+\#        process size:	      1,720 MB
+\# Thread usage limits (effective/default):	maxthreads 4294967294/4294967295 maxload 16.00/16.00
+\# Qt version:		5.15.9
+\# Window Manager:	other
+\# User Name:		saul
+\o Working Directory:	edatools:/home/saul/projects/AMS35_H35_MINIMAL
+\# Process Id:		494293
+\o 
+\o COPYRIGHT (C) 1992-2025  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2025  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading im.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading layers.cxt 
+\o Loading drv.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading socket.cxt 
+\o Loading analog.cxt 
+\o Loading par.cxt 
+\o Loading asimenv.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\o Loading adexlDM.cxt 
+\o Loading cpf.cxt 
+\o Loading cli.cxt 
+\o Loading lp.cxt 
+\o Loading sipLayout.cxt 
+\o Loading viva.cxt 
+\o Loading diagCenter.cxt 
+\o INFO (ELI-00333) License program mode is LSCS.
+\# [15:08:41.019866] Configured Lic search path (23.02-s006): 3000@lic08.ug.kth.se:29000@lic06.ug.kth.se
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso475528, host=edatools). Connection mode is LSCS. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
+\o INFO (ELI-00304) The registration of the child 494293 within 90 seconds is being processed...
+\o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
+\o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
+\o Loading... pdk .cdsinit from: /opt/pdk/ams/5.10.1/X35/start_up/.cdsinit
+\o ......................................................................................
+\o            
+\o          #    #     #  #####      #####   #####  ######     #    #     # 
+\o         # #   ##   ## #     #    #     # #     # #     #   # #   ##   ## 
+\o        #   #  # # # # #          #     # #       #     #  #   #  # # # # 
+\o       #     # #  #  #  #####     #     #  #####  ######  #     # #  #  # 
+\o       ####### #     #       #    #     #       # #   #   ####### #     # 
+\o       #     # #     # #     #    #     # #     # #    #  #     # #     # 
+\o       #     # #     #  #####      #####   #####  #     # #     # #     # 
+\o            
+\o ......................................................................................
+\o COPYRIGHT (c) 2025 EDA @ ams AG.  ALL RIGHTS RESERVED
+\o This pdk and attached documentation are confidential information and may 
+\o only be used as authorized by the pdk license agreement.
+\o ......................................................................................
+\o Loading generic ams-OSRAM PDK  skill context.
+\o Loading the environment file.
+\o Defining Technology Settings
+\o Defining Simulator Settings
+\o Checking what's new
+\# Current Window: window(2)
+\o Setting Special variables for Open Access
+\o Setting SOAC processes
+\o Setting the process option list
+\o Setting the default HIT-Kit options
+\o Loading simulator default settings.
+\# Memory report: using         356 MB, process size 1,945 MB at UTC 2026.09.28 15:08:43.051
+\o Loading Voltus Setup Files - "/opt/pdk/ams/5.10.1/X35/voltus/voltusfi.cdsinit"
+\o Loading Voltus Setup Files - "/opt/pdk/ams/5.10.1/X35/voltus/voltusfi/adexl2pgv.il"
+\o Using GDSII mapping file - "/opt/pdk/ams/5.10.1/X35/cds/HK_H35/TECH_H35B4/strmInOut.layertable"
+\o END OF DEFAULTS
+\o Loading process specific call-back routines.
+\o Loading all available p-cell functions.
+\o No mx check
+\o ROD pcell code loaded
+\o Loading default bindkeys.
+\o Setting the prompt.
+\o Loading simulator default settings.
+\o Loading Voltus Setup Files - "/opt/pdk/ams/5.10.1/X35/voltus/voltusfi.cdsinit"
+\o Selected Process Option: H35B4D3
+\o INFO: AMS_IP_POOL=/user/ip_release
+\o END OF SITE CUSTOMIZATION.
+\o Loading... ~/.cdsinit_personal from: /home/saul/.cdsinit_personal
+\o //
+\o //  Calibre Skill Interface * (v2024.4_12.9) *
+\o //
+\o //                         Copyright Siemens 1996-2020     
+\o //                             All Rights Reserved.
+\o //         THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+\o //            WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+\o //              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+\o //
+\o //
+\o END OF USER CUSTOMIZATION.
+\p pdk: X35  Tech: h35b4d3  User: saul 
+\o Loading le.cxt 
+\o Loading tilp.cxt 
+\o Loading validator.cxt 
+\o Loading vrf.cxt 
+\o Loading multiTechPlugin.cxt 
+\o Loading exportDie.cxt 
+\o INFO: TECH_H35B4 mapped to /opt/pdk/ams/5.10.1/X35/cds/HK_H35/TECH_H35B4_VS 
+\# Loading perfDiag...
+\# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
+\# The Health Monitor tool is installed. You can access it from CIW - Tools - Diagnostic Center or use the shell command 'cdsPerfDiag -p 494293' to open it when Virtuoso freezes.
+\# INFO (PerfDiag): The private spectreVerilog.envOpts environment variable 'modelFiles' is set to value '"$AMS_MODELPATH/processOption.scs $AMS_MODELPATH/cmos53.scs;cmostm $AMS_MODELPATH/res.scs;restm $AMS_MODELPATH/cap.scs;captm $AMS_MODELPATH/bip.scs;biptm $AMS_MODELPATH/esddiode.scs;esddiodetm $AMS_MODELPATH/soac.scs"' different than default value '""'.
+\# INFO (PerfDiag): The private spectre.opts environment variable 'compatible' is set to value '"spice2"' different than default value '""'.
+\# INFO (PerfDiag): The private spectre.envOpts environment variable 'useAltergroup' is set to value 'nil' different than default value 't'.
+\# INFO (PerfDiag): The private spectre.envOpts environment variable 'controlMode' is set to value '"batch"' different than default value '"interactive"'.
+\# INFO (PerfDiag): The private spectre.envOpts environment variable 'modelFiles' is set to value '"$AMS_MODELPATH/processOption.scs $AMS_MODELPATH/cmos53.scs;cmostm $AMS_MODELPATH/res.scs;restm $AMS_MODELPATH/cap.scs;captm $AMS_MODELPATH/bip.scs;biptm $AMS_MODELPATH/esddiode.scs;esddiodetm $AMS_MODELPATH/soac.scs"' different than default value '""'.
+\# INFO (PerfDiag): The private hspiceD.envOpts environment variable 'modelFiles' is set to value '" "' different than default value '""'.
+\# INFO (PerfDiag): The private ams.opts environment variable 'compatible' is set to value '"spice2"' different than default value '""'.
+\# INFO (PerfDiag): The private ams.netlisterOpts environment variable 'useRunDirNetlistsOnly' is set to value 'nil' different than default value 't'.
+\# INFO (PerfDiag): The private ams.envOpts environment variable 'modelFiles' is set to value '"$AMS_MODELPATH/processOption.scs $AMS_MODELPATH/cmos53.scs;cmostm $AMS_MODELPATH/res.scs;restm $AMS_MODELPATH/cap.scs;captm $AMS_MODELPATH/bip.scs;biptm $AMS_MODELPATH/esddiode.scs;esddiodetm $AMS_MODELPATH/soac.scs"' different than default value '""'.
+\# INFO (PerfDiag): The private adle environment variable 'initIOPinLayer' is set to value '"MET1 pin"' different than default value '""'.
+\# INFO (PerfDiag): The private adle environment variable 'mfactorSplit' is set to value 'nil' different than default value 't'.
+\# INFO (PerfDiag): The private UltraSimVerilog.envOpts environment variable 'modelFiles' is set to value '"$AMS_MODELPATH/processOption.scs $AMS_MODELPATH/cmos53.scs;cmostm $AMS_MODELPATH/res.scs;restm $AMS_MODELPATH/cap.scs;captm $AMS_MODELPATH/bip.scs;biptm $AMS_MODELPATH/esddiode.scs;esddiodetm $AMS_MODELPATH/soac.scs"' different than default value '""'.
+\# INFO (PerfDiag): The private UltraSim.envOpts environment variable 'modelFiles' is set to value '"$AMS_MODELPATH/processOption.scs $AMS_MODELPATH/cmos53.scs;cmostm $AMS_MODELPATH/res.scs;restm $AMS_MODELPATH/cap.scs;captm $AMS_MODELPATH/bip.scs;biptm $AMS_MODELPATH/esddiode.scs;esddiodetm $AMS_MODELPATH/soac.scs"' different than default value '""'.
+\# (PerfDiag): Use backtrace from GLIBC.
+\i _axlRunServices()
+\o Loading simui.cxt 
+\o [2026-09-28 15:08:43.897 Z] [PROCESS] [cadence.virtuoso.ade.services] - Netlist Service has successfully started. Waiting for incoming messages ... {"jobid": "12", "hostname": "edatools", "processid": 494293, "logfile": "/home/saul/projects/AMS35_H35_MINIMAL/logs_saul/logs0/Service12.log"}
+\# Memory report: using         467 MB, process size 2,442 MB at UTC 2026.09.28 15:08:44.940
+\# Available memory:         46,670 MB at UTC 2026.09.28 15:08:55.955
+\# Memory report: Maximum memory size now 47,138 MB at UTC 2026.09.28 15:08:55.955
+\# Thread usage report: 11 active threads, active load 1.40 at UTC 2026.09.28 15:08:55.955
+\o [2026-09-28 15:09:20.986 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Netlist Service process exits. {"jobid": "12", "hostname": "edatools", "processid": 494293, "logfile": "/home/saul/projects/AMS35_H35_MINIMAL/logs_saul/logs0/Service12.log"}
+\o Loading vdsil.cxt 
+\# Lic Summary:
+\# [15:09:25.009840] Cdslmd servers:3000@lic08.ug.kth.se:29000@lic06.ug.kth.se
+\# [15:09:25.009864] Feature usage summary:
+\# Memory report: on exit            459 MB, process size 2,431 MB at UTC 2026.09.28 15:09:25.010
+\# Memory report: peak usage         467 MB, process size 2,442 MB

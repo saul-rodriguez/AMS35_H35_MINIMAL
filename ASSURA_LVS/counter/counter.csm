@@ -1,0 +1,31 @@
+Schematic                                 | Layout                                  | Status
+----------------------------------------------------------------------------------------------
+BUFX8_DCV_HV cmos_sch CORELIBD_DCV_HV     | BUFX8_DCV_HV layout CORELIBD_DCV_HV     | matched
+XOR2X1_DCV_HV cmos_sch CORELIBD_DCV_HV    | XOR2X1_DCV_HV layout CORELIBD_DCV_HV    | matched
+AOI22X4_DCV_HV cmos_sch CORELIBD_DCV_HV   | AOI22X4_DCV_HV layout CORELIBD_DCV_HV   | matched
+HAX3_DCV_HV cmos_sch CORELIBD_DCV_HV      | HAX3_DCV_HV layout CORELIBD_DCV_HV      | matched
+BUFX16_DCV_HV cmos_sch CORELIBD_DCV_HV    | BUFX16_DCV_HV layout CORELIBD_DCV_HV    | matched
+AOI22X3_DCV_HV cmos_sch CORELIBD_DCV_HV   | AOI22X3_DCV_HV layout CORELIBD_DCV_HV   | matched
+INVX4_DCV_HV cmos_sch CORELIBD_DCV_HV     | INVX4_DCV_HV layout CORELIBD_DCV_HV     | matched
+INVX16_DCV_HV cmos_sch CORELIBD_DCV_HV    | INVX16_DCV_HV layout CORELIBD_DCV_HV    | matched
+DFX1_DCV_HV cmos_sch CORELIBD_DCV_HV      | DFX1_DCV_HV layout CORELIBD_DCV_HV      | matched
+XNOR2X2_DCV_HV cmos_sch CORELIBD_DCV_HV   | XNOR2X2_DCV_HV layout CORELIBD_DCV_HV   | matched
+NOR2X4_DCV_HV cmos_sch CORELIBD_DCV_HV    | NOR2X4_DCV_HV layout CORELIBD_DCV_HV    | matched
+CLKBUFX16_DCV_HV cmos_sch CORELIBD_DCV_HV | CLKBUFX16_DCV_HV layout CORELIBD_DCV_HV | matched
+BUFX12_DCV_HV cmos_sch CORELIBD_DCV_HV    | BUFX12_DCV_HV layout CORELIBD_DCV_HV    | matched
+CLKBUFX8_DCV_HV cmos_sch CORELIBD_DCV_HV  | CLKBUFX8_DCV_HV layout CORELIBD_DCV_HV  | matched
+CLKBUFX24_DCV_HV cmos_sch CORELIBD_DCV_HV | CLKBUFX24_DCV_HV layout CORELIBD_DCV_HV | matched
+DLY1X1_DCV_HV cmos_sch CORELIBD_DCV_HV    | DLY1X1_DCV_HV layout CORELIBD_DCV_HV    | matched
+BUFX6_DCV_HV cmos_sch CORELIBD_DCV_HV     | BUFX6_DCV_HV layout CORELIBD_DCV_HV     | matched
+CLKBUFX12_DCV_HV cmos_sch CORELIBD_DCV_HV | CLKBUFX12_DCV_HV layout CORELIBD_DCV_HV | matched
+BUFX2_DCV_HV cmos_sch CORELIBD_DCV_HV     | BUFX2_DCV_HV layout CORELIBD_DCV_HV     | matched
+CLKBUFX3_DCV_HV cmos_sch CORELIBD_DCV_HV  | CLKBUFX3_DCV_HV layout CORELIBD_DCV_HV  | matched
+FILLCAPX16_DCV_HV cmos_sch CORELIBD_DCV_HV| FILLCAPX16_DCV_HV layout CORELIBD_DCV_HV| matched
+FILLCAPX8_DCV_HV cmos_sch CORELIBD_DCV_HV | FILLCAPX8_DCV_HV layout CORELIBD_DCV_HV | matched
+FILLCAPX4_DCV_HV cmos_sch CORELIBD_DCV_HV | FILLCAPX4_DCV_HV layout CORELIBD_DCV_HV | matched
+CLKBUFX6_DCV_HV cmos_sch CORELIBD_DCV_HV  | CLKBUFX6_DCV_HV layout CORELIBD_DCV_HV  | matched
+BUFX4_DCV_HV cmos_sch CORELIBD_DCV_HV     | BUFX4_DCV_HV layout CORELIBD_DCV_HV     | matched
+CLKBUFX2_DCV_HV cmos_sch CORELIBD_DCV_HV  | CLKBUFX2_DCV_HV layout CORELIBD_DCV_HV  | matched
+counter schematic COUNTER                 | counter layout COUNTER                  | matched
+
+Schematic and Layout Match

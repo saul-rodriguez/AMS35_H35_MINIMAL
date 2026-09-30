@@ -1,0 +1,628 @@
+C PMOS4(MOS) PMOS4(MOS)
+N D D
+N G G
+N S S
+N B B
+
+C NMOS4(MOS) NMOS4(MOS)
+N D D
+N G G
+N S S
+N B B
+
+C "inv schematic INV" "inv layout INV"
+N IN IN
+N OUT OUT
+N VDDA VDDA
+N GNDA avT5122_1
+I MN0 avD1_1
+I MP0 avD3_1
+
+C PMOSI(MOS) PMOSI(MOS)
+N D D
+N G G
+N S S
+N B B
+
+C NMOSI(MOS) NMOSI(MOS)
+N D D
+N G G
+N S S
+N B B
+N T T
+
+C "BUFX8_DCV_HV cmos_sch CORELIBD_DCV_HV" "BUFX8_DCV_HV layout CORELIBD_DCV_HV"
+N Q_neg avC5
+N A A
+N Q Q
+N gnd! gnd!
+N vdd! vdd!
+I M_i_0_1/M_subinst_01 avD6_2
+I M_i_2/M_subinst_01 avD6_1
+I M_i_1_0 avD12_2
+I M_i_3 avD12_1
+
+C "XOR2X1_DCV_HV cmos_sch CORELIBD_DCV_HV" "XOR2X1_DCV_HV layout CORELIBD_DCV_HV"
+N mn2 avC9
+N x1 avC6
+N dn6 avC8
+N dn12 avC7
+N A A
+N B B
+N Q Q
+N gnd! gnd!
+N vdd! vdd!
+I M_MN5/M_subinst_01 avD6_5
+I M_MN1/M_subinst_01 avD6_2
+I M_MN3/M_subinst_01 avD6_3
+I M_MN2/M_subinst_01 avD6_1
+I M_MN4/M_subinst_01 avD6_4
+I M_MP4 avD12_5
+I M_MP3 avD12_3
+I M_MP5 avD12_4
+I M_MP2 avD12_1
+I M_MP1 avD12_2
+
+C "AOI22X4_DCV_HV cmos_sch CORELIBD_DCV_HV" "AOI22X4_DCV_HV layout CORELIBD_DCV_HV"
+N net_1 avC9
+N net_0 avC8
+N net_2 avC10
+N A1 A1
+N A2 A2
+N B1 B1
+N B2 B2
+N Q Q
+N gnd! gnd!
+N vdd! vdd!
+I M_i_2/M_subinst_01 avD6_3
+I M_i_3/M_subinst_01 avD6_4
+I M_i_0/M_subinst_01 avD6_2
+I M_i_1/M_subinst_01 avD6_1
+I M_i_6_0 avD12_2
+I M_i_5_1 avD12_4
+I M_i_7_0 avD12_1
+I M_i_4_1 avD12_3
+
+C "HAX3_DCV_HV cmos_sch CORELIBD_DCV_HV" "HAX3_DCV_HV layout CORELIBD_DCV_HV"
+N NS avC8
+N NCO avC7
+N net_2 avC11
+N net_1 avC10
+N net_0 avC9
+N A A
+N B B
+N CO CO
+N SUM SUM
+N gnd! gnd!
+N vdd! vdd!
+I M_instance_7/M_subinst_01 avD6_5
+I M_instance_6/M_subinst_01 avD6_4
+I M_instance_3/M_subinst_01 avD6_2
+I M_instance_2/M_subinst_01 avD6_1
+I M_instance_8/M_subinst_01 avD6_3
+I M_instance_0/M_subinst_01 avD6_6
+I M_instance_12/M_subinst_01 avD6_7
+I M_instance_11 avD12_3
+I M_instance_5 avD12_2
+I M_instance_4 avD12_1
+I M_instance_1 avD12_6
+I M_instance_13 avD12_7
+I M_instance_10 avD12_5
+I M_instance_9 avD12_4
+
+C "BUFX16_DCV_HV cmos_sch CORELIBD_DCV_HV" "BUFX16_DCV_HV layout CORELIBD_DCV_HV"
+N Q_neg avC5
+N A A
+N Q Q
+N gnd! gnd!
+N vdd! vdd!
+I M_i_0_2/M_subinst_01 avD6_2
+I M_i_2/M_subinst_01 avD6_1
+I M_i_3_0 avD12_1
+I M_i_1_3 avD12_3
+
+C "AOI22X3_DCV_HV cmos_sch CORELIBD_DCV_HV" "AOI22X3_DCV_HV layout CORELIBD_DCV_HV"
+N net_0 avC8
+N net_1 avC9
+N net_2 avC10
+N A1 A1
+N A2 A2
+N B1 B1
+N B2 B2
+N Q Q
+N gnd! gnd!
+N vdd! vdd!
+I M_i_0/M_subinst_01 avD6_2
+I M_i_3/M_subinst_01 avD6_4
+I M_i_2/M_subinst_01 avD6_3
+I M_i_1/M_subinst_01 avD6_1
+I M_i_4 avD12_3
+I M_i_7 avD12_1
+I M_i_5 avD12_4
+I M_i_6 avD12_2
+
+C "INVX4_DCV_HV cmos_sch CORELIBD_DCV_HV" "INVX4_DCV_HV layout CORELIBD_DCV_HV"
+N Q Q
+N A A
+N gnd! gnd!
+N vdd! vdd!
+I M_i_0/M_subinst_01 avD6_1
+I M_i_1 avD12_1
+
+C "INVX16_DCV_HV cmos_sch CORELIBD_DCV_HV" "INVX16_DCV_HV layout CORELIBD_DCV_HV"
+N A A
+N Q Q
+N gnd! gnd!
+N vdd! vdd!
+I M_i_0_2/M_subinst_01 avD6_1
+I M_i_1_0 avD12_1
+
+C "DFX1_DCV_HV cmos_sch CORELIBD_DCV_HV" "DFX1_DCV_HV layout CORELIBD_DCV_HV"
+N cki avC8
+N ncki avC7
+N net3 avC12
+N net2 avC11
+N net0 avC9
+N net4 avC10
+N net1 avC13
+N net8 avC17
+N net7 avC16
+N net6 avC15
+N net5 avC14
+N D D
+N CP CP
+N Q Q
+N QN QN
+N gnd! gnd!
+N vdd! vdd!
+I M_tn4/M_subinst_01 avD6_8
+I M_tn9/M_subinst_01 avD6_1
+I M_tn10/M_subinst_01 avD6_2
+I M_tn12/M_subinst_01 avD6_4
+I M_tn11/M_subinst_01 avD6_3
+I M_tn0/M_subinst_01 avD6_13
+I M_tn3/M_subinst_01 avD6_7
+I M_tn6/M_subinst_01 avD6_11
+I M_tn7/M_subinst_01 avD6_12
+I M_tn1/M_subinst_01 avD6_5
+I M_tn2/M_subinst_01 avD6_6
+I M_tn5/M_subinst_01 avD6_9
+I M_tn8/M_subinst_01 avD6_10
+I M_tp4 avD12_8
+I M_tp8 avD12_1
+I M_tp7 avD12_6
+I M_tp0 avD12_13
+I M_tp9 avD12_2
+I M_tp10 avD12_3
+I M_tp3 avD12_7
+I M_tp6 avD12_11
+I M_tp5 avD12_12
+I M_tp1 avD12_4
+I M_tp2 avD12_5
+I M_tp12 avD12_9
+I M_tp11 avD12_10
+
+C "XNOR2X2_DCV_HV cmos_sch CORELIBD_DCV_HV" "XNOR2X2_DCV_HV layout CORELIBD_DCV_HV"
+N I avC6
+N net_1 avC9
+N net_2 avC7
+N net_0 avC8
+N A A
+N B B
+N Q Q
+N gnd! gnd!
+N vdd! vdd!
+I M_i_6/M_subinst_01 avD6_1
+I M_i_1/M_subinst_01 avD6_5
+I M_i_7/M_subinst_01 avD6_2
+I M_i_0/M_subinst_01 avD6_4
+I M_i_2/M_subinst_01 avD6_3
+I M_i_9 avD12_2
+I M_i_5 avD12_3
+I M_i_4 avD12_5
+I M_i_8 avD12_1
+I M_i_3 avD12_4
+
+C "NOR2X4_DCV_HV cmos_sch CORELIBD_DCV_HV" "NOR2X4_DCV_HV layout CORELIBD_DCV_HV"
+N net_0__m1_RCX1 avC6
+N A A
+N B B
+N Q Q
+N gnd! gnd!
+N vdd! vdd!
+I XM_i_0__m0__M_subinst_01 avD6_1
+I XM_i_1__m0__M_subinst_01 avD6_2
+I XM_i_3__m1 avD12_1
+I XM_i_2__m1 avD12_2
+
+C "CLKBUFX16_DCV_HV cmos_sch CORELIBD_DCV_HV" "CLKBUFX16_DCV_HV layout CORELIBD_DCV_HV"
+N Q_neg avC5
+N A A
+N Q Q
+N gnd! gnd!
+N vdd! vdd!
+I M_i_0_2/M_subinst_01 avD6_2
+I M_i_2/M_subinst_01 avD6_1
+I M_i_3_0 avD12_1
+I M_i_1_3 avD12_2
+
+C "BUFX12_DCV_HV cmos_sch CORELIBD_DCV_HV" "BUFX12_DCV_HV layout CORELIBD_DCV_HV"
+N Q_neg avC5
+N A A
+N Q Q
+N gnd! gnd!
+N vdd! vdd!
+I M_i_0_1/M_subinst_01 avD6_2
+I M_i_2/M_subinst_01 avD6_1
+I M_i_1_1 avD12_2
+I M_i_3 avD12_1
+
+C "CLKBUFX8_DCV_HV cmos_sch CORELIBD_DCV_HV" "CLKBUFX8_DCV_HV layout CORELIBD_DCV_HV"
+N Q_neg avC5
+N A A
+N Q Q
+N gnd! gnd!
+N vdd! vdd!
+I M_i_0_1/M_subinst_01 avD6_2
+I M_i_2/M_subinst_01 avD6_1
+I M_i_1_0 avD12_2
+I M_i_3 avD12_1
+
+C "CLKBUFX24_DCV_HV cmos_sch CORELIBD_DCV_HV" "CLKBUFX24_DCV_HV layout CORELIBD_DCV_HV"
+N Q_neg avC5
+N A A
+N Q Q
+N gnd! gnd!
+N vdd! vdd!
+I M_i_2/M_subinst_01 avD6_1
+I M_i_0_3/M_subinst_01 avD6_2
+I M_i_3_1 avD12_1
+I M_i_1_3 avD12_3
+
+C "DLY1X1_DCV_HV cmos_sch CORELIBD_DCV_HV" "DLY1X1_DCV_HV layout CORELIBD_DCV_HV"
+N _net3 avC6
+N _net1 avC7
+N _net5 avC5
+N A A
+N Q Q
+N gnd! gnd!
+N vdd! vdd!
+I M_M15/M_subinst_01 avD6_1
+I M_M14/M_subinst_01 avD6_4
+I M_M16/M_subinst_01 avD6_3
+I M_M17/M_subinst_01 avD6_2
+I M_M12 avD12_3
+I M_M11 avD12_1
+I M_M10_0_x2_0 avD12_4
+I M_M13 avD12_2
+
+C "BUFX6_DCV_HV cmos_sch CORELIBD_DCV_HV" "BUFX6_DCV_HV layout CORELIBD_DCV_HV"
+N Q_neg avC5
+N Q Q
+N A A
+N gnd! gnd!
+N vdd! vdd!
+I M_i_2/M_subinst_01 avD6_2
+I M_i_0/M_subinst_01 avD6_1
+I M_i_3 avD12_1
+I M_i_1_0 avD12_2
+
+C "CLKBUFX12_DCV_HV cmos_sch CORELIBD_DCV_HV" "CLKBUFX12_DCV_HV layout CORELIBD_DCV_HV"
+N Q_neg avC5
+N A A
+N Q Q
+N gnd! gnd!
+N vdd! vdd!
+I M_i_0_1/M_subinst_01 avD6_2
+I M_i_2/M_subinst_01 avD6_1
+I M_i_1_1 avD12_2
+I M_i_3 avD12_1
+
+C "BUFX2_DCV_HV cmos_sch CORELIBD_DCV_HV" "BUFX2_DCV_HV layout CORELIBD_DCV_HV"
+N Q_neg avC5
+N Q Q
+N A A
+N gnd! gnd!
+N vdd! vdd!
+I M_i_2/M_subinst_01 avD6_1
+I M_i_0/M_subinst_01 avD6_2
+I M_i_3 avD12_1
+I M_i_1 avD12_2
+
+C "CLKBUFX3_DCV_HV cmos_sch CORELIBD_DCV_HV" "CLKBUFX3_DCV_HV layout CORELIBD_DCV_HV"
+N Q_neg avC5
+N Q Q
+N A A
+N gnd! gnd!
+N vdd! vdd!
+I M_i_2/M_subinst_01 avD6_1
+I M_i_0/M_subinst_01 avD6_2
+I M_i_3 avD12_1
+I M_i_1 avD12_2
+
+C "FILLCAPX16_DCV_HV cmos_sch CORELIBD_DCV_HV" "FILLCAPX16_DCV_HV layout CORELIBD_DCV_HV"
+N net5 avC3
+N net7 avC4
+N gnd! gnd!
+N vdd! vdd!
+I MN0/M_subinst_01 avD6_1
+I MP0 avD12_1
+
+C "FILLCAPX8_DCV_HV cmos_sch CORELIBD_DCV_HV" "FILLCAPX8_DCV_HV layout CORELIBD_DCV_HV"
+N net5 avC3
+N net7 avC4
+N gnd! gnd!
+N vdd! vdd!
+I MN0/M_subinst_01 avD6_1
+I MP0 avD12_1
+
+C "FILLCAPX4_DCV_HV cmos_sch CORELIBD_DCV_HV" "FILLCAPX4_DCV_HV layout CORELIBD_DCV_HV"
+N net5 avC3
+N net7 avC4
+N gnd! gnd!
+N vdd! vdd!
+I MN0/M_subinst_01 avD6_1
+I MP0 avD12_1
+
+C "CLKBUFX6_DCV_HV cmos_sch CORELIBD_DCV_HV" "CLKBUFX6_DCV_HV layout CORELIBD_DCV_HV"
+N Q_neg avC5
+N Q Q
+N A A
+N gnd! gnd!
+N vdd! vdd!
+I M_i_2/M_subinst_01 avD6_1
+I M_i_0/M_subinst_01 avD6_2
+I M_i_3 avD12_1
+I M_i_1_0 avD12_2
+
+C "BUFX4_DCV_HV cmos_sch CORELIBD_DCV_HV" "BUFX4_DCV_HV layout CORELIBD_DCV_HV"
+N Q_neg avC5
+N Q Q
+N A A
+N gnd! gnd!
+N vdd! vdd!
+I M_i_2/M_subinst_01 avD6_1
+I M_i_0/M_subinst_01 avD6_2
+I M_i_3 avD12_1
+I M_i_1 avD12_2
+
+C "CLKBUFX2_DCV_HV cmos_sch CORELIBD_DCV_HV" "CLKBUFX2_DCV_HV layout CORELIBD_DCV_HV"
+N Q_neg avC5
+N Q Q
+N A A
+N gnd! gnd!
+N vdd! vdd!
+I M_i_2/M_subinst_01 avD6_2
+I M_i_0/M_subinst_01 avD6_1
+I M_i_3 avD12_1
+I M_i_1 avD12_2
+
+C "counter schematic COUNTER" "counter layout COUNTER"
+N FE_PHN38_reset avC75
+N FE_PHN19_reset avC68
+N n_28 avC32
+N FE_PHN5_out_7_65 avC21
+N n_32 avC18
+N FE_PHN37_enable avC86
+N n_9 avC89
+N FE_PHN32_n_33 avC46
+N FE_PHN9_out_2_60 avC82
+N n_11 avC70
+N FE_PHN35_enable avC19
+N FE_PHN29_n_33 avC20
+N n_36 avC106
+N FE_PHN42_enable avC91
+N n_19 avC93
+N FE_PHN4_out_4_62 avC90
+N n_21 avC77
+N FE_PHN40_enable avC49
+N n_24 avC44
+N FE_PHN7_out_5_63 avC38
+N n_26 avC52
+N FE_PHN31_enable avC26
+N n_29 avC33
+N FE_PHN6_out_6_64 avC31
+N n_34 avC107
+N FE_PHN10_out_1_59 avC94
+N out[0]_58 avC72
+N n_3 avC87
+N n_4 avC99
+N FE_PHN8_out_3_61 avC104
+N n_8 avC92
+N n_13 avC84
+N n_14 avC103
+N out[4]_62 avC79
+N n_18 avC36
+N n_23 avC28
+N FE_PHN12_enable avC67
+N FE_PHN23_enable avC105
+N FE_PHN28_enable avC96
+N n_6 avC83
+N n_16 avC98
+N n_33 avC50
+N FE_PHN20_enable avC58
+N n_85 avC56
+N n_79 avC51
+N n_73 avC23
+N n_61 avC63
+N n_67 avC71
+N n_49 avC48
+N n_55 avC29
+N n_43 avC66
+N FE_PHN14_n_10 avC73
+N CTS_1 avC25
+N out[1]_59 avC85
+N FE_PHN26_n_15 avC60
+N out[2]_60 avC69
+N FE_PHN25_n_37 avC24
+N out[7]_65 avC17
+N FE_PHN15_n_30 avC43
+N out[5]_63 avC59
+N FE_PHN3_n_25 avC61
+N FE_PHN24_n_20 avC88
+N out[3]_61 avC97
+N FE_PHN16_n_35 avC30
+N out[6]_64 avC40
+N FE_PHN13_n_5 avC55
+N n_1 avC78
+N FE_PHN11_reset avC108
+N n_10 avC81
+N n_15 avC65
+N FE_PHN17_reset avC16
+N n_37 avC22
+N FE_PHN43_reset avC15
+N n_30 avC37
+N n_25 avC57
+N n_20 avC95
+N FE_PHN45_reset avC34
+N n_35 avC27
+N n_5 avC53
+N FE_PHN2_enable avC100
+N FE_PHN36_reset avC42
+N FE_PHN41_reset avC47
+N FE_PHN1_enable avC101
+N FE_PHN18_enable avC54
+N FE_PHN30_reset avC76
+N FE_PHN27_reset avC80
+N FE_PHN33_reset avC62
+N FE_PHN0_reset avC74
+N FE_PHN44_reset avC45
+N FE_PHN39_reset avC41
+N FE_PHN34_n_33 avC39
+N FE_PHN21_n_33 avC35
+N CTS_2 avC102
+N FE_PHN22_reset avC64
+N reset reset
+N clk clk
+N enable enable
+N out<7> out<7>
+N out<6> out<6>
+N out<5> out<5>
+N out<4> out<4>
+N out<3> out<3>
+N out<2> out<2>
+N out<1> out<1>
+N out<0> out<0>
+N gnd gnd!
+N vdd vdd!
+I FE_PHC15_n_30 FE_PHC15_n_30
+I FE_PHC3_n_25 FE_PHC3_n_25
+I FE_PHC4_out_4_62 FE_PHC4_out_4_62
+I FE_PHC20_enable FE_PHC20_enable
+I FE_PHC13_n_5 FE_PHC13_n_5
+I FE_PHC1_enable FE_PHC1_enable
+I FE_PHC30_reset FE_PHC30_reset
+I FE_PHC36_reset FE_PHC36_reset
+I FE_PHC11_reset FE_PHC11_reset
+I FE_PHC22_reset FE_PHC22_reset
+I FE_PHC12_enable FE_PHC12_enable
+I FE_PHC21_n_33 FE_PHC21_n_33
+I FE_PHC43_reset FE_PHC43_reset
+I FE_PHC32_n_33 FE_PHC32_n_33
+I FILLCAP_T_0_1 FILLCAP_T_0_1
+I FILLCAP_T_0_4 FILLCAP_T_0_4
+I FILLCAP_T_0_7 FILLCAP_T_0_7
+I FILLCAP_T_0_9 FILLCAP_T_0_9
+I FILLCAP_T_0_3 FILLCAP_T_0_3
+I FILLCAP_T_0_5 FILLCAP_T_0_5
+I FILLCAP_T_0_6 FILLCAP_T_0_8
+I FILLCAP_T_0_8 FILLCAP_T_0_6
+I FILLCAP_T_0_2 FILLCAP_T_0_2
+I FE_PHC39_reset FE_PHC39_reset
+I CTS_cdb_buf_00008 CTS_cdb_buf_00008
+I CTS_cdb_buf_00009 CTS_cdb_buf_00009
+I FE_PHC28_enable FE_PHC28_enable
+I FE_PHC42_enable FE_PHC42_enable
+I FE_PHC31_enable FE_PHC31_enable
+I FE_PHC29_n_33 FE_PHC29_n_33
+I FE_PHC34_n_33 FE_PHC34_n_33
+I FE_PHC26_n_15 FE_PHC26_n_15
+I FE_PHC44_reset FE_PHC44_reset
+I FE_PHC10_out_1_59 FE_PHC10_out_1_59
+I FE_PHC9_out_2_60 FE_PHC9_out_2_60
+I FE_PHC5_out_7_65 FE_PHC5_out_7_65
+I FE_PHC7_out_5_63 FE_PHC7_out_5_63
+I FE_PHC8_out_3_61 FE_PHC8_out_3_61
+I FE_PHC6_out_6_64 FE_PHC6_out_6_64
+I FE_PHC0_reset FE_PHC0_reset
+I FE_PHC17_reset FE_PHC17_reset
+I FE_PHC45_reset FE_PHC45_reset
+I FE_PHC27_reset FE_PHC27_reset
+I FE_PHC18_enable FE_PHC18_enable
+I FE_PHC38_reset FE_PHC38_reset
+I FE_PHC33_reset FE_PHC33_reset
+I FE_PHC14_n_10 FE_PHC14_n_10
+I FE_PHC37_enable FE_PHC37_enable
+I FE_PHC25_n_37 FE_PHC25_n_37
+I FE_PHC35_enable FE_PHC35_enable
+I FE_PHC24_n_20 FE_PHC24_n_20
+I FE_PHC16_n_35 FE_PHC16_n_35
+I FE_PHC41_reset FE_PHC41_reset
+I FE_PHC2_enable FE_PHC2_enable
+I g215__7482 g215__7482
+I g211__6131 g211__6131
+I g191__2398 g191__2398
+I g199__5526 g199__5526
+I g203__1617 g203__1617
+I g207__5122 g207__5122
+I g194__6260 g194__6260
+I g219__9315 g219__9315
+I g220__2883 g220__2883
+I out_reg[1] out_reg[1]
+I out_reg[2] out_reg[2]
+I out_reg[7] out_reg[7]
+I out_reg[5] out_reg[5]
+I out_reg[4] out_reg[4]
+I out_reg[3] out_reg[3]
+I out_reg[6] out_reg[6]
+I out_reg[0] out_reg[0]
+I drc_bufs280 drc_bufs280
+I drc_bufs274 drc_bufs274
+I drc_bufs268 drc_bufs268
+I drc_bufs256 drc_bufs256
+I drc_bufs262 drc_bufs262
+I drc_bufs244 drc_bufs244
+I drc_bufs250 drc_bufs250
+I drc_bufs238 drc_bufs238
+I g229 g229
+I g216__6161 g216__6161
+I g208__7098 g208__7098
+I FE_PHC40_enable FE_PHC40_enable
+I FE_PHC23_enable FE_PHC23_enable
+I g218__9945 g218__9945
+I g210__1881 g210__1881
+I g214__4733 g214__4733
+I g206__8246 g206__8246
+I g202__2802 g202__2802
+I g198__6783 g198__6783
+I g212__5115 g212__5115
+I g193__5107 g193__5107
+I g204__1705 g204__1705
+I g200__3680 g200__3680
+I g195__4319 g195__4319
+I g196__8428 g196__8428
+I FE_PHC19_reset FE_PHC19_reset
+
+C "core schematic MINIMAL_CORE" "core layout MINIMAL_CORE"
+N out<4> avC15
+N out<7> avC3_1
+N out<6> avC4_1
+N out<5> avC5_1
+N out<3> avC7_1
+N VDDD VDDD
+N GNDD GNDD
+N enable enable
+N clk clk
+N reset reset
+N out<2> out<2>
+N out<1> out<1>
+N out<0> out<0>
+N VDDA VDDA
+N GNDA GNDA
+N ain2 ain2
+N aout2 aout2
+N aout1 aout1
+I I0 I0
+I I2 I2
+I I1 I1
+

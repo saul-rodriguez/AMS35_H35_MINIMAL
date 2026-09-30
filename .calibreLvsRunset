@@ -1,0 +1,4 @@
+*lvsRulesFile: $AMS_DIR/calibre/h35b4/h35b4d3.rules
+*lvsPreTriggers: {{$AMS_DIR/programs/bin/rewrite_cal_netlist %s} process 1} {{$AMS_DIR/programs/bin/rewrite_cal_netlist %c} process 1}
+*cmnTemplate_RN: CALIBRE/%l/LVS
+*cmnShowOptions: 1

@@ -1,0 +1,6 @@
+
+*WARNING* Unstable devices of type Generic named "RCX_DUMMY" exist on layer "P_ND_device_Device_82"
+*WARNING* device avD0_4 at 0:269.65 from cell AGND3ALLP_HV layout IOLIB_ANA_HV_4M is replaced in cell ioring layout MINIMAL_IO_HV at 523.25:349.3 
+	stack:
+	I82       AGND3ALLP_HV                 523.25:79.65 r0   bind point
+	          ioring

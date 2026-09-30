@@ -1,0 +1,4 @@
+DRC ICSTATION YES
+
+#DEFINE NO_METRES
+INCLUDE "/opt/pdk/ams/5.10.1/X35/calibre/h35b4/h35b4d3.rules"

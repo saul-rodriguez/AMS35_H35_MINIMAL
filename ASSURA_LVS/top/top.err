@@ -1,0 +1,66 @@
+================================================================================
+Rule No. 355 : # INFO: Set -resimulate_extracted- Switch for QRC! #
+
+Real Error Count : 1; Flat Error Count : 1
+================================================================================
+
+--------------------------------------------------------------------------------
+Cell Name : top layout MINIMAL_TOP
+
+                   Cell Errors    Real Errors   Cell Placements     Environments
+                             1              1                 1                1
+--------------------------------------------------------------------------------
+Env.  Env. Placements            X1           Y1          X2           Y2
+
+  1        1                 42.800       39.450    2220.200     1230.850
+
+Shape               Environments Status & Error Marker 
+
+          1           X1         Y1         X2         Y2
+
+   1      X       42.800     39.450   2220.200   1230.850
+
+================================================================================
+Rule No. 356 : # H35B4 ENG - 243 (Last updated 28-Mar-2025 00:09) #
+
+Real Error Count : 1; Flat Error Count : 1
+================================================================================
+
+--------------------------------------------------------------------------------
+Cell Name : top layout MINIMAL_TOP
+
+                   Cell Errors    Real Errors   Cell Placements     Environments
+                             1              1                 1                1
+--------------------------------------------------------------------------------
+Env.  Env. Placements            X1           Y1          X2           Y2
+
+  1        1                 42.800       39.450    2220.200     1230.850
+
+Shape               Environments Status & Error Marker 
+
+          1           X1         Y1         X2         Y2
+
+   1      X       42.800     39.450   2220.200   1230.850
+
+================================================================================
+Rule No. 689 : unstable device for P_ND_device_Device_82
+
+Real Error Count : 1; Flat Error Count : 1
+================================================================================
+
+--------------------------------------------------------------------------------
+Cell Name : ioring layout MINIMAL_IO_HV
+
+                   Cell Errors    Real Errors   Cell Placements     Environments
+                             1              1                 1                1
+--------------------------------------------------------------------------------
+Env.  Env. Placements            X1           Y1          X2           Y2
+
+  1        1                531.500      343.200     533.000      344.200
+
+Shape               Environments Status & Error Marker 
+
+          1           X1         Y1         X2         Y2
+
+   1      X      523.250    349.300    524.750    350.300
+

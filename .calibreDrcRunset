@@ -1,0 +1,9 @@
+*drcRulesFile: $AMS_DIR/calibre/h35b4/h35b4d3.rules
+*drcIncludeSVRFCmds: 1
+*drcSVRFCmds: {#DEFINE NO_METRES}
+*cmnTemplate_RN: CALIBRE/%l/DRC
+*cmnShowOptions: 1
+*cmnVConnectNamesState: ALL
+*cmnVConnectReport: 1
+*cmnWXRLayerMapOrBaseLayersUsage: map
+*cmnWXRLayerMapFile: /opt/pdk/ams/5.10.1/X35/cds/HK_H35/TECH_H35B4/TECH_H35B4.layermap

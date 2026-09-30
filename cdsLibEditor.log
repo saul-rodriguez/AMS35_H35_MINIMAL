@@ -1,0 +1,25 @@
+\o Program:		@(#)$CDS: cdsLibEditor version 23.1 - CAT38 07/29/2025 19:43 (cpgbld15) $
+\o Sub version:		sub-version  p364 
+\o Arguments:		-cdslib /home/saul/projects/AMS35_H35_MINIMAL/cds.lib -mpssession virtuoso475528 -mpshost edatools -mpsversion 23.1 
+\o Working Directory:	edatools:/home/saul/projects/AMS35_H35_MINIMAL
+\o 64-bit offsets
+\a nrSetWindowVisibility(cdsLibEditor "show")
+\o Qt version: 		5.15.9
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrResizeWindow(cdsLibEditor list(1665 842 500 400))
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrListItemAction(cdsLibEditor->mainTable 0 0)
+\o Active cell: 0 0 "analogLib"
+\a nrResizeWindow(cdsLibEditor list(1665 842 938 723))
+\a nrListItemAction(cdsLibEditor->mainTable 37 0)
+\o Active cell: 37 0 ""
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrListItemRename(cdsLibEditor->mainTable, 37 0 "CORELIBD_DCV_HV")
+\a nrSetCurrentWindow(cdsLibEditor)
+\a nrListItemAction(cdsLibEditor->mainTable 37 1)
+\o Active cell: 37 1 ""
+\a nrListItemRename(cdsLibEditor->mainTable, 37 1 "/opt/pdk/ams/5.10.1/X35/ip_release/AMS_H35_ALL_CORELIBD_DCV_HV/01.01.00/03_OA/CORELIBD_DCV_HV")
+\a nrListItemAction(cdsLibEditor->mainTable 38 0)
+\o Active cell: 38 0 ""
+\a cdsLibEditor->fileSaveButton->value = t
+\a exit(0)

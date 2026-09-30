@@ -1,0 +1,1390 @@
+
+***** Begin Label Report *****
+
+ Label in cell 'XOR2X1_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (4.200, 0.000) to layer `net_met1'.
+  info: Assign pin label "B" at (4.900, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (6.300, 6.500) to layer `net_met1'.
+  info: Assign pin label "A" at (7.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (4.200, 10.400) to layer `net_met1'.
+
+ Label in cell 'XNOR2X2_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (4.200, 0.000) to layer `net_met1'.
+  info: Assign pin label "B" at (2.100, 5.200) to layer `net_met1'.
+  info: Assign pin label "A" at (4.900, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (4.900, 7.800) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (4.200, 10.400) to layer `net_met1'.
+
+ Label in cell 'NOR2X4_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.100, 0.000) to layer `net_met1'.
+  info: Assign pin label "B" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (2.100, 5.200) to layer `net_met1'.
+  info: Assign pin label "A" at (3.500, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.100, 10.400) to layer `net_met1'.
+
+ Label in cell 'INVX4_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.100, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (2.100, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.100, 10.400) to layer `net_met1'.
+
+ Label in cell 'INVX16_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (3.500, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (2.100, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (3.500, 10.400) to layer `net_met1'.
+
+ Label in cell 'HAX3_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "B" at (2.100, 3.900) to layer `net_met1'.
+  info: Assign pin label "gnd!" at (7.000, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (6.300, 5.200) to layer `net_met1'.
+  info: Assign pin label "CO" at (10.500, 5.200) to layer `net_met1'.
+  info: Assign pin label "SUM" at (11.900, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (7.000, 10.400) to layer `net_met1'.
+
+ Label in cell 'FILLCELLX4_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (1.525, 0.000) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (1.475, 10.400) to layer `net_met1'.
+
+ Label in cell 'FILLCAPX8_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (5.600, 0.000) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (5.600, 10.400) to layer `net_met1'.
+
+ Label in cell 'FILLCAPX4_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.800, 0.000) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.800, 10.400) to layer `net_met1'.
+
+ Label in cell 'FILLCAPX16_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (11.200, 0.000) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (11.200, 10.400) to layer `net_met1'.
+
+ Label in cell 'DLY1X1_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "A" at (2.100, 5.200) to layer `net_met1'.
+  info: Assign pin label "gnd!" at (8.400, 0.000) to layer `net_met1'.
+  info: Assign pin label "Q" at (11.900, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (8.400, 11.000) to layer `net_met1'.
+
+ Label in cell 'DFX1_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "CP" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "D" at (4.900, 5.200) to layer `net_met1'.
+  info: Assign pin label "gnd!" at (11.200, 0.000) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (11.200, 10.400) to layer `net_met1'.
+  info: Assign pin label "Q" at (21.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "QN" at (23.100, 5.200) to layer `net_met1'.
+
+ Label in cell 'CLKBUFX8_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.800, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (3.500, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.800, 10.400) to layer `net_met1'.
+
+ Label in cell 'CLKBUFX6_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.800, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (3.500, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.800, 10.400) to layer `net_met1'.
+
+ Label in cell 'CLKBUFX3_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.800, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (3.500, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.800, 10.400) to layer `net_met1'.
+
+ Label in cell 'CLKBUFX2_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.800, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (3.500, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.800, 10.400) to layer `net_met1'.
+
+ Label in cell 'CLKBUFX24_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (5.600, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (2.100, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (7.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (5.600, 10.400) to layer `net_met1'.
+
+ Label in cell 'CLKBUFX16_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (4.200, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (6.300, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (4.200, 10.400) to layer `net_met1'.
+
+ Label in cell 'CLKBUFX12_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.800, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (6.300, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.800, 10.400) to layer `net_met1'.
+
+ Label in cell 'BUFX8_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.800, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (3.500, 6.500) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.800, 10.400) to layer `net_met1'.
+
+ Label in cell 'BUFX6_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.800, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (4.900, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.800, 10.400) to layer `net_met1'.
+
+ Label in cell 'BUFX4_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.100, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (3.500, 7.800) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.100, 10.400) to layer `net_met1'.
+
+ Label in cell 'BUFX2_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.100, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (3.500, 7.800) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.100, 10.400) to layer `net_met1'.
+
+ Label in cell 'BUFX16_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (4.900, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (7.700, 6.500) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (4.900, 10.400) to layer `net_met1'.
+
+ Label in cell 'BUFX12_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (3.500, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (4.900, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (3.500, 10.400) to layer `net_met1'.
+
+ Label in cell 'AOI22X4_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (3.500, 0.050) to layer `net_met1'.
+  info: Assign pin label "B2" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "B1" at (2.100, 5.200) to layer `net_met1'.
+  info: Assign pin label "A1" at (3.500, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (4.900, 3.900) to layer `net_met1'.
+  info: Assign pin label "A2" at (6.300, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (3.500, 10.450) to layer `net_met1'.
+
+ Label in cell 'AOI22X3_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (3.500, 0.050) to layer `net_met1'.
+  info: Assign pin label "B2" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "B1" at (2.100, 5.200) to layer `net_met1'.
+  info: Assign pin label "A1" at (3.500, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (4.900, 3.900) to layer `net_met1'.
+  info: Assign pin label "A2" at (6.300, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (3.500, 10.450) to layer `net_met1'.
+
+ Label in cell 'inv layout INV':
+  info: Assign pin label "GNDA" at (3.000, 0.950) to layer `net_met1'.
+  info: Assign pin label "IN" at (1.900, 5.450) to layer `net_met1'.
+  info: Assign pin label "OUT" at (4.350, 5.550) to layer `net_met1'.
+  info: Assign pin label "VDDA" at (3.000, 10.500) to layer `net_met1'.
+
+ Label in cell 'counter layout COUNTER':
+  info: Assign pin label "out<7>" at (52.500, 0.300) to layer `net_met3'.
+  info: Assign pin label "out<6>" at (63.700, 0.300) to layer `net_met3'.
+  info: Assign pin label "out<5>" at (74.900, 0.300) to layer `net_met3'.
+  info: Assign pin label "out<4>" at (86.100, 0.300) to layer `net_met3'.
+  info: Assign pin label "out<3>" at (97.300, 0.300) to layer `net_met3'.
+  info: Assign pin label "out<2>" at (108.500, 0.350) to layer `net_met3'.
+  info: Assign pin label "out<1>" at (119.700, 0.300) to layer `net_met3'.
+  info: Assign pin label "out<0>" at (130.900, 0.300) to layer `net_met3'.
+  info: Assign pin label "clk" at (77.700, 134.900) to layer `net_met3'.
+  info: Assign pin label "enable" at (88.900, 134.900) to layer `net_met3'.
+  info: Assign pin label "reset" at (100.100, 134.900) to layer `net_met3'.
+  info: Assign pin label "gnd!" at (3.850, 103.450) to layer `net_met2'.
+  info: Assign pin label "vdd!" at (8.200, 108.850) to layer `net_met2'.
+
+ Label in cell 'VSUBALLP_HV layout IOLIB_HV_4M':
+  info: Assign pin label "psub!" at (1.100, -22.600) to layer `net_met3'.
+  info: Assign pin label "psub!" at (98.900, -22.600) to layer `net_met3'.
+  info: Assign pin label "A" at (50.000, 47.500) to layer `net_met3'.
+  WARN: Multiple label discarded: "A" at (50.000, 47.500) and "psub!" on net C1.
+  info: Assign pin label "gnd3o!" at (1.100, 137.300) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (1.100, 214.900) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (98.900, 137.300) to layer `net_met3'.
+  WARN: There is a Warning on net C1: multiple Labels on a single Net,
+        therefore, "psub!" at (1.100, 260.300) is discarded.
+  info: Assign pin label "vdd3r!" at (1.100, 280.900) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (1.100, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (98.900, 214.900) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (1.100, 337.150) to layer `net_met3'.
+  info: Nets C6 and C4 are associated with the same label "vdd3r!". They must be joined.
+        Net label "vdd3r!" at (1.100, 337.150) renamed vdd3r!;1.
+  WARN: There is a Warning on net C1: multiple Labels on a single Net,
+        therefore, "psub!" at (1.100, 353.800) is discarded.
+  WARN: There is a Warning on net C1: multiple Labels on a single Net,
+        therefore, "psub!" at (98.900, 260.300) is discarded.
+  info: Assign pin label "vdd3r!" at (98.900, 280.900) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (98.900, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (98.900, 337.150) to layer `net_met3'.
+  info: Nets C6 and C4 are associated with the same label "vdd3r!". They must be joined.
+        Net label "vdd3r!" at (98.900, 337.150) renamed vdd3r!;1.
+  WARN: There is a Warning on net C1: multiple Labels on a single Net,
+        therefore, "psub!" at (98.900, 353.800) is discarded.
+
+ Label in cell 'VDD3ALLP_HV layout IOLIB_HV_4M':
+  info: Assign pin label "psub!" at (1.100, -22.600) to layer `net_met3'.
+  info: Assign pin label "psub!" at (98.900, -22.600) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (1.100, 137.300) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (0.250, 214.900) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (98.900, 137.300) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 260.300) to layer `net_met3'.
+  info: Nets C5 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 260.300) renamed psub!;1.
+  info: Assign pin label "vdd3r!" at (1.100, 280.900) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (1.100, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (99.750, 214.900) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (1.100, 337.150) to layer `net_met3'.
+  info: Nets C8 and C6 are associated with the same label "vdd3r!". They must be joined.
+        Net label "vdd3r!" at (1.100, 337.150) renamed vdd3r!;1.
+  info: Assign pin label "psub!" at (1.100, 353.800) to layer `net_met3'.
+  info: Nets C9 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 353.800) renamed psub!;2.
+  info: Assign pin label "psub!" at (98.900, 260.300) to layer `net_met3'.
+  info: Nets C5 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 260.300) renamed psub!;1.
+  info: Assign pin label "vdd3r!" at (98.900, 280.900) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (98.900, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (98.900, 337.150) to layer `net_met3'.
+  info: Nets C8 and C6 are associated with the same label "vdd3r!". They must be joined.
+        Net label "vdd3r!" at (98.900, 337.150) renamed vdd3r!;1.
+  info: Assign pin label "psub!" at (98.900, 353.800) to layer `net_met3'.
+  info: Nets C9 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 353.800) renamed psub!;2.
+  info: Assign pin label "A" at (50.150, 358.650) to layer `net_met2'.
+
+ Label in cell 'PWRCUT_DIG_P_DXS_HV layout IOLIB_HV_4M':
+  info: Assign pin label "psub!" at (1.680, -22.600) to layer `net_met3'.
+  info: Assign pin label "psub!" at (91.130, -22.600) to layer `net_met3'.
+  info: Assign pin label "gndo_left!" at (1.100, 137.300) to layer `net_met3'.
+  info: Assign pin label "vddo_left!" at (1.100, 214.900) to layer `net_met3'.
+  info: Assign pin label "gndo_right!" at (91.900, 137.300) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 260.300) to layer `net_met3'.
+  info: Assign pin label "vddr_left!" at (1.100, 280.900) to layer `net_met3'.
+  info: Assign pin label "vddo_right!" at (91.900, 214.900) to layer `net_met3'.
+  info: Assign pin label "gndr_left!" at (1.100, 310.300) to layer `net_met3'.
+  info: Assign pin label "vddr_left!" at (1.100, 337.150) to layer `net_met3'.
+  info: Nets C8 and C5 are associated with the same label "vddr_left!". They must be joined.
+        Net label "vddr_left!" at (1.100, 337.150) renamed vddr_left!;1.
+  info: Assign pin label "psub!" at (91.900, 260.300) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.480, 353.900) to layer `net_met3'.
+  info: Assign pin label "vddr1_right!" at (91.900, 280.900) to layer `net_met3'.
+  info: Assign pin label "gndr_right!" at (91.900, 310.300) to layer `net_met3'.
+  info: Assign pin label "vddr_right!" at (91.900, 337.150) to layer `net_met3'.
+  info: Assign pin label "psub!" at (91.530, 353.900) to layer `net_met3'.
+
+ Label in cell 'PERI_SPACER_50_P_HV layout IOLIB_HV_4M':
+  info: Assign pin label "psub!" at (1.100, -22.600) to layer `net_met3'.
+  info: Assign pin label "psub!" at (48.900, -22.600) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (1.100, 137.300) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (48.900, 137.300) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (1.100, 214.900) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 260.300) to layer `net_met3'.
+  info: Nets C4 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 260.300) renamed psub!;1.
+  info: Assign pin label "vdd3o!" at (48.900, 214.900) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (1.100, 280.900) to layer `net_met3'.
+  info: Assign pin label "psub!" at (48.900, 260.300) to layer `net_met3'.
+  info: Nets C4 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (48.900, 260.300) renamed psub!;1.
+  info: Assign pin label "gnd3r!" at (1.100, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (48.900, 280.900) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (1.100, 337.150) to layer `net_met3'.
+  info: Nets C7 and C5 are associated with the same label "vdd3r!". They must be joined.
+        Net label "vdd3r!" at (1.100, 337.150) renamed vdd3r!;1.
+  info: Assign pin label "psub!" at (1.100, 353.800) to layer `net_met3'.
+  info: Nets C8 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 353.800) renamed psub!;2.
+  info: Assign pin label "gnd3r!" at (48.900, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (48.900, 337.150) to layer `net_met3'.
+  info: Nets C7 and C5 are associated with the same label "vdd3r!". They must be joined.
+        Net label "vdd3r!" at (48.900, 337.150) renamed vdd3r!;1.
+  info: Assign pin label "psub!" at (48.900, 353.800) to layer `net_met3'.
+  info: Nets C8 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (48.900, 353.800) renamed psub!;2.
+
+ Label in cell 'PERI_SPACER_2_P_HV layout IOLIB_HV_4M':
+  info: Assign pin label "psub!" at (1.100, -22.600) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (1.100, 137.300) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (1.100, 214.900) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 260.300) to layer `net_met3'.
+  info: Nets C4 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 260.300) renamed psub!;1.
+  info: Assign pin label "vdd3r!" at (1.100, 280.900) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (1.100, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (1.100, 337.150) to layer `net_met3'.
+  info: Nets C7 and C5 are associated with the same label "vdd3r!". They must be joined.
+        Net label "vdd3r!" at (1.100, 337.150) renamed vdd3r!;1.
+  info: Assign pin label "psub!" at (1.100, 353.800) to layer `net_met3'.
+  info: Nets C8 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 353.800) renamed psub!;2.
+
+ Label in cell 'PERI_SPACER_20_P_HV layout IOLIB_HV_4M':
+  info: Assign pin label "psub!" at (1.100, -22.600) to layer `net_met3'.
+  info: Assign pin label "psub!" at (18.900, -22.600) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (1.100, 137.300) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (18.900, 137.300) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (1.100, 214.900) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (18.900, 214.900) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 260.300) to layer `net_met3'.
+  info: Nets C4 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 260.300) renamed psub!;1.
+  info: Assign pin label "psub!" at (18.900, 260.300) to layer `net_met3'.
+  info: Nets C4 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (18.900, 260.300) renamed psub!;1.
+  info: Assign pin label "vdd3r!" at (1.100, 280.900) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (18.900, 280.900) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (1.100, 310.300) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (18.900, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (1.100, 337.150) to layer `net_met3'.
+  info: Nets C7 and C5 are associated with the same label "vdd3r!". They must be joined.
+        Net label "vdd3r!" at (1.100, 337.150) renamed vdd3r!;1.
+  info: Assign pin label "psub!" at (1.100, 353.800) to layer `net_met3'.
+  info: Nets C8 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 353.800) renamed psub!;2.
+  info: Assign pin label "vdd3r!" at (18.900, 337.150) to layer `net_met3'.
+  info: Nets C7 and C5 are associated with the same label "vdd3r!". They must be joined.
+        Net label "vdd3r!" at (18.900, 337.150) renamed vdd3r!;1.
+  info: Assign pin label "psub!" at (18.900, 353.800) to layer `net_met3'.
+  info: Nets C8 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (18.900, 353.800) renamed psub!;2.
+
+ Label in cell 'PERI_SPACER_10_P_HV layout IOLIB_HV_4M':
+  info: Assign pin label "psub!" at (1.100, -22.600) to layer `net_met3'.
+  info: Assign pin label "psub!" at (8.900, -22.600) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (1.100, 137.300) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (8.900, 137.300) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (1.100, 214.900) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (8.900, 214.900) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 260.300) to layer `net_met3'.
+  info: Nets C4 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 260.300) renamed psub!;1.
+  info: Assign pin label "psub!" at (8.900, 260.300) to layer `net_met3'.
+  info: Nets C4 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (8.900, 260.300) renamed psub!;1.
+  info: Assign pin label "vdd3r!" at (1.100, 280.900) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (8.900, 280.900) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (1.100, 310.300) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (8.900, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (1.100, 337.150) to layer `net_met3'.
+  info: Nets C7 and C5 are associated with the same label "vdd3r!". They must be joined.
+        Net label "vdd3r!" at (1.100, 337.150) renamed vdd3r!;1.
+  info: Assign pin label "vdd3r!" at (8.900, 337.150) to layer `net_met3'.
+  info: Nets C7 and C5 are associated with the same label "vdd3r!". They must be joined.
+        Net label "vdd3r!" at (8.900, 337.150) renamed vdd3r!;1.
+  info: Assign pin label "psub!" at (1.100, 353.800) to layer `net_met3'.
+  info: Nets C8 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 353.800) renamed psub!;2.
+  info: Assign pin label "psub!" at (8.900, 353.800) to layer `net_met3'.
+  info: Nets C8 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (8.900, 353.800) renamed psub!;2.
+
+ Label in cell 'PERI_SPACER_100_P_HV layout IOLIB_HV_4M':
+  info: Assign pin label "psub!" at (1.100, -22.600) to layer `net_met3'.
+  info: Assign pin label "psub!" at (98.900, -22.600) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (1.100, 137.300) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (1.100, 214.900) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (98.900, 137.300) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 260.300) to layer `net_met3'.
+  info: Nets C4 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 260.300) renamed psub!;1.
+  info: Assign pin label "vdd3r!" at (1.100, 280.900) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (1.100, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (98.900, 214.900) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (1.100, 337.150) to layer `net_met3'.
+  info: Nets C7 and C5 are associated with the same label "vdd3r!". They must be joined.
+        Net label "vdd3r!" at (1.100, 337.150) renamed vdd3r!;1.
+  info: Assign pin label "psub!" at (1.100, 353.800) to layer `net_met3'.
+  info: Nets C8 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 353.800) renamed psub!;2.
+  info: Assign pin label "psub!" at (98.900, 260.300) to layer `net_met3'.
+  info: Nets C4 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 260.300) renamed psub!;1.
+  info: Assign pin label "vdd3r!" at (98.900, 280.900) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (98.900, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (98.900, 337.150) to layer `net_met3'.
+  info: Nets C7 and C5 are associated with the same label "vdd3r!". They must be joined.
+        Net label "vdd3r!" at (98.900, 337.150) renamed vdd3r!;1.
+  info: Assign pin label "psub!" at (98.900, 353.800) to layer `net_met3'.
+  info: Nets C8 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 353.800) renamed psub!;2.
+
+ Label in cell 'ICP_HV layout IOLIB_HV_4M':
+  info: Assign pin label "psub!" at (1.100, -22.600) to layer `net_met3'.
+  info: Assign pin label "psub!" at (98.900, -22.600) to layer `net_met3'.
+  info: Assign pin label "PAD" at (50.175, 42.400) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (1.100, 137.300) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (1.100, 214.900) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (98.900, 137.300) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 260.300) to layer `net_met3'.
+  info: Nets C6 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 260.300) renamed psub!;1.
+  info: Assign pin label "vdd3r!" at (1.100, 280.900) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (1.100, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (98.900, 214.900) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (1.100, 337.150) to layer `net_met3'.
+  info: Nets C9 and C7 are associated with the same label "vdd3r!". They must be joined.
+        Net label "vdd3r!" at (1.100, 337.150) renamed vdd3r!;1.
+  info: Assign pin label "psub!" at (1.100, 353.800) to layer `net_met3'.
+  info: Nets C10 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 353.800) renamed psub!;2.
+  info: Assign pin label "psub!" at (98.900, 260.300) to layer `net_met3'.
+  info: Nets C6 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 260.300) renamed psub!;1.
+  info: Assign pin label "vdd3r!" at (98.900, 280.900) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (98.900, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (98.900, 337.150) to layer `net_met3'.
+  info: Nets C9 and C7 are associated with the same label "vdd3r!". They must be joined.
+        Net label "vdd3r!" at (98.900, 337.150) renamed vdd3r!;1.
+  info: Assign pin label "psub!" at (98.900, 353.800) to layer `net_met3'.
+  info: Nets C10 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 353.800) renamed psub!;2.
+  info: Assign pin label "Y" at (75.600, 359.350) to layer `net_met2'.
+
+ Label in cell 'GND3ALLP_HV layout IOLIB_HV_4M':
+  info: Assign pin label "psub!" at (1.100, -22.600) to layer `net_met3'.
+  info: Assign pin label "psub!" at (98.900, -22.600) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (0.250, 137.300) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (1.100, 214.900) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (99.750, 137.300) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 260.300) to layer `net_met3'.
+  info: Nets C5 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 260.300) renamed psub!;1.
+  info: Assign pin label "vdd3r!" at (1.100, 280.900) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (1.100, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (98.900, 214.900) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (1.100, 337.150) to layer `net_met3'.
+  info: Nets C8 and C6 are associated with the same label "vdd3r!". They must be joined.
+        Net label "vdd3r!" at (1.100, 337.150) renamed vdd3r!;1.
+  info: Assign pin label "psub!" at (1.100, 353.800) to layer `net_met3'.
+  info: Nets C9 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 353.800) renamed psub!;2.
+  info: Assign pin label "psub!" at (98.900, 260.300) to layer `net_met3'.
+  info: Nets C5 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 260.300) renamed psub!;1.
+  info: Assign pin label "vdd3r!" at (98.900, 280.900) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (98.900, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (98.900, 337.150) to layer `net_met3'.
+  info: Nets C8 and C6 are associated with the same label "vdd3r!". They must be joined.
+        Net label "vdd3r!" at (98.900, 337.150) renamed vdd3r!;1.
+  info: Assign pin label "psub!" at (98.900, 353.800) to layer `net_met3'.
+  info: Nets C9 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 353.800) renamed psub!;2.
+  info: Assign pin label "A" at (50.100, 358.600) to layer `net_met2'.
+
+ Label in cell 'CORNERP_HV layout IOLIB_HV_4M':
+  info: Assign pin label "psub!" at (-22.600, 358.500) to layer `net_met3'.
+  info: Assign pin label "psub!" at (358.500, -22.600) to layer `net_met3'.
+  info: Assign pin label "gndo!" at (137.300, 358.500) to layer `net_met3'.
+  info: Assign pin label "gndo!" at (358.500, 137.300) to layer `net_met3'.
+  info: Assign pin label "vddo!" at (214.900, 358.500) to layer `net_met3'.
+  info: Assign pin label "vddo!" at (358.500, 214.900) to layer `net_met3'.
+  info: Assign pin label "psub!" at (260.300, 358.500) to layer `net_met3'.
+  info: Nets C4 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (260.300, 358.500) renamed psub!;1.
+  info: Assign pin label "psub!" at (358.500, 260.300) to layer `net_met3'.
+  info: Nets C4 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (358.500, 260.300) renamed psub!;1.
+  info: Assign pin label "vddr!" at (280.900, 358.500) to layer `net_met3'.
+  info: Assign pin label "vddr!" at (358.500, 280.900) to layer `net_met3'.
+  info: Assign pin label "gndr!" at (310.300, 358.500) to layer `net_met3'.
+  info: Assign pin label "gndr!" at (358.500, 310.300) to layer `net_met3'.
+  info: Assign pin label "vddr!" at (337.150, 358.500) to layer `net_met3'.
+  info: Nets C7 and C5 are associated with the same label "vddr!". They must be joined.
+        Net label "vddr!" at (337.150, 358.500) renamed vddr!;1.
+  info: Assign pin label "vddr!" at (358.500, 337.150) to layer `net_met3'.
+  info: Nets C7 and C5 are associated with the same label "vddr!". They must be joined.
+        Net label "vddr!" at (358.500, 337.150) renamed vddr!;1.
+  info: Assign pin label "psub!" at (353.800, 358.500) to layer `net_met3'.
+  info: Nets C8 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (353.800, 358.500) renamed psub!;2.
+  info: Assign pin label "psub!" at (358.500, 353.800) to layer `net_met3'.
+  info: Nets C8 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (358.500, 353.800) renamed psub!;2.
+
+ Label in cell 'BU2P_HV layout IOLIB_HV_4M':
+  info: Assign pin label "psub!" at (1.100, -22.600) to layer `net_met3'.
+  info: Assign pin label "psub!" at (98.900, -22.600) to layer `net_met3'.
+  info: Assign pin label "PAD" at (50.175, 42.400) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (1.100, 137.300) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (1.100, 214.900) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (98.900, 137.300) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 260.300) to layer `net_met3'.
+  info: Nets C6 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 260.300) renamed psub!;1.
+  info: Assign pin label "vdd3r!" at (1.100, 280.900) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (1.100, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (98.900, 214.900) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (1.100, 337.150) to layer `net_met3'.
+  info: Nets C9 and C7 are associated with the same label "vdd3r!". They must be joined.
+        Net label "vdd3r!" at (1.100, 337.150) renamed vdd3r!;1.
+  info: Assign pin label "psub!" at (1.100, 353.800) to layer `net_met3'.
+  info: Nets C10 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 353.800) renamed psub!;2.
+  info: Assign pin label "psub!" at (98.900, 260.300) to layer `net_met3'.
+  info: Nets C6 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 260.300) renamed psub!;1.
+  info: Assign pin label "vdd3r!" at (98.900, 280.900) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (98.900, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (98.900, 337.150) to layer `net_met3'.
+  info: Nets C9 and C7 are associated with the same label "vdd3r!". They must be joined.
+        Net label "vdd3r!" at (98.900, 337.150) renamed vdd3r!;1.
+  info: Assign pin label "psub!" at (98.900, 353.800) to layer `net_met3'.
+  info: Nets C10 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 353.800) renamed psub!;2.
+  info: Assign pin label "A" at (3.000, 359.350) to layer `net_met2'.
+
+ Label in cell 'AVDD3ALLP_HV layout IOLIB_ANA_HV_4M':
+  info: Assign pin label "PAD" at (49.200, 40.000) to layer `net_met4'.
+  info: Assign pin label "psub!" at (1.100, -22.600) to layer `net_met3'.
+  info: Assign pin label "psub!" at (98.900, -22.600) to layer `net_met3'.
+  info: Assign pin label "gndo!" at (1.100, 137.300) to layer `net_met3'.
+  info: Assign pin label "vddo!" at (0.250, 214.900) to layer `net_met3'.
+  info: Assign pin label "gndo!" at (98.900, 137.300) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 260.300) to layer `net_met3'.
+  info: Nets C5 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 260.300) renamed psub!;1.
+  info: Assign pin label "vddr!" at (0.250, 280.900) to layer `net_met3'.
+  info: Assign pin label "gndr!" at (1.100, 310.300) to layer `net_met3'.
+  info: Assign pin label "vddo!" at (99.750, 214.900) to layer `net_met3'.
+  info: Assign pin label "vddr!" at (0.250, 337.150) to layer `net_met3'.
+  info: Nets C8 and C6 are associated with the same label "vddr!". They must be joined.
+        Net label "vddr!" at (0.250, 337.150) renamed vddr!;1.
+  info: Assign pin label "psub!" at (1.100, 353.800) to layer `net_met3'.
+  info: Nets C9 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 353.800) renamed psub!;2.
+  info: Assign pin label "psub!" at (98.900, 260.300) to layer `net_met3'.
+  info: Nets C5 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 260.300) renamed psub!;1.
+  info: Assign pin label "vddr!" at (99.750, 280.900) to layer `net_met3'.
+  info: Assign pin label "gndr!" at (98.900, 310.300) to layer `net_met3'.
+  info: Assign pin label "vddr!" at (99.750, 337.150) to layer `net_met3'.
+  info: Nets C8 and C6 are associated with the same label "vddr!". They must be joined.
+        Net label "vddr!" at (99.750, 337.150) renamed vddr!;1.
+  info: Assign pin label "psub!" at (98.900, 353.800) to layer `net_met3'.
+  info: Nets C9 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 353.800) renamed psub!;2.
+  info: Assign pin label "VDD3A" at (49.800, 358.600) to layer `net_met2'.
+  WARN: Multiple label discarded: "VDD3A" at (49.800, 358.600) and "PAD" on net C1.
+
+ Label in cell 'APRIOP_HV layout IOLIB_ANA_HV_4M':
+  info: Assign pin label "PAD" at (50.175, 42.400) to layer `net_met4'.
+  info: Assign pin label "psub!" at (1.100, -22.600) to layer `net_met3'.
+  info: Assign pin label "psub!" at (98.900, -22.600) to layer `net_met3'.
+  info: Assign pin label "gndo!" at (1.100, 137.300) to layer `net_met3'.
+  info: Assign pin label "vddo!" at (1.100, 214.900) to layer `net_met3'.
+  info: Assign pin label "gndo!" at (98.900, 137.300) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 260.300) to layer `net_met3'.
+  info: Nets C5 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 260.300) renamed psub!;1.
+  info: Assign pin label "vddr!" at (1.100, 280.900) to layer `net_met3'.
+  info: Assign pin label "gndr!" at (1.100, 310.300) to layer `net_met3'.
+  info: Assign pin label "vddo!" at (98.900, 214.900) to layer `net_met3'.
+  info: Assign pin label "vddr!" at (1.100, 337.150) to layer `net_met3'.
+  info: Nets C8 and C6 are associated with the same label "vddr!". They must be joined.
+        Net label "vddr!" at (1.100, 337.150) renamed vddr!;1.
+  info: Assign pin label "psub!" at (1.100, 353.800) to layer `net_met3'.
+  info: Nets C9 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 353.800) renamed psub!;2.
+  info: Assign pin label "psub!" at (98.900, 260.300) to layer `net_met3'.
+  info: Nets C5 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 260.300) renamed psub!;1.
+  info: Assign pin label "vddr!" at (98.900, 280.900) to layer `net_met3'.
+  info: Assign pin label "gndr!" at (98.900, 310.300) to layer `net_met3'.
+  info: Assign pin label "vddr!" at (98.900, 337.150) to layer `net_met3'.
+  info: Nets C8 and C6 are associated with the same label "vddr!". They must be joined.
+        Net label "vddr!" at (98.900, 337.150) renamed vddr!;1.
+  info: Assign pin label "psub!" at (98.900, 353.800) to layer `net_met3'.
+  info: Nets C9 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 353.800) renamed psub!;2.
+  info: Assign pin label "Z" at (49.900, 359.350) to layer `net_met2'.
+  WARN: Multiple label discarded: "Z" at (49.900, 359.350) and "PAD" on net C1.
+
+ Label in cell 'APRIO200P_HV layout IOLIB_ANA_HV_4M':
+  info: Assign pin label "PAD" at (50.175, 42.400) to layer `net_met4'.
+  info: Assign pin label "psub!" at (1.100, -22.600) to layer `net_met3'.
+  info: Assign pin label "psub!" at (98.900, -22.600) to layer `net_met3'.
+  info: Assign pin label "gndo!" at (1.100, 137.300) to layer `net_met3'.
+  info: Assign pin label "vddo!" at (1.100, 214.900) to layer `net_met3'.
+  info: Assign pin label "gndo!" at (98.900, 137.300) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 260.300) to layer `net_met3'.
+  info: Nets C5 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 260.300) renamed psub!;1.
+  info: Assign pin label "vddr!" at (1.100, 280.900) to layer `net_met3'.
+  info: Assign pin label "gndr!" at (1.100, 310.300) to layer `net_met3'.
+  info: Assign pin label "vddo!" at (98.900, 214.900) to layer `net_met3'.
+  info: Assign pin label "vddr!" at (1.100, 337.150) to layer `net_met3'.
+  info: Nets C8 and C6 are associated with the same label "vddr!". They must be joined.
+        Net label "vddr!" at (1.100, 337.150) renamed vddr!;1.
+  info: Assign pin label "psub!" at (1.100, 353.800) to layer `net_met3'.
+  info: Nets C9 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 353.800) renamed psub!;2.
+  info: Assign pin label "psub!" at (98.900, 260.300) to layer `net_met3'.
+  info: Nets C5 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 260.300) renamed psub!;1.
+  info: Assign pin label "vddr!" at (98.900, 280.900) to layer `net_met3'.
+  info: Assign pin label "gndr!" at (98.900, 310.300) to layer `net_met3'.
+  info: Assign pin label "vddr!" at (98.900, 337.150) to layer `net_met3'.
+  info: Nets C8 and C6 are associated with the same label "vddr!". They must be joined.
+        Net label "vddr!" at (98.900, 337.150) renamed vddr!;1.
+  info: Assign pin label "psub!" at (98.900, 353.800) to layer `net_met3'.
+  info: Nets C9 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 353.800) renamed psub!;2.
+  info: Assign pin label "Z" at (49.900, 359.350) to layer `net_met2'.
+
+ Label in cell 'AGND3ALLP_HV layout IOLIB_ANA_HV_4M':
+  info: Assign pin label "PAD" at (49.500, 44.800) to layer `net_met4'.
+  info: Assign pin label "psub!" at (1.100, -22.600) to layer `net_met3'.
+  info: Assign pin label "psub!" at (98.900, -22.600) to layer `net_met3'.
+  info: Assign pin label "gndo!" at (0.250, 137.300) to layer `net_met3'.
+  info: Assign pin label "vddo!" at (1.100, 214.900) to layer `net_met3'.
+  info: Assign pin label "gndo!" at (99.750, 137.300) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 260.300) to layer `net_met3'.
+  info: Nets C5 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 260.300) renamed psub!;1.
+  info: Assign pin label "vddr!" at (1.100, 280.900) to layer `net_met3'.
+  info: Assign pin label "gndr!" at (0.250, 310.300) to layer `net_met3'.
+  info: Assign pin label "vddo!" at (98.900, 214.900) to layer `net_met3'.
+  info: Assign pin label "vddr!" at (1.100, 337.150) to layer `net_met3'.
+  info: Nets C8 and C6 are associated with the same label "vddr!". They must be joined.
+        Net label "vddr!" at (1.100, 337.150) renamed vddr!;1.
+  info: Assign pin label "psub!" at (1.100, 353.800) to layer `net_met3'.
+  info: Nets C9 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 353.800) renamed psub!;2.
+  info: Assign pin label "psub!" at (98.900, 260.300) to layer `net_met3'.
+  info: Nets C5 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 260.300) renamed psub!;1.
+  info: Assign pin label "vddr!" at (98.900, 280.900) to layer `net_met3'.
+  info: Assign pin label "gndr!" at (99.750, 310.300) to layer `net_met3'.
+  info: Assign pin label "vddr!" at (98.900, 337.150) to layer `net_met3'.
+  info: Nets C8 and C6 are associated with the same label "vddr!". They must be joined.
+        Net label "vddr!" at (98.900, 337.150) renamed vddr!;1.
+  info: Assign pin label "psub!" at (98.900, 353.800) to layer `net_met3'.
+  info: Nets C9 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 353.800) renamed psub!;2.
+  info: Assign pin label "GND3A" at (50.200, 358.700) to layer `net_met2'.
+  WARN: Multiple label discarded: "GND3A" at (50.200, 358.700) and "PAD" on net C1.
+
+ Label in cell 'ioring layout MINIMAL_IO_HV':
+  info: Assign pin label "GNDA" at (574.250, 114.375) to layer `net_met4'.
+  info: Assign pin label "VDDA" at (722.225, 118.200) to layer `net_met4'.
+  info: Assign pin label "AIN2" at (873.900, 116.275) to layer `net_met4'.
+  info: Assign pin label "AOUT1" at (1023.250, 119.950) to layer `net_met4'.
+  info: Assign pin label "AOUT2" at (1172.475, 117.225) to layer `net_met4'.
+  info: Assign pin label "VSUB" at (780.250, 1155.050) to layer `net_met4'.
+  info: Assign pin label "RESET" at (930.025, 1160.800) to layer `net_met4'.
+  info: Assign pin label "CLK" at (1080.350, 1165.900) to layer `net_met4'.
+  info: Assign pin label "ENABLE" at (1230.250, 1162.550) to layer `net_met4'.
+  info: Assign pin label "COUT_C0" at (1380.075, 1160.450) to layer `net_met4'.
+  info: Assign pin label "COUT_C1" at (1529.850, 1159.900) to layer `net_met4'.
+  info: Assign pin label "COUT_C2" at (1679.600, 1174.900) to layer `net_met4'.
+  info: Assign pin label "ain2_c" at (873.150, 438.950) to layer `net_met2'.
+  info: Assign pin label "GNDD" at (480.100, 844.250) to layer `net_met2'.
+  info: Assign pin label "VDDD" at (630.100, 844.250) to layer `net_met2'.
+  info: Assign pin label "reset_c" at (904.650, 843.550) to layer `net_met2'.
+  info: Assign pin label "clk_c" at (1054.650, 843.550) to layer `net_met2'.
+  info: Assign pin label "enable_c" at (1204.650, 843.550) to layer `net_met2'.
+  info: Assign pin label "cout_c0" at (1427.250, 843.550) to layer `net_met2'.
+  info: Assign pin label "cout_c1" at (1577.250, 843.550) to layer `net_met2'.
+  info: Assign pin label "cout_c2" at (1727.250, 843.550) to layer `net_met2'.
+  info: Assign net label "gnd3o!_PERI_SPACE_avC_2" at (1815.750, 1065.550) to layer `net_met3'.
+  info: Assign net label "vdd3o!_PERI_SPACE_avC_2" at (1815.750, 987.950) to layer `net_met3'.
+  info: Assign net label "vdd3r!_PERI_SPACE_avC_2" at (1815.750, 921.950) to layer `net_met3'.
+  info: Assign net label "gnd3r!_PERI_SPACE_avC_2" at (1815.750, 892.550) to layer `net_met3'.
+
+ Label in cell 'core layout MINIMAL_CORE':
+  info: Assign pin label "out<2>" at (123.250, 55.550) to layer `net_met3'.
+  info: Assign pin label "out<1>" at (134.450, 55.500) to layer `net_met3'.
+  info: Assign pin label "out<0>" at (145.650, 55.550) to layer `net_met3'.
+  info: Assign pin label "clk" at (92.450, 191.350) to layer `net_met3'.
+  info: Assign pin label "enable" at (103.650, 191.350) to layer `net_met3'.
+  info: Assign pin label "reset" at (114.850, 191.350) to layer `net_met3'.
+  info: Assign pin label "aout1" at (99.550, 12.850) to layer `net_met2'.
+  info: Assign pin label "ain2" at (111.900, 12.700) to layer `net_met2'.
+  info: Assign pin label "aout2" at (115.750, 12.850) to layer `net_met2'.
+  info: Assign pin label "GNDD" at (18.500, 160.700) to layer `net_met2'.
+  info: Assign pin label "VDDD" at (22.950, 167.100) to layer `net_met2'.
+  info: Assign pin label "VSUB" at (30.050, 71.600) to layer `net_met1'.
+  info: Assign pin label "GNDA" at (98.050, 6.900) to layer `net_met1'.
+  info: Assign pin label "VDDA" at (98.000, 19.150) to layer `net_met1'.
+
+ Label in cell 'top layout MINIMAL_TOP':
+  info: Assign pin label "GNDA" at (582.450, 104.750) to layer `net_met4'.
+  info: Assign pin label "VDDA" at (730.450, 115.700) to layer `net_met4'.
+  info: Assign pin label "AIN2" at (882.050, 115.150) to layer `net_met4'.
+  info: Assign pin label "AOUT1" at (1031.450, 110.150) to layer `net_met4'.
+  info: Assign pin label "AOUT2" at (1180.700, 107.050) to layer `net_met4'.
+  info: Assign pin label "GNDD" at (488.650, 1155.850) to layer `net_met4'.
+  info: Assign pin label "VDDD" at (637.300, 1154.200) to layer `net_met4'.
+  info: Assign pin label "VSUB" at (788.550, 1152.750) to layer `net_met4'.
+  info: Assign pin label "RESET" at (938.200, 1158.500) to layer `net_met4'.
+  info: Assign pin label "CLK" at (1088.500, 1156.100) to layer `net_met4'.
+  info: Assign pin label "ENABLE" at (1238.500, 1160.000) to layer `net_met4'.
+  info: Assign pin label "COUT0" at (1388.400, 1159.150) to layer `net_met4'.
+  info: Assign pin label "COUT1" at (1538.000, 1159.000) to layer `net_met4'.
+  info: Assign pin label "COUT2" at (1688.100, 1157.400) to layer `net_met4'.
+
+***** End of Label Report *****
+
+
+***** Begin Label Report *****
+
+ Label in cell 'XOR2X1_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (4.200, 0.000) to layer `net_met1'.
+  info: Assign pin label "B" at (4.900, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (6.300, 6.500) to layer `net_met1'.
+  info: Assign pin label "A" at (7.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (4.200, 10.400) to layer `net_met1'.
+
+ Label in cell 'XNOR2X2_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (4.200, 0.000) to layer `net_met1'.
+  info: Assign pin label "B" at (2.100, 5.200) to layer `net_met1'.
+  info: Assign pin label "A" at (4.900, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (4.900, 7.800) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (4.200, 10.400) to layer `net_met1'.
+
+ Label in cell 'NOR2X4_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.100, 0.000) to layer `net_met1'.
+  info: Assign pin label "B" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (2.100, 5.200) to layer `net_met1'.
+  info: Assign pin label "A" at (3.500, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.100, 10.400) to layer `net_met1'.
+
+ Label in cell 'INVX4_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.100, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (2.100, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.100, 10.400) to layer `net_met1'.
+
+ Label in cell 'INVX16_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (3.500, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (2.100, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (3.500, 10.400) to layer `net_met1'.
+
+ Label in cell 'HAX3_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "B" at (2.100, 3.900) to layer `net_met1'.
+  info: Assign pin label "gnd!" at (7.000, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (6.300, 5.200) to layer `net_met1'.
+  info: Assign pin label "CO" at (10.500, 5.200) to layer `net_met1'.
+  info: Assign pin label "SUM" at (11.900, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (7.000, 10.400) to layer `net_met1'.
+
+ Label in cell 'FILLCELLX4_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (1.525, 0.000) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (1.475, 10.400) to layer `net_met1'.
+
+ Label in cell 'FILLCAPX8_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (5.600, 0.000) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (5.600, 10.400) to layer `net_met1'.
+
+ Label in cell 'FILLCAPX4_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.800, 0.000) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.800, 10.400) to layer `net_met1'.
+
+ Label in cell 'FILLCAPX16_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (11.200, 0.000) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (11.200, 10.400) to layer `net_met1'.
+
+ Label in cell 'DLY1X1_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "A" at (2.100, 5.200) to layer `net_met1'.
+  info: Assign pin label "gnd!" at (8.400, 0.000) to layer `net_met1'.
+  info: Assign pin label "Q" at (11.900, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (8.400, 11.000) to layer `net_met1'.
+
+ Label in cell 'DFX1_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "CP" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "D" at (4.900, 5.200) to layer `net_met1'.
+  info: Assign pin label "gnd!" at (11.200, 0.000) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (11.200, 10.400) to layer `net_met1'.
+  info: Assign pin label "Q" at (21.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "QN" at (23.100, 5.200) to layer `net_met1'.
+
+ Label in cell 'CLKBUFX8_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.800, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (3.500, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.800, 10.400) to layer `net_met1'.
+
+ Label in cell 'CLKBUFX6_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.800, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (3.500, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.800, 10.400) to layer `net_met1'.
+
+ Label in cell 'CLKBUFX3_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.800, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (3.500, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.800, 10.400) to layer `net_met1'.
+
+ Label in cell 'CLKBUFX2_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.800, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (3.500, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.800, 10.400) to layer `net_met1'.
+
+ Label in cell 'CLKBUFX24_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (5.600, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (2.100, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (7.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (5.600, 10.400) to layer `net_met1'.
+
+ Label in cell 'CLKBUFX16_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (4.200, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (6.300, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (4.200, 10.400) to layer `net_met1'.
+
+ Label in cell 'CLKBUFX12_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.800, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (6.300, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.800, 10.400) to layer `net_met1'.
+
+ Label in cell 'BUFX8_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.800, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (3.500, 6.500) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.800, 10.400) to layer `net_met1'.
+
+ Label in cell 'BUFX6_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.800, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (4.900, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.800, 10.400) to layer `net_met1'.
+
+ Label in cell 'BUFX4_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.100, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (3.500, 7.800) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.100, 10.400) to layer `net_met1'.
+
+ Label in cell 'BUFX2_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (2.100, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (3.500, 7.800) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (2.100, 10.400) to layer `net_met1'.
+
+ Label in cell 'BUFX16_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (4.900, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (7.700, 6.500) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (4.900, 10.400) to layer `net_met1'.
+
+ Label in cell 'BUFX12_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (3.500, 0.000) to layer `net_met1'.
+  info: Assign pin label "A" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (4.900, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (3.500, 10.400) to layer `net_met1'.
+
+ Label in cell 'AOI22X4_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (3.500, 0.050) to layer `net_met1'.
+  info: Assign pin label "B2" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "B1" at (2.100, 5.200) to layer `net_met1'.
+  info: Assign pin label "A1" at (3.500, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (4.900, 3.900) to layer `net_met1'.
+  info: Assign pin label "A2" at (6.300, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (3.500, 10.450) to layer `net_met1'.
+
+ Label in cell 'AOI22X3_DCV_HV layout CORELIBD_DCV_HV':
+  info: Assign pin label "gnd!" at (3.500, 0.050) to layer `net_met1'.
+  info: Assign pin label "B2" at (0.700, 5.200) to layer `net_met1'.
+  info: Assign pin label "B1" at (2.100, 5.200) to layer `net_met1'.
+  info: Assign pin label "A1" at (3.500, 5.200) to layer `net_met1'.
+  info: Assign pin label "Q" at (4.900, 3.900) to layer `net_met1'.
+  info: Assign pin label "A2" at (6.300, 5.200) to layer `net_met1'.
+  info: Assign pin label "vdd!" at (3.500, 10.450) to layer `net_met1'.
+
+ Label in cell 'inv layout INV':
+  info: Assign pin label "GNDA" at (3.000, 0.950) to layer `net_met1'.
+  info: Assign pin label "IN" at (1.900, 5.450) to layer `net_met1'.
+  info: Assign pin label "OUT" at (4.350, 5.550) to layer `net_met1'.
+  info: Assign pin label "VDDA" at (3.000, 10.500) to layer `net_met1'.
+
+ Label in cell 'counter layout COUNTER':
+  info: Assign pin label "out<7>" at (52.500, 0.300) to layer `net_met3'.
+  info: Assign pin label "out<6>" at (63.700, 0.300) to layer `net_met3'.
+  info: Assign pin label "out<5>" at (74.900, 0.300) to layer `net_met3'.
+  info: Assign pin label "out<4>" at (86.100, 0.300) to layer `net_met3'.
+  info: Assign pin label "out<3>" at (97.300, 0.300) to layer `net_met3'.
+  info: Assign pin label "out<2>" at (108.500, 0.350) to layer `net_met3'.
+  info: Assign pin label "out<1>" at (119.700, 0.300) to layer `net_met3'.
+  info: Assign pin label "out<0>" at (130.900, 0.300) to layer `net_met3'.
+  info: Assign pin label "clk" at (77.700, 134.900) to layer `net_met3'.
+  info: Assign pin label "enable" at (88.900, 134.900) to layer `net_met3'.
+  info: Assign pin label "reset" at (100.100, 134.900) to layer `net_met3'.
+  info: Assign pin label "gnd!" at (3.850, 103.450) to layer `net_met2'.
+  info: Assign pin label "vdd!" at (8.200, 108.850) to layer `net_met2'.
+
+ Label in cell 'VSUBALLP_HV layout IOLIB_HV_4M':
+  info: Assign pin label "psub!" at (1.100, -22.600) to layer `net_met3'.
+  info: Assign pin label "psub!" at (98.900, -22.600) to layer `net_met3'.
+  info: Assign pin label "A" at (50.000, 47.500) to layer `net_met3'.
+  WARN: Multiple label discarded: "A" at (50.000, 47.500) and "psub!" on net C1.
+  info: Assign pin label "gnd3o!" at (1.100, 137.300) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (1.100, 214.900) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (98.900, 137.300) to layer `net_met3'.
+  WARN: There is a Warning on net C1: multiple Labels on a single Net,
+        therefore, "psub!" at (1.100, 260.300) is discarded.
+  info: Assign pin label "vdd3r!" at (1.100, 280.900) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (1.100, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (98.900, 214.900) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (1.100, 337.150) to layer `net_met3'.
+  WARN: There is a Warning on net C1: multiple Labels on a single Net,
+        therefore, "psub!" at (1.100, 353.800) is discarded.
+  WARN: There is a Warning on net C1: multiple Labels on a single Net,
+        therefore, "psub!" at (98.900, 260.300) is discarded.
+  info: Assign pin label "vdd3r!" at (98.900, 280.900) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (98.900, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (98.900, 337.150) to layer `net_met3'.
+  WARN: There is a Warning on net C1: multiple Labels on a single Net,
+        therefore, "psub!" at (98.900, 353.800) is discarded.
+
+ Label in cell 'VDD3ALLP_HV layout IOLIB_HV_4M':
+  info: Assign pin label "psub!" at (1.100, -22.600) to layer `net_met3'.
+  info: Assign pin label "psub!" at (98.900, -22.600) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (1.100, 137.300) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (0.250, 214.900) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (98.900, 137.300) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 260.300) to layer `net_met3'.
+  info: Nets C5 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 260.300) renamed psub!;1.
+  info: Assign pin label "vdd3r!" at (1.100, 280.900) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (1.100, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (99.750, 214.900) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (1.100, 337.150) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 353.800) to layer `net_met3'.
+  info: Nets C8 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 353.800) renamed psub!;2.
+  info: Assign pin label "psub!" at (98.900, 260.300) to layer `net_met3'.
+  info: Nets C5 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 260.300) renamed psub!;1.
+  info: Assign pin label "vdd3r!" at (98.900, 280.900) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (98.900, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (98.900, 337.150) to layer `net_met3'.
+  info: Assign pin label "psub!" at (98.900, 353.800) to layer `net_met3'.
+  info: Nets C8 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 353.800) renamed psub!;2.
+  info: Assign pin label "A" at (50.150, 358.650) to layer `net_met2'.
+
+ Label in cell 'PWRCUT_DIG_P_DXS_HV layout IOLIB_HV_4M':
+  info: Assign pin label "psub!" at (1.680, -22.600) to layer `net_met3'.
+  info: Assign pin label "psub!" at (91.130, -22.600) to layer `net_met3'.
+  info: Assign pin label "gndo_left!" at (1.100, 137.300) to layer `net_met3'.
+  info: Assign pin label "vddo_left!" at (1.100, 214.900) to layer `net_met3'.
+  info: Assign pin label "gndo_right!" at (91.900, 137.300) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 260.300) to layer `net_met3'.
+  info: Assign pin label "vddr_left!" at (1.100, 280.900) to layer `net_met3'.
+  info: Assign pin label "vddo_right!" at (91.900, 214.900) to layer `net_met3'.
+  info: Assign pin label "gndr_left!" at (1.100, 310.300) to layer `net_met3'.
+  info: Assign pin label "vddr_left!" at (1.100, 337.150) to layer `net_met3'.
+  info: Nets C8 and C5 are associated with the same label "vddr_left!". They must be joined.
+        Net label "vddr_left!" at (1.100, 337.150) renamed vddr_left!;1.
+  info: Assign pin label "psub!" at (91.900, 260.300) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.480, 353.900) to layer `net_met3'.
+  info: Assign pin label "vddr1_right!" at (91.900, 280.900) to layer `net_met3'.
+  info: Assign pin label "gndr_right!" at (91.900, 310.300) to layer `net_met3'.
+  info: Assign pin label "vddr_right!" at (91.900, 337.150) to layer `net_met3'.
+  info: Assign pin label "psub!" at (91.530, 353.900) to layer `net_met3'.
+
+ Label in cell 'PERI_SPACER_50_P_HV layout IOLIB_HV_4M':
+  info: Assign pin label "psub!" at (1.100, -22.600) to layer `net_met3'.
+  info: Assign pin label "psub!" at (48.900, -22.600) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (1.100, 137.300) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (48.900, 137.300) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (1.100, 214.900) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 260.300) to layer `net_met3'.
+  info: Nets C4 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 260.300) renamed psub!;1.
+  info: Assign pin label "vdd3o!" at (48.900, 214.900) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (1.100, 280.900) to layer `net_met3'.
+  info: Assign pin label "psub!" at (48.900, 260.300) to layer `net_met3'.
+  info: Nets C4 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (48.900, 260.300) renamed psub!;1.
+  info: Assign pin label "gnd3r!" at (1.100, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (48.900, 280.900) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (1.100, 337.150) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 353.800) to layer `net_met3'.
+  info: Nets C7 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 353.800) renamed psub!;2.
+  info: Assign pin label "gnd3r!" at (48.900, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (48.900, 337.150) to layer `net_met3'.
+  info: Assign pin label "psub!" at (48.900, 353.800) to layer `net_met3'.
+  info: Nets C7 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (48.900, 353.800) renamed psub!;2.
+
+ Label in cell 'PERI_SPACER_2_P_HV layout IOLIB_HV_4M':
+  info: Assign pin label "psub!" at (1.100, -22.600) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (1.100, 137.300) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (1.100, 214.900) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 260.300) to layer `net_met3'.
+  info: Nets C4 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 260.300) renamed psub!;1.
+  info: Assign pin label "vdd3r!" at (1.100, 280.900) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (1.100, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (1.100, 337.150) to layer `net_met3'.
+  info: Nets C7 and C5 are associated with the same label "vdd3r!". They must be joined.
+        Net label "vdd3r!" at (1.100, 337.150) renamed vdd3r!;1.
+  info: Assign pin label "psub!" at (1.100, 353.800) to layer `net_met3'.
+  info: Nets C8 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 353.800) renamed psub!;2.
+
+ Label in cell 'PERI_SPACER_20_P_HV layout IOLIB_HV_4M':
+  info: Assign pin label "psub!" at (1.100, -22.600) to layer `net_met3'.
+  info: Assign pin label "psub!" at (18.900, -22.600) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (1.100, 137.300) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (18.900, 137.300) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (1.100, 214.900) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (18.900, 214.900) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 260.300) to layer `net_met3'.
+  info: Nets C4 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 260.300) renamed psub!;1.
+  info: Assign pin label "psub!" at (18.900, 260.300) to layer `net_met3'.
+  info: Nets C4 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (18.900, 260.300) renamed psub!;1.
+  info: Assign pin label "vdd3r!" at (1.100, 280.900) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (18.900, 280.900) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (1.100, 310.300) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (18.900, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (1.100, 337.150) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 353.800) to layer `net_met3'.
+  info: Nets C7 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 353.800) renamed psub!;2.
+  info: Assign pin label "vdd3r!" at (18.900, 337.150) to layer `net_met3'.
+  info: Assign pin label "psub!" at (18.900, 353.800) to layer `net_met3'.
+  info: Nets C7 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (18.900, 353.800) renamed psub!;2.
+
+ Label in cell 'PERI_SPACER_10_P_HV layout IOLIB_HV_4M':
+  info: Assign pin label "psub!" at (1.100, -22.600) to layer `net_met3'.
+  info: Assign pin label "psub!" at (8.900, -22.600) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (1.100, 137.300) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (8.900, 137.300) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (1.100, 214.900) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (8.900, 214.900) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 260.300) to layer `net_met3'.
+  info: Nets C4 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 260.300) renamed psub!;1.
+  info: Assign pin label "psub!" at (8.900, 260.300) to layer `net_met3'.
+  info: Nets C4 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (8.900, 260.300) renamed psub!;1.
+  info: Assign pin label "vdd3r!" at (1.100, 280.900) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (8.900, 280.900) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (1.100, 310.300) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (8.900, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (1.100, 337.150) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (8.900, 337.150) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 353.800) to layer `net_met3'.
+  info: Nets C7 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 353.800) renamed psub!;2.
+  info: Assign pin label "psub!" at (8.900, 353.800) to layer `net_met3'.
+  info: Nets C7 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (8.900, 353.800) renamed psub!;2.
+
+ Label in cell 'PERI_SPACER_100_P_HV layout IOLIB_HV_4M':
+  info: Assign pin label "psub!" at (1.100, -22.600) to layer `net_met3'.
+  info: Assign pin label "psub!" at (98.900, -22.600) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (1.100, 137.300) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (1.100, 214.900) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (98.900, 137.300) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 260.300) to layer `net_met3'.
+  info: Nets C4 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 260.300) renamed psub!;1.
+  info: Assign pin label "vdd3r!" at (1.100, 280.900) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (1.100, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (98.900, 214.900) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (1.100, 337.150) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 353.800) to layer `net_met3'.
+  info: Nets C7 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 353.800) renamed psub!;2.
+  info: Assign pin label "psub!" at (98.900, 260.300) to layer `net_met3'.
+  info: Nets C4 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 260.300) renamed psub!;1.
+  info: Assign pin label "vdd3r!" at (98.900, 280.900) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (98.900, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (98.900, 337.150) to layer `net_met3'.
+  info: Assign pin label "psub!" at (98.900, 353.800) to layer `net_met3'.
+  info: Nets C7 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 353.800) renamed psub!;2.
+
+ Label in cell 'ICP_HV layout IOLIB_HV_4M':
+  info: Assign pin label "psub!" at (1.100, -22.600) to layer `net_met3'.
+  info: Assign pin label "psub!" at (98.900, -22.600) to layer `net_met3'.
+  info: Assign pin label "PAD" at (50.175, 42.400) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (1.100, 137.300) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (1.100, 214.900) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (98.900, 137.300) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 260.300) to layer `net_met3'.
+  info: Nets C6 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 260.300) renamed psub!;1.
+  info: Assign pin label "vdd3r!" at (1.100, 280.900) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (1.100, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (98.900, 214.900) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (1.100, 337.150) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 353.800) to layer `net_met3'.
+  info: Nets C9 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 353.800) renamed psub!;2.
+  info: Assign pin label "psub!" at (98.900, 260.300) to layer `net_met3'.
+  info: Nets C6 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 260.300) renamed psub!;1.
+  info: Assign pin label "vdd3r!" at (98.900, 280.900) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (98.900, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (98.900, 337.150) to layer `net_met3'.
+  info: Assign pin label "psub!" at (98.900, 353.800) to layer `net_met3'.
+  info: Nets C9 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 353.800) renamed psub!;2.
+  info: Assign pin label "Y" at (75.600, 359.350) to layer `net_met2'.
+
+ Label in cell 'GND3ALLP_HV layout IOLIB_HV_4M':
+  info: Assign pin label "psub!" at (1.100, -22.600) to layer `net_met3'.
+  info: Assign pin label "psub!" at (98.900, -22.600) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (0.250, 137.300) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (1.100, 214.900) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (99.750, 137.300) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 260.300) to layer `net_met3'.
+  info: Nets C5 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 260.300) renamed psub!;1.
+  info: Assign pin label "vdd3r!" at (1.100, 280.900) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (1.100, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (98.900, 214.900) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (1.100, 337.150) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 353.800) to layer `net_met3'.
+  info: Nets C8 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 353.800) renamed psub!;2.
+  info: Assign pin label "psub!" at (98.900, 260.300) to layer `net_met3'.
+  info: Nets C5 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 260.300) renamed psub!;1.
+  info: Assign pin label "vdd3r!" at (98.900, 280.900) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (98.900, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (98.900, 337.150) to layer `net_met3'.
+  info: Assign pin label "psub!" at (98.900, 353.800) to layer `net_met3'.
+  info: Nets C8 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 353.800) renamed psub!;2.
+  info: Assign pin label "A" at (50.100, 358.600) to layer `net_met2'.
+
+ Label in cell 'CORNERP_HV layout IOLIB_HV_4M':
+  info: Assign pin label "psub!" at (-22.600, 358.500) to layer `net_met3'.
+  info: Assign pin label "psub!" at (358.500, -22.600) to layer `net_met3'.
+  info: Assign pin label "gndo!" at (137.300, 358.500) to layer `net_met3'.
+  info: Assign pin label "gndo!" at (358.500, 137.300) to layer `net_met3'.
+  info: Assign pin label "vddo!" at (214.900, 358.500) to layer `net_met3'.
+  info: Assign pin label "vddo!" at (358.500, 214.900) to layer `net_met3'.
+  info: Assign pin label "psub!" at (260.300, 358.500) to layer `net_met3'.
+  info: Nets C4 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (260.300, 358.500) renamed psub!;1.
+  info: Assign pin label "psub!" at (358.500, 260.300) to layer `net_met3'.
+  info: Nets C4 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (358.500, 260.300) renamed psub!;1.
+  info: Assign pin label "vddr!" at (280.900, 358.500) to layer `net_met3'.
+  info: Assign pin label "vddr!" at (358.500, 280.900) to layer `net_met3'.
+  info: Assign pin label "gndr!" at (310.300, 358.500) to layer `net_met3'.
+  info: Assign pin label "gndr!" at (358.500, 310.300) to layer `net_met3'.
+  info: Assign pin label "vddr!" at (337.150, 358.500) to layer `net_met3'.
+  info: Assign pin label "vddr!" at (358.500, 337.150) to layer `net_met3'.
+  info: Assign pin label "psub!" at (353.800, 358.500) to layer `net_met3'.
+  info: Nets C7 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (353.800, 358.500) renamed psub!;2.
+  info: Assign pin label "psub!" at (358.500, 353.800) to layer `net_met3'.
+  info: Nets C7 and C1 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (358.500, 353.800) renamed psub!;2.
+
+ Label in cell 'BU2P_HV layout IOLIB_HV_4M':
+  info: Assign pin label "psub!" at (1.100, -22.600) to layer `net_met3'.
+  info: Assign pin label "psub!" at (98.900, -22.600) to layer `net_met3'.
+  info: Assign pin label "PAD" at (50.175, 42.400) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (1.100, 137.300) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (1.100, 214.900) to layer `net_met3'.
+  info: Assign pin label "gnd3o!" at (98.900, 137.300) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 260.300) to layer `net_met3'.
+  info: Nets C6 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 260.300) renamed psub!;1.
+  info: Assign pin label "vdd3r!" at (1.100, 280.900) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (1.100, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3o!" at (98.900, 214.900) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (1.100, 337.150) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 353.800) to layer `net_met3'.
+  info: Nets C9 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 353.800) renamed psub!;2.
+  info: Assign pin label "psub!" at (98.900, 260.300) to layer `net_met3'.
+  info: Nets C6 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 260.300) renamed psub!;1.
+  info: Assign pin label "vdd3r!" at (98.900, 280.900) to layer `net_met3'.
+  info: Assign pin label "gnd3r!" at (98.900, 310.300) to layer `net_met3'.
+  info: Assign pin label "vdd3r!" at (98.900, 337.150) to layer `net_met3'.
+  info: Assign pin label "psub!" at (98.900, 353.800) to layer `net_met3'.
+  info: Nets C9 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 353.800) renamed psub!;2.
+  info: Assign pin label "A" at (3.000, 359.350) to layer `net_met2'.
+
+ Label in cell 'AVDD3ALLP_HV layout IOLIB_ANA_HV_4M':
+  info: Assign pin label "PAD" at (49.200, 40.000) to layer `net_met4'.
+  info: Assign pin label "psub!" at (1.100, -22.600) to layer `net_met3'.
+  info: Assign pin label "psub!" at (98.900, -22.600) to layer `net_met3'.
+  info: Assign pin label "gndo!" at (1.100, 137.300) to layer `net_met3'.
+  info: Assign pin label "vddo!" at (0.250, 214.900) to layer `net_met3'.
+  info: Assign pin label "gndo!" at (98.900, 137.300) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 260.300) to layer `net_met3'.
+  info: Nets C5 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 260.300) renamed psub!;1.
+  info: Assign pin label "vddr!" at (0.250, 280.900) to layer `net_met3'.
+  info: Assign pin label "gndr!" at (1.100, 310.300) to layer `net_met3'.
+  info: Assign pin label "vddo!" at (99.750, 214.900) to layer `net_met3'.
+  info: Assign pin label "vddr!" at (0.250, 337.150) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 353.800) to layer `net_met3'.
+  info: Nets C8 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 353.800) renamed psub!;2.
+  info: Assign pin label "psub!" at (98.900, 260.300) to layer `net_met3'.
+  info: Nets C5 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 260.300) renamed psub!;1.
+  info: Assign pin label "vddr!" at (99.750, 280.900) to layer `net_met3'.
+  info: Assign pin label "gndr!" at (98.900, 310.300) to layer `net_met3'.
+  info: Assign pin label "vddr!" at (99.750, 337.150) to layer `net_met3'.
+  info: Assign pin label "psub!" at (98.900, 353.800) to layer `net_met3'.
+  info: Nets C8 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 353.800) renamed psub!;2.
+  info: Assign pin label "VDD3A" at (49.800, 358.600) to layer `net_met2'.
+  WARN: Multiple label discarded: "VDD3A" at (49.800, 358.600) and "PAD" on net C1.
+
+ Label in cell 'APRIOP_HV layout IOLIB_ANA_HV_4M':
+  info: Assign pin label "PAD" at (50.175, 42.400) to layer `net_met4'.
+  info: Assign pin label "psub!" at (1.100, -22.600) to layer `net_met3'.
+  info: Assign pin label "psub!" at (98.900, -22.600) to layer `net_met3'.
+  info: Assign pin label "gndo!" at (1.100, 137.300) to layer `net_met3'.
+  info: Assign pin label "vddo!" at (1.100, 214.900) to layer `net_met3'.
+  info: Assign pin label "gndo!" at (98.900, 137.300) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 260.300) to layer `net_met3'.
+  info: Nets C5 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 260.300) renamed psub!;1.
+  info: Assign pin label "vddr!" at (1.100, 280.900) to layer `net_met3'.
+  info: Assign pin label "gndr!" at (1.100, 310.300) to layer `net_met3'.
+  info: Assign pin label "vddo!" at (98.900, 214.900) to layer `net_met3'.
+  info: Assign pin label "vddr!" at (1.100, 337.150) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 353.800) to layer `net_met3'.
+  info: Nets C8 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 353.800) renamed psub!;2.
+  info: Assign pin label "psub!" at (98.900, 260.300) to layer `net_met3'.
+  info: Nets C5 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 260.300) renamed psub!;1.
+  info: Assign pin label "vddr!" at (98.900, 280.900) to layer `net_met3'.
+  info: Assign pin label "gndr!" at (98.900, 310.300) to layer `net_met3'.
+  info: Assign pin label "vddr!" at (98.900, 337.150) to layer `net_met3'.
+  info: Assign pin label "psub!" at (98.900, 353.800) to layer `net_met3'.
+  info: Nets C8 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 353.800) renamed psub!;2.
+  info: Assign pin label "Z" at (49.900, 359.350) to layer `net_met2'.
+  WARN: Multiple label discarded: "Z" at (49.900, 359.350) and "PAD" on net C1.
+
+ Label in cell 'APRIO200P_HV layout IOLIB_ANA_HV_4M':
+  info: Assign pin label "PAD" at (50.175, 42.400) to layer `net_met4'.
+  info: Assign pin label "psub!" at (1.100, -22.600) to layer `net_met3'.
+  info: Assign pin label "psub!" at (98.900, -22.600) to layer `net_met3'.
+  info: Assign pin label "gndo!" at (1.100, 137.300) to layer `net_met3'.
+  info: Assign pin label "vddo!" at (1.100, 214.900) to layer `net_met3'.
+  info: Assign pin label "gndo!" at (98.900, 137.300) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 260.300) to layer `net_met3'.
+  info: Nets C5 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 260.300) renamed psub!;1.
+  info: Assign pin label "vddr!" at (1.100, 280.900) to layer `net_met3'.
+  info: Assign pin label "gndr!" at (1.100, 310.300) to layer `net_met3'.
+  info: Assign pin label "vddo!" at (98.900, 214.900) to layer `net_met3'.
+  info: Assign pin label "vddr!" at (1.100, 337.150) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 353.800) to layer `net_met3'.
+  info: Nets C8 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 353.800) renamed psub!;2.
+  info: Assign pin label "psub!" at (98.900, 260.300) to layer `net_met3'.
+  info: Nets C5 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 260.300) renamed psub!;1.
+  info: Assign pin label "vddr!" at (98.900, 280.900) to layer `net_met3'.
+  info: Assign pin label "gndr!" at (98.900, 310.300) to layer `net_met3'.
+  info: Assign pin label "vddr!" at (98.900, 337.150) to layer `net_met3'.
+  info: Assign pin label "psub!" at (98.900, 353.800) to layer `net_met3'.
+  info: Nets C8 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 353.800) renamed psub!;2.
+  info: Assign pin label "Z" at (49.900, 359.350) to layer `net_met2'.
+
+ Label in cell 'AGND3ALLP_HV layout IOLIB_ANA_HV_4M':
+  info: Assign pin label "PAD" at (49.500, 44.800) to layer `net_met4'.
+  info: Assign pin label "psub!" at (1.100, -22.600) to layer `net_met3'.
+  info: Assign pin label "psub!" at (98.900, -22.600) to layer `net_met3'.
+  info: Assign pin label "gndo!" at (0.250, 137.300) to layer `net_met3'.
+  info: Assign pin label "vddo!" at (1.100, 214.900) to layer `net_met3'.
+  info: Assign pin label "gndo!" at (99.750, 137.300) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 260.300) to layer `net_met3'.
+  info: Nets C5 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 260.300) renamed psub!;1.
+  info: Assign pin label "vddr!" at (1.100, 280.900) to layer `net_met3'.
+  info: Assign pin label "gndr!" at (0.250, 310.300) to layer `net_met3'.
+  info: Assign pin label "vddo!" at (98.900, 214.900) to layer `net_met3'.
+  info: Assign pin label "vddr!" at (1.100, 337.150) to layer `net_met3'.
+  info: Assign pin label "psub!" at (1.100, 353.800) to layer `net_met3'.
+  info: Nets C8 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (1.100, 353.800) renamed psub!;2.
+  info: Assign pin label "psub!" at (98.900, 260.300) to layer `net_met3'.
+  info: Nets C5 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 260.300) renamed psub!;1.
+  info: Assign pin label "vddr!" at (98.900, 280.900) to layer `net_met3'.
+  info: Assign pin label "gndr!" at (99.750, 310.300) to layer `net_met3'.
+  info: Assign pin label "vddr!" at (98.900, 337.150) to layer `net_met3'.
+  info: Assign pin label "psub!" at (98.900, 353.800) to layer `net_met3'.
+  info: Nets C8 and C2 are associated with the same label "psub!". They must be joined.
+        Net label "psub!" at (98.900, 353.800) renamed psub!;2.
+  info: Assign pin label "GND3A" at (50.200, 358.700) to layer `net_met2'.
+  WARN: Multiple label discarded: "GND3A" at (50.200, 358.700) and "PAD" on net C1.
+
+ Label in cell 'ioring layout MINIMAL_IO_HV':
+  info: Assign pin label "GNDA" at (574.250, 114.375) to layer `net_met4'.
+  info: Assign pin label "VDDA" at (722.225, 118.200) to layer `net_met4'.
+  info: Assign pin label "AIN2" at (873.900, 116.275) to layer `net_met4'.
+  info: Assign pin label "AOUT1" at (1023.250, 119.950) to layer `net_met4'.
+  info: Assign pin label "AOUT2" at (1172.475, 117.225) to layer `net_met4'.
+  info: Assign pin label "VSUB" at (780.250, 1155.050) to layer `net_met4'.
+  info: Assign pin label "RESET" at (930.025, 1160.800) to layer `net_met4'.
+  info: Assign pin label "CLK" at (1080.350, 1165.900) to layer `net_met4'.
+  info: Assign pin label "ENABLE" at (1230.250, 1162.550) to layer `net_met4'.
+  info: Assign pin label "COUT_C0" at (1380.075, 1160.450) to layer `net_met4'.
+  info: Assign pin label "COUT_C1" at (1529.850, 1159.900) to layer `net_met4'.
+  info: Assign pin label "COUT_C2" at (1679.600, 1174.900) to layer `net_met4'.
+  info: Assign pin label "ain2_c" at (873.150, 438.950) to layer `net_met2'.
+  info: Assign pin label "GNDD" at (480.100, 844.250) to layer `net_met2'.
+  info: Assign pin label "VDDD" at (630.100, 844.250) to layer `net_met2'.
+  info: Assign pin label "reset_c" at (904.650, 843.550) to layer `net_met2'.
+  info: Assign pin label "clk_c" at (1054.650, 843.550) to layer `net_met2'.
+  info: Assign pin label "enable_c" at (1204.650, 843.550) to layer `net_met2'.
+  info: Assign pin label "cout_c0" at (1427.250, 843.550) to layer `net_met2'.
+  info: Assign pin label "cout_c1" at (1577.250, 843.550) to layer `net_met2'.
+  info: Assign pin label "cout_c2" at (1727.250, 843.550) to layer `net_met2'.
+  info: Assign net label "gnd3o!_PERI_SPACE_avC_2" at (1815.750, 1065.550) to layer `net_met3'.
+  info: Assign net label "vdd3o!_PERI_SPACE_avC_2" at (1815.750, 987.950) to layer `net_met3'.
+  info: Assign net label "vdd3r!_PERI_SPACE_avC_2" at (1815.750, 921.950) to layer `net_met3'.
+  info: Assign net label "gnd3r!_PERI_SPACE_avC_2" at (1815.750, 892.550) to layer `net_met3'.
+
+ Label in cell 'core layout MINIMAL_CORE':
+  info: Assign pin label "out<2>" at (123.250, 55.550) to layer `net_met3'.
+  info: Assign pin label "out<1>" at (134.450, 55.500) to layer `net_met3'.
+  info: Assign pin label "out<0>" at (145.650, 55.550) to layer `net_met3'.
+  info: Assign pin label "clk" at (92.450, 191.350) to layer `net_met3'.
+  info: Assign pin label "enable" at (103.650, 191.350) to layer `net_met3'.
+  info: Assign pin label "reset" at (114.850, 191.350) to layer `net_met3'.
+  info: Assign pin label "aout1" at (99.550, 12.850) to layer `net_met2'.
+  info: Assign pin label "ain2" at (111.900, 12.700) to layer `net_met2'.
+  info: Assign pin label "aout2" at (115.750, 12.850) to layer `net_met2'.
+  info: Assign pin label "GNDD" at (18.500, 160.700) to layer `net_met2'.
+  info: Assign pin label "VDDD" at (22.950, 167.100) to layer `net_met2'.
+  info: Assign pin label "VSUB" at (30.050, 71.600) to layer `net_met1'.
+  info: Assign pin label "GNDA" at (98.050, 6.900) to layer `net_met1'.
+  info: Assign pin label "VDDA" at (98.000, 19.150) to layer `net_met1'.
+
+ Label in cell 'top layout MINIMAL_TOP':
+  info: Assign pin label "GNDA" at (582.450, 104.750) to layer `net_met4'.
+  info: Assign pin label "VDDA" at (730.450, 115.700) to layer `net_met4'.
+  info: Assign pin label "AIN2" at (882.050, 115.150) to layer `net_met4'.
+  info: Assign pin label "AOUT1" at (1031.450, 110.150) to layer `net_met4'.
+  info: Assign pin label "AOUT2" at (1180.700, 107.050) to layer `net_met4'.
+  info: Assign pin label "GNDD" at (488.650, 1155.850) to layer `net_met4'.
+  info: Assign pin label "VDDD" at (637.300, 1154.200) to layer `net_met4'.
+  info: Assign pin label "VSUB" at (788.550, 1152.750) to layer `net_met4'.
+  info: Assign pin label "RESET" at (938.200, 1158.500) to layer `net_met4'.
+  info: Assign pin label "CLK" at (1088.500, 1156.100) to layer `net_met4'.
+  info: Assign pin label "ENABLE" at (1238.500, 1160.000) to layer `net_met4'.
+  info: Assign pin label "COUT0" at (1388.400, 1159.150) to layer `net_met4'.
+  info: Assign pin label "COUT1" at (1538.000, 1159.000) to layer `net_met4'.
+  info: Assign pin label "COUT2" at (1688.100, 1157.400) to layer `net_met4'.
+
+***** End of Label Report *****
+

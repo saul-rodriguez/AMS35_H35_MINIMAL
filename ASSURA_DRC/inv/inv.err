@@ -1,0 +1,66 @@
+================================================================================
+Rule No. 2338 : PO_R_1 Minimum density of POLY1 area [%] Density = total poly layer area / chip area Recommended dummy structures are 5um * 2um rectangles with 2um spacing. They should not be placed on active devices. = 14
+
+Real Error Count : 1; Flat Error Count : 2
+================================================================================
+
+--------------------------------------------------------------------------------
+Cell Name : inv layout INV
+
+                   Cell Errors    Real Errors   Cell Placements     Environments
+                             2              1                 1                1
+--------------------------------------------------------------------------------
+Env.  Env. Placements            X1           Y1          X2           Y2
+
+  1        1                  0.950        0.300       6.300       11.350
+
+Shape               Environments Status & Error Marker 
+
+          1           X1         Y1         X2         Y2
+
+   1      X        0.950      0.300      6.300     11.350
+
+================================================================================
+Rule No. 2389 : M1_R_1 Minimum density of MET1 area [%] = 30
+
+Real Error Count : 1; Flat Error Count : 2
+================================================================================
+
+--------------------------------------------------------------------------------
+Cell Name : inv layout INV
+
+                   Cell Errors    Real Errors   Cell Placements     Environments
+                             2              1                 1                1
+--------------------------------------------------------------------------------
+Env.  Env. Placements            X1           Y1          X2           Y2
+
+  1        1                  0.950        0.300       6.300       11.350
+
+Shape               Environments Status & Error Marker 
+
+          1           X1         Y1         X2         Y2
+
+   1      X        0.950      0.300      6.300     11.350
+
+================================================================================
+Rule No. 2722 : # H35B4 (Last updated 20-Nov-2018 10:48) #
+
+Real Error Count : 1; Flat Error Count : 1
+================================================================================
+
+--------------------------------------------------------------------------------
+Cell Name : inv layout INV
+
+                   Cell Errors    Real Errors   Cell Placements     Environments
+                             1              1                 1                1
+--------------------------------------------------------------------------------
+Env.  Env. Placements            X1           Y1          X2           Y2
+
+  1        1                  0.950        0.300       6.300       11.350
+
+Shape               Environments Status & Error Marker 
+
+          1           X1         Y1         X2         Y2
+
+   1      X        0.950      0.300      6.300     11.350
+

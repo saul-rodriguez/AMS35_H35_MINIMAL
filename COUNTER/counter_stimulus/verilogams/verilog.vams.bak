@@ -1,0 +1,45 @@
+//Verilog-AMS HDL for "COUNTER", "counter_stimulus" "verilogams"
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+`timescale 1ns / 1ps
+
+module counter_stimulus ( clk, enable, reset );
+
+  output enable;
+  output reset;
+  output clk;
+
+  reg clk, reset, enable;
+
+  initial begin
+        //$dumpfile("dump.vcd");
+        //$dumpvars(0,counter1);
+
+        //SDF annotation
+
+		//counter_tb
+	$sdf_annotate("/home/saul/projects/TEST_AMS_H35_DIG/DIG_TEST/virtuoso/COUNTER/sdf/design_slow.sdf",I0,,"sdf.log","MAXIMUM");
+
+        //core_tb
+//	$sdf_annotate("/home/saul/projects/TEST_AMS_H35_DIG/DIG_TEST/virtuoso/COUNTER/sdf/design_slow.sdf",I0,,"sdf.log","MAXIMUM");
+
+        //top_tb
+//	$sdf_annotate("/home/saul/projects/AMS_35_V4_MINIMAL/COUNTER_SDF/design_slow.sdf",I0.I1.I0,,"sdf.log","MAXIMUM");
+
+        clk = 0;
+        reset = 0;
+        enable = 0;
+        #16 reset = 1;
+        #18 reset = 0;
+        #10 enable = 1; 
+        #1000 $finish;
+  end
+
+  always begin
+        #10 clk = ~clk;
+  end
+
+endmodule
+

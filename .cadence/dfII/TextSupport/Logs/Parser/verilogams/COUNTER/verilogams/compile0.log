@@ -1,0 +1,63 @@
+TOOL:	xrun(64)	24.09-s008: Started on Sep 28, 2026 at 14:59:30 UTC
+xrun
+	-compile
+	-nocopy
+	-nostdout
+	-nowarn DLNOHV
+	-nowarn SPDUSD
+	-messages
+	-update
+	-log /home/saul/projects/AMS35_H35_MINIMAL/.cadence/dfII/TextSupport/Logs/Parser/verilogams/COUNTER/verilogams/compile0.log
+	-incdir "/home/saul/projects/AMS35_H35_MINIMAL/"
+	-ams
+	-cdslib /home/saul/projects/AMS35_H35_MINIMAL/cds.lib
+	-makelib COUNTER
+	-view verilogams
+	-SPECIFICUNIT counter_stimulus
+	/home/saul/projects/AMS35_H35_MINIMAL/COUNTER/counter_stimulus/verilogams/verilog.vams
+	-endlib
+INCLUDE $IUSDIR/tools/inca/files/cds.lib
+|
+xrun: *W,DLCIML (./cds.lib,31): cds.lib CDS.LIB file included multiple times '/opt/tools/cadence/installs/XCELIUM2409/tools.lnx86/inca/files/cds.lib' (cds.lib command ignored).
+xrun: *W,AMSIUSLD: The software has modified your LD_LIBRARY_PATH to add the following path first: `xmroot`/tools/lib. For the IUS 6.2 release onward, the AMS Designer simulator libraries require the C++ compiler that Cadence ships. If you are including code compiled using the native C++ compiler (for example, through VPI), you might need to recompile the code using the Cadence C++ compiler. You can restore and use the original LD_LIBRARY_PATH by using the -iusldno command-line option when you run xrun. However, using the -iusldno command-line option might result in an internal error in the AMS Designer simulator. The resulting error message indicates that the software is not loading the required shared object file or valid ELFCLASS32 library. This error message is fatal and you need to run xrun without the -iusldno command-line option to fix the problem.
+INCLUDE $IUSDIR/tools/inca/files/cds.lib
+|
+xmvlog: *W,DLCIML (./cds.lib,31): cds.lib CDS.LIB file included multiple times '/opt/tools/cadence/installs/XCELIUM2409/tools.lnx86/inca/files/cds.lib' (cds.lib command ignored).
+file: /home/saul/projects/AMS35_H35_MINIMAL/COUNTER/counter_stimulus/verilogams/verilog.vams
+	module COUNTER.counter_stimulus:verilogams
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+TOOL:	xrun(64)	24.09-s008: Exiting on Sep 28, 2026 at 14:59:30 UTC  (total: 00:00:00)
+
+
+Instance Binding Report:
+-------------------------------------------------------------------------------
+Instance		MasterLib		MasterCell		MasterView
+-------------------------------------------------------------------------------
+
+
+
+ ========================================================================================================
+		                  HDL IMPORT QUICK STATUS REPORT
+ ========================================================================================================
+ HDL SETUP MODE	: 0 - IMPROVED LEGACY FLOW
+ ========================================================================================================
+ HDL SETUP STATUS	: SUCCESS
+ ========================================================================================================
+ cds.lib USED	: "/home/saul/projects/AMS35_H35_MINIMAL/cds.lib"
+ ========================================================================================================
+ COMPILER OPTIONS	: ""
+ ========================================================================================================
+ PCDB DM CHECKS	: SUCCESS
+ ========================================================================================================
+ PCDB UPDATE REQUIRED	: YES
+ ========================================================================================================
+ IMPORT CONFIGURATION	: CHECK BELOW SETTINGS
+		: generateShadow(true)
+		: enableBlackBox(false)
+		: enableSpecificUnit(true)
+		: updateCDF(true)
+ ========================================================================================================
+ OVERALL IMPORT STATUS	: SUCCESS
+ ========================================================================================================

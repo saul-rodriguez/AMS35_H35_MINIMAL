@@ -1,0 +1,168 @@
+Version 3
+3 NMOS_device 5124 231 -1
+3 NMOSM_device 5162 231 -1
+3 PMOS_device 5200 231 -1
+3 PMOSM_device 5238 231 -1
+3 NMOSI_device_hv 5390 231 -1
+3 NMOSI_device_not_hv 5461 231 -1
+3 NMOSIM_device_hv 5508 231 -1
+3 NMOSIM_device_not_hv 5579 231 -1
+3 PMOSI_device_hv 5624 231 -1
+3 PMOSI_device_not_hv 5692 231 -1
+3 PMOSIM_device_hv 5736 231 -1
+3 PMOSIM_device_not_hv 5804 231 -1
+3 poa_nmos_waffle_2x 5858 231 -1
+3 poa_nmos_waffle_3x 5903 231 -1
+3 poa_nmos_waffle_4x 5948 231 -1
+3 poa_nmos_midox_waffle_2x 5993 231 -1
+3 poa_nmos_midox_waffle_3x 6038 231 -1
+3 poa_nmos_midox_waffle_4x 6083 231 -1
+3 poa_pmos_waffle_2x 6126 231 -1
+3 poa_pmos_waffle_3x 6168 231 -1
+3 poa_pmos_waffle_4x 6210 231 -1
+3 poa_pmos_midox_waffle_2x 6252 231 -1
+3 poa_pmos_midox_waffle_3x 6294 231 -1
+3 poa_pmos_midox_waffle_4x 6336 231 -1
+3 NMOSH_device 6381 231 -1
+3 NMOSMH_device 6424 231 -1
+3 RPWELLR_device 6463 231 -1
+3 RNWELL_device 6484 231 -1
+3 RNWELLS_device 6503 231 -1
+3 RDIFFP_device 6522 231 -1
+3 RDIFFPS_device_hv 6569 231 -1
+3 RDIFFPS_device_not_hv 6618 231 -1
+3 RDIFFN_device 6639 231 -1
+3 RDIFFNR_device 6660 231 -1
+3 RPOLY2_PSUB_device 6695 231 -1
+3 RPOLY2_NTUB_device 6728 231 -1
+3 RPOLY2_PTUB_device 6761 231 -1
+3 RPOLY2PH_PSUB_device 6834 231 -1
+3 RPOLY2PH_PTUB_device 6867 231 -1
+3 RPOLY2PH_NTUB_device 6900 231 -1
+3 RPOLYH_PSUB_device 6944 231 -1
+3 RPOLYH_NTUB_device 6977 231 -1
+3 RPOLYH_PTUB_device 7010 231 -1
+3 RPOLY1_PSUB_device 7054 231 -1
+3 RPOLY1_NTUB_device 7079 231 -1
+3 RPOLY1_PTUB_device 7104 231 -1
+3 PFUSE_device 7127 231 -1
+3 LAT2_device 7236 231 -1
+3 VERT10_device 7253 231 -1
+3 VERTN1_device 7266 231 -1
+3 VERTPH_device 7282 231 -1
+3 PJFET_device 7292 231 -1
+3 CPOLY_PSUB_device 7325 231 -1
+3 CPOLY_NTUB_device 7335 231 -1
+3 PROBE_device 7373 231 -1
+3 ND_device 7391 231 -1
+3 P_ND_device 7406 231 -1
+3 PD_device 7416 231 -1
+3 P_PD_device 7434 231 -1
+3 NWD_device 7444 231 -1
+3 P_NWD_device 7465 231 -1
+3 PDI1N01S002_device 7494 231 -1
+3 PDI1N13S002_device 7528 231 -1
+3 ND_SP_device 7551 231 -1
+3 P_ND_SP_device 7567 231 -1
+3 PD_SN_device 7577 231 -1
+3 P_PD_SN_device 7593 231 -1
+3 DP_DN_device 7603 231 -1
+3 P_DP_DN_device 7620 231 -1
+3 DN_PS_device_hv 7658 231 -1
+3 DN_PS_device_not_hv 7698 231 -1
+3 P_DN_PS_device 7716 231 -1
+3 ESDGCI3_device 7746 231 -1
+3 ESDGCNI5_device 7782 231 -1
+3 ESDGCI20_device 7801 231 -1
+3 ESDVSD_device 7822 231 -1
+3 ESDVSS_device 7853 231 -1
+3 ESDFDI50_device 7883 231 -1
+3 ESDTD20_device 7901 231 -1
+3 ESDTD50_device 7919 231 -1
+3 ESDTD40_device 7937 231 -1
+3 ESDTD42_device 7955 231 -1
+3 ESDTD45_device 7973 231 -1
+3 ESDTD60_device 7991 231 -1
+3 ESDPD10_device 8009 231 -1
+3 ESDGCPI5_device 8039 231 -1
+3 ESDFDPI5_device 8057 231 -1
+3 ESDFDNI5_device 8077 231 -1
+3 ESDFDN5_device 8093 231 -1
+3 ESDGCN5_device 8107 231 -1
+3 ESDFDP5_device 8123 231 -1
+3 ESDGCP5_device 8139 231 -1
+3 ESDPNP40_device 8157 231 -1
+3 ESDPNP42_device 8189 231 -1
+3 ESDNPN_PN3_device 8223 231 -1
+3 ESDSCR14_SN_device 8256 231 -1
+3 ESDSCR55_SN_device 8277 231 -1
+3 NMOS50T_device 8287 231 -1
+3 NMOS50M_device 8334 231 -1
+3 NMOS50H_device 8381 231 -1
+3 NMOS50HS_device 8426 231 -1
+3 NMOSI50T_device 8463 231 -1
+3 NMOSI50M_device 8512 231 -1
+3 NMOSI50H_device 8561 231 -1
+3 NMOSI20H_device 8610 231 -1
+3 NMOSI20T_device 8659 231 -1
+3 NMOSI20M_device 8708 231 -1
+3 NMOS10MH_device 8757 231 -1
+3 NMOSD10MH_device 8802 231 -1
+3 NMOS20T_device 8851 231 -1
+3 NMOS20M_device 8898 231 -1
+3 NMOSD20M_device 8943 231 -1
+3 NMOS20H_device 8992 231 -1
+3 NMOS20HS_device 9037 231 -1
+3 NMOSDI20M_device 9080 231 -1
+3 NMOSDI20T_device 9134 231 -1
+3 NMOSDI20H_device 9188 231 -1
+3 NMOSDI50H_device 9242 231 -1
+3 NMOSDI50T_device 9291 231 -1
+3 NMOSI120H_device 9342 231 -1
+3 NMOSI120M_device 9391 231 -1
+3 NMOSDIVST_device 9450 231 -1
+3 NMOSIVST_device 9510 231 -1
+3 PMOS50T_device 9569 231 -1
+3 PMOS50M_device 9618 231 -1
+3 PMOS50H_device 9667 231 -1
+3 PMOS50HS_device 9714 231 -1
+3 PMOS10MH_device 9760 231 -1
+3 PMOSD10MH_device 9807 231 -1
+3 PMOS20H_device_rev4 9858 231 -1
+3 PMOS20H_device_rev3 9907 231 -1
+3 PMOS20T_device 9956 231 -1
+3 ESDPMOS18T_device 10005 231 -1
+3 PMOSD20T_device 10052 231 -1
+3 PMOS20M_device 10103 231 -1
+3 PMOSD20M_device 10150 231 -1
+3 PMOS20HS_device 10199 231 -1
+3 PMOS120H_device 10245 231 -1
+3 PMOS120M_device 10294 231 -1
+3 PMOSVST_device 10349 231 -1
+3 PMOSDVST_device 10428 231 -1
+3 HALL_XY12x12_Zx2_LN_device 10549 231 -1
+3 HALL_XY12x12_Zx2_STD_device 10605 231 -1
+3 HALL_XY8x8_Zx2_LN_device 10661 231 -1
+3 HALL_XY8x8_Zx2_STD_device 10717 231 -1
+3 HALL_C1_H35_device 10737 231 -1
+3 HALL_C1_H35X2_device 10757 231 -1
+3 HALL_C1_H35X4_device 10777 231 -1
+3 HALL_C2_H35_device 10797 231 -1
+3 HALL_C2_H35X2_device 10817 231 -1
+3 HALL_C2_H35X4_device 10837 231 -1
+4 net_via3 1 13018 41 0
+4 net_met4 1 3840 42 0
+4 net_met3 1 3839 39 0
+4 net_via2_metcap 1 3697 38 0
+4 net_via2 0 3693 38 0
+4 net_met2 1 3838 37 0
+4 net_via1 1 13016 36 0
+4 net_met1 1 3837 35 0
+4 net_poly2con 1 13013 34 0
+4 net_poly2 1 374 30 0
+4 net_poly1con 1 233 34 0
+4 net_poly1 1 3836 20 0
+4 net_pdiffcon 1 13015 34 0
+4 net_pdiff 1 410 124 0
+4 net_ndiffcon 1 13014 34 0
+4 net_ndiff 1 407 123 0

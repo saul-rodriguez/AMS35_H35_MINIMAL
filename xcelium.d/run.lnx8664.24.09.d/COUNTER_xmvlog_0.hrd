@@ -1,0 +1,11 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-INCDIR
+"/home/saul/projects/AMS35_H35_MINIMAL/"
+-AMS
+-VIEW
+verilogams
+-SPECIFICUNIT
+counter_stimulus

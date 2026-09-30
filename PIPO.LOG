@@ -1,0 +1,121 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version IC23.1-64b 09/09/2025 22:32 (cpgbld16) $
+          : sub-version  IC23.1-64b.ISR16.19 
+Started at: 30-Sep-2026  07:12:20
+User Name : saul
+Host Name : edatools
+Directory : /home/saul/projects/AMS35_H35_MINIMAL
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+WARNING (XSTRM-20): Output Stream file '/home/saul/projects/AMS35_H35_MINIMAL/CALIBRE/core/DRC/core.calibre.db' already exists. It will be overwritten.
+INFO (XSTRM-217): Reading the layer map file, /opt/pdk/ams/5.10.1/X35/cds/HK_H35/TECH_H35B4/strmInOut.layertable
+WARNING (XSTRM-156): The entry at line number '89' is duplicate in the '/opt/pdk/ams/5.10.1/X35/cds/HK_H35/TECH_H35B4/strmInOut.layertable' layerMap file. Therefore, this entry will be ignored during translation.
+WARNING (XINFRA-1): Available space at the location '/dev/shm' is only '66990080', which is less than the required space.
+INFO (XSTRM-162): You have not used the '-viaMap' option. If the OpenAccess design has native oaVia instances, use the '-viaMap' option for preserving oaVia instances in a XStream Out - XStream In round trip. Using the '-viaMap' option improves performance and VM usage of applications using the Streamed-In design.
+
+Summary of Options :
+library                                 MINIMAL_CORE
+strmFile                                /home/saul/projects/AMS35_H35_MINIMAL/CALIBRE/core/DRC/core.calibre.db
+topCell                                 core
+view                                    layout
+logFile                                 PIPO.LOG
+summaryFile                             PIPO.SUM.core
+hierDepth                               20
+layerMap                                /opt/pdk/ams/5.10.1/X35/cds/HK_H35/TECH_H35B4/strmInOut.layertable
+userSkillFile                           /opt/pdk/ams/5.10.1/X35/cds/HK_H35/skill/ams_sdl.il
+case                                    Preserve
+convertDot                              node
+convertPcellPin                         geometry
+
+INFO (XSTRM-223): 1. Translating stdVia TECH_H35B4/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_790752340020.
+INFO (XSTRM-223): 2. Translating stdVia TECH_H35B4/VIA2_C/layout as STRUCTURE VIA2_C_CDNS_790752340021.
+INFO (XSTRM-223): 3. Translating stdVia TECH_H35B4/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_790752340022.
+INFO (XSTRM-223): 4. Translating stdVia TECH_H35B4/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_790752340023.
+INFO (XSTRM-223): 5. Translating stdVia TECH_H35B4/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_790752340024.
+INFO (XSTRM-223): 6. Translating stdVia TECH_H35B4/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_790752340025.
+INFO (XSTRM-223): 7. Translating customVia TECH_H35B4/VIA1_DSOUTH/layout as STRUCTURE VIA1_DSOUTH.
+INFO (XSTRM-223): 8. Translating customVia TECH_H35B4/VIA2_DEAST/layout as STRUCTURE VIA2_DEAST.
+INFO (XSTRM-223): 9. Translating customVia TECH_H35B4/VIA2_DSOUTH/layout as STRUCTURE VIA2_DSOUTH.
+INFO (XSTRM-223): 10. Translating customVia TECH_H35B4/VIA1_DNORTH/layout as STRUCTURE VIA1_DNORTH.
+INFO (XSTRM-223): 11. Translating customVia TECH_H35B4/VIA1_PR/layout as STRUCTURE VIA1_PR.
+INFO (XSTRM-223): 12. Translating customVia TECH_H35B4/VIA1_DEAST/layout as STRUCTURE VIA1_DEAST.
+INFO (XSTRM-223): 13. Translating customVia TECH_H35B4/VIA2_DNORTH/layout as STRUCTURE VIA2_DNORTH.
+INFO (XSTRM-223): 14. Translating customVia TECH_H35B4/VIA2_DWEST/layout as STRUCTURE VIA2_DWEST.
+INFO (XSTRM-223): 15. Translating customVia TECH_H35B4/VIA1_VC/layout as STRUCTURE VIA1_VC.
+INFO (XSTRM-223): 16. Translating customVia TECH_H35B4/VIA3_HC/layout as STRUCTURE VIA3_HC.
+INFO (XSTRM-223): 17. Translating customVia TECH_H35B4/VIA1_DWEST/layout as STRUCTURE VIA1_DWEST.
+INFO (XSTRM-223): 18. Translating customVia TECH_H35B4/VIA2_PR/layout as STRUCTURE VIA2_PR.
+INFO (XSTRM-223): 19. Translating customVia TECH_H35B4/VIA3_VC/layout as STRUCTURE VIA3_VC.
+INFO (XSTRM-223): 20. Translating stdVia TECH_H35B4/VIA1_C/layout as STRUCTURE VIA1_C_CDNS_790752340026.
+INFO (XSTRM-223): 21. Translating cellview CORELIBD_DCV_HV/CLKBUFX3_DCV_HV/layout as STRUCTURE CLKBUFX3_DCV_HV.
+INFO (XSTRM-180): You have not used the '-objectMap' option. The design has instance(s) of at least one of following OpenAccess objects: oaBlockage, oaBoundary, oaRow, and oaMarker. Any information about these objects will not be translated into the generated stream file. Use the '-objectMap' option to translate/preserve these objects using XStream.
+WARNING (XSTRM-35): The objects in the layer-purpose pair 'MET1:pin' are ignored. This is because the layer-purpose pair used in the design is not specified in the layer map file. Specify the layer-purpose pair in the layer map file and try again.
+INFO (XSTRM-223): 22. Translating cellview CORELIBD_DCV_HV/BUFX12_DCV_HV/layout as STRUCTURE BUFX12_DCV_HV.
+INFO (XSTRM-223): 23. Translating cellview CORELIBD_DCV_HV/BUFX16_DCV_HV/layout as STRUCTURE BUFX16_DCV_HV.
+INFO (XSTRM-223): 24. Translating cellview CORELIBD_DCV_HV/CLKBUFX8_DCV_HV/layout as STRUCTURE CLKBUFX8_DCV_HV.
+INFO (XSTRM-223): 25. Translating cellview CORELIBD_DCV_HV/CLKBUFX12_DCV_HV/layout as STRUCTURE CLKBUFX12_DCV_HV.
+INFO (XSTRM-223): 26. Translating cellview CORELIBD_DCV_HV/BUFX4_DCV_HV/layout as STRUCTURE BUFX4_DCV_HV.
+INFO (XSTRM-223): 27. Translating cellview CORELIBD_DCV_HV/BUFX6_DCV_HV/layout as STRUCTURE BUFX6_DCV_HV.
+INFO (XSTRM-223): 28. Translating cellview CORELIBD_DCV_HV/CLKBUFX24_DCV_HV/layout as STRUCTURE CLKBUFX24_DCV_HV.
+INFO (XSTRM-223): 29. Translating cellview CORELIBD_DCV_HV/CLKBUFX2_DCV_HV/layout as STRUCTURE CLKBUFX2_DCV_HV.
+INFO (XSTRM-223): 30. Translating cellview CORELIBD_DCV_HV/CLKBUFX6_DCV_HV/layout as STRUCTURE CLKBUFX6_DCV_HV.
+INFO (XSTRM-223): 31. Translating cellview CORELIBD_DCV_HV/BUFX8_DCV_HV/layout as STRUCTURE BUFX8_DCV_HV.
+INFO (XSTRM-223): 32. Translating cellview CORELIBD_DCV_HV/DLY1X1_DCV_HV/layout as STRUCTURE DLY1X1_DCV_HV.
+INFO (XSTRM-223): 33. Translating cellview CORELIBD_DCV_HV/CLKBUFX16_DCV_HV/layout as STRUCTURE CLKBUFX16_DCV_HV.
+INFO (XSTRM-223): 34. Translating cellview CORELIBD_DCV_HV/BUFX2_DCV_HV/layout as STRUCTURE BUFX2_DCV_HV.
+INFO (XSTRM-223): 35. Translating cellview CORELIBD_DCV_HV/DFX1_DCV_HV/layout as STRUCTURE DFX1_DCV_HV.
+INFO (XSTRM-223): 36. Translating cellview CORELIBD_DCV_HV/NOR2X4_DCV_HV/layout as STRUCTURE NOR2X4_DCV_HV.
+INFO (XSTRM-223): 37. Translating cellview CORELIBD_DCV_HV/AOI22X4_DCV_HV/layout as STRUCTURE AOI22X4_DCV_HV.
+INFO (XSTRM-223): 38. Translating cellview CORELIBD_DCV_HV/XOR2X1_DCV_HV/layout as STRUCTURE XOR2X1_DCV_HV.
+INFO (XSTRM-223): 39. Translating cellview CORELIBD_DCV_HV/HAX3_DCV_HV/layout as STRUCTURE HAX3_DCV_HV.
+INFO (XSTRM-223): 40. Translating cellview CORELIBD_DCV_HV/AOI22X3_DCV_HV/layout as STRUCTURE AOI22X3_DCV_HV.
+INFO (XSTRM-223): 41. Translating cellview CORELIBD_DCV_HV/XNOR2X2_DCV_HV/layout as STRUCTURE XNOR2X2_DCV_HV.
+INFO (XSTRM-223): 42. Translating cellview CORELIBD_DCV_HV/INVX4_DCV_HV/layout as STRUCTURE INVX4_DCV_HV.
+INFO (XSTRM-223): 43. Translating cellview CORELIBD_DCV_HV/INVX16_DCV_HV/layout as STRUCTURE INVX16_DCV_HV.
+INFO (XSTRM-223): 44. Translating cellview CORELIBD_DCV_HV/FILLCAPX4_DCV_HV/layout as STRUCTURE FILLCAPX4_DCV_HV.
+INFO (XSTRM-223): 45. Translating cellview CORELIBD_DCV_HV/FILLCAPX16_DCV_HV/layout as STRUCTURE FILLCAPX16_DCV_HV.
+INFO (XSTRM-223): 46. Translating cellview CORELIBD_DCV_HV/FILLCAPX8_DCV_HV/layout as STRUCTURE FILLCAPX8_DCV_HV.
+INFO (XSTRM-223): 47. Translating cellview CORELIBD_DCV_HV/FILLCELLX2_DCV_HV/layout as STRUCTURE FILLCELLX2_DCV_HV.
+INFO (XSTRM-223): 48. Translating cellview CORELIBD_DCV_HV/FILLCELLX1_DCV_HV/layout as STRUCTURE FILLCELLX1_DCV_HV.
+INFO (XSTRM-223): 49. Translating cellview CORELIBD_DCV_HV/FILLCELLX4_DCV_HV/layout as STRUCTURE FILLCELLX4_DCV_HV.
+INFO (XSTRM-223): 50. Translating cellview CORELIBD_DCV_HV/FILLCELLX8_DCV_HV/layout as STRUCTURE FILLCELLX8_DCV_HV.
+INFO (XSTRM-223): 51. Translating cellview COUNTER/counter/layout as STRUCTURE counter.
+INFO (XSTRM-223): 52. Translating stdVia TECH_H35B4/ND_C/layout as STRUCTURE ND_C_CDNS_790752340027.
+INFO (XSTRM-223): 53. Translating stdVia TECH_H35B4/PD_C/layout as STRUCTURE PD_C_CDNS_790752340028.
+INFO (XSTRM-223): 54. Translating stdVia TECH_H35B4/P1_C/layout as STRUCTURE P1_C_CDNS_790752340029.
+INFO (XSTRM-223): 55. Translating cellview PRIMLIB/nmos4/layout as STRUCTURE nmos4_CDNS_790752340020.
+INFO (XSTRM-223): 56. Translating cellview PRIMLIB/pmos4/layout as STRUCTURE pmos4_CDNS_790752340021.
+INFO (XSTRM-223): 57. Translating cellview INV/inv/layout as STRUCTURE inv.
+INFO (XSTRM-223): 58. Translating cellview MINIMAL_CORE/core/layout as STRUCTURE core.
+
+Summary of Objects Translated:
+	Scalar Instances:                       155
+	Array Instances:                        0
+	Polygons:                               303
+	Paths:                                  27
+	Rectangles:                             4044
+	Lines:                                  0
+	Arcs:                                   0
+	Donuts:                                 0
+	Dots:                                   0
+	Ellipses:                               0
+	Boundaries:                             0
+	Area Blockages:                         0
+	Layer Blockages:                        0
+	Area Halos:                             0
+	Markers:                                0
+	Rows:                                   0
+	Stitch:                                 0
+	Standard Vias                           32
+	Custom Vias:                            396
+	CdsGen Vias:                            0
+	Pathsegs:                               508
+	Text:                                   425
+	TextDisplay:                            0
+	Cells:                                  58
+
+Elapsed Time: 0.2s   User Time: 0.1s   CPU Time: 0.0s   Peak VM: 13040KB
+INFO (XSTRM-234): Translation completed. '0' error(s) and '4' warning(s) found.

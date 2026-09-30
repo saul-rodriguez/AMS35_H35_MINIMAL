@@ -1,0 +1,9 @@
+[Logging Service: 0]
+[2026-09-29 04:07:45.262 Z] [INFO] [cadence.virtuoso.ade.loggingservice] - HistoryRecorderManager init {"dbBasePath": "/home/saul/projects/AMS35_H35_MINIMAL/MINIMAL_TOP/top_tb/maestro/results/maestro"}
+[2026-09-29 04:07:45.262 Z] [INFO] [cadence.virtuoso.ade.loggingservice] - useGRPC grpc service... {"brokerAddress": "edatools:35455", "serviceName": "DaVinciService_518303_1790654863", "axlSession": "fnxSession0"}
+[2026-09-29 04:07:45.262 Z] [PROCESS] [cadence.virtuoso.ade.loggingservice] - Logging Service has successfully started. Waiting for incoming messages ... {"hostname": "edatools", "processid": 519013, "logfile": "/home/saul/projects/AMS35_H35_MINIMAL/logs_saul/logs0/LoggingService0.log"}
+[2026-09-29 04:07:45.268 Z] [INFO] [cadence.virtuoso.ade.loggingservice] - logging service gRPC started {"listening address": "edatools:42655"}
+[2026-09-29 04:09:15.001 Z] [INFO] [cadence.virtuoso.ade.loggingservice] - Got exit signal in processControlMessage. Will exit. {}
+[2026-09-29 04:09:16.002 Z] [PROCESS] [cadence.virtuoso.ade.loggingservice] - Current memory used: 57.2109 MBytes, peak memory used: 57.2109 MBytes {"hostname": "edatools", "processid": 519013, "logfile": "/home/saul/projects/AMS35_H35_MINIMAL/logs_saul/logs0/LoggingService0.log"}
+[2026-09-29 04:09:16.002 Z] [PROCESS] [cadence.virtuoso.ade.loggingservice] - Stopping Logging Service process. {"hostname": "edatools", "processid": 519013, "logfile": "/home/saul/projects/AMS35_H35_MINIMAL/logs_saul/logs0/LoggingService0.log"}
+[2026-09-29 04:09:16.002 Z] [PROCESS] [cadence.virtuoso.ade.loggingservice] - Logging Service stop!!!! {"hostname": "edatools", "processid": 519013, "logfile": "/home/saul/projects/AMS35_H35_MINIMAL/logs_saul/logs0/LoggingService0.log"}

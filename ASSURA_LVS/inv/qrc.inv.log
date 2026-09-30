@@ -1,0 +1,1791 @@
+
+
+  Cadence Quantus Extraction - 64-bit Parasitic Extractor - Version
+24.1.0-p089 Wed Dec 18 09:25:34 PST 2024
+---------------------------------------------------------------------------------------------------------------
+                                  Copyright 2024 Cadence Design Systems,
+Inc.
+
+
+
+INFO (EXTQRCXOPT-243) : For Assura inputs, if the "output_setup -directory_name" option was not
+specified, it is automatically set to the input directory.
+INFO (LBRCXU-108): Starting
+
+ runUserCmd /opt/tools/cadence/installs/ASSURA41/tools.lnx86/assura/bin/rcxToDfII /home/saul/projects/AMS35_H35_MINIMAL/ASSURA_LVS/inv/inv/__qrc.rcx_cmd -t -f /home/saul/projects/AMS35_H35_MINIMAL/ASSURA_LVS/inv/inv/extview.tmp -w /home/saul/projects/AMS35_H35_MINIMAL/ASSURA_LVS/inv/inv -cdslib /home/saul/projects/AMS35_H35_MINIMAL/cds.lib
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.02s.
+@(#)$CDS: rcxToDfII_64 version av4.1:Production:dfII25.1-64b:IC25.1-64b.38 08/06/2025 03:35 (sjfdcl919) $
+sub-version 4.1_USR7_HF3, integ signature 2025-08-06-0300
+
+run on edatools from /opt/tools/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/rcxToDfII on Mon Sep 28 11:09:11 2026
+
+
+Loading tech rule set file : /opt/pdk/ams/5.10.1/X35/assura/h35b4/h35b4d3/techRuleSets
+Loading all available p-cell functions
+AMS_DB set to cds
+No mx check
+ROD pcell code loaded
+*WARNING* (DB-270210): dbOpenCellViewByType: library 'IOLIB_4M' does not exist
+*WARNING* No library model for device "probepad auLvs IOLIB_4M".
+*WARNING* (DB-270210): dbOpenCellViewByType: library 'PRIMLIB_WIP' does not exist
+*WARNING* No library model for device "pdi1n01s002 auLvs PRIMLIB_WIP".
+*WARNING* (DB-270210): dbOpenCellViewByType: library 'PRIMLIB_WIP' does not exist
+*WARNING* No library model for device "pdi1n13s002 auLvs PRIMLIB_WIP".
+*WARNING* (DB-270210): dbOpenCellViewByType: library 'ESDLIB_WIP' does not exist
+*WARNING* No library model for device "esdscr14_sn auLvs ESDLIB_WIP".
+*WARNING* (DB-270210): dbOpenCellViewByType: library 'HALL' does not exist
+*WARNING* No library model for device "HALL_XY12x12_Zx2_LN auLvs HALL".
+*WARNING* (DB-270210): dbOpenCellViewByType: library 'HALL' does not exist
+*WARNING* No library model for device "HALL_XY12x12_Zx2_STD auLvs HALL".
+*WARNING* (DB-270210): dbOpenCellViewByType: library 'HALL' does not exist
+*WARNING* No library model for device "HALL_XY8x8_Zx2_LN auLvs HALL".
+*WARNING* (DB-270210): dbOpenCellViewByType: library 'HALL' does not exist
+*WARNING* No library model for device "HALL_XY8x8_Zx2_STD auLvs HALL".
+*WARNING* (DB-270210): dbOpenCellViewByType: library 'HALL' does not exist
+*WARNING* No library model for device "HALL_C1_H35 auLvs HALL".
+*WARNING* (DB-270210): dbOpenCellViewByType: library 'HALL' does not exist
+*WARNING* No library model for device "HALL_C1_H35X2 auLvs HALL".
+*WARNING* (DB-270210): dbOpenCellViewByType: library 'HALL' does not exist
+*WARNING* No library model for device "HALL_C1_H35X4 auLvs HALL".
+*WARNING* (DB-270210): dbOpenCellViewByType: library 'HALL' does not exist
+*WARNING* No library model for device "HALL_C2_H35 auLvs HALL".
+*WARNING* (DB-270210): dbOpenCellViewByType: library 'HALL' does not exist
+*WARNING* No library model for device "HALL_C2_H35X2 auLvs HALL".
+*WARNING* (DB-270210): dbOpenCellViewByType: library 'HALL' does not exist
+*WARNING* No library model for device "HALL_C2_H35X4 auLvs HALL".
+INFO (LBRCXM-612): Done Executing :runUserCmd
+
+INFO (LBRCXU-108): Starting
+
+ /opt/tools/cadence/installs/ASSURA41/tools.lnx86/assura/bin/avRCXxref /home/saul/projects/AMS35_H35_MINIMAL/ASSURA_LVS/inv/inv/__qrc.rcx_cmd -useRunName
+@(#)$CDS: avRCXxref_64 version av4.1:Production:dfII25.1-64b:IC25.1-64b.38 08/06/2025 03:32 (sjfdcl919) $
+sub-version 4.1_USR7_HF3, integ signature 2025-08-06-0300
+run on edatools at Mon Sep 28 11:09:12 2026
+Reading rsf
+INFO (LBRCXU-114): Finished /opt/tools/cadence/installs/ASSURA41/tools.lnx86/assura/bin/avRCXxref
+
+INFO (LBRCXM-642): Constructing the RCX run script
+
+Forking:  capgen -techdir /opt/pdk/ams/5.10.1/X35/assura/h35b4/h35b4d3/RCX-typical -inc /home/saul/projects/AMS35_H35_MINIMAL/ASSURA_LVS/inv/inv.elf -lvs /home/saul/projects/AMS35_H35_MINIMAL/ASSURA_LVS/inv/inv.xcn -lvsvia -p2lvs /opt/pdk/ams/5.10.1/X35/assura/h35b4/h35b4d3/RCX-typical/qrcTechFile -sd -reseqn -sw3d -canonical_res_caps -cap_ground_layer net_psub -cap_unit 1.0 -dsub net_pwell,net_nwell,net_psub -length_units meters -lexclude poly2,poly1 -p poly1,capgen_gate,pdiff -selected_paths_proper -genericMos NMOSI_device_hv,D,G,S -genericMos NMOSI_device_not_hv,D,G,S -genericMos NMOSIM_device_hv,D,G,S -genericMos NMOSIM_device_not_hv,D,G,S -blocking cblock_met1_poly1:0.001,met1,poly1 -blocking cblock_met2cap_met2:0.001,met2cap,met2 -blocking cblock_met3_poly1:0.001,met3,met2,met1,poly2,poly1 -blocking cblock_met3_psub:0.001,met3,met2,met1,poly2,poly1,pdiff,fox -blocking cblock_poly2_poly1:0.001,poly2,poly1 -blocking cblock_poly2_psub:0.001,poly2,poly1,pdiff,fox -blocking cblock_poly1_psub:0.001,poly1,pdiff,fox -res_blocking rblock_met1,net_met1 -res_blocking rblock_met2,net_met2 -res_blocking rblock_met3,net_met3 -res_blocking rblock_met4,net_met4 -res_blocking rblock_poly1,net_poly1 -res_blocking rblock_poly2,net_poly2 /home/saul/projects/AMS35_H35_MINIMAL/ASSURA_LVS/inv/inv
+
+INFO (LBMISC-215205): 
+*** Cadence Quantus Extraction Techgen -trans VERSION 24.1.0 Linux 64 bit - (Wed Dec 18 09:06:09 PST 2024)  ***
+
+
+INFO (CAPGEN-41199): 
+
+
+Techgen -trans results will be written to directory: /home/saul/projects/AMS35_H35_MINIMAL/ASSURA_LVS/inv/inv
+
+/home/saul/projects/AMS35_H35_MINIMAL/ASSURA_LVS/inv/inv/rcx_temp/tTWF020508CxPZJL
+INFO (CAPGEN-41737): Lvs connect layers DEVDEF_lambdaterm_n13_pinshape DEVDEF_lambdaterm_pinshape DEVDEF_pterm_n13_pinshape DEVDEF_pterm_pinshape MET1_pinshape MET2_pinshape MET3_pinshape MET4_pinshape OPTDEF_lambdaterm_pinshape OPTDEF_pterm_pinshape PAD_pinshape POLY1_pinshape T?3909 T?3910 T?3923 T?3924 T?3925 T?3926 T?3927 T?3928 T?3929 T?3930 net_DEVDEF_pin net_PDI1N01S002_LAM net_PDI1N01S002_P net_PDI1N13S002_LAM net_PDI1N13S002_P net_bondpad net_met1_VSUB net_met1_X1A net_met1_X1B net_met1_X1C net_met1_X1D net_met1_X2A net_met1_X2B net_met1_X2C net_met1_X2D net_met1_Y1A net_met1_Y1B net_met1_Y1C net_met1_Y1D net_met1_Y2A net_met1_Y2B net_met1_Y2C net_met1_Y2D net_met1_ZA net_met1_ZB net_met1_ZC net_met1_ZD net_met2_VSUB net_met2_X1A net_met2_X1B net_met2_X1C net_met2_X1D net_met2_X2A net_met2_X2B net_met2_X2C net_met2_X2D net_met2_Y1A net_met2_Y1B net_met2_Y1C net_met2_Y1D net_met2_Y2A net_met2_Y2B net_met2_Y2C net_met2_Y2D net_met2_ZA net_met2_ZB net_met2_ZC net_met2_ZD net_met3_COILN net_met3_COILP net_met3_VSUB net_met3_X1A net_met3_X1B net_met3_X1C net_met3_X1D net_met3_X2A net_met3_X2B net_met3_X2C net_met3_X2D net_met3_Y1A net_met3_Y1B net_met3_Y1C net_met3_Y1D net_met3_Y2A net_met3_Y2B net_met3_Y2C net_met3_Y2D net_met3_ZA net_met3_ZB net_met3_ZC net_met3_ZD net_met4_COILN net_met4_COILP net_ndiff net_nsd net_pdiff net_phdpinb750_lambdaterm net_phdpinb750_pterm net_pin_BFgnd net_pin_BFx net_pin_BFy net_pin_BFz net_psd rblock_met1 rblock_met2 rblock_met3 rblock_met4 rblock_poly1 rblock_poly2 are not mapped in layer_setup file
+
+INFO (CAPGEN-41804): Lvs stamped by PIN_DNTUB layers avStamp000f66 are not mapped in layer_setup file
+
+INFO (CAPGEN-41804): Lvs stamped by net_met1 layers esdscr14_sn_vio esdscr55_sn_vio rmet1_trm are not mapped in layer_setup file
+
+INFO (CAPGEN-41804): Lvs stamped by net_met2 layers esdnpn_pn3_gnd net_met2_metcap rmet2_trm are not mapped in layer_setup file
+
+INFO (CAPGEN-41804): Lvs stamped by net_met3 layers esdnpn_pn3_vio net_met3_metcap rmet3_trm are not mapped in layer_setup file
+
+INFO (CAPGEN-41804): Lvs stamped by net_met4 layers rmet4_trm are not mapped in layer_setup file
+
+INFO (CAPGEN-41804): Lvs stamped by net_ndiff layers PDI1N01S002_cath PDI1N13S002_cath are not mapped in layer_setup file
+
+INFO (CAPGEN-41804): Lvs stamped by net_ndiff_d_ptub layers esdgci3_e_ndiff_d_ptub esdgci3_e_ndiff_d_ptubx nmos10mh_for_stamp nmos20_for_stamp nmos50_for_stamp nmosdi20_for_stamp nmosdi50_for_stamp nmosi120_for_stamp nmosi120_met1_s nmosi20_for_stamp nmosi20_met1_s nmosi50_for_stamp nmosi50_met1_s are not mapped in layer_setup file
+
+INFO (CAPGEN-41804): Lvs stamped by net_pdiff_c_ptub layers nmosi120_met1_b nmosi20_met1_b nmosi50_met1_b are not mapped in layer_setup file
+
+INFO (CAPGEN-41804): Lvs stamped by net_pdiff_c_sub layers avStamp000f62 are not mapped in layer_setup file
+
+INFO (CAPGEN-41804): Lvs stamped by net_pdiff_d_ntub layers esdpmos18t_for_stamp pmos10mh_for_stamp pmos120_for_stamp pmos20_for_stamp pmos50_for_stamp are not mapped in layer_setup file
+
+INFO (CAPGEN-41804): Lvs stamped by net_poly1 layers esdgci3_gate net_poly1_metcap are not mapped in layer_setup file
+
+INFO (CAPGEN-41804): Lvs stamped by net_poly2 layers net_poly2_metcap are not mapped in layer_setup file
+
+INFO (CAPGEN-41804): Lvs stamped by nmosfi25t_source layers nmosfi25_for_stamp are not mapped in layer_setup file
+
+INFO (CAPGEN-41809):  Lvs connect via PAD are not mapped in layer_setup file.
+
+rcxspice took  0.20 user, 0.11 sys, 0.00 elapsed, 27764.0 kbytes
+
+Successfully created RCX script '/home/saul/projects/AMS35_H35_MINIMAL/ASSURA_LVS/inv/inv/rcx.sh'
+WARNING (LBRCXM-617): Unable to obtain 1 license(s) of QTS100 24.10
+
+INFO (LBRCXM-581): Checked out '1' license(s) of QTS300 24.10
+
+INFO (LBRCXM-608): Executing command
+   /bin/ksh  /home/saul/projects/AMS35_H35_MINIMAL/ASSURA_LVS/inv/inv/rcx.sh
+
+##=======================================================
+##ADD_EXPLICIT_VIAS=N
+##ADD_BULK_TERMINAL=N
+##AGDS_FILE=/dev/null
+##AGDS_LAYER_MAP_FILE=/dev/null
+##HCCI_DEV_PROP_FILE=/dev/null
+##AGDS_SPICE_FILE=/dev/null
+##AGDS_TEXT_LAYERS=
+##ARRAY_VIAS_SPACING=
+##ASSURA_RUN_DIR=/home/saul/projects/AMS35_H35_MINIMAL/ASSURA_LVS/inv
+##ASSURA_RUN_NAME=inv
+##BLACK_BOX_CELLS=/dev/null
+##BREAK_WIDTH=
+##CAP_COUPLING_FACTOR=1.0
+##CAP_EXTRACT_MODE=coupled
+##CAP_GROUND=GNDA
+##CAP_MODELS=no
+##DANGLINGR=N
+##DENSITY_CHECK_METHOD=P
+##DELETE_OUTPUT_FILE=N
+##DEVICE_FINGER_DELIMITER='@'
+##DF2=Y
+##DRACULA_RUN_DIR=
+##DRACULA_RUN_NAME=
+##ENABLESENSITIVITYEXTRACTION=N
+##EXCLUDE_FLOAT_LIMIT=
+##EXCLUDE_FLOAT_DECOPULING_FACTOR=
+##EXCLUDE_FLOATING_NETS=N
+##EXCLUDE_NETS_REDUCERC=/dev/null
+##EXCLUDE_SELF_CAPS=N
+##IGNORE_GATE_DIFFUSION_FRINGING_CAP=Y
+##EXTRACT=both
+##EXTRACT_MOS_DIFFUSION_AP=N
+##EXTRACT_MOS_DIFFUSION_HIGH=
+##EXTRACT_MOS_DIFFUSION_RES=Y
+##FILTER_SIZE=2.0
+##FIXED_NETS_FILE=/dev/null
+##FMAX=
+##FRACTURE_LENGTH_UNITS=MICRONS
+##FREQUENCY_FILE=/dev/null
+##GROUND_NETS=
+##GROUND_NETS_FILE=/dev/null
+##GROUND_SUBSTRATE_FLOATING_NETS=N
+##HCCI_DEV_PROP=7
+##HCCI_INST_PROP=6
+##HCCI_NET_PROP=5
+##HCCI_RULE_FILE=
+##HCCI_RUN_DIR=
+##HCCI_RUN_NAME=
+##HEADER_FILE=/dev/null
+##HIERARCHY_DELIMITER='/'
+##OUTPUT_HIERARCHY_DELIMITER='/'
+##HRCX_CELLS_FILE=/dev/null
+##IMPORT_GLOBALS=Y
+##LADDER_NETWORK=N
+##LVS_SOURCE=assura
+##M_FACTORR=
+##M_FACTORW=N
+##MACRO_CELL=Y
+##MAX_FRACTURE_LENGTH=infinite
+##MAX_SIGNALS=
+##MERGE_PARALLEL_R=N
+##MERGE_PARALLEL_VIA=N
+##MINC=1e-17
+##MINC_BY_PERCENTAGE=0.1
+##MINR=0.001
+##NET_NAME_SPACE=schematic
+##NETS_FILE=/dev/null
+##OUTPUT=/home/saul/projects/AMS35_H35_MINIMAL/ASSURA_LVS/inv/inv/extview.tmp
+##OUTPUT_NET_NAME_SPACE=layout
+##PARASITIC_BLOCKING_DEVICE_CELLS_TYPE=gray
+##PARASITIC_CAP_MODELS=no
+##PARASITIC_RES_MODELS=comment
+##PARASITIC_RES_LENGTH=N
+##PARASITIC_RES_WIDTH=N
+##PARASITIC_RES_WIDTH_DRAWN=N
+##PARASITIC_RES_UNIT=N
+##PARTIAL_CAP_BLOCKING=N
+##PEEC=N
+##PIN_ORDER_FILE=/dev/null
+##PIPE_ADVGEN=
+##PIPE_SPICE2DB=
+##POWER_NETS=
+##POWER_NETS_FILE=/dev/null
+##RC_FREQUENCY=
+##RCXDIR=/home/saul/projects/AMS35_H35_MINIMAL/ASSURA_LVS/inv/inv
+##RCXFS_HIGH=N
+##RCXFS_NETS_FILE=
+##RCXFS_TYPE=none
+##RCXFS_CUTOFF_DISTANCE=
+##RCXFS_CUTOFF_DISTANCE=
+##RCXFS_CUTOFF_DISTANCE=
+##RCXFS_CUTOFF_DISTANCE=
+##RCXFS_CUTOFF_DISTANCE=
+##RCXFS_VIA_OFF=N
+##REDUCERC=N
+##REGION_LIMIT=
+##RES_MODELS=no
+##RISE_TIME=
+##SAVE_FILL_SHAPES=N
+##SINGLE_CAP_EDSPF=N
+##SHOW_DIODES=N
+##SKIN_FREQUENCY=
+##SPEF=N
+##SPEF_UNITS=
+##SPLIT_PINS=N
+##FORCE_SUBCELL_PIN_ORDERS=N
+##SPLIT_PINS_DISTANCE=
+##SUB_NODE_CHAR='#'
+##SUBSTRATE_PROFILE=/dev/null
+##SUBSTRATE_STAMPING_OFF=N
+##TEMPDIR=/home/saul/projects/AMS35_H35_MINIMAL/ASSURA_LVS/inv/inv/rcx_temp
+##TEMPERATURE=25.0
+##TYPE=full
+##USER_REGION=/dev/null
+##VARIANT_CELL_FILE=/dev/null
+##VIA_EFFECT_OFF=N
+##VIRTUAL_FILL=
+##XREF=/home/saul/projects/AMS35_H35_MINIMAL/ASSURA_LVS/inv/inv/inv.gnx,/home/saul/projects/AMS35_H35_MINIMAL/ASSURA_LVS/inv/inv/inv.gdx
+##XY_COORDINATES=c,r
+##=======================================================
+
+CASE_SENSITIVE=TRUE
+export CASE_SENSITIVE
+QRC_MOS_LW_PRECISION=y
+export QRC_MOS_LW_PRECISION
+TEMPDIR=`setTempDir /home/saul/projects/AMS35_H35_MINIMAL/ASSURA_LVS/inv/inv/rcx_temp`
+setTempDir /home/saul/projects/AMS35_H35_MINIMAL/ASSURA_LVS/inv/inv/rcx_temp
+export TEMPDIR
+DEVICE_FINGER_DELIMITER='@'
+HIERARCHY_DELIMITER='/'
+OUTPUT_HIERARCHY_DELIMITER='/'
+cd /home/saul/projects/AMS35_H35_MINIMAL/ASSURA_LVS/inv/inv
+cat <<ENDCAT> caps2dversion
+* caps2d version: 11
+ENDCAT
+cat <<ENDCAT> genDev
+ENDCAT
+cat <<ENDCAT> flattransUnit.info
+meters
+ENDCAT
+QRC=Y
+export QRC
+cat <<ENDCAT> topcellxcn.info
+/home/saul/projects/AMS35_H35_MINIMAL/ASSURA_LVS/inv/inv.xcn
+ENDCAT
+
+#==========================================================#
+# Generate RCX input data from Assura LVS database
+#==========================================================#
+
+GOALIE2DIR=/opt/tools/cadence/installs/QUANTUS241/tools/extraction/bin
+export GOALIE2DIR
+vdbToRcx /home/saul/projects/AMS35_H35_MINIMAL/ASSURA_LVS/inv inv -unit \
+	meters -- -V1 -H satfile -r \
+	/home/saul/projects/AMS35_H35_MINIMAL/ASSURA_LVS/inv/inv.xcn -df2 \
+	-xgl
+@(#)$CDS: vdbToRcx_64 version av4.1:Production:dfII25.1-64b:IC25.1-64b.38 08/06/2025 03:35 (sjfdcl919) $
+24.1.0 Linux 64 bit - (Thu Mar 20 10:21:58 PDT 2025)
+Opening LVS data for inv in /home/saul/projects/AMS35_H35_MINIMAL/ASSURA_LVS/inv
+Open time is 0.0 sec.
+Build pins/attributes took 0.1 sec.
+Processing MET1_pintext                          4 shapes 0.0 sec.
+create satfile took  0.02 user, 0.00 sys, 0.00 elapsed, 192136.0 kbytes
+write edge MET1_pintext took  0.00 user, 0.00 sys, 0.00 elapsed, 192324.0 kbytes
+Building net map file.		0.0 sec.
+create netmap file took 0.00 user, 0.00 sys, 0.00 elapsed, 192344.0 kbytes
+create net file took 0.00 user, 0.00 sys, 0.00 elapsed, 192348.0 kbytes
+WARNING (LBCLV-5663): No bipolar models provided. Can't create bipolar files
+
+WARNING (LBCLV-5660): No resistor models provided. Can't create resistor files
+
+WARNING (LBCLV-5654): No capacitor models provided. Can't create capacitor file
+
+WARNING (LBCLV-5706): no generic models in rule file
+
+Device creation took 0.0 sec
+Processing net_pdiffcon                          8 shapes 0.0 sec.
+write edge net_pdiffcon took  0.01 user, 0.00 sys, 0.00 elapsed, 193060.0 kbytes
+Processing net_ndiffcon                          6 shapes 0.0 sec.
+write edge net_ndiffcon took  0.00 user, 0.00 sys, 0.00 elapsed, 193216.0 kbytes
+write edge P_NWD_device_DIODE_86 took  0.00 user, 0.00 sys, 0.00 elapsed, 193336.0 kbytes
+Processing P_NWD_device_DIODE_86                 1 shapes 0.0 sec.
+Processing vertph_c                              1 shapes 0.0 sec.
+write edge vertph_c took  0.00 user, 0.00 sys, 0.00 elapsed, 193476.0 kbytes
+Processing pnpvert10_c                           1 shapes 0.0 sec.
+write edge pnpvert10_c took  0.00 user, 0.00 sys, 0.00 elapsed, 193616.0 kbytes
+write edge PMOS_device_MOS_3 took  0.00 user, 0.00 sys, 0.00 elapsed, 193756.0 kbytes
+write edge NMOS_device_MOS_1 took  0.00 user, 0.00 sys, 0.00 elapsed, 193896.0 kbytes
+Processing PMOS_device_MOS_3                     1 shapes 0.0 sec.
+Processing NMOS_device_MOS_1                     1 shapes 0.0 sec.
+Processing avStamp000f62                         1 shapes 0.0 sec.
+write edge avStamp000f62 took  0.00 user, 0.01 sys, 0.00 elapsed, 194036.0 kbytes
+Processing net_nwell                             1 shapes 0.0 sec.
+write edge net_nwell took  0.00 user, 0.00 sys, 0.00 elapsed, 194176.0 kbytes
+Processing net_met1                              4 shapes 0.0 sec.
+write edge net_met1 took  0.00 user, 0.00 sys, 0.00 elapsed, 194356.0 kbytes
+Processing net_poly1                             1 shapes 0.0 sec.
+write edge net_poly1 took  0.00 user, 0.00 sys, 0.00 elapsed, 194516.0 kbytes
+write edge cblock_poly2_psub took  0.00 user, 0.00 sys, 0.00 elapsed, 194624.0 kbytes
+write edge cblock_poly1_psub took  0.00 user, 0.00 sys, 0.00 elapsed, 194764.0 kbytes
+write edge cblock_poly2_poly1 took  0.00 user, 0.00 sys, 0.00 elapsed, 194872.0 kbytes
+write edge cblock_met1_poly1 took  0.00 user, 0.00 sys, 0.00 elapsed, 194980.0 kbytes
+write edge cblock_met2cap_met2 took  0.00 user, 0.00 sys, 0.00 elapsed, 195088.0 kbytes
+write edge cblock_met3_psub took  0.00 user, 0.00 sys, 0.00 elapsed, 195196.0 kbytes
+write edge cblock_met3_poly1 took  0.00 user, 0.00 sys, 0.00 elapsed, 195304.0 kbytes
+Processing cblock_poly2_psub                     0 shapes 0.0 sec.
+Processing cblock_poly1_psub                     2 shapes 0.0 sec.
+Processing cblock_poly2_poly1                    0 shapes 0.0 sec.
+Processing cblock_met1_poly1                     0 shapes 0.0 sec.
+Processing cblock_met2cap_met2                   0 shapes 0.0 sec.
+Processing cblock_met3_psub                      0 shapes 0.0 sec.
+Processing cblock_met3_poly1                     0 shapes 0.0 sec.
+Processing net_psd                               2 shapes 0.0 sec.
+write edge net_psd took  0.00 user, 0.00 sys, 0.00 elapsed, 195448.0 kbytes
+Processing net_nsd                               2 shapes 0.0 sec.
+write edge net_nsd took  0.00 user, 0.00 sys, 0.00 elapsed, 195588.0 kbytes
+Processing net_pdiff_d_ntub                      2 shapes 0.0 sec.
+write edge net_pdiff_d_ntub took  0.00 user, 0.00 sys, 0.00 elapsed, 195728.0 kbytes
+Processing net_pdiff_c_sub                       1 shapes 0.0 sec.
+write edge net_pdiff_c_sub took  0.00 user, 0.00 sys, 0.00 elapsed, 195868.0 kbytes
+Processing net_ndiff_d_sub                       2 shapes 0.0 sec.
+write edge net_ndiff_d_sub took  0.00 user, 0.00 sys, 0.00 elapsed, 196008.0 kbytes
+Processing net_ndiff_c_ntub                      1 shapes 0.0 sec.
+write edge net_ndiff_c_ntub took  0.00 user, 0.00 sys, 0.00 elapsed, 196148.0 kbytes
+Processing net_pdiff                             3 shapes 0.0 sec.
+write edge net_pdiff took  0.00 user, 0.00 sys, 0.00 elapsed, 196288.0 kbytes
+Processing net_ndiff                             3 shapes 0.0 sec.
+write edge net_ndiff took  0.00 user, 0.00 sys, 0.00 elapsed, 196432.0 kbytes
+Processing net_poly1con                          1 shapes 0.0 sec.
+write edge net_poly1con took  0.00 user, 0.00 sys, 0.00 elapsed, 196572.0 kbytes
+Processing net_psub                              1 shapes 0.0 sec.
+write edge net_psub took  0.00 user, 0.00 sys, 0.00 elapsed, 196712.0 kbytes
+Processing MET1_pinshape                         4 shapes 0.0 sec.
+write edge MET1_pinshape took  0.00 user, 0.00 sys, 0.00 elapsed, 196852.0 kbytes
+sort edges took  0.05 user, 0.20 sys, 0.00 elapsed, 4928.0 kbytes
+sort labels took  0.00 user, 0.00 sys, 0.00 elapsed, 4740.0 kbytes
+sort edges and labels took  0.10 user, 0.27 sys, 0.00 elapsed, 196852.0 kbytes
+
+	vdbToRcx System Usage:
+	Elapsed:     1 seconds.
+	CPU:         0.1 seconds
+	Memory     134 Meg
+GOALIE2DIR=/opt/tools/cadence/installs/QUANTUS241/tools/extraction/bin/64bit
+export GOALIE2DIR
+
+#==========================================================#
+# Calculate erosion tables for specified process layers
+#==========================================================#
+
+densitymap -V -TC -o met1.den 47.5 net_met1
+densitymap took 0.00 user, 0.01 sys, 0.00 elapsed, 6232.0 kbytes
+/bin/cp NMOS_device_MOS_1 NMOS_device_MOS_1_orig
+geom NMOS_device_MOS_1 net_ndiff_d_sub - NMOS_device_MOS_1,10,i,1
+/bin/cp PMOS_device_MOS_3 PMOS_device_MOS_3_orig
+geom PMOS_device_MOS_3 net_pdiff_d_ntub - PMOS_device_MOS_3,10,i,1
+
+#==========================================================#
+# Generate power list
+#==========================================================#
+
+cat global.net > power_list
+
+#==========================================================#
+# Generate FS connectivity
+#==========================================================#
+
+
+#==========================================================#
+# Ensure vias do not extend beyond routing
+#==========================================================#
+
+geom -V net_poly1con net_met1 net_poly1 - net_poly1con_net_met1_net_poly1,111,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 7272.0 kbytes
+geom -V net_ndiffcon net_met1 net_ndiff_c_ntub - net_ndiffcon_net_met1_net_ndiff_c_ntub,111,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 7272.0 kbytes
+geom -V net_ndiffcon net_met1 net_ndiff_d_sub - net_ndiffcon_net_met1_net_ndiff_d_sub,111,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 7272.0 kbytes
+geom -V net_ndiffcon net_ndiff_c_ntub net_ndiff_d_sub - net_ndiffcon_net_ndiff_c_ntub_net_ndiff_d_sub,111,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 7232.0 kbytes
+geom -V net_pdiffcon net_met1 net_pdiff_c_sub - net_pdiffcon_net_met1_net_pdiff_c_sub,111,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 7272.0 kbytes
+geom -V net_pdiffcon net_met1 net_pdiff_d_ntub - net_pdiffcon_net_met1_net_pdiff_d_ntub,111,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 7272.0 kbytes
+geom -V net_pdiffcon net_pdiff_c_sub net_pdiff_d_ntub - net_pdiffcon_net_pdiff_c_sub_net_pdiff_d_ntub,111,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 7240.0 kbytes
+geom -V net_met1 MET1_pinshape - net_met1_MET1_pinshape_ovia,11,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 7188.0 kbytes
+geom -V net_ndiff_c_ntub net_ndiff - net_ndiff_c_ntub_net_ndiff_ovia,11,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 7232.0 kbytes
+geom -V net_ndiff_d_sub net_ndiff - net_ndiff_d_sub_net_ndiff_ovia,11,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 7228.0 kbytes
+geom -V net_nsd net_ndiff - net_nsd_net_ndiff_ovia,11,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 7240.0 kbytes
+geom -V net_pdiff_c_sub net_pdiff - net_pdiff_c_sub_net_pdiff_ovia,11,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 7180.0 kbytes
+geom -V net_pdiff_d_ntub net_pdiff - net_pdiff_d_ntub_net_pdiff_ovia,11,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 7248.0 kbytes
+geom -V net_psd net_pdiff - net_psd_net_pdiff_ovia,11,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 7248.0 kbytes
+geom -V avStamp000f62 net_pdiff_c_sub - avStamp000f62_net_pdiff_c_sub_ovia,11,i,1
+
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 7216.0 kbytes
+#==========================================================#
+# Flatten net file, routing, via and device layers
+#==========================================================#
+
+SAVEDIR=`beginFlattenInputs`
+beginFlattenInputs
+export SAVEDIR
+/bin/mv -f NET h_NET
+flatnet -V -li -h '/' h_NET NET
+flatnet took 0.00 user, 0.00 sys, 0.00 elapsed, 19904.0 kbytes
+netprint -V -N1 power_list:power_list_nums NET
+flattenTransistorData NMOS_device_MOS_1 meters
+flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 12752.0 kbytes
+flatnet took 0.00 user, 0.00 sys, 0.00 elapsed, 20036.0 kbytes
+flattrans took 0.00 user, 0.00 sys, 0.00 elapsed, 6220.0 kbytes
+flattenTransistorData PMOS_device_MOS_3 meters
+flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 12784.0 kbytes
+flatnet took 0.00 user, 0.00 sys, 0.00 elapsed, 19892.0 kbytes
+flattrans took 0.00 user, 0.00 sys, 0.00 elapsed, 6292.0 kbytes
+flattenDiodeData P_NWD_device_DIODE_86 meters
+flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 12964.0 kbytes
+flatnet took 0.00 user, 0.01 sys, 0.00 elapsed, 19648.0 kbytes
+flattrans took 0.00 user, 0.00 sys, 0.00 elapsed, 6288.0 kbytes
+flattenLayers cblock_poly1_psub
+flattub took  0.00 user, 0.00 sys, 0.00 elapsed, 6488.0 kbytes
+flattenLayers -m net_poly1con net_ndiffcon net_pdiffcon net_met1 net_poly1 \
+	net_ndiff_c_ntub net_ndiff_d_sub net_pdiff_c_sub net_pdiff_d_ntub \
+	net_nwell net_psub pnpvert10_c vertph_c \
+	net_poly1con_net_met1_net_poly1 \
+	net_ndiffcon_net_met1_net_ndiff_c_ntub \
+	net_ndiffcon_net_met1_net_ndiff_d_sub \
+	net_ndiffcon_net_ndiff_c_ntub_net_ndiff_d_sub \
+	net_pdiffcon_net_met1_net_pdiff_c_sub \
+	net_pdiffcon_net_met1_net_pdiff_d_ntub \
+	net_pdiffcon_net_pdiff_c_sub_net_pdiff_d_ntub \
+	net_met1_MET1_pinshape_ovia MET1_pinshape \
+	net_ndiff_c_ntub_net_ndiff_ovia net_ndiff \
+	net_ndiff_d_sub_net_ndiff_ovia net_nsd_net_ndiff_ovia net_nsd \
+	net_pdiff_c_sub_net_pdiff_ovia net_pdiff \
+	net_pdiff_d_ntub_net_pdiff_ovia net_psd_net_pdiff_ovia net_psd \
+	avStamp000f62_net_pdiff_c_sub_ovia avStamp000f62 \
+	NMOS_device_MOS_1_orig PMOS_device_MOS_3_orig
+flattub took  0.00 user, 0.01 sys, 0.00 elapsed, 13348.0 kbytes
+endFlattenInputs
+
+#==========================================================#
+# Initialize CAP_GROUND variable
+#==========================================================#
+
+cat <<ENDCAT> sch_cap_ground
+GNDA
+ENDCAT
+sch2lay -a -r /home/saul/projects/AMS35_H35_MINIMAL/ASSURA_LVS/inv/inv/inv.gnx -rd /home/saul/projects/AMS35_H35_MINIMAL/ASSURA_LVS/inv/inv/inv.gdx sch_cap_ground lay_cap_ground
+CAP_GROUND=`findCapGround -gfn lay_cap_ground -l net_psub NET`
+findCapGround -gfn lay_cap_ground -l net_psub NET
+echo "CAP_GROUND=" ${CAP_GROUND}
+CAP_GROUND= 1
+export CAP_GROUND
+echo ${CAP_GROUND} > cgnetfile
+netprint -n cgnetfile:gn_summary.log NET
+reconnect -cgnd ${CAP_GROUND} -float floatlvsnetsfile -tf \
+	NMOS_device_MOS_1,PMOS_device_MOS_3 -df P_NWD_device_DIODE_86 -probe \
+	MET1_pintext:net_met1:MET1_pintext_fvia
+iprint -count floatlvsnetsfile > floatlvsnetsfile.txt
+geom NMOS_device_MOS_1,PMOS_device_MOS_3 - qrcgate,1,i,1
+geom -V  NMOS_device_MOS_1,PMOS_device_MOS_3 - qrcpoly__0,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6900.0 kbytes
+geom -V  qrcpoly__0 - qrcpoly,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6904.0 kbytes
+/bin/rm -f qrcpoly__0
+
+#==========================================================#
+# Extract MOSFET diffusion resistance parameters (NRD/NRS)
+#==========================================================#
+
+createLink net_ndiffcon_net_met1_net_ndiff_d_sub net_ndiff_d_sub.sdres
+createLink net_pdiffcon_net_met1_net_pdiff_d_ntub net_pdiff_d_ntub.sdres
+tident -V -noLW NMOS_device_MOS_1.trans -e 0x1 -r net_ndiff_d_sub.sdres \
+	NMOS_device_MOS_1 net_ndiff_d_sub net_poly1 net_psub - net_psub - \
+	1,NMOS4 0,xNMOS4 - NMOS_device_MOS_1.transn
+
+INFO (TIDENT-143051):        1 transistors of type 
+
+INFO (TIDENT-143052): 'NMOS4'
+
+
+INFO (TIDENT-143055):        1 transistors all together
+
+
+  Output 2 Regions for INFO (INTER-122004): Interact
+
+
+tident took 0.08 user, 0.20 sys, 0.00 elapsed, 12592.0 kbytes
+tident -V -noLW PMOS_device_MOS_3.trans -e 0x1 -r net_pdiff_d_ntub.sdres \
+	PMOS_device_MOS_3 net_pdiff_d_ntub net_poly1 net_nwell - net_nwell - \
+	1,PMOS4 0,xPMOS4 - PMOS_device_MOS_3.transn
+
+INFO (TIDENT-143051):        1 transistors of type 
+
+INFO (TIDENT-143052): 'PMOS4'
+
+
+INFO (TIDENT-143055):        1 transistors all together
+
+
+  Output 2 Regions for INFO (INTER-122004): Interact
+
+
+tident took 0.07 user, 0.14 sys, 0.00 elapsed, 12688.0 kbytes
+changeTransFileNameAP NMOS_device_MOS_1.trans NMOS_device_MOS_1.transn
+changeTransFileNameAP PMOS_device_MOS_3.trans PMOS_device_MOS_3.transn
+iprint -count floatlvsnetsfile > input_nets_summary.log
+iprint -imerge power_list_nums floatlvsnetsfile power_list_nums2
+mv power_list_nums power_list_nums_orig
+cp power_list_nums2 power_list_nums 
+
+#==========================================================#
+# Segregate interconnect into resistive and non-resistive
+#==========================================================#
+
+selectNetsByNumber power_list_nums MET1_pinshape p_rMET1_pinshape np_rMET1_pinshape
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 6124.0 kbytes
+selectNetsByNumber power_list_nums avStamp000f62 p_ravStamp000f62 np_ravStamp000f62
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 6136.0 kbytes
+selectNetsByNumber power_list_nums net_met1 p_rnet_met1 np_rnet_met1
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 6108.0 kbytes
+selectNetsByNumber power_list_nums net_ndiff p_rnet_ndiff np_rnet_ndiff
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 6132.0 kbytes
+selectNetsByNumber power_list_nums net_ndiff_c_ntub p_rnet_ndiff_c_ntub np_rnet_ndiff_c_ntub
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 6136.0 kbytes
+selectNetsByNumber power_list_nums net_ndiff_d_sub p_rnet_ndiff_d_sub np_rnet_ndiff_d_sub
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 6132.0 kbytes
+selectNetsByNumber power_list_nums net_nsd p_rnet_nsd np_rnet_nsd
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 6116.0 kbytes
+selectNetsByNumber power_list_nums net_pdiff p_rnet_pdiff np_rnet_pdiff
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 6128.0 kbytes
+selectNetsByNumber power_list_nums net_pdiff_c_sub p_rnet_pdiff_c_sub np_rnet_pdiff_c_sub
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 6124.0 kbytes
+selectNetsByNumber power_list_nums net_pdiff_d_ntub p_rnet_pdiff_d_ntub np_rnet_pdiff_d_ntub
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 6116.0 kbytes
+selectNetsByNumber power_list_nums net_poly1 p_rnet_poly1 np_rnet_poly1
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 6132.0 kbytes
+selectNetsByNumber power_list_nums net_psd p_rnet_psd np_rnet_psd
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 6100.0 kbytes
+selectNetsByNumber power_list_nums net_nwell p_rnet_nwell np_rnet_nwell
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 6132.0 kbytes
+selectNetsByNumber power_list_nums net_psub p_rnet_psub np_rnet_psub
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 6136.0 kbytes
+selectNetsByNumber power_list_nums pnpvert10_c p_rpnpvert10_c np_rpnpvert10_c
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 6132.0 kbytes
+selectNetsByNumber power_list_nums vertph_c p_rvertph_c np_rvertph_c
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 6128.0 kbytes
+selectNetsByNumber power_list_nums net_poly1con_net_met1_net_poly1 p_rnet_poly1con_net_met1_net_poly1 np_rnet_poly1con_net_met1_net_poly1
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 6120.0 kbytes
+selectNetsByNumber power_list_nums net_ndiffcon_net_met1_net_ndiff_c_ntub p_rnet_ndiffcon_net_met1_net_ndiff_c_ntub np_rnet_ndiffcon_net_met1_net_ndiff_c_ntub
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 6128.0 kbytes
+selectNetsByNumber power_list_nums net_ndiffcon_net_met1_net_ndiff_d_sub p_rnet_ndiffcon_net_met1_net_ndiff_d_sub np_rnet_ndiffcon_net_met1_net_ndiff_d_sub
+epick took  0.00 user, 0.01 sys, 0.00 elapsed, 6108.0 kbytes
+selectNetsByNumber power_list_nums net_pdiffcon_net_met1_net_pdiff_c_sub p_rnet_pdiffcon_net_met1_net_pdiff_c_sub np_rnet_pdiffcon_net_met1_net_pdiff_c_sub
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 6132.0 kbytes
+selectNetsByNumber power_list_nums net_pdiffcon_net_met1_net_pdiff_d_ntub p_rnet_pdiffcon_net_met1_net_pdiff_d_ntub np_rnet_pdiffcon_net_met1_net_pdiff_d_ntub
+epick took  0.00 user, 0.01 sys, 0.00 elapsed, 6132.0 kbytes
+mv power_list_nums_orig power_list_nums
+
+#==========================================================#
+# Create resistor cut regions between resistive
+# interconnect levels
+#==========================================================#
+
+mergevia -V -tech /opt/pdk/ams/5.10.1/X35/assura/h35b4/h35b4d3/RCX-typical \
+	-cnt np_rnet_poly1con_net_met1_net_poly1 \
+	rnet_poly1con_net_met1_net_poly1 - np_rnet_met1 np_rnet_poly1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 28392.0 kbytes
+mergevia took 0.00 user, 0.00 sys, 0.00 elapsed, 28396.0 kbytes
+cp rnet_poly1con_net_met1_net_poly1 rnet_poly1con_net_met1_net_poly1_orig
+
+#==========================================================#
+# Create resistive interconnect MOSFET terminals
+#==========================================================#
+
+createMosfetGateTerminal -V NMOS_device_MOS_1 np_rnet_poly1 NMOS_device_MOS_1_mgvia
+createMosfetGateTerminal took 0.04 user, 0.09 sys, 0.00 elapsed, 4420.0 kbytes
+createMosfetGateTerminal -V PMOS_device_MOS_3 np_rnet_poly1 PMOS_device_MOS_3_mgvia
+
+createMosfetGateTerminal took 0.03 user, 0.08 sys, 0.00 elapsed, 4456.0 kbytes
+#==========================================================#
+# Prepare non-resistive text layers
+#==========================================================#
+
+flatlabel -V -tc -F MET1_pintext MET1_pintext_nr_labs
+
+INFO (FLTLBL-89003): exec labsort -V MET1_pintext_nr_labs
+
+sort labels took  0.00 user, 0.00 sys, 0.00 elapsed, 4668.0 kbytes
+flatlabel took 0.00 user, 0.00 sys, 0.00 elapsed, 6032.0 kbytes
+#==========================================================#
+# Assign net numbers to cut regions
+#==========================================================#
+
+connect -V -relocate NET np_rMET1_pinshape:np_rMET1_pinshape.conn \
+	np_ravStamp000f62:np_ravStamp000f62.conn \
+	np_rnet_ndiff_c_ntub:np_rnet_ndiff_c_ntub.conn \
+	np_rnet_ndiff_d_sub:np_rnet_ndiff_d_sub.conn \
+	np_rnet_pdiff_c_sub:np_rnet_pdiff_c_sub.conn \
+	np_rnet_pdiff_d_ntub:np_rnet_pdiff_d_ntub.conn \
+	np_rnet_ndiff:np_rnet_ndiff.conn np_rnet_nsd:np_rnet_nsd.conn \
+	np_rnet_pdiff:np_rnet_pdiff.conn np_rnet_psd:np_rnet_psd.conn \
+	rnet_poly1con_net_met1_net_poly1 NMOS_device_MOS_1_mgvia \
+	PMOS_device_MOS_3_mgvia - avStamp000f62_net_pdiff_c_sub_ovia,2,5 \
+	net_ndiff_c_ntub_net_ndiff_ovia,3,7 \
+	net_ndiff_d_sub_net_ndiff_ovia,4,7 \
+	net_ndiffcon_net_ndiff_c_ntub_net_ndiff_d_sub,3,4 \
+	net_nsd_net_ndiff_ovia,8,7 net_pdiff_c_sub_net_pdiff_ovia,5,9 \
+	net_pdiff_d_ntub_net_pdiff_ovia,6,9 \
+	net_pdiffcon_net_pdiff_c_sub_net_pdiff_d_ntub,5,6 \
+	net_psd_net_pdiff_ovia,10,9 - MET1_pintext_nr_labs,1
+
+relocate took 0.01 user, 0.04 sys, 0.00 elapsed, 274924.0 kbytes
+connect took  0.00 user, 0.00 sys, 0.00 elapsed, 275092.0 kbytes
+#==========================================================#
+# Assign net numbers to resistor vias
+#==========================================================#
+
+geom -V net_met1_MET1_pinshape_ovia np_rMET1_pinshape.conn - tmp_rnet_met1_MET1_pinshape_ovia,11,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6936.0 kbytes
+mergevia -V -i -tech /opt/pdk/ams/5.10.1/X35/assura/h35b4/h35b4d3/RCX-typical \
+	-cnt tmp_rnet_met1_MET1_pinshape_ovia rnet_met1_MET1_pinshape_ovia - \
+	np_rnet_met1 np_rMET1_pinshape
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 28960.0 kbytes
+stamp took  0.05 user, 0.10 sys, 0.00 elapsed, 274792.0 kbytes
+mergevia took 0.05 user, 0.11 sys, 0.00 elapsed, 29028.0 kbytes
+[dofork] stamp -V tmp_rnet_met1_MET1_pinshape_ovia rnet_met1_MET1_pinshape_ovia
+cp rnet_met1_MET1_pinshape_ovia rnet_met1_MET1_pinshape_ovia_orig
+/bin/rm -f tmp_rnet_met1_MET1_pinshape_ovia
+geom -V net_ndiffcon_net_met1_net_ndiff_c_ntub np_rnet_ndiff_c_ntub.conn - tmp_rnet_ndiffcon_net_met1_net_ndiff_c_ntub,11,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6916.0 kbytes
+geom -V np_rnet_ndiffcon_net_met1_net_ndiff_c_ntub np_rnet_ndiff_c_ntub.conn - np_rnet_ndiffcon_net_met1_net_ndiff_c_ntub,11,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6940.0 kbytes
+mergevia -V -i -tech /opt/pdk/ams/5.10.1/X35/assura/h35b4/h35b4d3/RCX-typical \
+	-cnt tmp_rnet_ndiffcon_net_met1_net_ndiff_c_ntub \
+	rnet_ndiffcon_net_met1_net_ndiff_c_ntub - np_rnet_met1 \
+	np_rnet_ndiff_c_ntub
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 28964.0 kbytes
+stamp took  0.05 user, 0.07 sys, 0.00 elapsed, 274896.0 kbytes
+mergevia took 0.05 user, 0.08 sys, 0.00 elapsed, 29032.0 kbytes
+[dofork] stamp -V tmp_rnet_ndiffcon_net_met1_net_ndiff_c_ntub rnet_ndiffcon_net_met1_net_ndiff_c_ntub
+cp rnet_ndiffcon_net_met1_net_ndiff_c_ntub rnet_ndiffcon_net_met1_net_ndiff_c_ntub_orig
+/bin/rm -f tmp_rnet_ndiffcon_net_met1_net_ndiff_c_ntub
+geom -V net_ndiffcon_net_met1_net_ndiff_d_sub np_rnet_ndiff_d_sub.conn - tmp_rnet_ndiffcon_net_met1_net_ndiff_d_sub,11,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6876.0 kbytes
+geom -V np_rnet_ndiffcon_net_met1_net_ndiff_d_sub np_rnet_ndiff_d_sub.conn - np_rnet_ndiffcon_net_met1_net_ndiff_d_sub,11,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6864.0 kbytes
+mergevia -V -i -tech /opt/pdk/ams/5.10.1/X35/assura/h35b4/h35b4d3/RCX-typical \
+	-cnt tmp_rnet_ndiffcon_net_met1_net_ndiff_d_sub \
+	rnet_ndiffcon_net_met1_net_ndiff_d_sub - np_rnet_met1 \
+	np_rnet_ndiff_d_sub
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 28948.0 kbytes
+stamp took  0.04 user, 0.07 sys, 0.00 elapsed, 274884.0 kbytes
+mergevia took 0.05 user, 0.08 sys, 0.00 elapsed, 29020.0 kbytes
+[dofork] stamp -V tmp_rnet_ndiffcon_net_met1_net_ndiff_d_sub rnet_ndiffcon_net_met1_net_ndiff_d_sub
+cp rnet_ndiffcon_net_met1_net_ndiff_d_sub rnet_ndiffcon_net_met1_net_ndiff_d_sub_orig
+/bin/rm -f tmp_rnet_ndiffcon_net_met1_net_ndiff_d_sub
+geom -V net_pdiffcon_net_met1_net_pdiff_c_sub np_rnet_pdiff_c_sub.conn - tmp_rnet_pdiffcon_net_met1_net_pdiff_c_sub,11,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6920.0 kbytes
+geom -V np_rnet_pdiffcon_net_met1_net_pdiff_c_sub np_rnet_pdiff_c_sub.conn - np_rnet_pdiffcon_net_met1_net_pdiff_c_sub,11,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6928.0 kbytes
+mergevia -V -i -tech /opt/pdk/ams/5.10.1/X35/assura/h35b4/h35b4d3/RCX-typical \
+	-cnt tmp_rnet_pdiffcon_net_met1_net_pdiff_c_sub \
+	rnet_pdiffcon_net_met1_net_pdiff_c_sub - np_rnet_met1 \
+	np_rnet_pdiff_c_sub
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 28960.0 kbytes
+stamp took  0.04 user, 0.07 sys, 0.00 elapsed, 274924.0 kbytes
+mergevia took 0.05 user, 0.08 sys, 0.00 elapsed, 29028.0 kbytes
+[dofork] stamp -V tmp_rnet_pdiffcon_net_met1_net_pdiff_c_sub rnet_pdiffcon_net_met1_net_pdiff_c_sub
+cp rnet_pdiffcon_net_met1_net_pdiff_c_sub rnet_pdiffcon_net_met1_net_pdiff_c_sub_orig
+/bin/rm -f tmp_rnet_pdiffcon_net_met1_net_pdiff_c_sub
+geom -V net_pdiffcon_net_met1_net_pdiff_d_ntub np_rnet_pdiff_d_ntub.conn - tmp_rnet_pdiffcon_net_met1_net_pdiff_d_ntub,11,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6928.0 kbytes
+geom -V np_rnet_pdiffcon_net_met1_net_pdiff_d_ntub np_rnet_pdiff_d_ntub.conn - np_rnet_pdiffcon_net_met1_net_pdiff_d_ntub,11,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6924.0 kbytes
+mergevia -V -i -tech /opt/pdk/ams/5.10.1/X35/assura/h35b4/h35b4d3/RCX-typical \
+	-cnt tmp_rnet_pdiffcon_net_met1_net_pdiff_d_ntub \
+	rnet_pdiffcon_net_met1_net_pdiff_d_ntub - np_rnet_met1 \
+	np_rnet_pdiff_d_ntub
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 28952.0 kbytes
+stamp took  0.04 user, 0.08 sys, 0.00 elapsed, 274928.0 kbytes
+mergevia took 0.04 user, 0.09 sys, 1.00 elapsed, 29024.0 kbytes
+[dofork] stamp -V tmp_rnet_pdiffcon_net_met1_net_pdiff_d_ntub rnet_pdiffcon_net_met1_net_pdiff_d_ntub
+cp rnet_pdiffcon_net_met1_net_pdiff_d_ntub rnet_pdiffcon_net_met1_net_pdiff_d_ntub_orig
+/bin/rm -f tmp_rnet_pdiffcon_net_met1_net_pdiff_d_ntub
+
+#==========================================================#
+# Assign net numbers to nonresistive layers
+#==========================================================#
+
+epick -V -reo -e rnet_met1_MET1_pinshape_ovia -e \
+	rnet_ndiffcon_net_met1_net_ndiff_c_ntub -e \
+	rnet_ndiffcon_net_met1_net_ndiff_d_sub -e \
+	rnet_pdiffcon_net_met1_net_pdiff_c_sub -e \
+	rnet_pdiffcon_net_met1_net_pdiff_d_ntub np_rnet_ndiff_c_ntub.conn \
+	tmp_net_ndiff_c_ntub
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 6180.0 kbytes
+epick -V -reo -e tmp_net_ndiff_c_ntub -c np_rnet_ndiff_c_ntub.conn tmp1_net_ndiff_c_ntub
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 6172.0 kbytes
+geom -V tmp1_net_ndiff_c_ntub np_rnet_ndiff_c_ntub - tmp1_net_ndiff_c_ntub,11,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6928.0 kbytes
+geom -V tmp_net_ndiff_c_ntub,tmp1_net_ndiff_c_ntub - np_rnet_ndiff_c_ntub,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6912.0 kbytes
+/bin/rm -f tmp_net_ndiff_c_ntub tmp1_net_ndiff_c_ntub
+epick -V -reo -e rnet_met1_MET1_pinshape_ovia -e \
+	rnet_ndiffcon_net_met1_net_ndiff_c_ntub -e \
+	rnet_ndiffcon_net_met1_net_ndiff_d_sub -e \
+	rnet_pdiffcon_net_met1_net_pdiff_c_sub -e \
+	rnet_pdiffcon_net_met1_net_pdiff_d_ntub np_rnet_ndiff_d_sub.conn \
+	tmp_net_ndiff_d_sub
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 6180.0 kbytes
+epick -V -reo -e tmp_net_ndiff_d_sub -c np_rnet_ndiff_d_sub.conn tmp1_net_ndiff_d_sub
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 6188.0 kbytes
+geom -V tmp1_net_ndiff_d_sub np_rnet_ndiff_d_sub - tmp1_net_ndiff_d_sub,11,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6920.0 kbytes
+geom -V tmp_net_ndiff_d_sub,tmp1_net_ndiff_d_sub - np_rnet_ndiff_d_sub,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6916.0 kbytes
+/bin/rm -f tmp_net_ndiff_d_sub tmp1_net_ndiff_d_sub
+epick -V -reo -e rnet_met1_MET1_pinshape_ovia -e \
+	rnet_ndiffcon_net_met1_net_ndiff_c_ntub -e \
+	rnet_ndiffcon_net_met1_net_ndiff_d_sub -e \
+	rnet_pdiffcon_net_met1_net_pdiff_c_sub -e \
+	rnet_pdiffcon_net_met1_net_pdiff_d_ntub np_rnet_pdiff_c_sub.conn \
+	tmp_net_pdiff_c_sub
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 6184.0 kbytes
+epick -V -reo -e tmp_net_pdiff_c_sub -c np_rnet_pdiff_c_sub.conn tmp1_net_pdiff_c_sub
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 6156.0 kbytes
+geom -V tmp1_net_pdiff_c_sub np_rnet_pdiff_c_sub - tmp1_net_pdiff_c_sub,11,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6896.0 kbytes
+geom -V tmp_net_pdiff_c_sub,tmp1_net_pdiff_c_sub - np_rnet_pdiff_c_sub,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6912.0 kbytes
+/bin/rm -f tmp_net_pdiff_c_sub tmp1_net_pdiff_c_sub
+epick -V -reo -e rnet_met1_MET1_pinshape_ovia -e \
+	rnet_ndiffcon_net_met1_net_ndiff_c_ntub -e \
+	rnet_ndiffcon_net_met1_net_ndiff_d_sub -e \
+	rnet_pdiffcon_net_met1_net_pdiff_c_sub -e \
+	rnet_pdiffcon_net_met1_net_pdiff_d_ntub np_rnet_pdiff_d_ntub.conn \
+	tmp_net_pdiff_d_ntub
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 6168.0 kbytes
+epick -V -reo -e tmp_net_pdiff_d_ntub -c np_rnet_pdiff_d_ntub.conn tmp1_net_pdiff_d_ntub
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 6176.0 kbytes
+geom -V tmp1_net_pdiff_d_ntub np_rnet_pdiff_d_ntub - tmp1_net_pdiff_d_ntub,11,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6928.0 kbytes
+geom -V tmp_net_pdiff_d_ntub,tmp1_net_pdiff_d_ntub - np_rnet_pdiff_d_ntub,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6928.0 kbytes
+/bin/rm -f tmp_net_pdiff_d_ntub tmp1_net_pdiff_d_ntub
+epick -V -reo -e rnet_met1_MET1_pinshape_ovia -e \
+	rnet_ndiffcon_net_met1_net_ndiff_c_ntub -e \
+	rnet_ndiffcon_net_met1_net_ndiff_d_sub -e \
+	rnet_pdiffcon_net_met1_net_pdiff_c_sub -e \
+	rnet_pdiffcon_net_met1_net_pdiff_d_ntub np_ravStamp000f62.conn \
+	tmp_avStamp000f62
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 6192.0 kbytes
+epick -V -reo -e tmp_avStamp000f62 -c np_ravStamp000f62.conn tmp1_avStamp000f62
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 6188.0 kbytes
+geom -V tmp1_avStamp000f62 np_ravStamp000f62 - tmp1_avStamp000f62,11,i,2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6924.0 kbytes
+geom -V tmp_avStamp000f62,tmp1_avStamp000f62 - np_ravStamp000f62,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6912.0 kbytes
+/bin/rm -f tmp_avStamp000f62 tmp1_avStamp000f62
+
+#==========================================================#
+# Process text layers
+#==========================================================#
+
+flatlabel -V  -tc -F -l flatlabel.info MET1_pintext L1T0
+INFO (FLTLBL-89003): exec labsort -V L1T0
+
+sort labels took  0.00 user, 0.00 sys, 0.00 elapsed, 4668.0 kbytes
+flatlabel took 0.00 user, 0.00 sys, 0.00 elapsed, 6032.0 kbytes
+# 1 np_rnet_poly1
+# 2 np_rnet_met1
+
+#==========================================================#
+# Parasitic R extraction with default precision
+#==========================================================#
+
+rex -V -m -pd -I'#' -scale 1 -tech \
+	/opt/pdk/ams/5.10.1/X35/assura/h35b4/h35b4d3/RCX-typical -map \
+	p2elayermapfile -wee p2elayermapfile -N NET -e2 -rP res.mod \
+	np_rnet_poly1::poly1_cut np_rnet_met1::met1_cut - \
+	rnet_met1_MET1_pinshape_ovia,2 \
+	rnet_ndiffcon_net_met1_net_ndiff_c_ntub,2,t \
+	rnet_ndiffcon_net_met1_net_ndiff_d_sub,2,t \
+	rnet_pdiffcon_net_met1_net_pdiff_c_sub,2,t \
+	rnet_pdiffcon_net_met1_net_pdiff_d_ntub,2,t \
+	rnet_poly1con_net_met1_net_poly1,1,2,t NMOS_device_MOS_1_mgvia,1,z \
+	PMOS_device_MOS_3_mgvia,1,z - L1T0,2,I
+
+INFO (REX-163462):  exec rex -g -V -m -pd -I# -scale 1 -tech /opt/pdk/ams/5.10.1/X35/assura/h35b4/h35b4d3/RCX-typical -map p2elayermapfile -wee p2elayermapfile -N NET -e2 -rP res.mod np_rnet_poly1::poly1_cut np_rnet_met1::met1_cut - rnet_met1_MET1_pinshape_ovia,2 rnet_ndiffcon_net_met1_net_ndiff_c_ntub,2,t rnet_ndiffcon_net_met1_net_ndiff_d_sub,2,t rnet_pdiffcon_net_met1_net_pdiff_c_sub,2,t rnet_pdiffcon_net_met1_net_pdiff_d_ntub,2,t rnet_poly1con_net_met1_net_poly1,1,2,t NMOS_device_MOS_1_mgvia,1,z PMOS_device_MOS_3_mgvia,1,z - L1T0,2,I
+
+rex took  0.00 user, 0.00 sys, 0.00 elapsed, 28064.0 kbytes
+INFO (LBMISC-215513): Socket: connection with sd 16 closed
+
+INFO (REX-163511): Forked command: REX 1
+
+  rex (np_rnet_met1) took  0.00 user, 0.01 sys, 0.00 elapsed, 29036.0 kbytes
+  [dofork] geom np_rnet_met1 met1_cut - np_rnet_met1,10,n
+INFO (LBMISC-215513): Socket: connection with sd 16 closed
+
+INFO (REX-163511): Forked command: REX 2
+
+  rex (np_rnet_poly1) took  0.00 user, 0.00 sys, 0.00 elapsed, 29288.0 kbytes
+  [dofork] geom np_rnet_poly1 poly1_cut - np_rnet_poly1,10,n
+INFO (REX-163511): Forked command: REX 3
+
+  rexmerge took  0.00 user, 0.00 sys, 0.00 elapsed, 8892.0 kbytes
+rex took  0.28 user, 0.06 sys, 0.00 elapsed, 28016.0 kbytes
+#==========================================================#
+# Form resistive via layers
+#==========================================================#
+
+stamp -V -i2 np_rnet_met1 rnet_poly1con_net_met1_net_poly1 np_rnet_poly1con_net_met1_net_poly1
+stamp took  0.05 user, 0.08 sys, 0.00 elapsed, 274896.0 kbytes
+geom -V np_rnet_poly1con_net_met1_net_poly1,p_rnet_poly1con_net_met1_net_poly1 - rnet_poly1con_net_met1_net_poly1,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6928.0 kbytes
+stamp -V -B -i rnet_ndiffcon_net_met1_net_ndiff_c_ntub np_rnet_ndiffcon_net_met1_net_ndiff_c_ntub
+stamp took  0.05 user, 0.07 sys, 0.00 elapsed, 274896.0 kbytes
+geom -V np_rnet_ndiffcon_net_met1_net_ndiff_c_ntub,p_rnet_ndiffcon_net_met1_net_ndiff_c_ntub - rnet_ndiffcon_net_met1_net_ndiff_c_ntub,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6928.0 kbytes
+stamp -V -B -i rnet_ndiffcon_net_met1_net_ndiff_d_sub np_rnet_ndiffcon_net_met1_net_ndiff_d_sub
+stamp took  0.05 user, 0.07 sys, 1.00 elapsed, 274896.0 kbytes
+geom -V np_rnet_ndiffcon_net_met1_net_ndiff_d_sub,p_rnet_ndiffcon_net_met1_net_ndiff_d_sub - rnet_ndiffcon_net_met1_net_ndiff_d_sub,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6928.0 kbytes
+stamp -V -B -i rnet_pdiffcon_net_met1_net_pdiff_c_sub np_rnet_pdiffcon_net_met1_net_pdiff_c_sub
+stamp took  0.04 user, 0.08 sys, 0.00 elapsed, 275044.0 kbytes
+geom -V np_rnet_pdiffcon_net_met1_net_pdiff_c_sub,p_rnet_pdiffcon_net_met1_net_pdiff_c_sub - rnet_pdiffcon_net_met1_net_pdiff_c_sub,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6912.0 kbytes
+stamp -V -B -i rnet_pdiffcon_net_met1_net_pdiff_d_ntub np_rnet_pdiffcon_net_met1_net_pdiff_d_ntub
+stamp took  0.04 user, 0.07 sys, 0.00 elapsed, 275068.0 kbytes
+geom -V np_rnet_pdiffcon_net_met1_net_pdiff_d_ntub,p_rnet_pdiffcon_net_met1_net_pdiff_d_ntub - rnet_pdiffcon_net_met1_net_pdiff_d_ntub,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6928.0 kbytes
+stamp -V -B -i np_rnet_met1 net_met1_MET1_pinshape_ovia
+stamp took  0.04 user, 0.08 sys, 0.00 elapsed, 275024.0 kbytes
+/bin/cp -f net_met1_MET1_pinshape_ovia rnet_met1_MET1_pinshape_ovia
+
+#==========================================================#
+# Perform stamp operations
+#==========================================================#
+
+stamp -V -cntr -i -B np_rnet_ndiff_c_ntub np_rnet_nwell
+stamp took  0.05 user, 0.07 sys, 0.00 elapsed, 275024.0 kbytes
+stamp -V -cntr -i -B np_ravStamp000f62 np_rnet_psub
+stamp took  0.05 user, 0.07 sys, 0.00 elapsed, 274932.0 kbytes
+stamp -V -cntr -i -B np_rnet_psub np_rpnpvert10_c
+stamp took  0.05 user, 0.07 sys, 0.00 elapsed, 274920.0 kbytes
+stamp -V -cntr -i -B np_rnet_psub np_rvertph_c
+stamp took  0.05 user, 0.08 sys, 1.00 elapsed, 274928.0 kbytes
+/bin/rm -f np_rMET1_pinshape.conn
+/bin/rm -f np_ravStamp000f62.conn
+/bin/rm -f np_rnet_ndiff_c_ntub.conn
+/bin/rm -f np_rnet_ndiff_d_sub.conn
+/bin/rm -f np_rnet_pdiff_c_sub.conn
+/bin/rm -f np_rnet_pdiff_d_ntub.conn
+/bin/rm -f np_rnet_ndiff.conn
+/bin/rm -f np_rnet_nsd.conn
+/bin/rm -f np_rnet_pdiff.conn
+/bin/rm -f np_rnet_psd.conn
+
+#==========================================================#
+# Combine power non-power
+#==========================================================#
+
+/bin/rm -f net_ndiff_d_sub
+geom np_rnet_ndiff_d_sub,p_rnet_ndiff_d_sub - net_ndiff_d_sub,1,i,1
+epick -c -f floatlvsnetsfile net_ndiff_d_sub net_ndiff_d_sub
+/bin/rm -f net_pdiff_d_ntub
+geom np_rnet_pdiff_d_ntub,p_rnet_pdiff_d_ntub - net_pdiff_d_ntub,1,i,1
+epick -c -f floatlvsnetsfile net_pdiff_d_ntub net_pdiff_d_ntub
+/bin/rm -f net_poly1
+geom np_rnet_poly1,p_rnet_poly1 - net_poly1,1,i,1
+epick -c -f floatlvsnetsfile net_poly1 net_poly1
+/bin/rm -f net_nwell
+geom np_rnet_nwell,p_rnet_nwell - net_nwell,1,i,1
+epick -c -f floatlvsnetsfile net_nwell net_nwell
+/bin/rm -f net_psub
+geom np_rnet_psub,p_rnet_psub - net_psub,1,i,1
+epick -c -f floatlvsnetsfile net_psub net_psub
+
+#==========================================================#
+# Reconnect MOSFET devices
+#==========================================================#
+
+reconnect -V -mbg -n NET -se2 mwires.res -t \
+	NMOS_device_MOS_1.transn:NMOS_device_MOS_1.transnr NMOS_device_MOS_1 \
+	net_ndiff_d_sub,NMOS_device_MOS_1_mgvia,net_psub -t \
+	PMOS_device_MOS_3.transn:PMOS_device_MOS_3.transnr PMOS_device_MOS_3 \
+	net_pdiff_d_ntub,PMOS_device_MOS_3_mgvia,net_nwell
+changeTransFileNameAP NMOS_device_MOS_1.transn NMOS_device_MOS_1.transnr
+changeTransFileNameAP PMOS_device_MOS_3.transn PMOS_device_MOS_3.transnr
+
+#==========================================================#
+# Reconnect DIODE devices
+#==========================================================#
+
+createLink net_psub P_NWD_device_DIODE_86_net_psub_dvia
+createLink net_nwell P_NWD_device_DIODE_86_net_nwell_dvia
+reconnect -V -mbg -se2 dwires.res -n NET -c \
+	P_NWD_device_DIODE_86.dpax:P_NWD_device_DIODE_86.dpaxr \
+	P_NWD_device_DIODE_86 \
+	P_NWD_device_DIODE_86_net_psub_dvia,P_NWD_device_DIODE_86_net_nwell_dvia
+netprint -max NET > original_maxnetfile
+
+#==========================================================#
+# Form capacitance layers for resistive process layers
+#==========================================================#
+
+#4 
+ geom -V -i p_rnet_poly1,np_rnet_poly1 - so_poly1,1,n
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6972.0 kbytes
+geom -V p_rnet_poly1,np_rnet_poly1 - poly1,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6932.0 kbytes
+#4 
+ geom -V -i p_rnet_met1,np_rnet_met1 - so_met1,1,n
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6972.0 kbytes
+geom -V p_rnet_met1,np_rnet_met1 - met1,1,i,1
+
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6936.0 kbytes
+#==========================================================#
+# Form capacitance layers for non-resistive process layers
+#==========================================================#
+
+emerge -V p_rnet_ndiff_c_ntub np_rnet_ndiff_c_ntub net_ndiff_c_ntub
+emerge took 0.00 user, 0.00 sys, 0.00 elapsed, 5912.0 kbytes
+emerge -V p_rnet_pdiff_c_sub np_rnet_pdiff_c_sub net_pdiff_c_sub
+emerge took 0.00 user, 0.00 sys, 0.00 elapsed, 5984.0 kbytes
+grow -V .001 net_ndiff_c_ntub mask
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 6292.0 kbytes
+geom -V net_ndiff_d_sub mask - net_ndiff_d_sub,10,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6916.0 kbytes
+grow -V .001 net_ndiff_d_sub g_net_ndiff_d_sub
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 6328.0 kbytes
+geom -V mask,g_net_ndiff_d_sub - mask,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6936.0 kbytes
+geom -V net_pdiff_c_sub mask - net_pdiff_c_sub,10,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6940.0 kbytes
+grow -V .001 net_pdiff_c_sub g_net_pdiff_c_sub
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 6320.0 kbytes
+geom -V mask,g_net_pdiff_c_sub - mask,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6876.0 kbytes
+geom -V net_pdiff_d_ntub mask - net_pdiff_d_ntub,10,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6940.0 kbytes
+geom -V net_ndiff_c_ntub,net_ndiff_d_sub,net_pdiff_c_sub,net_pdiff_d_ntub - pdiff,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6924.0 kbytes
+createEmptyLayer met4
+createEmptyLayer met3
+createEmptyLayer met2cap
+createEmptyLayer met2
+createEmptyLayer poly2
+
+#==========================================================#
+# Form substrate
+#==========================================================#
+
+/bin/cp -f net_nwell net_nwell_orig
+geom -V p_rnet_nwell,np_rnet_nwell - net_nwell,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6940.0 kbytes
+/bin/cp -f net_psub net_psub_orig
+geom -V p_rnet_psub,np_rnet_psub - net_psub,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6904.0 kbytes
+/bin/cp -f pnpvert10_c pnpvert10_c_orig
+geom -V p_rpnpvert10_c,np_rpnpvert10_c - pnpvert10_c,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6940.0 kbytes
+/bin/cp -f vertph_c vertph_c_orig
+geom -V p_rvertph_c,np_rvertph_c - vertph_c,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6904.0 kbytes
+/bin/cp -f vertph_c vertph_c.df2
+grow -V 0.001 net_nwell g_net_nwell
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 6332.0 kbytes
+geom -V net_psub g_net_nwell - net_psub,10,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6916.0 kbytes
+/bin/cp -f net_psub net_psub_preserve
+grow -V 0.001 net_psub g_net_psub
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 6332.0 kbytes
+geom -V pnpvert10_c g_net_psub,g_net_nwell - pnpvert10_c,10,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6948.0 kbytes
+/bin/cp -f pnpvert10_c pnpvert10_c_preserve
+grow -V 0.001 pnpvert10_c g_pnpvert10_c
+geom -V vertph_c g_pnpvert10_c,g_net_psub,g_net_nwell - vertph_c,10,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6956.0 kbytes
+/bin/cp -f vertph_c vertph_c_preserve
+geom -V net_nwell,net_psub,pnpvert10_c,vertph_c - fox,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6936.0 kbytes
+xytoebbox -V -g 40.002 -e met4,met3,met2cap,met2,met1,poly2,poly1,pdiff,net_nwell,net_psub,pnpvert10_c,vertph_c xg_fox
+xytoebbox took  0.00 user, 0.00 sys, 0.00 elapsed, 4748.0 kbytes
+grow -V 0.001 fox g_fox
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 6336.0 kbytes
+geom -V xg_fox g_fox - tmp_fox,10
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6940.0 kbytes
+epick -V -reo -D ${CAP_GROUND} tmp_fox pick_fox
+epick took  0.00 user, 0.00 sys, 0.00 elapsed, 6184.0 kbytes
+grow -V -m 0.002 pick_fox g_pick_fox
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 6336.0 kbytes
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6896.0 kbytes
+stamp -i fox g_pick_fox
+grow -V -m -0.002 g_pick_fox pick_fox
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 6340.0 kbytes
+sort edges took  0.00 user, 0.00 sys, 0.00 elapsed, 6512.0 kbytes
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6912.0 kbytes
+emerge -V pick_fox fox tmp1_fox
+emerge took 0.00 user, 0.00 sys, 0.00 elapsed, 6000.0 kbytes
+geom -V tmp1_fox - fox,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6896.0 kbytes
+/bin/rm -f g_pick_fox xg_fox tmp_fox tmp1_fox
+geom -V fox pdiff - fox,10,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6940.0 kbytes
+/bin/cp -f fox fox_preserve
+geom NMOS_device_MOS_1,PMOS_device_MOS_3 - qrcgate,1,i,1
+netprint -max NET > maxnetfile
+/bin/rm -f gateblockingmap ovl_gateblockingmap gateblockingmaxnet gateblockingmaxid blockingmap blockingbyregionmap blockingbyregionmaxnet
+
+#==========================================================#
+# Prepare blocking layers
+#==========================================================#
+
+/bin/cp poly1 poly1.df2
+/bin/cp pdiff pdiff.df2
+/bin/cp fox fox.df2
+grow -V 0.002 cblock_poly1_psub g_cblock_poly1_psub_1
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 6356.0 kbytes
+grow -V -0.001 g_cblock_poly1_psub_1 g_dev_1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6916.0 kbytes
+merge input file took 0.00 user, 0.00 sys, 0.00 elapsed, 6280.0 kbytes
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 6460.0 kbytes
+sort edges took  0.00 user, 0.00 sys, 0.00 elapsed, 6560.0 kbytes
+geom g_cblock_poly1_psub_1 g_dev_1 fox - fox_in,111,i,3 fox_out,001,i,3 fox_new_cut,101
+# /bin/rm -f g_dev_1
+/bin/mv -f fox_new_cut fox_cut
+grow -V -0.001 g_cblock_poly1_psub_1 g_dev_2
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6928.0 kbytes
+merge input file took 0.00 user, 0.00 sys, 0.00 elapsed, 6256.0 kbytes
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 6432.0 kbytes
+sort edges took  0.00 user, 0.00 sys, 0.00 elapsed, 6532.0 kbytes
+geom g_cblock_poly1_psub_1 g_dev_2 pdiff - pdiff_in,111,i,3 pdiff_out,001,i,3 pdiff_new_cut,101
+# /bin/rm -f g_dev_2
+/bin/mv -f pdiff_new_cut pdiff_cut
+grow -V -0.001 g_cblock_poly1_psub_1 g_dev_3
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6924.0 kbytes
+merge input file took 0.00 user, 0.00 sys, 1.00 elapsed, 6264.0 kbytes
+grow took  0.00 user, 0.00 sys, 0.00 elapsed, 6440.0 kbytes
+sort edges took  0.00 user, 0.00 sys, 0.00 elapsed, 6540.0 kbytes
+geom g_cblock_poly1_psub_1 g_dev_3 poly1 - poly1_in,111,i,3 poly1_out,001,i,3 poly1_new_cut,101
+# /bin/rm -f g_dev_3
+emerge poly1_cut poly1_new_cut tmp_cut
+/bin/mv -f tmp_cut poly1_cut
+relocate -V -a -I relocatemap -n NET fox_in pdiff_in poly1_in
+relocate took 0.00 user, 0.02 sys, 0.00 elapsed, 5608.0 kbytes
+emerge fox_in fox_out fox
+emerge pdiff_in pdiff_out pdiff
+emerge poly1_in poly1_out poly1
+/bin/rm -f fox_in fox_out
+/bin/rm -f pdiff_in pdiff_out
+/bin/rm -f poly1_in poly1_out
+
+#==========================================================#
+# Prepare qrcgate block 
+#==========================================================#
+
+geom net_psub net_psub_preserve - net_psub,11,i,1
+geom pnpvert10_c pnpvert10_c_preserve - pnpvert10_c,11,i,1
+geom vertph_c vertph_c_preserve - vertph_c,11,i,1
+geom fox fox_preserve - fox,11,i,1
+#lvsblocking 
+/bin/rm -f lvsblockingmaxnet lvsblockingmap
+createEmptyLayer via_m4_m3
+createEmptyLayer via_m3_m2c
+createEmptyLayer via_m3_m2
+createEmptyLayer via_m2_m1
+createEmptyLayer via_m1_p2
+
+#==========================================================#
+# Prepare via layers for sip
+#==========================================================#
+
+geom -V rnet_poly1con_net_met1_net_poly1 - via_m1_p1,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6924.0 kbytes
+geom -V rnet_ndiffcon_net_met1_net_ndiff_c_ntub,rnet_ndiffcon_net_met1_net_ndiff_d_sub,rnet_pdiffcon_net_met1_net_pdiff_c_sub,rnet_pdiffcon_net_met1_net_pdiff_d_ntub - via_m1_nd,1,i,1
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6956.0 kbytes
+geom -V rnet_pdiffcon_net_met1_net_pdiff_c_sub,rnet_pdiffcon_net_met1_net_pdiff_d_ntub,rnet_ndiffcon_net_met1_net_ndiff_c_ntub,rnet_ndiffcon_net_met1_net_ndiff_d_sub - via_m1_pd,1,i,1
+
+geom took  0.00 user, 0.00 sys, 0.00 elapsed, 6944.0 kbytes
+#==========================================================#
+# Create sip/sw3d/cn3d capacitance data files
+#==========================================================#
+
+cat <<ENDCAT> sip.cmd
+sip -V -NEWP -s -o  -n 6.9 -Maxw 6.9 -j 0.4 -lvia -i 0,6.901 -b poly2 -t met1 \
+	-p via_m1_p1,key 0,6.9 - via_m1_p1.sip
+sip -V -NEWP -s -o  -n 4.8 -Maxw 4.8 -j 0.4 -lvia -i 0,4.801 -b poly1 -t met1 \
+	-p via_m1_nd,key 0,4.8 - via_m1_nd.sip
+sip -V -NEWP -s -o  -n 4.8 -Maxw 4.8 -j 0.4 -lvia -i 0,4.801 -b poly1 -t met1 \
+	-p via_m1_pd,key 0,4.8 - via_m1_pd.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc poly1 -n 6.5 -i 0,6.501 -b \
+	poly1,pdiff,fox -t met1,met2,met2cap,met3,met4 -j 0.4 -Maxw 9.75 -p \
+	poly2,key 0,6.5 - poly2.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc poly2,met1 -n 5 -i 0,5.001 -b \
+	met1,poly2,poly1,pdiff,fox -t met2cap,met3,met4 -j 0.6 -Maxw 9 -p \
+	met2,key 0,5 - met2.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc met1,met2 -n 8 -i 0,8.001 -b \
+	met2,met1,poly2,poly1,pdiff,fox -t met3,met4 -j 4 -Maxw 60 -p \
+	met2cap,key 0,8 - met2cap.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc met1,met2,met2cap -n 5 -i \
+	0,5.001 -b met2cap,met2,met1,poly2,poly1,pdiff,fox -t met4 -j 0.6 \
+	-Maxw 9 -p met3,key 0,5 - met3.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc met2,met2cap,met3 -n 20 -i \
+	0,20.001 -b met3,met2cap,met2,met1,poly2,poly1,pdiff,fox -j 2.5 -Maxw \
+	37.5 -p met4,key 0,20 - met4.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -cp poly1,capgen_gate,pdiff -n 4.5 -i \
+	0,4.501 -b pdiff,fox -t poly2,met1,met2,met2cap,met3,met4 -j 0.35 \
+	-Maxw 5.25 -p poly1,key 0,4.5 - poly1.sip
+sip -V -cgnd ${CAP_GROUND} -s -o -sub 2 -mlc poly1,poly2 -n 4.5 -i 0,4.501 -b \
+	poly2,poly1,pdiff,fox -t met2,met2cap,met3,met4 -j 0.5 -Maxw 7.5 -p \
+	met1,key 0,4.5 - met1.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -b \
+	met2cap,met2,met1,poly2,poly1,pdiff,fox -Maxw 37.5 -p \
+	met3,key,met4,key 0,20,0 - met3_met4.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -b \
+	met2,met1,poly2,poly1,pdiff,fox -Maxw 60 -p met2cap,key,met4,key \
+	0,20,0 - met2cap_met4.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b met2,met1,poly2,poly1,pdiff,fox -t \
+	met4 -Maxw 60 -p met2cap,key,met3,key 0,8,0 - met2cap_met3.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R met4 -b \
+	met1,poly2,poly1,pdiff,fox -k met2cap:0,met3:0 -Maxw 37.5 -p \
+	met2,key,met4,key 0,20,0 - met2_met4.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b met1,poly2,poly1,pdiff,fox -t met4 \
+	-Maxw 9 -p met2,key,met3,key 0,5,0 - met2_met3.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b met1,poly2,poly1,pdiff,fox -t \
+	met3,met4 -Maxw 60 -p met2,key,met2cap,key 0,8,0 - met2_met2cap.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R met3 -b poly2,poly1,pdiff,fox \
+	-t met4 -k met2:0,met2cap:0 -Maxw 9 -p met1:met1_cut,key,met3,key \
+	0,5,0 - met1_met3.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -R met2cap -b poly2,poly1,pdiff,fox \
+	-t met3,met4 -Maxw 60 -p met1:met1_cut,key,met2cap,key 0,8,0 - \
+	met1_met2cap.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b poly2,poly1,pdiff,fox -t \
+	met2cap,met3,met4 -Maxw 9 -p met1:met1_cut,key,met2,key 0,5,0 - \
+	met1_met2.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R met2 -b poly1,pdiff,fox -t \
+	met2cap,met3,met4 -k met1:0.665 -Maxw 9.75 -p poly2,key,met2,key \
+	0,6.5,0 - poly2_met2.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -b poly1,pdiff,fox -t \
+	met2,met2cap,met3,met4 -Maxw 9.75 -p poly2,key,met1:met1_cut,key \
+	0,6.5,0 - poly2_met1.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -L3A -h -R met1 -b pdiff,fox -t \
+	met2,met2cap,met3,met4 -Maxw 7.5 -p \
+	poly1:poly1_cut,key,met1:met1_cut,key 0,4.5,0 - poly1_met1.sip
+sip -V -s -cgnd ${CAP_GROUND} -sub 2 -h -R poly2,poly1 -b pdiff,fox -t \
+	met1,met2,met2cap,met3,met4 -Maxw 9.75 -p \
+	poly1:poly1_cut,key,poly2,key 0,6.5,0 - poly1_poly2.sip
+sw3d -V -cgnd ${CAP_GROUND} -sub 2 -b met2cap,met2,met1,poly2,poly1,pdiff,fox \
+	-p met3,met4 - met3_met4.sw3d
+sw3d -V -cgnd ${CAP_GROUND} -sub 2 -b met2,met1,poly2,poly1,pdiff,fox -t met4 \
+	-p met2cap,met3 - met2cap_met3.sw3d
+sw3d -V -cgnd ${CAP_GROUND} -sub 2 -b met1,poly2,poly1,pdiff,fox -t met3,met4 \
+	-p met2,met2cap - met2_met2cap.sw3d
+sw3d -V -cgnd ${CAP_GROUND} -sub 2 -b poly2,poly1,pdiff,fox -t \
+	met2cap,met3,met4 -p met1:met1_cut,met2 - met1_met2.sw3d
+sw3d -V -cgnd ${CAP_GROUND} -sub 2 -b poly1,pdiff,fox -t \
+	met2,met2cap,met3,met4 -p poly2,met1:met1_cut - poly2_met1.sw3d
+sw3d -V -cgnd ${CAP_GROUND} -sub 2 -b pdiff,fox -t \
+	met1,met2,met2cap,met3,met4 -p poly1:poly1_cut,poly2 - \
+	poly1_poly2.sw3d
+ENDCAT
+
+#==========================================================#
+# Prepare gate capacitance blocking layers
+#==========================================================#
+
+emerge -V NMOS_device_MOS_1 PMOS_device_MOS_3 capgen_gate
+
+emerge took 0.00 user, 0.00 sys, 0.00 elapsed, 6000.0 kbytes
+#==========================================================#
+# Run pax16 to generate capfile
+#==========================================================#
+
+pax16 -V -lee_off -gnd ${CAP_GROUND} -via \
+	via_m4_m3,via_m3_m2c,via_m3_m2,via_m2_m1,via_m1_p2,via_m1_p1,via_m1_nd,via_m1_pd \
+	-ignore_cf_table -scf sip.cmd -filterfile maxnetfile -rcxlvs \
+	rcxtolvsmapfile -M_perim_off -c \
+	/opt/pdk/ams/5.10.1/X35/assura/h35b4/h35b4d3/RCX-typical/qrcTechFile \
+	-f fox:fox_cut pdiff:pdiff_cut poly1:poly1_cut poly2 met1:met1_cut \
+	met2 met2cap met3 met4 capgen_gate - \
+	/opt/pdk/ams/5.10.1/X35/assura/h35b4/h35b4d3/RCX-typical/qrcTechFile \
+	- - NET - capfile
+pax16 took  0.17 user, 0.32 sys, 0.00 elapsed, 78732.0 kbytes
+relocate -V -r maxnetfile -n NET fox pdiff poly1 poly2 \
+	rnet_poly1con_net_met1_net_poly1
+
+relocate took 0.01 user, 0.04 sys, 0.00 elapsed, 5772.0 kbytes
+#==========================================================#
+# Generate netlister data files
+#==========================================================#
+
+createDIODEModelFile lvsdio.mod1 pnwd#20auLvs#20PRIMLIB 1 P_NWD_device_DIODE_86 net_psub net_nwell 
+
+#==========================================================#
+# Perform RC reduction
+#==========================================================#
+
+xreduce -V -mergecap -n NET -tech \
+	/opt/pdk/ams/5.10.1/X35/assura/h35b4/h35b4d3/RCX-typical -d1 -e \
+	met4,met3,met2cap,met2,met1,poly2,poly1,pdiff,fox,np_rnet_ndiff_c_ntub,np_rnet_ndiff_d_sub,np_rnet_pdiff_c_sub,np_rnet_pdiff_d_ntub,np_rnet_nwell,np_rnet_psub,np_rpnpvert10_c,np_rvertph_c,rnet_poly1con_net_met1_net_poly1 \
+	-sr -g ${CAP_GROUND},1.0 -minR 0.001 -rPvia \
+	rnet_poly1con_net_met1_net_poly1.res,rnet_ndiffcon_net_met1_net_ndiff_c_ntub.res,rnet_ndiffcon_net_met1_net_ndiff_d_sub.res,rnet_pdiffcon_net_met1_net_pdiff_c_sub.res,rnet_pdiffcon_net_met1_net_pdiff_d_ntub.res \
+	-rP np_rnet_poly1.res,np_rnet_met1.res,mwires.res,dwires.res -minC \
+	1e-17 -minCper 0.1 -cap capfile L1T0 NMOS_device_MOS_1.transnr \
+	PMOS_device_MOS_3.transnr P_NWD_device_DIODE_86.dpaxr
+
+INFO (XREDUCE-199107): Total number of resistors is 11
+
+INFO (XREDUCE-199108): d1 option renamed 0 nets
+
+INFO (XREDUCE-199108): d1 option renamed 0 nets
+
+INFO (XREDUCE-199109): minR option removed 0 resistors (0%)
+
+INFO (XREDUCE-199054): Total number of capacitors in capfile is 48
+
+INFO (XREDUCE-199052): mergecap required for 0 (0%) of 114 nets
+
+INFO (XREDUCE-199065): minC small capacitor decoupling set to 0.1%
+
+INFO (XREDUCE-199066): minC option decoupled 1 capacitors in capfile
+
+INFO (XREDUCE-199067): the number of capacitors decreased by 2 (4%)
+
+xreduce took 0.14 user, 0.36 sys, 1.00 elapsed, 20408.0 kbytes
+#==========================================================#
+# Generate HSPICE file
+#==========================================================#
+
+advgen -V -g0 -li -f -n -o HSPICE -TL L1T0 -sc caps2dversion -mx capfile \
+	met4,met3,met2cap,met2,met1,poly2,poly1,pdiff,fox -rPm res.mod \
+	np_rnet_met1.res,Rnp_rnet_met1.dev2 \
+	np_rnet_poly1.res,Rnp_rnet_poly1.dev2 \
+	rnet_poly1con_net_met1_net_poly1.res,Rrnet_poly1con_net_met1_net_poly1.dev2 \
+	rnet_ndiffcon_net_met1_net_ndiff_c_ntub.res,Rrnet_ndiffcon_net_met1_net_ndiff_c_ntub.dev2 \
+	rnet_ndiffcon_net_met1_net_ndiff_d_sub.res,Rrnet_ndiffcon_net_met1_net_ndiff_d_sub.dev2 \
+	rnet_pdiffcon_net_met1_net_pdiff_c_sub.res,Rrnet_pdiffcon_net_met1_net_pdiff_c_sub.dev2 \
+	rnet_pdiffcon_net_met1_net_pdiff_d_ntub.res,Rrnet_pdiffcon_net_met1_net_pdiff_d_ntub.dev2 \
+	-rPm mwires.mod mwires.res,mwires.dev2 -rPm dwires.mod \
+	dwires.res,dwires.dev2 -ta lvsmos.mod,NMOS_device_MOS_1.net \
+	NMOS_device_MOS_1.transnr -ta lvsmos.mod,PMOS_device_MOS_3.net \
+	PMOS_device_MOS_3.transnr -dM lvsdio.mod1,P_NWD_device_DIODE_86.net \
+	P_NWD_device_DIODE_86.dpaxr - NET - \
+	/home/saul/projects/AMS35_H35_MINIMAL/ASSURA_LVS/inv/inv/extview.tmp
+
+advgen took:  0.18 user, 0.44 sys, 1.00 elapsed, 27216.0 kbytes
+#==========================================================#
+# Create _save_layers file for Assura extracted view
+#==========================================================#
+
+geom met1 np_rnet_met1 - np_rnet_met1,11,i,1
+geom poly1 np_rnet_poly1 - np_rnet_poly1,11,i,1
+stamp -i2 np_rnet_met1 rnet_poly1con_net_met1_net_poly1 np_rnet_poly1con_net_met1_net_poly1
+ereduce  rnet_met1_MET1_pinshape_ovia rnet_met1_MET1_pinshape_ovia.reduce
+stamp -i  np_rnet_met1 rnet_met1_MET1_pinshape_ovia.reduce
+stamp -i  rnet_met1_MET1_pinshape_ovia.reduce rnet_met1_MET1_pinshape_ovia
+stamp -i  rnet_met1_MET1_pinshape_ovia net_met1_MET1_pinshape_ovia
+/bin/rm -f rnet_met1_MET1_pinshape_ovia.reduce
+ereduce  rnet_ndiffcon_net_met1_net_ndiff_c_ntub rnet_ndiffcon_net_met1_net_ndiff_c_ntub.reduce
+stamp -i  np_rnet_met1 rnet_ndiffcon_net_met1_net_ndiff_c_ntub.reduce
+stamp -i  rnet_ndiffcon_net_met1_net_ndiff_c_ntub.reduce rnet_ndiffcon_net_met1_net_ndiff_c_ntub
+stamp -i  rnet_ndiffcon_net_met1_net_ndiff_c_ntub net_ndiffcon_net_met1_net_ndiff_c_ntub
+/bin/rm -f rnet_ndiffcon_net_met1_net_ndiff_c_ntub.reduce
+ereduce  rnet_ndiffcon_net_met1_net_ndiff_d_sub rnet_ndiffcon_net_met1_net_ndiff_d_sub.reduce
+stamp -i  np_rnet_met1 rnet_ndiffcon_net_met1_net_ndiff_d_sub.reduce
+stamp -i  rnet_ndiffcon_net_met1_net_ndiff_d_sub.reduce rnet_ndiffcon_net_met1_net_ndiff_d_sub
+stamp -i  rnet_ndiffcon_net_met1_net_ndiff_d_sub net_ndiffcon_net_met1_net_ndiff_d_sub
+/bin/rm -f rnet_ndiffcon_net_met1_net_ndiff_d_sub.reduce
+ereduce  rnet_pdiffcon_net_met1_net_pdiff_c_sub rnet_pdiffcon_net_met1_net_pdiff_c_sub.reduce
+stamp -i  np_rnet_met1 rnet_pdiffcon_net_met1_net_pdiff_c_sub.reduce
+stamp -i  rnet_pdiffcon_net_met1_net_pdiff_c_sub.reduce rnet_pdiffcon_net_met1_net_pdiff_c_sub
+stamp -i  rnet_pdiffcon_net_met1_net_pdiff_c_sub net_pdiffcon_net_met1_net_pdiff_c_sub
+/bin/rm -f rnet_pdiffcon_net_met1_net_pdiff_c_sub.reduce
+ereduce  rnet_pdiffcon_net_met1_net_pdiff_d_ntub rnet_pdiffcon_net_met1_net_pdiff_d_ntub.reduce
+stamp -i  np_rnet_met1 rnet_pdiffcon_net_met1_net_pdiff_d_ntub.reduce
+stamp -i  rnet_pdiffcon_net_met1_net_pdiff_d_ntub.reduce rnet_pdiffcon_net_met1_net_pdiff_d_ntub
+stamp -i  rnet_pdiffcon_net_met1_net_pdiff_d_ntub net_pdiffcon_net_met1_net_pdiff_d_ntub
+/bin/rm -f rnet_pdiffcon_net_met1_net_pdiff_d_ntub.reduce
+cat <<ENDCAT> _save_layers
+fox fox
+poly2 poly2
+met2 met2
+met2cap met2cap
+met3 met3
+met4 met4
+pdiff pdiff
+net_poly1con np_rnet_poly1con_net_met1_net_poly1 p_rnet_poly1con_net_met1_net_poly1
+net_ndiffcon net_ndiffcon_net_ndiff_c_ntub_net_ndiff_d_sub np_rnet_ndiffcon_net_met1_net_ndiff_d_sub p_rnet_ndiffcon_net_met1_net_ndiff_d_sub np_rnet_ndiffcon_net_met1_net_ndiff_c_ntub p_rnet_ndiffcon_net_met1_net_ndiff_c_ntub
+net_pdiffcon net_pdiffcon_net_pdiff_c_sub_net_pdiff_d_ntub np_rnet_pdiffcon_net_met1_net_pdiff_d_ntub p_rnet_pdiffcon_net_met1_net_pdiff_d_ntub np_rnet_pdiffcon_net_met1_net_pdiff_c_sub p_rnet_pdiffcon_net_met1_net_pdiff_c_sub
+net_met1 np_rnet_met1 p_rnet_met1
+net_poly1 np_rnet_poly1 p_rnet_poly1
+net_ndiff_c_ntub np_rnet_ndiff_c_ntub p_rnet_ndiff_c_ntub
+net_ndiff_d_sub np_rnet_ndiff_d_sub p_rnet_ndiff_d_sub
+net_pdiff_c_sub np_rnet_pdiff_c_sub p_rnet_pdiff_c_sub
+net_pdiff_d_ntub np_rnet_pdiff_d_ntub p_rnet_pdiff_d_ntub
+net_nwell np_rnet_nwell p_rnet_nwell
+net_psub np_rnet_psub p_rnet_psub
+pnpvert10_c np_rpnpvert10_c p_rpnpvert10_c
+vertph_c vertph_c
+net_met1_MET1_pinshape_ovia net_met1_MET1_pinshape_ovia
+MET1_pinshape np_rMET1_pinshape p_rMET1_pinshape
+net_ndiff_c_ntub_net_ndiff_ovia net_ndiff_c_ntub_net_ndiff_ovia
+net_ndiff np_rnet_ndiff p_rnet_ndiff
+net_ndiff_d_sub_net_ndiff_ovia net_ndiff_d_sub_net_ndiff_ovia
+net_nsd_net_ndiff_ovia net_nsd_net_ndiff_ovia
+net_nsd np_rnet_nsd p_rnet_nsd
+net_pdiff_c_sub_net_pdiff_ovia net_pdiff_c_sub_net_pdiff_ovia
+net_pdiff np_rnet_pdiff p_rnet_pdiff
+net_pdiff_d_ntub_net_pdiff_ovia net_pdiff_d_ntub_net_pdiff_ovia
+net_psd_net_pdiff_ovia net_psd_net_pdiff_ovia
+net_psd np_rnet_psd p_rnet_psd
+avStamp000f62_net_pdiff_c_sub_ovia avStamp000f62_net_pdiff_c_sub_ovia
+avStamp000f62 np_ravStamp000f62 p_ravStamp000f62
+ENDCAT
+INFO (LBRCXM-610): Extraction finished.
+
+INFO (LBRCXU-108): Starting
+
+ runUserCmd /opt/tools/cadence/installs/ASSURA41/tools.lnx86/assura/bin/rcxToDfII /home/saul/projects/AMS35_H35_MINIMAL/ASSURA_LVS/inv/inv/__qrc.rcx_cmd -f /home/saul/projects/AMS35_H35_MINIMAL/ASSURA_LVS/inv/inv/extview.tmp -w /home/saul/projects/AMS35_H35_MINIMAL/ASSURA_LVS/inv/inv -cdslib /home/saul/projects/AMS35_H35_MINIMAL/cds.lib
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.01s.
+@(#)$CDS: rcxToDfII_64 version av4.1:Production:dfII25.1-64b:IC25.1-64b.38 08/06/2025 03:35 (sjfdcl919) $
+sub-version 4.1_USR7_HF3, integ signature 2025-08-06-0300
+
+run on edatools from /opt/tools/cadence/installs/ASSURA41/tools.lnx86/assura/bin/64bit/rcxToDfII on Mon Sep 28 11:09:25 2026
+
+
+Loading tech rule set file : /opt/pdk/ams/5.10.1/X35/assura/h35b4/h35b4d3/techRuleSets
+Loading all available p-cell functions
+AMS_DB set to cds
+No mx check
+ROD pcell code loaded
+*WARNING* (DB-270210): dbOpenCellViewByType: library 'IOLIB_4M' does not exist
+*WARNING* No library model for device "probepad auLvs IOLIB_4M".
+*WARNING* (DB-270210): dbOpenCellViewByType: library 'PRIMLIB_WIP' does not exist
+*WARNING* No library model for device "pdi1n01s002 auLvs PRIMLIB_WIP".
+*WARNING* (DB-270210): dbOpenCellViewByType: library 'PRIMLIB_WIP' does not exist
+*WARNING* No library model for device "pdi1n13s002 auLvs PRIMLIB_WIP".
+*WARNING* (DB-270210): dbOpenCellViewByType: library 'ESDLIB_WIP' does not exist
+*WARNING* No library model for device "esdscr14_sn auLvs ESDLIB_WIP".
+*WARNING* (DB-270210): dbOpenCellViewByType: library 'HALL' does not exist
+*WARNING* No library model for device "HALL_XY12x12_Zx2_LN auLvs HALL".
+*WARNING* (DB-270210): dbOpenCellViewByType: library 'HALL' does not exist
+*WARNING* No library model for device "HALL_XY12x12_Zx2_STD auLvs HALL".
+*WARNING* (DB-270210): dbOpenCellViewByType: library 'HALL' does not exist
+*WARNING* No library model for device "HALL_XY8x8_Zx2_LN auLvs HALL".
+*WARNING* (DB-270210): dbOpenCellViewByType: library 'HALL' does not exist
+*WARNING* No library model for device "HALL_XY8x8_Zx2_STD auLvs HALL".
+*WARNING* (DB-270210): dbOpenCellViewByType: library 'HALL' does not exist
+*WARNING* No library model for device "HALL_C1_H35 auLvs HALL".
+*WARNING* (DB-270210): dbOpenCellViewByType: library 'HALL' does not exist
+*WARNING* No library model for device "HALL_C1_H35X2 auLvs HALL".
+*WARNING* (DB-270210): dbOpenCellViewByType: library 'HALL' does not exist
+*WARNING* No library model for device "HALL_C1_H35X4 auLvs HALL".
+*WARNING* (DB-270210): dbOpenCellViewByType: library 'HALL' does not exist
+*WARNING* No library model for device "HALL_C2_H35 auLvs HALL".
+*WARNING* (DB-270210): dbOpenCellViewByType: library 'HALL' does not exist
+*WARNING* No library model for device "HALL_C2_H35X2 auLvs HALL".
+*WARNING* (DB-270210): dbOpenCellViewByType: library 'HALL' does not exist
+
+Creating extracted view for INV inv layout
+
+Schematic cell -  inv schematic INV
+Express Pcell license has been checked out for the Express Pcell feature.
+Save recognition layer NMOS_device
+Layer NMOS_device has 1 shapes.
+Save recognition layer NMOSM_device
+Layer NMOSM_device has 0 shapes.
+Save recognition layer PMOS_device
+Layer PMOS_device has 1 shapes.
+Save recognition layer PMOSM_device
+Layer PMOSM_device has 0 shapes.
+Save recognition layer NMOSI_device_hv
+Layer NMOSI_device_hv has 0 shapes.
+Save recognition layer NMOSI_device_not_hv
+Layer NMOSI_device_not_hv has 0 shapes.
+Save recognition layer NMOSIM_device_hv
+Layer NMOSIM_device_hv has 0 shapes.
+Save recognition layer NMOSIM_device_not_hv
+Layer NMOSIM_device_not_hv has 0 shapes.
+Save recognition layer PMOSI_device_hv
+Layer PMOSI_device_hv has 0 shapes.
+Save recognition layer PMOSI_device_not_hv
+Layer PMOSI_device_not_hv has 0 shapes.
+Save recognition layer PMOSIM_device_hv
+Layer PMOSIM_device_hv has 0 shapes.
+Save recognition layer PMOSIM_device_not_hv
+Layer PMOSIM_device_not_hv has 0 shapes.
+Save recognition layer poa_nmos_waffle_2x
+Layer poa_nmos_waffle_2x has 0 shapes.
+Save recognition layer poa_nmos_waffle_3x
+Layer poa_nmos_waffle_3x has 0 shapes.
+Save recognition layer poa_nmos_waffle_4x
+Layer poa_nmos_waffle_4x has 0 shapes.
+Save recognition layer poa_nmos_midox_waffle_2x
+Layer poa_nmos_midox_waffle_2x has 0 shapes.
+Save recognition layer poa_nmos_midox_waffle_3x
+Layer poa_nmos_midox_waffle_3x has 0 shapes.
+Save recognition layer poa_nmos_midox_waffle_4x
+Layer poa_nmos_midox_waffle_4x has 0 shapes.
+Save recognition layer poa_pmos_waffle_2x
+Layer poa_pmos_waffle_2x has 0 shapes.
+Save recognition layer poa_pmos_waffle_3x
+Layer poa_pmos_waffle_3x has 0 shapes.
+Save recognition layer poa_pmos_waffle_4x
+Layer poa_pmos_waffle_4x has 0 shapes.
+Save recognition layer poa_pmos_midox_waffle_2x
+Layer poa_pmos_midox_waffle_2x has 0 shapes.
+Save recognition layer poa_pmos_midox_waffle_3x
+Layer poa_pmos_midox_waffle_3x has 0 shapes.
+Save recognition layer poa_pmos_midox_waffle_4x
+Layer poa_pmos_midox_waffle_4x has 0 shapes.
+Save recognition layer NMOSH_device
+Layer NMOSH_device has 0 shapes.
+Save recognition layer NMOSMH_device
+Layer NMOSMH_device has 0 shapes.
+Save recognition layer RPWELLR_device
+Layer RPWELLR_device has 0 shapes.
+Save recognition layer RNWELL_device
+Layer RNWELL_device has 0 shapes.
+Save recognition layer RNWELLS_device
+Layer RNWELLS_device has 0 shapes.
+Save recognition layer RDIFFP_device
+Layer RDIFFP_device has 0 shapes.
+Save recognition layer RDIFFPS_device_hv
+Layer RDIFFPS_device_hv has 0 shapes.
+Save recognition layer RDIFFPS_device_not_hv
+Layer RDIFFPS_device_not_hv has 0 shapes.
+Save recognition layer RDIFFN_device
+Layer RDIFFN_device has 0 shapes.
+Save recognition layer RDIFFNR_device
+Layer RDIFFNR_device has 0 shapes.
+Save recognition layer RPOLY2_PSUB_device
+Layer RPOLY2_PSUB_device has 0 shapes.
+Save recognition layer RPOLY2_NTUB_device
+Layer RPOLY2_NTUB_device has 0 shapes.
+Save recognition layer RPOLY2_PTUB_device
+Layer RPOLY2_PTUB_device has 0 shapes.
+Save recognition layer RPOLY2PH_PSUB_device
+Layer RPOLY2PH_PSUB_device has 0 shapes.
+Save recognition layer RPOLY2PH_PTUB_device
+Layer RPOLY2PH_PTUB_device has 0 shapes.
+Save recognition layer RPOLY2PH_NTUB_device
+Layer RPOLY2PH_NTUB_device has 0 shapes.
+Save recognition layer RPOLYH_PSUB_device
+Layer RPOLYH_PSUB_device has 0 shapes.
+Save recognition layer RPOLYH_NTUB_device
+Layer RPOLYH_NTUB_device has 0 shapes.
+Save recognition layer RPOLYH_PTUB_device
+Layer RPOLYH_PTUB_device has 0 shapes.
+Save recognition layer RPOLY1_PSUB_device
+Layer RPOLY1_PSUB_device has 0 shapes.
+Save recognition layer RPOLY1_NTUB_device
+Layer RPOLY1_NTUB_device has 0 shapes.
+Save recognition layer RPOLY1_PTUB_device
+Layer RPOLY1_PTUB_device has 0 shapes.
+Save recognition layer PFUSE_device
+Layer PFUSE_device has 0 shapes.
+Save recognition layer LAT2_device
+Layer LAT2_device has 0 shapes.
+Save recognition layer VERT10_device
+Layer VERT10_device has 0 shapes.
+Save recognition layer VERTN1_device
+Layer VERTN1_device has 0 shapes.
+Save recognition layer VERTPH_device
+Layer VERTPH_device has 0 shapes.
+Save recognition layer PJFET_device
+Layer PJFET_device has 0 shapes.
+Save recognition layer CPOLY_PSUB_device
+Layer CPOLY_PSUB_device has 0 shapes.
+Save recognition layer CPOLY_NTUB_device
+Layer CPOLY_NTUB_device has 0 shapes.
+Save recognition layer PROBE_device
+Layer PROBE_device has 0 shapes.
+Save recognition layer ND_device
+Layer ND_device has 0 shapes.
+Save recognition layer P_ND_device
+Layer P_ND_device has 0 shapes.
+Save recognition layer PD_device
+Layer PD_device has 0 shapes.
+Save recognition layer P_PD_device
+Layer P_PD_device has 0 shapes.
+Save recognition layer NWD_device
+Layer NWD_device has 0 shapes.
+Save recognition layer P_NWD_device
+Layer P_NWD_device has 1 shapes.
+Save recognition layer PDI1N01S002_device
+Layer PDI1N01S002_device has 0 shapes.
+Save recognition layer PDI1N13S002_device
+Layer PDI1N13S002_device has 0 shapes.
+Save recognition layer ND_SP_device
+Layer ND_SP_device has 0 shapes.
+Save recognition layer P_ND_SP_device
+Layer P_ND_SP_device has 0 shapes.
+Save recognition layer PD_SN_device
+Layer PD_SN_device has 0 shapes.
+Save recognition layer P_PD_SN_device
+Layer P_PD_SN_device has 0 shapes.
+Save recognition layer DP_DN_device
+Layer DP_DN_device has 0 shapes.
+Save recognition layer P_DP_DN_device
+Layer P_DP_DN_device has 0 shapes.
+Save recognition layer DN_PS_device_hv
+Layer DN_PS_device_hv has 0 shapes.
+Save recognition layer DN_PS_device_not_hv
+Layer DN_PS_device_not_hv has 0 shapes.
+Save recognition layer P_DN_PS_device
+Layer P_DN_PS_device has 0 shapes.
+Save recognition layer ESDGCI3_device
+Layer ESDGCI3_device has 0 shapes.
+Save recognition layer ESDGCNI5_device
+Layer ESDGCNI5_device has 0 shapes.
+Save recognition layer ESDGCI20_device
+Layer ESDGCI20_device has 0 shapes.
+Save recognition layer ESDVSD_device
+Layer ESDVSD_device has 0 shapes.
+Save recognition layer ESDVSS_device
+Layer ESDVSS_device has 0 shapes.
+Save recognition layer ESDFDI50_device
+Layer ESDFDI50_device has 0 shapes.
+Save recognition layer ESDTD20_device
+Layer ESDTD20_device has 0 shapes.
+Save recognition layer ESDTD50_device
+Layer ESDTD50_device has 0 shapes.
+Save recognition layer ESDTD40_device
+Layer ESDTD40_device has 0 shapes.
+Save recognition layer ESDTD42_device
+Layer ESDTD42_device has 0 shapes.
+Save recognition layer ESDTD45_device
+Layer ESDTD45_device has 0 shapes.
+Save recognition layer ESDTD60_device
+Layer ESDTD60_device has 0 shapes.
+Save recognition layer ESDPD10_device
+Layer ESDPD10_device has 0 shapes.
+Save recognition layer ESDGCPI5_device
+Layer ESDGCPI5_device has 0 shapes.
+Save recognition layer ESDFDPI5_device
+Layer ESDFDPI5_device has 0 shapes.
+Save recognition layer ESDFDNI5_device
+Layer ESDFDNI5_device has 0 shapes.
+Save recognition layer ESDFDN5_device
+Layer ESDFDN5_device has 0 shapes.
+Save recognition layer ESDGCN5_device
+Layer ESDGCN5_device has 0 shapes.
+Save recognition layer ESDFDP5_device
+Layer ESDFDP5_device has 0 shapes.
+Save recognition layer ESDGCP5_device
+Layer ESDGCP5_device has 0 shapes.
+Save recognition layer ESDPNP40_device
+Layer ESDPNP40_device has 0 shapes.
+Save recognition layer ESDPNP42_device
+Layer ESDPNP42_device has 0 shapes.
+Save recognition layer ESDNPN_PN3_device
+Layer ESDNPN_PN3_device has 0 shapes.
+Save recognition layer ESDSCR14_SN_device
+Layer ESDSCR14_SN_device has 0 shapes.
+Save recognition layer ESDSCR55_SN_device
+Layer ESDSCR55_SN_device has 0 shapes.
+Save recognition layer NMOS50T_device
+Layer NMOS50T_device has 0 shapes.
+Save recognition layer NMOS50M_device
+Layer NMOS50M_device has 0 shapes.
+Save recognition layer NMOS50H_device
+Layer NMOS50H_device has 0 shapes.
+Save recognition layer NMOS50HS_device
+Layer NMOS50HS_device has 0 shapes.
+Save recognition layer NMOSI50T_device
+Layer NMOSI50T_device has 0 shapes.
+Save recognition layer NMOSI50M_device
+Layer NMOSI50M_device has 0 shapes.
+Save recognition layer NMOSI50H_device
+Layer NMOSI50H_device has 0 shapes.
+Save recognition layer NMOSI20H_device
+Layer NMOSI20H_device has 0 shapes.
+Save recognition layer NMOSI20T_device
+Layer NMOSI20T_device has 0 shapes.
+Save recognition layer NMOSI20M_device
+Layer NMOSI20M_device has 0 shapes.
+Save recognition layer NMOS10MH_device
+Layer NMOS10MH_device has 0 shapes.
+Save recognition layer NMOSD10MH_device
+Layer NMOSD10MH_device has 0 shapes.
+Save recognition layer NMOS20T_device
+Layer NMOS20T_device has 0 shapes.
+Save recognition layer NMOS20M_device
+Layer NMOS20M_device has 0 shapes.
+Save recognition layer NMOSD20M_device
+Layer NMOSD20M_device has 0 shapes.
+Save recognition layer NMOS20H_device
+Layer NMOS20H_device has 0 shapes.
+Save recognition layer NMOS20HS_device
+Layer NMOS20HS_device has 0 shapes.
+Save recognition layer NMOSDI20M_device
+Layer NMOSDI20M_device has 0 shapes.
+Save recognition layer NMOSDI20T_device
+Layer NMOSDI20T_device has 0 shapes.
+Save recognition layer NMOSDI20H_device
+Layer NMOSDI20H_device has 0 shapes.
+Save recognition layer NMOSDI50H_device
+Layer NMOSDI50H_device has 0 shapes.
+Save recognition layer NMOSDI50T_device
+Layer NMOSDI50T_device has 0 shapes.
+Save recognition layer NMOSI120H_device
+Layer NMOSI120H_device has 0 shapes.
+Save recognition layer NMOSI120M_device
+Layer NMOSI120M_device has 0 shapes.
+Save recognition layer NMOSDIVST_device
+Layer NMOSDIVST_device has 0 shapes.
+Save recognition layer NMOSIVST_device
+Layer NMOSIVST_device has 0 shapes.
+Save recognition layer PMOS50T_device
+Layer PMOS50T_device has 0 shapes.
+Save recognition layer PMOS50M_device
+Layer PMOS50M_device has 0 shapes.
+Save recognition layer PMOS50H_device
+Layer PMOS50H_device has 0 shapes.
+Save recognition layer PMOS50HS_device
+Layer PMOS50HS_device has 0 shapes.
+Save recognition layer PMOS10MH_device
+Layer PMOS10MH_device has 0 shapes.
+Save recognition layer PMOSD10MH_device
+Layer PMOSD10MH_device has 0 shapes.
+Save recognition layer PMOS20H_device_rev4
+Layer PMOS20H_device_rev4 has 0 shapes.
+Save recognition layer PMOS20H_device_rev3
+Layer PMOS20H_device_rev3 has 0 shapes.
+Save recognition layer PMOS20T_device
+Layer PMOS20T_device has 0 shapes.
+Save recognition layer ESDPMOS18T_device
+Layer ESDPMOS18T_device has 0 shapes.
+Save recognition layer PMOSD20T_device
+Layer PMOSD20T_device has 0 shapes.
+Save recognition layer PMOS20M_device
+Layer PMOS20M_device has 0 shapes.
+Save recognition layer PMOSD20M_device
+Layer PMOSD20M_device has 0 shapes.
+Save recognition layer PMOS20HS_device
+Layer PMOS20HS_device has 0 shapes.
+Save recognition layer PMOS120H_device
+Layer PMOS120H_device has 0 shapes.
+Save recognition layer PMOS120M_device
+Layer PMOS120M_device has 0 shapes.
+Save recognition layer PMOSVST_device
+Layer PMOSVST_device has 0 shapes.
+Save recognition layer PMOSDVST_device
+Layer PMOSDVST_device has 0 shapes.
+Save recognition layer HALL_XY12x12_Zx2_LN_device
+Layer HALL_XY12x12_Zx2_LN_device has 0 shapes.
+Save recognition layer HALL_XY12x12_Zx2_STD_device
+Layer HALL_XY12x12_Zx2_STD_device has 0 shapes.
+Save recognition layer HALL_XY8x8_Zx2_LN_device
+Layer HALL_XY8x8_Zx2_LN_device has 0 shapes.
+Save recognition layer HALL_XY8x8_Zx2_STD_device
+Layer HALL_XY8x8_Zx2_STD_device has 0 shapes.
+Save recognition layer HALL_C1_H35_device
+Layer HALL_C1_H35_device has 0 shapes.
+Save recognition layer HALL_C1_H35X2_device
+Layer HALL_C1_H35X2_device has 0 shapes.
+Save recognition layer HALL_C1_H35X4_device
+Layer HALL_C1_H35X4_device has 0 shapes.
+Save recognition layer HALL_C2_H35_device
+Layer HALL_C2_H35_device has 0 shapes.
+Save recognition layer HALL_C2_H35X2_device
+Layer HALL_C2_H35X2_device has 0 shapes.
+Save recognition layer HALL_C2_H35X4_device
+Layer HALL_C2_H35X4_device has 0 shapes.
+Copying layer net_via3
+Layer net_via3 has 0 shapes.
+Copying layer net_met4
+Layer net_met4 has 0 shapes.
+Copying layer net_met3
+Layer net_met3 has 0 shapes.
+Copying layer net_via2_metcap
+Layer net_via2_metcap has 0 shapes.
+Copying layer net_via2
+Layer net_via2 has 0 shapes.
+Copying layer net_met2
+Layer net_met2 has 0 shapes.
+Copying layer net_via1
+Layer net_via1 has 0 shapes.
+Copying layer net_met1
+Layer net_met1 has 9 shapes.
+Copying layer net_poly2con
+Layer net_poly2con has 0 shapes.
+Copying layer net_poly2
+Layer net_poly2 has 0 shapes.
+Copying layer net_poly1con
+Layer net_poly1con has 1 shapes.
+Copying layer net_poly1
+Layer net_poly1 has 8 shapes.
+Copying layer net_pdiffcon
+Layer net_pdiffcon has 8 shapes.
+Copying layer net_pdiff
+Layer net_pdiff has 3 shapes.
+Copying layer net_ndiffcon
+Layer net_ndiffcon has 6 shapes.
+Copying layer net_ndiff
+Layer net_ndiff has 3 shapes.
+Loading techComp.cxt 
+
+
+Summary for INV/inv/av_extracted
+
+instance count totals:
+
+    lib              cell             view                    total
+    PRIMLIB          nmos4            auLvs                       1
+    PRIMLIB          pcapacitor       auLvs                      46
+    PRIMLIB          pmos4            auLvs                       1
+    PRIMLIB          pnwd             auLvs                       1
+    PRIMLIB          presistor        auLvs                      10
+
+extracted view creation completed
+cpu: 0.13  elap: 0  pf: 32  in: 4616  out: 224  virt: 437M  phys: 1000M
+INFO (LBRCXM-612): Done Executing :runUserCmd
+
+INFO (LBRCXM-582): Checking in license of QTS300 24.10
+
+INFO (LBRCXM-985): Summary:
+ Number of CPUs requested:		1
+ Techfile(s):
+    /opt/pdk/ams/5.10.1/X35/assura/h35b4/h35b4d3/RCX-typical/qrcTechFile; process name: h35b4-typical
+ License(s) used:	QTS300 (x1)
+ Design data:
+    global nets:                  0
+    LVS nets:                     4
+    signal nets:                  4
+    floating nets:                0
+    ground net name:              GNDA
+ Reduction statistics:
+    Dangling Rs removed:          0
+    Merged Parallel Rs:           0
+    Mfactor Merged Devices:       0
+    Rs shorted by min_res option: 0
+    Merged Parallel Self Caps:    0
+    CCs filtered by minC option:  1
+    Shorted Incomplete Nets:      0
+ Output statistics:
+    R: 10
+    C: 46
+    L: 0
+
+
+INFO (LBRCXM-920): Host name and peak memory report
+ Host Name:                    edatools
+ Peak memory used:             197 MB (sampled at 15s intervals)
+
+INFO (LBRCXM-982): Floating net statistics in the design:
+
+   Total floating nets =  0
+     Total signal nets =  4
+         Total LVS net = 4
+
+INFO (LBRCXM-702): Run ended: Mon Sep 28 11:09:25 2026
+
+
+INFO (LBRCXM-805): Quantus run took:  4s user, 7s sys, 14s elapsed
+
+
+INFO (LBRCXM-708): *****  Quantus terminated normally  *****
+
+

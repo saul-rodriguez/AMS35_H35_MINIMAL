@@ -1,0 +1,35 @@
+@(#)$CDS: nvn_64 version av4.1:Production:dfII25.1-64b:IC25.1-64b.38 08/06/2025 03:34 (sjfdcl919) $
+sub-version 4.1_USR7_HF3, integ signature 2025-08-06-0300
+run on edatools at Mon Sep 28 11:08:07 2026
+
+Schematic           | Layout                              | Status
+-------------------------------------------------------------------------------
+inv schematic INV   | inv layout INV                      | matched         
+
+Schematic and Layout Match
+
+Schematic:
+  Library:INV
+  Cell   :inv
+  View   :schematic
+
+Layout:
+  Library:INV
+  Cell   :inv
+  View   :layout
+
+
+
+Extraction  Information
+--------------------
+     0 cells have 0 mal-formed device problems
+     0 cells have 0 label short problems
+     0 cells have 0 label open problems
+
+Mismatch  Information
+--------------------
+     0 cells have 0 Net mismatches
+     0 cells have 0 Device mismatches
+     0 cells have 0 Pin mismatches
+     0 cells have 0 Parameter mismatches
+

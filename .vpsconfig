@@ -1,0 +1,10 @@
+setvar vps_pgv_setup_view dynamic
+setvar vps_pgv_setup_ext_tech {/opt/pdk/ams/5.10.1/X35/assura/h35b4/h35b4/RCX-typical/qrcTechFile}
+setvar vps_pgv_setup_tech_lef {/opt/pdk/ams/5.10.1/X35/cds/HK_H35/LEF/h35b4/h35b4.lef}
+setvar vps_pgv_setup_flow mmsim
+setvar vps_pgv_setup_lef_layer_map {/opt/pdk/ams/5.10.1/X35/voltus/h35/layermaps/h35b4.lefdeflayermap}
+setvar vps_pgv_setup_pgdb_layer_map {/opt/pdk/ams/5.10.1/X35/voltus/h35/layermaps/h35b4.pgdblayermap}
+setvar vps_results_EM_tech_file {}
+setvar vps_results_EM_layermap_file {/opt/pdk/ams/5.10.1/X35/voltus/h35/layermaps/h35b4.ictlayermap}
+setvar vps_results_shape_layermap_file {/opt/pdk/ams/5.10.1/X35/voltus/h35/layermaps/h35b4.pgdblayermap}
+setvar vps_results_shape_layermapEM_file {/opt/pdk/ams/5.10.1/X35/voltus/h35/layermaps/h35b4.pgdblayermap}

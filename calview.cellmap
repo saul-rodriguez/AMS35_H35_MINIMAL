@@ -1,0 +1,1257 @@
+mgc_layer_map(list(
+                list("routingpoly" '(POLY1 drawing))
+                list("poly1con" '(CONT drawing))
+                list("routingpoly2" '(POLY2 drawing))
+                list("poly2con" '(CONT drawing))
+                list("routingmet1" '(MET1 drawing))
+                list("routingvia" '(VIA1 drawing))
+                list("routingmet2" '(MET2 drawing))
+                list("routingvia2" '(VIA2 drawing))
+                list("routingmet3" '(MET3 drawing))
+                list("routingvia3" '(VIA3 drawing))
+                list("routingmet4" '(MET4 drawing))
+              )
+)
+
+(pmos4 (PRIMLIB pmos4 symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil ng 1)
+  )
+)
+
+(pmosm4 (PRIMLIB pmosm4 symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil ng 1)
+  )
+)
+
+(pmosi (PRIMLIB pmosi symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil ng 1) (nil extracted 1)
+  )
+)
+
+(pmosil (PRIMLIB pmosil symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil ng 1) (nil extracted 1)
+  )
+)
+
+(pmossl (PRIMLIB pmossl symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil ng 1) (nil extracted 1)
+  )
+)
+
+(pmosim (PRIMLIB pmosim symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil ng 1) (nil extracted 1)
+  )
+)
+
+(pmosiml (PRIMLIB pmosiml symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil ng 1) (nil extracted 1)
+  )
+)
+
+(pmossml (PRIMLIB pmossml symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil ng 1) (nil extracted 1)
+  )
+)
+
+(pmos10mh (PRIMLIB pmos10mh symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(pmosd10mh (PRIMLIB pmosd10mh symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b nil)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(pmos20t (PRIMLIB pmos20t symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(pmosd20t (PRIMLIB pmosd20t symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b nil)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(pmos20m (PRIMLIB pmos20m symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(pmosd20m (PRIMLIB pmosd20m symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b nil)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(pmos20h (PRIMLIB pmos20h symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(pmos20hs (PRIMLIB pmos20hs symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(pmos50t (PRIMLIB pmos50t symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(pmos50m (PRIMLIB pmos50m symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(pmos50h (PRIMLIB pmos50h symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(pmos50hs (PRIMLIB pmos50hs symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(pmos120m (PRIMLIB pmos120m symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(pmos120h (PRIMLIB pmos120h symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(nmos4 (PRIMLIB nmos4 symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil ng 1)
+  )
+)
+
+(nmosm4 (PRIMLIB nmosm4 symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil ng 1)
+  )
+)
+
+(nmosi (PRIMLIB nmosi symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+    (t T)
+  )
+  (
+    (nil ng 1) (nil extracted 1)
+  )
+)
+
+(nmosil (PRIMLIB nmosil symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+    (t T)
+  )
+  (
+    (nil ng 1) (nil extracted 1)
+  )
+)
+
+(nmosim (PRIMLIB nmosim symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+    (t T)
+  )
+  (
+    (nil ng 1) (nil extracted 1)
+  )
+)
+
+(nmosiml (PRIMLIB nmosiml symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+    (t T)
+  )
+  (
+    (nil ng 1) (nil extracted 1)
+  )
+)
+
+(nmosh (PRIMLIB nmosh4 symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil m 1)
+  )
+)
+
+(nmosmh (PRIMLIB nmosmh4 symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil m 1)
+  )
+)
+
+(nmos10mh (PRIMLIB nmos10mh symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(nmosd10mh (PRIMLIB nmosd10mh symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b nil)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(nmos20t (PRIMLIB nmos20t symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(nmos20m (PRIMLIB nmos20m symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(nmosd20m (PRIMLIB nmosd20m symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b nil)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(nmos20h (PRIMLIB nmos20h symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(nmos20hs (PRIMLIB nmos20hs symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(nmosi20t (PRIMLIB nmosi20t symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(nmosi20m (PRIMLIB nmosi20m symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(nmosi20h (PRIMLIB nmosi20h symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(nmosdi20m (PRIMLIB nmosdi20m symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b nil)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(nmosdi20h (PRIMLIB nmosdi20h symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b nil)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(nmos50t (PRIMLIB nmos50t symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(nmos50m (PRIMLIB nmos50m symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(nmos50h (PRIMLIB nmos50h symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(nmos50hs (PRIMLIB nmos50hs symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(nmosi50t (PRIMLIB nmosi50t symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(nmosi50m (PRIMLIB nmosi50m symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(nmosi50h (PRIMLIB nmosi50h symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(nmosdi50h (PRIMLIB nmosdi50h symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b nil)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(nmosi120m (PRIMLIB nmosi120m symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(nmosi120h (PRIMLIB nmosi120h symbol)
+  (
+    (g G)
+    (s S)
+    (d D)
+    (b B)
+  )
+  (
+    (nil mult 1) (nil m 1)
+  )
+)
+
+(pnpvert10 (PRIMLIB vert10_4 symbol)
+  (
+    (c C)
+    (b B)
+    (e E)
+    (nil SUB (C))
+  )
+  (
+    (area m (area*1e12))
+  )
+)
+
+(pnpvertph (PRIMLIB vertph symbol)
+  (
+    (c C)
+    (b B)
+    (e E)
+    (nil SUB (C))
+  )
+  (
+    (area m (area*1e12))
+  )
+)
+
+(pnplat (PRIMLIB lat2 symbol)
+  (
+    (c C)
+    (b B)
+    (e E)
+    (s SUB)
+    (g G)
+  )
+  (
+    (area m (area*1e12))
+  )
+)
+
+(npnvert1 (PRIMLIB vertn1 symbol)
+  (
+    (c C)
+    (b B)
+    (e E)
+    (s SUB)
+  )
+  (
+    (area m (area*1e12))
+  )
+)
+
+(pjfet (PRIMLIB pjfet symbol)
+  (
+    (d D)
+    (g G)
+    (s S)
+  )
+  (
+    (nil m 1)
+  )
+)
+
+(rpoly1 (PRIMLIB rpoly1 symbol)
+  (
+    (pos PLUS)
+    (neg MINUS)
+  )
+)
+
+(rpoly2 (PRIMLIB rpoly2 symbol)
+  (
+    (pos PLUS)
+    (neg MINUS)
+  )
+)
+
+(rpoly2p (PRIMLIB rpoly2p symbol)
+  (
+    (pos PLUS)
+    (neg MINUS)
+  )
+)
+
+(rpoly2ph (PRIMLIB rpoly2ph symbol)
+  (
+    (pos PLUS)
+    (neg MINUS)
+  )
+)
+
+(rpolyh (PRIMLIB rpolyh symbol)
+  (
+    (pos PLUS)
+    (neg MINUS)
+  )
+)
+
+(rdiffp3 (PRIMLIB rdiffp3 symbol)
+  (
+    (pos PLUS)
+    (neg MINUS)
+    (sub B)
+  )
+)
+
+(rdiffn3 (PRIMLIB rdiffn3 symbol)
+  (
+    (pos PLUS)
+    (neg MINUS)
+    (sub B)
+  )
+)
+
+(rdiffps (PRIMLIB rdiffps symbol)
+  (
+    (pos PLUS)
+    (neg MINUS)
+    (sub B)
+  )
+)
+
+(rdiffnr (PRIMLIB rdiffnr symbol)
+  (
+    (pos PLUS)
+    (neg MINUS)
+    (sub B)
+    (t   T)
+  )
+)
+
+(rnwell (PRIMLIB rnwell symbol)
+  (
+    (pos PLUS)
+    (neg MINUS)
+    (sub B)
+  )
+)
+
+(rnwells (PRIMLIB rnwells symbol)
+  (
+    (pos PLUS)
+    (neg MINUS)
+    (sub B)
+  )
+)
+
+(rpwellr (PRIMLIB rpwellr symbol)
+  (
+    (pos PLUS)
+    (neg MINUS)
+    (sub B)
+  )
+)
+
+(pfuse (PRIMLIB pfuse symbol)
+  (
+    (neg MINUS)
+    (pos PLUS)
+  )
+)
+
+(short (PRIMLIB short symbol)
+  (
+    (pos PLUS)
+    (neg MINUS)
+  )
+)
+
+(cpolya (PRIMLIB cpoly symbol)
+  (
+    (pos MINUS)
+    (neg PLUS)
+  )
+  (
+    (a area (a*1e-12))
+    (p perimeter (p*1e-6))
+  )
+)
+
+(cpm (PRIMLIB cpm symbol)
+  (
+    (pos PLUS)
+    (neg MINUS)
+  )
+  (
+    (a area (a*1e-12))
+    (p perimeter (p*1e-6))
+  )
+)
+
+(cwpm (PRIMLIB cwpm symbol)
+  (
+    (pos PLUS)
+    (neg MINUS)
+  )
+  (
+    (a area (a*1e-12))
+    (p perimeter (p*1e-6))
+  )
+)
+
+(cmim20 (PRIMLIB cmim20 symbol)
+  (
+    (pos PLUS)
+    (neg MINUS)
+  )
+  (
+    (a area (a*1e-12))
+    (p perimeter (p*1e-6))
+  )
+)
+
+(nd (PRIMLIB subdiode symbol)
+  (
+    (pos PLUS)
+    (neg MINUS)
+  )
+  (
+    (area area (area*1e-12))
+    (pj perimeter (pj*1e-6))
+  )
+)
+
+(pd (PRIMLIB welldiode symbol)
+  (
+    (pos PLUS)
+    (neg MINUS)
+  )
+  (
+    (area area (area*1e-12))
+    (pj perimeter (pj*1e-6))
+  )
+)
+
+(nwd (PRIMLIB nwd symbol)
+  (
+    (pos PLUS)
+    (neg MINUS)
+  )
+  (
+    (area area (area*1e-12))
+    (pj perimeter (pj*1e-6))
+  )
+)
+
+(nd_sp (PRIMLIB nd_sp symbol)
+  (
+    (pos PLUS)
+    (neg MINUS)
+  )
+  (
+    (area area (area*1e-12))
+    (pj perimeter (pj*1e-6))
+  )
+)
+
+(pd_sn (PRIMLIB pd_sn symbol)
+  (
+    (pos PLUS)
+    (neg MINUS)
+  )
+  (
+    (area area (area*1e-12))
+    (pj perimeter (pj*1e-6))
+  )
+)
+
+(dp_dn (PRIMLIB dp_dn symbol)
+  (
+    (pos PLUS)
+    (neg MINUS)
+  )
+  (
+    (area area (area*1e-12))
+    (pj perimeter (pj*1e-6))
+  )
+)
+
+(dn_ps (PRIMLIB dn_ps symbol)
+  (
+    (pos PLUS)
+    (neg MINUS)
+  )
+  (
+    (area area (area*1e-12))
+    (pj perimeter (pj*1e-6))
+  )
+)
+
+(sn_ps (PRIMLIB sn_ps symbol)
+  (
+    (pos PLUS)
+    (neg MINUS)
+  )
+  (
+    (area area (area*1e-12))
+    (pj perimeter (pj*1e-6))
+  )
+)
+
+(p_nd (PRIMLIB nfetdiode symbol)
+  (
+    (pos PLUS)
+    (neg MINUS)
+  )
+  (
+    (area ad (area*1e-12))
+    (pj pd (pj*1e-6))
+  )
+)
+
+(p_pd (PRIMLIB pfetdiode symbol)
+  (
+    (pos PLUS)
+    (neg MINUS)
+  )
+  (
+    (area ad (area*1e-12))
+    (pj pd (pj*1e-6))
+  )
+)
+
+(p_nwd (PRIMLIB pnwd symbol)
+  (
+    (pos PLUS)
+    (neg MINUS)
+  )
+  (
+    (area area (area*1e-12))
+    (pj perimeter (pj*1e-6))
+  )
+)
+
+(p_nd_sp (PRIMLIB p_nd_sp symbol)
+  (
+    (pos PLUS)
+    (neg MINUS)
+  )
+  (
+    (area area (area*1e-12))
+    (pj perimeter (pj*1e-6))
+  )
+)
+
+(p_pd_sn (PRIMLIB p_pd_sn symbol)
+  (
+    (pos PLUS)
+    (neg MINUS)
+  )
+  (
+    (area area (area*1e-12))
+    (pj perimeter (pj*1e-6))
+  )
+)
+
+(p_dp_dn (PRIMLIB p_dp_dn symbol)
+  (
+    (pos PLUS)
+    (neg MINUS)
+  )
+  (
+    (area area (area*1e-12))
+    (pj perimeter (pj*1e-6))
+  )
+)
+
+(p_dn_ps (PRIMLIB p_dn_ps symbol)
+  (
+    (pos PLUS)
+    (neg MINUS)
+  )
+  (
+    (area area (area*1e-12))
+    (pj perimeter (pj*1e-6))
+  )
+)
+
+
+
+(esdfdi50 (ESDLIB esdfdi50 symbol)
+  (
+    (a A)
+    (c C)
+    (sub SUB)
+  )
+  (
+    (nil m 1)
+  )
+)
+
+(esdfdn5 (ESDLIB esdfdn5 symbol)
+  (
+    (a A)
+    (c C)
+  )
+  (
+    (nil m 1)
+  )
+)
+
+(esdfdni5 (ESDLIB esdfdni5 symbol)
+  (
+    (a A)
+    (c C)
+    (sub SUB)
+    (t T)
+  )
+  (
+    (nil m 1)
+  )
+)
+
+(esdfdp5 (ESDLIB esdfdp5 symbol)
+  (
+    (a A)
+    (c C)
+    (sub SUB)
+  )
+  (
+    (nil m 1)
+  )
+)
+
+(esdfdpi5 (ESDLIB esdfdpi5 symbol)
+  (
+    (a A)
+    (c C)
+    (sub SUB)
+  )
+  (
+    (nil m 1)
+  )
+)
+
+(esdgci3 (ESDLIB esdgci3 symbol)
+  (
+    (c C)
+    (e E)
+    (sub SUB)
+  )
+  (
+    (nil m 1)
+  )
+)
+
+(esdgci20 (ESDLIB esdgci20 symbol)
+  (
+    (a A)
+    (c C)
+    (sub SUB)
+  )
+  (
+    (nil m 1)
+  )
+)
+
+(esdgcn5 (ESDLIB esdgcn5 symbol)
+  (
+    (a A)
+    (c C)
+  )
+  (
+    (nil m 1)
+  )
+)
+
+(esdgcni5 (ESDLIB esdgcni5 symbol)
+  (
+    (a A)
+    (c C)
+    (sub SUB)
+    (t T)
+  )
+  (
+    (nil m 1)
+  )
+)
+
+(esdgcp5 (ESDLIB esdgcp5 symbol)
+  (
+    (a A)
+    (c C)
+    (sub SUB)
+  )
+  (
+    (nil m 1)
+  )
+)
+
+(esdgcpi5 (ESDLIB esdgcpi5 symbol)
+  (
+    (a A)
+    (c C)
+    (sub SUB)
+  )
+  (
+    (nil m 1)
+  )
+)
+
+(esdpd10 (ESDLIB esdpd10 symbol)
+  (
+    (a A)
+    (c C)
+    (sub SUB)
+  )
+  (
+    (nil m 1)
+  )
+)
+
+(esdpnp40 (ESDLIB esdpnp40 symbol)
+  (
+    (b B)
+    (c C)
+    (e E)
+    (sub SUB)
+  )
+  (
+    (nil m 1)
+  )
+)
+
+(esdpnp42 (ESDLIB esdpnp42 symbol)
+  (
+    (b B)
+    (c C)
+    (e E)
+    (sub SUB)
+  )
+  (
+    (nil m 1)
+  )
+)
+
+(esdtd20 (ESDLIB esdtd20 symbol)
+  (
+    (a A)
+    (c C)
+    (sub SUB)
+  )
+  (
+    (nil m 1)
+  )
+)
+
+(esdtd40 (ESDLIB esdtd40 symbol)
+  (
+    (a A)
+    (c C)
+    (sub SUB)
+  )
+  (
+    (nil m 1)
+  )
+)
+
+(esdtd42 (ESDLIB esdtd42 symbol)
+  (
+    (a A)
+    (c C)
+    (sub SUB)
+  )
+  (
+    (nil m 1)
+  )
+)
+
+(esdtd45 (ESDLIB esdtd45 symbol)
+  (
+    (a A)
+    (c C)
+    (sub SUB)
+  )
+  (
+    (nil m 1)
+  )
+)
+
+(esdtd50 (ESDLIB esdtd50 symbol)
+  (
+    (a A)
+    (c C)
+    (sub SUB)
+  )
+  (
+    (nil m 1)
+  )
+)
+
+(esdtd60 (ESDLIB esdtd60 symbol)
+  (
+    (a A)
+    (c C)
+    (sub SUB)
+  )
+  (
+    (nil m 1)
+  )
+)
+
+
+
+((p cap c) (PRIMLIB pcapacitor symbol)
+  (
+    (PLUS)
+    (MINUS)
+  )
+)
+
+((p res r) (PRIMLIB presistor symbol)
+  (
+    (PLUS)
+    (MINUS)
+  )
+)

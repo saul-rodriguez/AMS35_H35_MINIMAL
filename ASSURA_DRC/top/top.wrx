@@ -1,0 +1,136 @@
+*WARNING* Multiple label discarded: "A" at (50.000, 47.500) and "psub!" on net C1.
+*WARNING* Net C1: multiple Labels on a single Net, 
+therefore, "psub!" at (1.100, 260.300) is discarded.
+*WARNING* Net C1: multiple Labels on a single Net, 
+therefore, "psub!" at (1.100, 353.800) is discarded.
+*WARNING* Net C1: multiple Labels on a single Net, 
+therefore, "psub!" at (98.900, 260.300) is discarded.
+*WARNING* Net C1: multiple Labels on a single Net, 
+therefore, "psub!" at (98.900, 353.800) is discarded.
+*WARNING* 5 net(s) with multi-label warnings found in cell 'VSUBALLP_HV layout IOLIB_HV_4M'.
+*WARNING* 2 same-label  warnings found in cell 'VSUBALLP_HV layout IOLIB_HV_4M'.
+*WARNING* Because of the label priority, discard label "vdd3r!" at (1.100, 280.900),
+but keep original label "vdd3o!" on net C1.
+*WARNING* Because of the label priority, discard label "vdd3r!" at (1.100, 337.150),
+but keep original label "vdd3o!" on net C1.
+*WARNING* Because of the label priority, discard label "vdd3r!" at (98.900, 280.900),
+but keep original label "vdd3o!" on net C1.
+*WARNING* Because of the label priority, discard label "vdd3r!" at (98.900, 337.150),
+but keep original label "vdd3o!" on net C1.
+*WARNING* Because of the label priority, discard label "A" at (50.150, 358.650),
+but keep original label "vdd3o!" on net C1.
+*WARNING* 5 net(s) with multi-label warnings found in cell 'VDD3ALLP_HV layout IOLIB_HV_4M'.
+*WARNING* 4 same-label  warnings found in cell 'VDD3ALLP_HV layout IOLIB_HV_4M'.
+*WARNING* 1 same-label  warning  found in cell 'PWRCUT_DIG_P_DXS_HV layout IOLIB_HV_4M'.
+*WARNING* 6 same-label  warnings found in cell 'PERI_SPACER_50_P_HV layout IOLIB_HV_4M'.
+*WARNING* 3 same-label  warnings found in cell 'PERI_SPACER_2_P_HV layout IOLIB_HV_4M'.
+*WARNING* 6 same-label  warnings found in cell 'PERI_SPACER_20_P_HV layout IOLIB_HV_4M'.
+*WARNING* 6 same-label  warnings found in cell 'PERI_SPACER_10_P_HV layout IOLIB_HV_4M'.
+*WARNING* 6 same-label  warnings found in cell 'PERI_SPACER_100_P_HV layout IOLIB_HV_4M'.
+*WARNING* 6 same-label  warnings found in cell 'ICP_HV layout IOLIB_HV_4M'.
+*WARNING* Because of the label priority, discard label "gnd3r!" at (1.100, 310.300),
+but keep original label "gnd3o!" on net C1.
+*WARNING* Because of the label priority, discard label "gnd3r!" at (98.900, 310.300),
+but keep original label "gnd3o!" on net C1.
+*WARNING* Because of the label priority, discard label "A" at (50.100, 358.600),
+but keep original label "gnd3o!" on net C1.
+*WARNING* 3 net(s) with multi-label warnings found in cell 'GND3ALLP_HV layout IOLIB_HV_4M'.
+*WARNING* 6 same-label  warnings found in cell 'GND3ALLP_HV layout IOLIB_HV_4M'.
+*WARNING* 6 same-label  warnings found in cell 'CORNERP_HV layout IOLIB_HV_4M'.
+*WARNING* 6 same-label  warnings found in cell 'BU2P_HV layout IOLIB_HV_4M'.
+*WARNING* Because of the label priority, discard label "PAD",
+        but keep the label "vddo!" at (0.250, 214.900)  on net C1.
+*WARNING* Because of the label priority, discard label "vddr!" at (0.250, 280.900),
+but keep original label "vddo!" on net C1.
+*WARNING* Because of the label priority, discard label "vddr!" at (0.250, 337.150),
+but keep original label "vddo!" on net C1.
+*WARNING* Because of the label priority, discard label "vddr!" at (99.750, 280.900),
+but keep original label "vddo!" on net C1.
+*WARNING* Because of the label priority, discard label "vddr!" at (99.750, 337.150),
+but keep original label "vddo!" on net C1.
+*WARNING* Because of the label priority, discard label "VDD3A" at (49.800, 358.600),
+but keep original label "vddo!" on net C1.
+*WARNING* 6 net(s) with multi-label warnings found in cell 'AVDD3ALLP_HV layout IOLIB_ANA_HV_4M'.
+*WARNING* 4 same-label  warnings found in cell 'AVDD3ALLP_HV layout IOLIB_ANA_HV_4M'.
+*WARNING* Multiple label discarded: "Z" at (49.900, 359.350) and "PAD" on net C1.
+*WARNING* 1 net(s) with multi-label warning  found in cell 'APRIOP_HV layout IOLIB_ANA_HV_4M'.
+*WARNING* 6 same-label  warnings found in cell 'APRIOP_HV layout IOLIB_ANA_HV_4M'.
+*WARNING* 6 same-label  warnings found in cell 'APRIO200P_HV layout IOLIB_ANA_HV_4M'.
+*WARNING* Because of the label priority, discard label "PAD",
+        but keep the label "gndo!" at (0.250, 137.300)  on net C1.
+*WARNING* Because of the label priority, discard label "gndr!" at (0.250, 310.300),
+but keep original label "gndo!" on net C1.
+*WARNING* Because of the label priority, discard label "gndr!" at (99.750, 310.300),
+but keep original label "gndo!" on net C1.
+*WARNING* Because of the label priority, discard label "GND3A" at (50.200, 358.700),
+but keep original label "gndo!" on net C1.
+*WARNING* 4 net(s) with multi-label warnings found in cell 'AGND3ALLP_HV layout IOLIB_ANA_HV_4M'.
+*WARNING* 6 same-label  warnings found in cell 'AGND3ALLP_HV layout IOLIB_ANA_HV_4M'.
+*WARNING* Multiple label discarded: "A" at (50.000, 47.500) and "psub!" on net C1.
+*WARNING* Net C1: multiple Labels on a single Net, 
+therefore, "psub!" at (1.100, 260.300) is discarded.
+*WARNING* Net C1: multiple Labels on a single Net, 
+therefore, "psub!" at (1.100, 353.800) is discarded.
+*WARNING* Net C1: multiple Labels on a single Net, 
+therefore, "psub!" at (98.900, 260.300) is discarded.
+*WARNING* Net C1: multiple Labels on a single Net, 
+therefore, "psub!" at (98.900, 353.800) is discarded.
+*WARNING* 5 net(s) with multi-label warnings found in cell 'VSUBALLP_HV layout IOLIB_HV_4M'.
+*WARNING* 2 same-label  warnings found in cell 'VSUBALLP_HV layout IOLIB_HV_4M'.
+*WARNING* Because of the label priority, discard label "vdd3r!" at (1.100, 280.900),
+but keep original label "vdd3o!" on net C1.
+*WARNING* Because of the label priority, discard label "vdd3r!" at (1.100, 337.150),
+but keep original label "vdd3o!" on net C1.
+*WARNING* Because of the label priority, discard label "vdd3r!" at (98.900, 280.900),
+but keep original label "vdd3o!" on net C1.
+*WARNING* Because of the label priority, discard label "vdd3r!" at (98.900, 337.150),
+but keep original label "vdd3o!" on net C1.
+*WARNING* Because of the label priority, discard label "A" at (50.150, 358.650),
+but keep original label "vdd3o!" on net C1.
+*WARNING* 5 net(s) with multi-label warnings found in cell 'VDD3ALLP_HV layout IOLIB_HV_4M'.
+*WARNING* 4 same-label  warnings found in cell 'VDD3ALLP_HV layout IOLIB_HV_4M'.
+*WARNING* 1 same-label  warning  found in cell 'PWRCUT_DIG_P_DXS_HV layout IOLIB_HV_4M'.
+*WARNING* 6 same-label  warnings found in cell 'PERI_SPACER_50_P_HV layout IOLIB_HV_4M'.
+*WARNING* 3 same-label  warnings found in cell 'PERI_SPACER_2_P_HV layout IOLIB_HV_4M'.
+*WARNING* 6 same-label  warnings found in cell 'PERI_SPACER_20_P_HV layout IOLIB_HV_4M'.
+*WARNING* 6 same-label  warnings found in cell 'PERI_SPACER_10_P_HV layout IOLIB_HV_4M'.
+*WARNING* 6 same-label  warnings found in cell 'PERI_SPACER_100_P_HV layout IOLIB_HV_4M'.
+*WARNING* 6 same-label  warnings found in cell 'ICP_HV layout IOLIB_HV_4M'.
+*WARNING* Because of the label priority, discard label "gnd3r!" at (1.100, 310.300),
+but keep original label "gnd3o!" on net C1.
+*WARNING* Because of the label priority, discard label "gnd3r!" at (98.900, 310.300),
+but keep original label "gnd3o!" on net C1.
+*WARNING* Because of the label priority, discard label "A" at (50.100, 358.600),
+but keep original label "gnd3o!" on net C1.
+*WARNING* 3 net(s) with multi-label warnings found in cell 'GND3ALLP_HV layout IOLIB_HV_4M'.
+*WARNING* 6 same-label  warnings found in cell 'GND3ALLP_HV layout IOLIB_HV_4M'.
+*WARNING* 6 same-label  warnings found in cell 'CORNERP_HV layout IOLIB_HV_4M'.
+*WARNING* 6 same-label  warnings found in cell 'BU2P_HV layout IOLIB_HV_4M'.
+*WARNING* Because of the label priority, discard label "PAD",
+        but keep the label "vddo!" at (0.250, 214.900)  on net C1.
+*WARNING* Because of the label priority, discard label "vddr!" at (0.250, 280.900),
+but keep original label "vddo!" on net C1.
+*WARNING* Because of the label priority, discard label "vddr!" at (0.250, 337.150),
+but keep original label "vddo!" on net C1.
+*WARNING* Because of the label priority, discard label "vddr!" at (99.750, 280.900),
+but keep original label "vddo!" on net C1.
+*WARNING* Because of the label priority, discard label "vddr!" at (99.750, 337.150),
+but keep original label "vddo!" on net C1.
+*WARNING* Because of the label priority, discard label "VDD3A" at (49.800, 358.600),
+but keep original label "vddo!" on net C1.
+*WARNING* 6 net(s) with multi-label warnings found in cell 'AVDD3ALLP_HV layout IOLIB_ANA_HV_4M'.
+*WARNING* 4 same-label  warnings found in cell 'AVDD3ALLP_HV layout IOLIB_ANA_HV_4M'.
+*WARNING* Multiple label discarded: "Z" at (49.900, 359.350) and "PAD" on net C1.
+*WARNING* 1 net(s) with multi-label warning  found in cell 'APRIOP_HV layout IOLIB_ANA_HV_4M'.
+*WARNING* 6 same-label  warnings found in cell 'APRIOP_HV layout IOLIB_ANA_HV_4M'.
+*WARNING* 6 same-label  warnings found in cell 'APRIO200P_HV layout IOLIB_ANA_HV_4M'.
+*WARNING* Because of the label priority, discard label "PAD",
+        but keep the label "gndo!" at (0.250, 137.300)  on net C1.
+*WARNING* Because of the label priority, discard label "gndr!" at (0.250, 310.300),
+but keep original label "gndo!" on net C1.
+*WARNING* Because of the label priority, discard label "gndr!" at (99.750, 310.300),
+but keep original label "gndo!" on net C1.
+*WARNING* Because of the label priority, discard label "GND3A" at (50.200, 358.700),
+but keep original label "gndo!" on net C1.
+*WARNING* 4 net(s) with multi-label warnings found in cell 'AGND3ALLP_HV layout IOLIB_ANA_HV_4M'.
+*WARNING* 6 same-label  warnings found in cell 'AGND3ALLP_HV layout IOLIB_ANA_HV_4M'.

@@ -1,0 +1,179 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version IC23.1-64b 09/09/2025 22:32 (cpgbld16) $
+          : sub-version  IC23.1-64b.ISR16.19 
+Started at: 28-Sep-2026  12:39:05
+User Name : saul
+Host Name : edatools
+Directory : /home/saul/projects/AMS35_H35_MINIMAL
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+
+                       Individual Cell Statistics - Basic Objects
+---------------------------------------------------------------------------------------------------------------------------------------
+Library/Cell/View               Instance Array   Polygon  Rect   Path   PathSeg   Text   TextDisplay   Line   Dot   Arc   Donut   Ellipse 
+---------------------------------------------------------------------------------------------------------------------------------------
+CORELIBD_DCV_HV/AOI22X3_DCV_HV/layout                           0        0       15       44     0      0         16     0             0      0     0     0       0       
+CORELIBD_DCV_HV/AOI22X4_DCV_HV/layout                           0        0       14       45     0      0         16     0             0      0     0     0       0       
+CORELIBD_DCV_HV/BUFX12_DCV_HV/layout                            0        0       10       42     0      0         13     0             0      0     0     0       0       
+CORELIBD_DCV_HV/BUFX16_DCV_HV/layout                            0        0       10       52     0      0         13     0             0      0     0     0       0       
+CORELIBD_DCV_HV/BUFX2_DCV_HV/layout                             0        0       10       32     0      0         13     0             0      0     0     0       0       
+CORELIBD_DCV_HV/BUFX4_DCV_HV/layout                             0        0       10       32     0      0         13     0             0      0     0     0       0       
+CORELIBD_DCV_HV/BUFX6_DCV_HV/layout                             0        0       11       35     0      0         13     0             0      0     0     0       0       
+CORELIBD_DCV_HV/BUFX8_DCV_HV/layout                             0        0       10       39     0      0         13     0             0      0     0     0       0       
+CORELIBD_DCV_HV/CLKBUFX12_DCV_HV/layout                         0        0       10       46     0      0         13     0             0      0     0     0       0       
+CORELIBD_DCV_HV/CLKBUFX16_DCV_HV/layout                         0        0       10       50     0      0         13     0             0      0     0     0       0       
+CORELIBD_DCV_HV/CLKBUFX24_DCV_HV/layout                         0        0       10       66     0      0         13     0             0      0     0     0       0       
+CORELIBD_DCV_HV/CLKBUFX2_DCV_HV/layout                          0        0       9        33     0      0         13     0             0      0     0     0       0       
+CORELIBD_DCV_HV/CLKBUFX3_DCV_HV/layout                          0        0       9        33     0      0         13     0             0      0     0     0       0       
+CORELIBD_DCV_HV/CLKBUFX6_DCV_HV/layout                          0        0       9        39     0      0         13     0             0      0     0     0       0       
+CORELIBD_DCV_HV/CLKBUFX8_DCV_HV/layout                          0        0       9        41     0      0         13     0             0      0     0     0       0       
+CORELIBD_DCV_HV/DFX1_DCV_HV/layout                              0        0       33       124    0      0         15     0             0      0     0     0       0       
+CORELIBD_DCV_HV/DLY1X1_DCV_HV/layout                            0        0       15       69     0      0         13     0             0      0     0     0       0       
+CORELIBD_DCV_HV/FILLCAPX16_DCV_HV/layout                        0        0       8        139    1      0         11     0             0      0     0     0       0       
+CORELIBD_DCV_HV/FILLCAPX4_DCV_HV/layout                         0        0       8        37     0      0         11     0             0      0     0     0       0       
+CORELIBD_DCV_HV/FILLCAPX8_DCV_HV/layout                         0        0       8        71     0      0         11     0             0      0     0     0       0       
+CORELIBD_DCV_HV/FILLCELLX1_DCV_HV/layout                        0        0       2        13     0      0         11     0             0      0     0     0       0       
+CORELIBD_DCV_HV/FILLCELLX2_DCV_HV/layout                        0        0       2        15     0      0         11     0             0      0     0     0       0       
+CORELIBD_DCV_HV/FILLCELLX4_DCV_HV/layout                        0        0       2        19     0      0         11     0             0      0     0     0       0       
+CORELIBD_DCV_HV/FILLCELLX8_DCV_HV/layout                        0        0       2        27     0      0         11     0             0      0     0     0       0       
+CORELIBD_DCV_HV/HAX3_DCV_HV/layout                              0        0       17       67     0      0         15     0             0      0     0     0       0       
+CORELIBD_DCV_HV/INVX16_DCV_HV/layout                            0        0       6        42     0      0         13     0             0      0     0     0       0       
+CORELIBD_DCV_HV/INVX4_DCV_HV/layout                             0        0       6        26     0      0         13     0             0      0     0     0       0       
+CORELIBD_DCV_HV/NOR2X4_DCV_HV/layout                            0        0       8        32     0      0         14     0             0      0     0     0       0       
+CORELIBD_DCV_HV/XNOR2X2_DCV_HV/layout                           0        0       16       48     0      0         14     0             0      0     0     0       0       
+CORELIBD_DCV_HV/XOR2X1_DCV_HV/layout                            0        0       14       47     0      0         14     0             0      0     0     0       0       
+COUNTER/counter/layout_noring_2 150      0       0        2478   10     490       14     0             0      0     0     0       0       
+TECH_H35B4/VIA1_C/layout        0        0       0        6      0      0         0      0             0      0     0     0       0       
+TECH_H35B4/VIA1_C/layout        0        0       0        18     0      0         0      0             0      0     0     0       0       
+TECH_H35B4/VIA1_C/layout        0        0       0        6      0      0         0      0             0      0     0     0       0       
+TECH_H35B4/VIA1_C/layout        0        0       0        10     0      0         0      0             0      0     0     0       0       
+TECH_H35B4/VIA1_DEAST/layout    0        0       0        4      0      0         0      0             0      0     0     0       0       
+TECH_H35B4/VIA1_DNORTH/layout   0        0       0        4      0      0         0      0             0      0     0     0       0       
+TECH_H35B4/VIA1_DSOUTH/layout   0        0       0        4      0      0         0      0             0      0     0     0       0       
+TECH_H35B4/VIA1_DWEST/layout    0        0       0        4      0      0         0      0             0      0     0     0       0       
+TECH_H35B4/VIA1_PR/layout       0        0       0        3      0      0         0      0             0      0     0     0       0       
+TECH_H35B4/VIA1_VC/layout       0        0       0        4      0      0         0      0             0      0     0     0       0       
+TECH_H35B4/VIA2_DEAST/layout    0        0       0        4      0      0         0      0             0      0     0     0       0       
+TECH_H35B4/VIA2_DNORTH/layout   0        0       0        4      0      0         0      0             0      0     0     0       0       
+TECH_H35B4/VIA2_DSOUTH/layout   0        0       0        4      0      0         0      0             0      0     0     0       0       
+TECH_H35B4/VIA2_DWEST/layout    0        0       0        4      0      0         0      0             0      0     0     0       0       
+TECH_H35B4/VIA2_PR/layout       0        0       0        3      0      0         0      0             0      0     0     0       0       
+TECH_H35B4/VIA3_HC/layout       0        0       0        4      0      0         0      0             0      0     0     0       0       
+TECH_H35B4/VIA3_VC/layout       0        0       0        4      0      0         0      0             0      0     0     0       0       
+---------------------------------------------------------------------------------------------------------------------------------------
+
+                       Individual Cell Statistics - Advanced Objects
+--------------------------------------------------------------------------------------------------------------------------------------------
+Library/Cell/View               PRBdy    OtherBdy   AreaBlkg   LayerBlkg  AreaHalo   Row   Marker   Stitch   CustVia   StdVia    CdsGenVia
+--------------------------------------------------------------------------------------------------------------------------------------------
+CORELIBD_DCV_HV/AOI22X3_DCV_HV/layout                           0        0          0          0          0          0     0        0        0         0         0        
+CORELIBD_DCV_HV/AOI22X4_DCV_HV/layout                           0        0          0          0          0          0     0        0        0         0         0        
+CORELIBD_DCV_HV/BUFX12_DCV_HV/layout                            0        0          0          0          0          0     0        0        0         0         0        
+CORELIBD_DCV_HV/BUFX16_DCV_HV/layout                            0        0          0          0          0          0     0        0        0         0         0        
+CORELIBD_DCV_HV/BUFX2_DCV_HV/layout                             0        0          0          0          0          0     0        0        0         0         0        
+CORELIBD_DCV_HV/BUFX4_DCV_HV/layout                             0        0          0          0          0          0     0        0        0         0         0        
+CORELIBD_DCV_HV/BUFX6_DCV_HV/layout                             0        0          0          0          0          0     0        0        0         0         0        
+CORELIBD_DCV_HV/BUFX8_DCV_HV/layout                             0        0          0          0          0          0     0        0        0         0         0        
+CORELIBD_DCV_HV/CLKBUFX12_DCV_HV/layout                         0        0          0          0          0          0     0        0        0         0         0        
+CORELIBD_DCV_HV/CLKBUFX16_DCV_HV/layout                         0        0          0          0          0          0     0        0        0         0         0        
+CORELIBD_DCV_HV/CLKBUFX24_DCV_HV/layout                         0        0          0          0          0          0     0        0        0         0         0        
+CORELIBD_DCV_HV/CLKBUFX2_DCV_HV/layout                          0        0          0          0          0          0     0        0        0         0         0        
+CORELIBD_DCV_HV/CLKBUFX3_DCV_HV/layout                          0        0          0          0          0          0     0        0        0         0         0        
+CORELIBD_DCV_HV/CLKBUFX6_DCV_HV/layout                          0        0          0          0          0          0     0        0        0         0         0        
+CORELIBD_DCV_HV/CLKBUFX8_DCV_HV/layout                          0        0          0          0          0          0     0        0        0         0         0        
+CORELIBD_DCV_HV/DFX1_DCV_HV/layout                              0        0          0          0          0          0     0        0        0         0         0        
+CORELIBD_DCV_HV/DLY1X1_DCV_HV/layout                            0        0          0          0          0          0     0        0        0         0         0        
+CORELIBD_DCV_HV/FILLCAPX16_DCV_HV/layout                        0        0          0          0          0          0     0        0        0         0         0        
+CORELIBD_DCV_HV/FILLCAPX4_DCV_HV/layout                         0        0          0          0          0          0     0        0        0         0         0        
+CORELIBD_DCV_HV/FILLCAPX8_DCV_HV/layout                         0        0          0          0          0          0     0        0        0         0         0        
+CORELIBD_DCV_HV/FILLCELLX1_DCV_HV/layout                        0        0          0          0          0          0     0        0        0         0         0        
+CORELIBD_DCV_HV/FILLCELLX2_DCV_HV/layout                        0        0          0          0          0          0     0        0        0         0         0        
+CORELIBD_DCV_HV/FILLCELLX4_DCV_HV/layout                        0        0          0          0          0          0     0        0        0         0         0        
+CORELIBD_DCV_HV/FILLCELLX8_DCV_HV/layout                        0        0          0          0          0          0     0        0        0         0         0        
+CORELIBD_DCV_HV/HAX3_DCV_HV/layout                              0        0          0          0          0          0     0        0        0         0         0        
+CORELIBD_DCV_HV/INVX16_DCV_HV/layout                            0        0          0          0          0          0     0        0        0         0         0        
+CORELIBD_DCV_HV/INVX4_DCV_HV/layout                             0        0          0          0          0          0     0        0        0         0         0        
+CORELIBD_DCV_HV/NOR2X4_DCV_HV/layout                            0        0          0          0          0          0     0        0        0         0         0        
+CORELIBD_DCV_HV/XNOR2X2_DCV_HV/layout                           0        0          0          0          0          0     0        0        0         0         0        
+CORELIBD_DCV_HV/XOR2X1_DCV_HV/layout                            0        0          0          0          0          0     0        0        0         0         0        
+COUNTER/counter/layout_noring_2 0        0          0          0          0          0     0        0        396       24        0        
+TECH_H35B4/VIA1_C/layout        0        0          0          0          0          0     0        0        0         0         0        
+TECH_H35B4/VIA1_C/layout        0        0          0          0          0          0     0        0        0         0         0        
+TECH_H35B4/VIA1_C/layout        0        0          0          0          0          0     0        0        0         0         0        
+TECH_H35B4/VIA1_C/layout        0        0          0          0          0          0     0        0        0         0         0        
+TECH_H35B4/VIA1_DEAST/layout    0        0          0          0          0          0     0        0        0         0         0        
+TECH_H35B4/VIA1_DNORTH/layout   0        0          0          0          0          0     0        0        0         0         0        
+TECH_H35B4/VIA1_DSOUTH/layout   0        0          0          0          0          0     0        0        0         0         0        
+TECH_H35B4/VIA1_DWEST/layout    0        0          0          0          0          0     0        0        0         0         0        
+TECH_H35B4/VIA1_PR/layout       0        0          0          0          0          0     0        0        0         0         0        
+TECH_H35B4/VIA1_VC/layout       0        0          0          0          0          0     0        0        0         0         0        
+TECH_H35B4/VIA2_DEAST/layout    0        0          0          0          0          0     0        0        0         0         0        
+TECH_H35B4/VIA2_DNORTH/layout   0        0          0          0          0          0     0        0        0         0         0        
+TECH_H35B4/VIA2_DSOUTH/layout   0        0          0          0          0          0     0        0        0         0         0        
+TECH_H35B4/VIA2_DWEST/layout    0        0          0          0          0          0     0        0        0         0         0        
+TECH_H35B4/VIA2_PR/layout       0        0          0          0          0          0     0        0        0         0         0        
+TECH_H35B4/VIA3_HC/layout       0        0          0          0          0          0     0        0        0         0         0        
+TECH_H35B4/VIA3_VC/layout       0        0          0          0          0          0     0        0        0         0         0        
+---------------------------------------------------------------------------------------------------------------------------------------
+
+                       Statistics of Layers 
+---------------------------------------------------------------------------------------------------------------------------------------
+Cadence         Cadence         Stream  Stream   
+Layer           Purpose         Layer   Datatype  Polygon  Rect     Path     Text     TextDisplay   Line Dot Arc Donut Ellipse Pathseg
+---------------------------------------------------------------------------------------------------------------------------------------
+DNTUB           drawing         4       0         0        31       1        0        0             0    0   0   0     0      0      
+SNTUB           drawing         6       0         5        25       1        0        0             0    0   0   0     0      0      
+DPTUB           drawing         7       0         30       0        1        0        0             0    0   0   0     0      0      
+SPTUB           drawing         57      0         30       0        1        0        0             0    0   0   0     0      0      
+DIFF            drawing         10      0         47       72       2        0        0             0    0   0   0     0      0      
+NPLUS           drawing         23      0         4        56       1        0        0             0    0   0   0     0      0      
+PPLUS           drawing         24      0         4        56       1        0        0             0    0   0   0     0      0      
+POLY1           drawing         20      0         73       0        0        0        0             0    0   0   0     0      0      
+CONT            drawing         34      0         0        3550     0        0        0             0    0   0   0     0      0      
+MET1            drawing         35      0         110      56       3        1        0             0    0   0   0     0      45     
+VIA1            drawing         36      0         0        43       0        0        0             0    0   0   0     0      0      
+MET2            drawing         37      0         0        21       0        0        0             0    0   0   0     0      273    
+VIA2            drawing         38      0         0        9        0        0        0             0    0   0   0     0      0      
+MET3            drawing         39      0         0        18       0        0        0             0    0   0   0     0      169    
+VIA3            drawing         41      0         0        4        0        0        0             0    0   0   0     0      0      
+MET4            drawing         42      0         0        2        0        0        0             0    0   0   0     0      3      
+CELBOX          drawing         62      1         0        30       0        0        0             0    0   0   0     0      0      
+IPDEF           drawing         62      6         0        0        0        270      0             0    0   0   0     0      0      
+PIN             metal1          61      2         0        0        0        119      0             0    0   0   0     0      0      
+PIN             metal2          61      3         0        0        0        2        0             0    0   0   0     0      0      
+PIN             metal3          61      4         0        0        0        11       0             0    0   0   0     0      0      
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Summary of Objects Translated:
+	Scalar Instances:		150
+	Array Instances:		0
+	Polygons:			303
+	Paths:				11
+	Rectangles:			3973
+	Lines:				0
+	Arcs:				0
+	Donuts:				0
+	Dots:				0
+	Ellipses:			0
+	Boundaries:			0
+	Area Blockages:			0
+	Layer Blockages:		0
+	Area Halos:			0
+	Markers:			0
+	Rows:				0
+	Stitches:			0
+	Standard Vias:			24
+	Custom Vias:			396
+	CdsGen Vias:			0
+	Pathsegs:			490
+	Text:				403
+	TextDisplay:		0
+	Cells:				48
+Design Libraries: 
+
+DEFINE COUNTER	/home/saul/projects/AMS35_H35_MINIMAL/COUNTER
+DEFINE CORELIBD_DCV_HV	/opt/pdk/ams/5.10.1/X35/ip_release/AMS_H35_ALL_CORELIBD_DCV_HV/01.00.00/03_OA/CORELIBD_DCV_HV
+DEFINE TECH_H35B4	/opt/pdk/ams/5.10.1/X35/cds/HK_H35/TECH_H35B4_VS

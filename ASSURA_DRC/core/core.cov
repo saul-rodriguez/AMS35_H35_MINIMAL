@@ -1,0 +1,84 @@
+================================================================================
+Rule No. 38343 : PO_R_1 Minimum density of POLY1 area [%] Density = total poly layer area / chip area Recommended dummy structures are 5um * 2um rectangles with 2um spacing. They should not be placed on active devices. = 14
+
+Real Error Count : 1; Flat Error Count : 1                     
+================================================================================
+
+--------------------------------------------------------------------------------
+Cell Name : core layout MINIMAL_CORE
+
+                   Cell Errors    Real Errors   Cell Placements     Environments
+                             1              1                 1                1  
+--------------------------------------------------------------------------------
+Env.  Env. Placements            X1           Y1           X2           Y2    
+
+  1        1                 16.550        6.050      193.550      191.650
+
+Shape               Environments Status & Error Marker
+
+         1           X1         Y1         X2         Y2    Cov        Real area
+
+   1     X       16.550      6.050    193.550    191.650  0.064         2097.335
+================================================================================
+Rule No. 38667 : M2_R_1 Minimum density of MET2 area [%] = 30
+
+Real Error Count : 1; Flat Error Count : 1                     
+================================================================================
+
+--------------------------------------------------------------------------------
+Cell Name : core layout MINIMAL_CORE
+
+                   Cell Errors    Real Errors   Cell Placements     Environments
+                             1              1                 1                1  
+--------------------------------------------------------------------------------
+Env.  Env. Placements            X1           Y1           X2           Y2    
+
+  1        1                 16.550        6.050      193.550      191.650
+
+Shape               Environments Status & Error Marker
+
+         1           X1         Y1         X2         Y2    Cov        Real area
+
+   1     X       16.550      6.050    193.550    191.650  0.126         4130.220
+================================================================================
+Rule No. 38750 : M3_R_1 Minimum density of MET3 area [%] = 30
+
+Real Error Count : 1; Flat Error Count : 1                     
+================================================================================
+
+--------------------------------------------------------------------------------
+Cell Name : core layout MINIMAL_CORE
+
+                   Cell Errors    Real Errors   Cell Placements     Environments
+                             1              1                 1                1  
+--------------------------------------------------------------------------------
+Env.  Env. Placements            X1           Y1           X2           Y2    
+
+  1        1                 16.550        6.050      193.550      191.650
+
+Shape               Environments Status & Error Marker
+
+         1           X1         Y1         X2         Y2    Cov        Real area
+
+   1     X       16.550      6.050    193.550    191.650  0.042         1393.765
+================================================================================
+Rule No. 38776 : R01M4 Minimum density of MET4 area [%] = 30
+
+Real Error Count : 1; Flat Error Count : 1                     
+================================================================================
+
+--------------------------------------------------------------------------------
+Cell Name : core layout MINIMAL_CORE
+
+                   Cell Errors    Real Errors   Cell Placements     Environments
+                             1              1                 1                1  
+--------------------------------------------------------------------------------
+Env.  Env. Placements            X1           Y1           X2           Y2    
+
+  1        1                 16.550        6.050      193.550      191.650
+
+Shape               Environments Status & Error Marker
+
+         1           X1         Y1         X2         Y2    Cov        Real area
+
+   1     X       16.550      6.050    193.550    191.650  0.013          418.500

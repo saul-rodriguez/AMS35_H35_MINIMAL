@@ -1,0 +1,13 @@
+top 1000
+INFO_POLY1_DIE_RATIO_POR1::<1>
+1 1 2 Sep 30 06:55:35 2026                      
+INFO_POLY1_DIE_RATIO_POR1::<1> = DENSITY POLY1 < 1 INSIDE OF LAYER chipedge_for_check
+PO_R_1 INFO density of POLY1 area [%] Density = total poly layer area / chip area Recommended dummy structures are 5um * 2um rectangles with 2um spacing. They should not be placed on active devices. = 30 30
+p 1 4
+DV 0.0037883475
+DA 2.73619e+06
+DA POLY1 10365.6
+-1000 -1000
+2220200 -1000
+2220200 1230850
+-1000 1230850

@@ -1,0 +1,279 @@
+C DN_PS(DIO) DN_PS(DIO)
+N PLUS PLUS
+N MINUS MINUS
+
+C PD_SN(DIO) PD_SN(DIO)
+N PLUS PLUS
+N MINUS MINUS
+
+C "PWRCUT_DIG_P_DXS_HV cmos_sch IOLIB_HV_4M" "PWRCUT_DIG_P_DXS_HV layout IOLIB_HV_4M"
+N gndo_left! gndo_left!
+N gndo_right! gndo_right!
+N gndr_left! gndr_left!
+N gndr_right! gndr_right!
+N psub! avT7694_1
+N vddr_left! vddr_left!
+N vddr_right! vddr1_right!
+I DLIB14 avD98_4
+I DLIB13 avD98_3
+I DLIB12 avD98_1
+I DLIB11 avD98_2
+I DLIB10 avD98_5
+I DLIB8 avD98_6
+I DLIB6 avD93_18
+I DLIB5 avD93_5
+I DLIB4 avD93_1
+I DLIB3 avD93_9
+
+C DP_DN(DIO) DP_DN(DIO)
+N PLUS PLUS
+N MINUS MINUS
+
+C ND_SP(DIO) ND_SP(DIO)
+N PLUS PLUS
+N MINUS MINUS
+
+C RPOLY2(RES) RPOLY2(RES)
+N PLUS PLUS
+N MINUS MINUS
+
+C "APRIOP_HV schematic IOLIB_ANA_HV_4M" "APRIOP_HV layout IOLIB_ANA_HV_4M"
+N PAD avC1
+N gndo! gndo!
+N gndr! gndr!
+N psub! avT7694_1
+N vddo! vddo!
+N vddr! vddr!;1
+I DLIB5 avD95_1
+I DLIB_PAD avD98_1
+I DLIB_VDDO avD98_2
+I DLIB_VDDR avD98_4
+I DLIB8 avD93_18
+I DLIB7 avD93_2
+I DLIB6 avD93_1
+I DLIB_GNDR_GNDR avD91_1
+I R7 avD42_1
+I R8 avD42_3
+
+C "APRIO200P_HV schematic IOLIB_ANA_HV_4M" "APRIO200P_HV layout IOLIB_ANA_HV_4M"
+N PAD PAD
+N Z Z
+N gndo! gndo!
+N gndr! gndr!
+N psub! avT7694_1
+N vddo! vddo!
+N vddr! vddr!;1
+I DLIB5 avD95_1
+I DLIB_PAD avD98_1
+I DLIB_VDDO avD98_2
+I DLIB_VDDR avD98_4
+I DLIB8 avD93_18
+I DLIB7 avD93_2
+I DLIB6 avD93_1
+I DLIB_GNDR avD91_1
+I R7 avD42_6
+I R2 avD42_1
+I R8 avD42_3
+
+C RPOLY1(RES) RPOLY1(RES)
+N PLUS PLUS
+N MINUS MINUS
+
+C NMOSI(MOS) NMOSI(MOS)
+N D D
+N G G
+N S S
+N B B
+N T T
+
+C SHORT(RES) SHORT(RES)
+N PLUS PLUS
+N MINUS MINUS
+
+C "AVDD3ALLP_HV schematic IOLIB_ANA_HV_4M" "AVDD3ALLP_HV layout IOLIB_ANA_HV_4M"
+N net23 avC10
+N PAD avC1
+N gndo! gndo!
+N gndr! gndr!
+N psub! avT7694_1
+N vddo! vddo!
+N vddr! vddr!
+I RSTAR_VDDR avD61_1
+I RSTAR_VDDO avD62_7
+I RLIB_GC1 avD54_1
+I MNLIB_DR1/M_esdnmosi avD6_1
+I DLIB2 avD95_1
+I DLIB_VDDR avD98_1
+
+C "AGND3ALLP_HV schematic IOLIB_ANA_HV_4M" "AGND3ALLP_HV layout IOLIB_ANA_HV_4M"
+N net8 avC10
+N PAD avC1
+N gndo! gndo!
+N gndr! gndr!
+N psub! avT7694_1
+N vddo! vddo!
+N vddr! vddr!;1
+I RSTAR_GNDO_PAD1 avD59_1
+I RLIB_GC1 avD54_1
+I MNLIB_DR1/M_esdnmosi avD6_1
+I DLIB1 avD95_1
+I DLIB_VDDR avD98_1
+
+C PMOSI(MOS) PMOSI(MOS)
+N D D
+N G G
+N S S
+N B B
+
+C RDIFFPS(RES) RDIFFPS(RES)
+N PLUS PLUS
+N MINUS MINUS
+N B B
+
+C "BU2P_HV cmos_sch IOLIB_HV_4M" "BU2P_HV layout IOLIB_HV_4M"
+N net74 avC15
+N net70 avC11
+N net86 avC14
+N net42 avC12
+N net46 avC13
+N PAD PAD
+N A A
+N gnd3o! gnd3o!
+N gnd3r! gnd3r!
+N psub avT7694_1
+N vdd3o! vdd3o!
+N vdd3r! vdd3r!
+N I36/net14 avC16
+I MNLIB_3 avD6_7
+I MNLIB_2 avD6_11
+I MNLIB_1 avD6_9
+I MNLIB_DR2/M_esdnmosi avD6_2
+I MNLIB_DR1/M_esdnmosi avD6_1
+I MPLIB_3 avD12_20
+I MPLIB_2 avD12_13
+I MPLIB_1 avD12_16
+I MPLIB_DR2/M_esdpmosi avD12_19
+I MPLIB_DR1/M_esdpmosi avD12_1
+I R10 avD38_2
+I R0 avD38_1
+I I36/R1 avD54_1
+I I36/D2 avD95_1
+I I36/dn_ps avD98_1
+I I36/I23 avD93_1
+I I36/I40 avD91_1
+
+C "ICP_HV cmos_sch IOLIB_HV_4M" "ICP_HV layout IOLIB_HV_4M"
+N net53 avC13
+N net79 avC14
+N net50 avC12
+N net55 avC11
+N PAD PAD
+N Y Y
+N gnd3o! gnd3o!
+N gnd3r! gnd3r!
+N psub! avT7694_1
+N vdd3o! vdd3o!
+N vdd3r! vdd3r!;1
+I RLIB1 avD54_1
+I MNLIB_2 avD6_3
+I MNLIB_1 avD6_1
+I MNLIB_DR1/M_esdnmosi avD6_2
+I DLIB2 avD95_1
+I DLIB_VDD3R avD98_1
+I MPLIB_2 avD12_9
+I MPLIB_1 avD12_1
+I MPLIB_DR1/M_esdpmosi avD12_2
+I R5 avD38_1
+I R10 avD38_2
+I DLIB3 avD93_1
+I DLIB_GND3R avD91_1
+
+C "VSUBALLP_HV cmos_sch IOLIB_HV_4M" "VSUBALLP_HV layout IOLIB_HV_4M"
+N net8 avC7
+N A avT7694_1
+N gnd3o! gnd3o!
+N gnd3r! gnd3r!
+N vdd3o! vdd3o!
+N vdd3r! vdd3r!;1
+I RLIB_GC1 avD54_1
+I M0 avD6_1
+I DLIB2 avD95_1
+I DLIB1 avD98_1
+
+C "VDD3ALLP_HV cmos_sch IOLIB_HV_4M" "VDD3ALLP_HV layout IOLIB_HV_4M"
+N net23 avC10
+N A A
+N gnd3o! gnd3o!
+N gnd3r! gnd3r!
+N psub! avT7694_1
+N vdd3o! vdd3o!
+N vdd3r! vdd3r!
+I RSTAR_VDD3R avD61_1
+I RSTAR_VDD3O avD62_7
+I RLIB_GC1 avD54_1
+I M0 avD6_1
+I DLIB2 avD95_1
+I DLIB1 avD98_1
+
+C "GND3ALLP_HV cmos_sch IOLIB_HV_4M" "GND3ALLP_HV layout IOLIB_HV_4M"
+N net8 avC10
+N A A
+N gnd3o! gnd3o!
+N gnd3r! gnd3r!
+N psub! avT7694_1
+N vdd3o! vdd3o!
+N vdd3r! vdd3r!;1
+I RSTAR_GND3O_1 avD59_1
+I RSTAR_GND3R avD61_1
+I RLIB_GC1 avD54_1
+I MNLIB_DR1/M_esdnmosi avD6_1
+I DLIB1 avD95_1
+I DLIB2 avD98_1
+
+C "ioring schematic MINIMAL_IO_HV" "ioring layout MINIMAL_IO_HV"
+N GNDD GNDD
+N VDDD VDDD
+N VSUB VSUB
+N RESET RESET
+N CLK CLK
+N ENABLE ENABLE
+N reset_c reset_c
+N clk_c clk_c
+N enable_c enable_c
+N cout_c0 cout_c0
+N cout_c1 cout_c1
+N cout_c2 cout_c2
+N COUT_C0 COUT_C0
+N COUT_C1 COUT_C1
+N COUT_C2 COUT_C2
+N GNDA GNDA
+N VDDA VDDA
+N AIN2 AIN2
+N ain2_c ain2_c
+N AOUT1 AOUT1
+N AOUT2 AOUT2
+N vdd3o! avC12
+N gnd3o! avC11
+N vdd3r! avC13
+N gndoA! avC29
+N vddrA! avC26
+N gnd3r! avC14
+N vddoA! avC27
+N gndrA! avC28
+I I0 I0
+I I1 I1
+I I2 I2
+I I5 I5
+I I4 I4
+I I3 I3
+I I8 I8
+I I7 I7
+I I6 I6
+I I9 I9
+I I20 I20
+I I18 I18
+I I21 I21
+I I19 I19
+I I17 I15
+I I15 I17
+
