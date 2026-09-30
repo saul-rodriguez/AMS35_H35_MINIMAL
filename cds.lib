@@ -1,4 +1,4 @@
-# File Created by  at Mon Sep 28 11:45:22 2026
+# File Created by  at Wed Sep 30 07:58:02 2026
 # assisted by CdsLibEditor
 #--------------------------------------------------------------------------------
 #
@@ -42,4 +42,4 @@ DEFINE MINIMAL_IO_HV ./MINIMAL_IO_HV
 DEFINE IOLIB_ANA_HV_4M $AMS_DIR/cds/HK_H35/IOLIB_ANA_HV_4M
 DEFINE IOLIB_HV_4M $AMS_DIR/cds/HK_H35/IOLIB_HV_4M
 DEFINE CORELIBD_DCV_HV /opt/pdk/ams/5.10.1/X35/ip_release/AMS_H35_ALL_CORELIBD_DCV_HV/01.01.00/03_OA/CORELIBD_DCV_HV
-DEFINE MINIMAL_TOP /home/saul/projects/AMS35_H35_MINIMAL/MINIMAL_TOP
+DEFINE MINIMAL_TOP ./MINIMAL_TOP

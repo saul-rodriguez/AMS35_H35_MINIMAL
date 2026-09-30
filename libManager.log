@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager version 23.1 - CAT38 07/29/2025 19:43 (cpgbld15) $
 \o Sub version:		sub-version  p364 
-\o Arguments:		-mpssession virtuoso518303 -mpshost edatools -masterPID 518303 -ADVM 
+\o Arguments:		-mpssession virtuoso545918 -mpshost edatools -masterPID 545918 -ADVM 
 \o Working Directory:	edatools:/home/saul/projects/AMS35_H35_MINIMAL
 \o 64-bit offsets
 \o Qt version: 		5.15.9
@@ -8,7 +8,7 @@
 \o Opening libManager window.
 \a nrSetCurrentWindow(cdsLibManager)
 \o Loading customization file "/opt/pdk/ams/5.10.1/X35/start_up/localStartup/cdsLibMgr.il"
-\a nrResizeWindow(cdsLibManager list(1383 229 1722 975))
+\a nrResizeWindow(cdsLibManager list(1276 185 1722 975))
 \o MPS virtuoso types registered: 68
 \o changeWorkingDir("/home/saul/projects/AMS35_H35_MINIMAL") unnecessary.
 \o ddSetForcedLib("") unnecessary.
@@ -16,296 +16,16 @@
 \o MPS service: map window
 \o Library Manager customization server connected.
 \a nrSetCurrentWindow(cdsLibManager)
+\o MPS request: update library list
+\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = "MINIMAL_TOP"
 \a cdsLibManager->libLineEdit->value = "MINIMAL_TOP"
 \a cdsLibManager->cellListBox->value = "top_tb"
 \a cdsLibManager->cellLineEdit->value = "top_tb"
-\a cdsLibManager->cellListBox->value = "top"
-\a cdsLibManager->cellLineEdit->value = "top"
-\a cdsLibManager->cellListBox->value = "top_tb"
-\a cdsLibManager->cellLineEdit->value = "top_tb"
-\a cdsLibManager->viewListBox->value = "config_dig_schem_analog_schem"
-\a cdsLibManager->viewLineEdit->value = "config_dig_schem_analog_schem"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = "config_dig_schem_analog_schem"
 \a cdsLibManager->viewLineEdit->value = "config_dig_schem_analog_schem"
 \o MPS request: edit design
 \a nrListItemAction(cdsLibManager->gdmXTView 3 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "MINIMAL_TOP"
-\a cdsLibManager->libLineEdit->value = "MINIMAL_TOP"
-\a cdsLibManager->cellListBox->value = "top_tb"
-\a cdsLibManager->cellLineEdit->value = "top_tb"
-\a cdsLibManager->viewListBox->value = "config_dig_schem_analog_schem"
-\a cdsLibManager->viewLineEdit->value = "config_dig_schem_analog_schem"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config_dig_schem_analog_schem"
-\a cdsLibManager->viewLineEdit->value = "config_dig_schem_analog_schem"
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "MINIMAL_TOP"
-\a cdsLibManager->libLineEdit->value = "MINIMAL_TOP"
-\a cdsLibManager->cellListBox->value = "top_tb"
-\a cdsLibManager->cellLineEdit->value = "top_tb"
-\a cdsLibManager->viewListBox->value = "config_dig_schem_analog_schem"
-\a cdsLibManager->viewLineEdit->value = "config_dig_schem_analog_schem"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "config_dig_schem_analog_schem"
-\a cdsLibManager->viewLineEdit->value = "config_dig_schem_analog_schem"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "top"
-\a cdsLibManager->cellLineEdit->value = "top"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = nil
-\a cdsLibManager->libLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->libListBox->value = "MINIMAL_TOP"
-\a cdsLibManager->libLineEdit->value = "MINIMAL_TOP"
-\a cdsLibManager->cellListBox->value = "top"
-\a cdsLibManager->cellLineEdit->value = "top"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "MINIMAL_CORE"
-\a cdsLibManager->libLineEdit->value = "MINIMAL_CORE"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "core"
-\a cdsLibManager->cellLineEdit->value = "core"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "CORELIBD_DCV_HV"
-\a cdsLibManager->libLineEdit->value = "CORELIBD_DCV_HV"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellSearchOptionsButton->value = t
-\a cdsLibManager->showCatsToggle->value = t
-\a cdsLibManager->QToolButton7->value = t
-\a cdsLibManager->showCategoriesAction->value = t
-\a cdsLibManager->libCatsTreeView->value = "Everything"
-\a cdsLibManager->catLineEdit->value = "Everything"
-\a cdsLibManager->libCatsTreeView->value = "GlueCells"
-\a cdsLibManager->catLineEdit->value = "GlueCells"
-\a cdsLibManager->libCatsTreeView->value = "HVRingCells"
-\a cdsLibManager->catLineEdit->value = "HVRingCells"
-\a cdsLibManager->cellListBox->value = "END_SPACER_10G_HV"
-\a cdsLibManager->cellLineEdit->value = "END_SPACER_10G_HV"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a lmgrLogShowPopup("mainListPopup2" 44 25 2 "layout")
-\a cdsLibManager->FileOpenROButton->value = t
-\o MPS request: open design readonly
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "ENDLR_HV"
-\a cdsLibManager->cellLineEdit->value = "ENDLR_HV"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a lmgrLogShowPopup("mainListPopup2" 41 27 2 "layout")
-\a cdsLibManager->FileOpenROButton->value = t
-\o MPS request: open design readonly
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "ENDLR_small_HV"
-\a cdsLibManager->cellLineEdit->value = "ENDLR_small_HV"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a lmgrLogShowPopup("mainListPopup2" 41 28 2 "layout")
-\a cdsLibManager->FileOpenROButton->value = t
-\o MPS request: open design readonly
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "ENDCAPR_DCV_HV"
-\a cdsLibManager->cellLineEdit->value = "ENDCAPR_DCV_HV"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a lmgrLogShowPopup("mainListPopup2" 51 27 2 "layout")
-\a cdsLibManager->FileOpenROButton->value = t
-\o MPS request: open design readonly
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libCatsTreeView->value = "sites"
-\a cdsLibManager->catLineEdit->value = "sites"
-\a cdsLibManager->libCatsTreeView->value = "HVRingCells"
-\a cdsLibManager->catLineEdit->value = "HVRingCells"
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "ENDCO_II_120V_HV"
-\a cdsLibManager->cellLineEdit->value = "ENDCO_II_120V_HV"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a lmgrLogShowPopup("mainListPopup2" 51 27 2 "layout")
-\a cdsLibManager->FileOpenROButton->value = t
-\o MPS request: open design readonly
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "ENDCO_II_120V_small_HV"
-\a cdsLibManager->cellLineEdit->value = "ENDCO_II_120V_small_HV"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->cellListBox->value = "ENDCO_II_HV"
-\a cdsLibManager->cellLineEdit->value = "ENDCO_II_HV"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->cellListBox->value = "ENDCO_II_small_HV"
-\a cdsLibManager->cellLineEdit->value = "ENDCO_II_small_HV"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a nrResizeWindow(cdsLibManager list(1817 27 1722 975))
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(1780 150 1722 975))
-\a cdsLibManager->cellListBox->value = "ENDCAPL_DCV_HV"
-\a cdsLibManager->cellLineEdit->value = "ENDCAPL_DCV_HV"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a lmgrLogShowPopup("mainListPopup2" 37 30 2 "layout")
-\a cdsLibManager->FileOpenROButton->value = t
-\o MPS request: open design readonly
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libCatsTreeView->value = "GlueCells"
-\a cdsLibManager->catLineEdit->value = "GlueCells"
-\a cdsLibManager->cellLineEdit->value = "ENDCAPL_DCV_HV"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->cellListBox->value = "FILLCAPX32_DCV_HV"
-\a cdsLibManager->cellLineEdit->value = "FILLCAPX32_DCV_HV"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->cellListBox->value = "FILLCELLX1_DCV_HV"
-\a cdsLibManager->cellLineEdit->value = "FILLCELLX1_DCV_HV"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->cellListBox->value = "FILLCELLX4_DCV_HV"
-\a cdsLibManager->cellLineEdit->value = "FILLCELLX4_DCV_HV"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->libCatsTreeView->value = "HVRingCells"
-\a cdsLibManager->catLineEdit->value = "HVRingCells"
-\a cdsLibManager->cellListBox->value = "END_SPACER_1G_HV"
-\a cdsLibManager->cellLineEdit->value = "END_SPACER_1G_HV"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a lmgrLogShowPopup("mainListPopup2" 40 30 2 "layout")
-\a cdsLibManager->FileOpenROButton->value = t
-\o MPS request: open design readonly
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->cellListBox->value = "ENDLR_HV"
-\a cdsLibManager->cellLineEdit->value = "ENDLR_HV"
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a lmgrLogShowPopup("mainListPopup2" 43 28 2 "layout")
-\a cdsLibManager->FileOpenROButton->value = t
-\o MPS request: open design readonly
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(1604 420 1722 975))
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(1605 423 1722 975))
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(1276 185 1722 975))
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "MINIMAL_TOP"
-\a cdsLibManager->libLineEdit->value = "MINIMAL_TOP"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->libCatsTreeView->value = nil
-\a cdsLibManager->catLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = "top"
-\a cdsLibManager->cellLineEdit->value = "top"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a lmgrLogShowPopup("mainListPopup2" 49 14 2 "layout")
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "MINIMAL_CORE"
-\a cdsLibManager->libLineEdit->value = "MINIMAL_CORE"
-\a cdsLibManager->cellLineEdit->value = ""
-\a cdsLibManager->cellListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->cellListBox->value = "core"
-\a cdsLibManager->cellLineEdit->value = "core"
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewLineEdit->value = ""
-\a cdsLibManager->viewListBox->value = "layout"
-\a cdsLibManager->viewLineEdit->value = "layout"
-\o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
-\a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetWindowVisibility(cdsLibManager "hide")
